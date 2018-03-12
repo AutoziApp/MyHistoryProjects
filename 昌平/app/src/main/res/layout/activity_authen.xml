@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_authen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.mapuni.mobileenvironment.activity.AuthenActivity">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/waitLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@mipmap/head"
+            android:id="@+id/imageView8" />
+        <TextView
+            android:textColor="#2f2e2e"
+            android:text="张三"
+            android:gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameView" />
+        <TextView
+            android:textColor="#2f2e2e"
+            android:text="联系方式:15689653269"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telView" />
+        <TextView
+            android:text="机器码:ADA4515"
+            android:textColor="#2f2e2e"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/numView" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/jiazai"
+                    android:id="@+id/progressView"
+                    android:layout_weight="1" />
+                <TextView
+                    android:text="审核中，请耐心等待"
+                    android:textColor="#076bd0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stationView"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:text="如需帮助请联系管理员:000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:textSize="12sp"
+            android:textColor="#868686"
+            android:gravity="center_horizontal|bottom"
+            android:id="@+id/admin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/commitLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@mipmap/head"
+             />
+        <RelativeLayout
+            android:background="@drawable/kuang_bg2"
+            android:layout_marginTop="45dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="50dp">
+            <TextView
+                android:text="姓名:"
+                android:textColor="#222121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="36dp"
+                android:layout_marginStart="36dp"
+                android:id="@+id/name"
+                />
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textSize="13sp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:ems="10"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_toRightOf="@+id/name"
+                android:drawableRight="@mipmap/select"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@drawable/kuang_bg2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:text="电话:"
+                android:textColor="#222121"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="36dp"
+                android:layout_marginStart="36dp"
+                android:id="@+id/textView15" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:paddingLeft="5dp"
+                android:ems="10"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView15"
+                android:id="@+id/phoneEdit" />
+        </RelativeLayout>
+        <Button
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:background="@drawable/commit_press"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/commit" />
+
+        <TextView
+            android:text="设备未认证请提交认证信息"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="12sp"
+            android:textColor="#868686"
+            android:gravity="center_horizontal"
+             />
+    </LinearLayout>
+</LinearLayout>

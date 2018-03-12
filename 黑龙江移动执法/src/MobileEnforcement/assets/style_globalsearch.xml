@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+		<id></id>
+		<column>u_realname</column>
+		<name>全局搜索</name>
+		<img>grid_wrycx_selector</img>
+		<type></type>
+		<table></table>
+		<qxid></qxid>
+		<path></path>
+		<ywl></ywl>
+	</item>
+	
+	<item>
+		<id>guid</id>
+		<column>rwmc</column>
+		<name>监察任务</name>
+		<img>grid_hpsts_selector</img>
+		<type>detail</type>
+		<table>t_ydzf_rwxx</table>
+		<qxid></qxid>
+		<path></path>
+		<ywl>RWXX</ywl>
+	</item>
+	
+	<item>
+		<id>userid</id>
+		<column>u_realname</column>
+		<name>监察人员</name>
+		<img>grid_hpsts_selector</img>
+		<type>detail</type>
+		<table>pc_users</table>
+		<qxid></qxid>
+		<path></path>
+		<ywl>Users</ywl>
+	</item>
+	
+	<item>
+		<id>guid</id>
+		<column>qymc</column>
+		<name>监察企业</name>
+		<img>grid_hpsts_selector</img>
+		<type>detail</type>
+		<table>t_wry_qyjbxx</table>
+		<qxid></qxid>
+		<path></path>
+		<ywl>QYJBXX</ywl>
+	</item>
+	
+	
+	
+	<item>
+		<id>guid</id>
+		<column>solufenl</column>
+		<name>救援物资</name>
+		<img>grid_hpsts_selector</img>
+		<type>detail</type>
+		<table>t_zsk_entersoluandsave</table>
+		<qxid></qxid>
+		<path></path>
+		<ywl>JYWZXX</ywl>
+	</item>
+	
+	<item>
+		<id>guid</id>
+		<column>wjbh</column>
+		<name>环评三同时</name>
+		<img>grid_hpsts_selector</img>
+		<type>fj</type>
+		<table>t_wry_hpstsys</table>
+		<qxid>vmob2A1B16C</qxid>
+		<path>HPSTSYS</path>
+		<ywl>HBSTSYSXX</ywl>
+	</item>
+	
+	<item>
+		<id>guid</id>
+		<column>fj</column>
+		<name>限期治理</name>
+		<img>grid_xqzl_selector</img>
+		<type>fj</type>
+		<table>t_wry_xqzl</table>
+		<qxid>vmob2A1B17C</qxid>
+		<path>XQZLXX</path>
+		<ywl>XQZLXX</ywl>
+	</item>
+	
+	<item>
+		<id>guid</id>
+		<column>fj</column>
+		<name>信访投诉</name>
+		<img>grid_xfts_selector</img>
+		<type>fj</type>
+		<table>t_wry_xfts</table>
+		<qxid>vmob2A1B20C</qxid>
+		<path>XFTSXX</path>
+		<ywl>XFTSXX</ywl>
+	</item>
+		
+	<item>
+		<id>id</id>
+		<column>cname</column>
+		<name>危化品</name>
+		<img>grid_whp_selector</img>
+		<type>detail</type>
+		<table>t_zsk_dangerchem</table>
+		<qxid>vmob7A1B</qxid>
+		<path></path>
+		<ywl>WHPXX</ywl>
+	</item>
+		 
+	<item>
+		<id>id</id>
+		<column>name</column>
+		<name>专家库</name>
+		<img>grid_zjkcx_selector</img>
+		<type>detail</type>
+		<table>t_zsk_expert_new</table>
+		<qxid>vmob7A2B</qxid>
+		<path></path>
+		<ywl>ZJKXX</ywl>
+	</item>
+	
+	<item>
+		<id>guid</id>
+		<column>fj</column>
+		<name>预案</name>
+		<img>grid_yjsc_yuan_selector</img>
+		<type>fj</type>
+		<table>t_zsk_yajal</table>
+		<qxid>vmob7A4B</qxid>
+		<path>YAJAL</path>
+		<ywl>YAJALXX</ywl>
+	</item>
+	
+	<item>
+		<id>guid</id>
+		<column>fj</column>
+		<name>案例</name>
+		<img>grid_yjsc_anli_selector</img>
+		<type>fj</type>
+		<table>t_zsk_yajal</table>
+		<qxid>vmob7A4B</qxid>
+		<path>YAJAL</path>
+		<ywl>YAJALXX</ywl>
+	</item>
+	
+	<item>
+		<id>guid</id>
+		<column>fj</column>
+		<name>法律法规</name>
+		<img>grid_hbfg_a</img>
+		<type>fj</type>
+		<table>t_zsk_flfgbz</table>
+		<qxid>vmob11A8B</qxid>
+		<path>FLFGBZ</path>
+		<ywl>HBFLXX</ywl>
+	</item>
+	 
+	
+	<!-- 
+	<item>
+		<id>2</id>
+		<img>grid_hjzlbz_selector</img>
+		<type>环境质量标准</type>
+		<qxid>vmob11A5B</qxid>
+		<table>T_ZSK_FLFGBZ</table>
+		<path>HBSTSYSXX</path>
+	</item>
+	
+	<item>
+		<id>2</id>
+		<img>grid_wrypfbz_selector</img>
+		<type>排放标准</type>
+		<qxid>vmob11A6B</qxid>
+		<table>T_ZSK_FLFGBZ</table>
+		<path>HBSTSYSXX</path>
+	</item>
+	
+	<item>
+		<id>2</id>
+		<img>grid_hbbz_a</img> 
+		<type>环保标准</type>
+		<qxid>vmob11A10B</qxid>
+		<table>T_ZSK_FLFGBZ</table>
+		<path>HBSTSYSXX</path>
+	</item>
+	-->	
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

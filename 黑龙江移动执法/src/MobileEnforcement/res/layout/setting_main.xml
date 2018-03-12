@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/set_system"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:text="系统管理"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+         />
+    <LinearLayout 
+	    android:id="@+id/set_layout" 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@android:color/white"
+   		android:orientation="vertical" >
+    <TextView
+        android:id="@+id/set_system1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="bottom"
+        android:text=" 系统设置"
+        android:textColor="@color/blue"
+         />
+	<LinearLayout 
+	    android:id="@+id/system_set_layout" 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@android:color/background_light"
+    	android:layout_margin="10dp"
+   		android:orientation="vertical" >
+   		
+	    <ListView android:id="@+id/set_listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/separator_all"
+        android:layout_margin="5dp"
+        android:background="@drawable/setting_shape"/>
+	    
+	    <ListView android:id="@+id/set_listView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/separator_all"
+        android:background="@drawable/setting_shape"
+        android:layout_margin="5dp"/>
+	</LinearLayout>
+	
+    <TextView
+        android:id="@+id/set_about"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="bottom"
+        android:text=" 关于系统"
+        android:textColor="@color/blue"
+         />
+    <LinearLayout
+        android:id="@+id/about_system_layout" 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/setting_shape"
+    	android:layout_margin="20dp"
+   		android:orientation="vertical" >
+   		
+        <TextView
+        android:id="@+id/set_envname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  环境移动执法"
+        android:padding="5dp"
+        android:textColor="@color/black"/>
+         />
+        
+        <TextView
+        android:id="@+id/set_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  版本号：YT03.31.i01"
+        android:padding="5dp"
+		android:textColor="@color/black"/>
+        
+        <TextView
+        android:id="@+id/set_companyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="  中科宇图天下科技有限公司" 
+        android:textColor="@color/black"/>
+        
+        <TextView
+        android:id="@+id/set_ownership"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:padding="5dp"
+        android:text="  保留所有权利" 
+        android:textColor="@color/black"/>
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/check_update"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:gravity="center_horizontal"
+        android:text=" 检查更新" 
+        android:textColor="@color/blue"
+        />
+</LinearLayout>
+</LinearLayout>

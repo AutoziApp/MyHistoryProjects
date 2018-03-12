@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<expand>
+    <item>
+        <id>1</id>
+        <name>行政管理</name>
+    </item>
+<!--      <item> -->
+<!--         <id>2</id> -->
+<!--         <name>移动处罚</name> -->
+<!--     </item> -->
+<!--      <item> -->
+<!--         <id>3</id> -->
+<!--         <name>移动执法</name> -->
+<!--     </item> -->
+</expand>

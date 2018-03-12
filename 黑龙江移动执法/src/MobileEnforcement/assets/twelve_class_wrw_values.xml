@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list> 
+    <item>
+  <name>燃煤烟尘</name> 
+  <values>2.18</values> 
+  </item>
+  <item>
+  <name>燃煤二氧化硫</name> 
+  <values>0.95</values> 
+  </item>
+   <item>
+  <name>燃煤氮氧化物</name> 
+  <values>0.95</values> 
+  </item>
+   <item>
+  <name>燃煤一氧化碳</name> 
+  <values>16.7</values> 
+  </item>
+   <item>
+  <name>焦炭一氧化碳</name> 
+  <values>16.7</values> 
+  </item>
+</list>

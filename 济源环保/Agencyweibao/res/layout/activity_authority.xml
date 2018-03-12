@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#072736"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/back_btn_style" />
+
+        <TextView
+            android:id="@+id/toptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/back"
+            android:gravity="center"
+            android:text="最高权限"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dip"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ic"
+            android:layout_width="90dip"
+            android:layout_height="90dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/version_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ic"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="5dip"
+            android:text="河南省空气质量实况与预报"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/version_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+id/version_text"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip"
+            android:drawableLeft="@drawable/guanli"
+            android:drawablePadding="5dip"
+            android:gravity="center_vertical"
+            android:paddingLeft="6dip"
+            android:paddingRight="3dip"
+            android:text="权限密码："
+            android:textColor="#242424"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_input_password"
+            style="@style/my_edittext_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:imeOptions="actionDone"
+            android:padding="7dip"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:hint="输入权限密码" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="#f0f0f0" />
+
+    <Button
+        android:layout_marginTop="10dip"
+        android:id="@+id/btn_get_highest"
+        android:text="点击获取最高权限"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp" 
+        android:paddingTop="8dp" 
+        android:textSize="18sp"
+        android:background="@drawable/btn_rounded"
+        android:textColor="@color/white" 
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+    </Button>
+
+</LinearLayout>

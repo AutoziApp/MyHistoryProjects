@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+ <!-- 存放编辑页面的样式信息 -->
+    <!-- 通用编辑页面测试 -->
+    <item>
+        <name>editor</name> 
+        <u_loginname notnull="用户名不能为空">用户名：</u_loginname> <!-- 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示-->
+        <u_password>密码：</u_password>
+        <u_email email="请输入正确的电子邮件">电子邮件：</u_email>
+        <u_sex style="AutoCompleteTextView" datasource="select sexid,sexname from sex" show="sexname" dbsavekey="sexid">性别：</u_sex>
+        <u_hometel style="tel" telvalidates="请输入正确的电话号码" notnull="电话不能为空">家庭电话：</u_hometel>
+        <u_photo identificationcard="请输入正确的身份证号">照片：</u_photo>
+        <u_realname style="number" number="请输入数字">曾用名：</u_realname> 
+        <depid notnull="部门不能为空" style="AutoCompleteTextView" datasource="select depid,depname from pc_departmentinfo" show="depname" dbsavekey="depid">部门：</depid><!-- dbsavekey和AutoCompleteTextView显示的内容所对应    -->
+        <u_extendfield3 style="Spinner" datasource="select roleid,rolename from pc_role" show="rolename" dbsavekey="roleid">用户职位：</u_extendfield3>
+        <u_lawnum style="Spinner" datasource="select attencode,attenname from attention" show="attenname" dbsavekey="attencode">控制级别：</u_lawnum>
+        <updatetime style="time">更新时间：</updatetime>
+        <mysql>select userid,u_loginname,u_password,u_email,sexname as u_sex,u_hometel,u_photo,u_realname,depname as depid,u_extendField3,u_lawnum,updatetime from v_users where </mysql>
+    </item>
+</list>

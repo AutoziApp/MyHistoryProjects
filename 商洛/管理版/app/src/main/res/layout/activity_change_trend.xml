@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_trend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mapuni.administrator.activity.gridMgAc.ChangeTrendActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    style="@style/assess_text_style"
+                    android:drawableLeft="@drawable/count"
+                    android:text=" 查询统计："/>
+
+                <TextView
+                    android:id="@+id/tv_startTime"
+                    style="@style/assess_time_style"
+                    android:text="0000-00-00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" — "/>
+
+                <TextView
+                    android:id="@+id/tv_endTime"
+                    style="@style/assess_time_style"
+                    android:text="0000-00-00"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/btn_query"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/login_btn_check"
+                        android:clickable="true"
+                        android:padding="4dp"
+                        android:src="@drawable/query"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="请选择区域类型："
+                    android:textColor="@color/my_fragment_text_color"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/btn_showArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="请选择查询区域地点"
+                    android:textColor="@color/my_fragment_text_color"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/linechart"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:paddingBottom="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"/>
+
+            <GridView
+                android:id="@+id/gv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="4dp"
+                android:numColumns="3"
+                android:verticalSpacing="4dp">
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

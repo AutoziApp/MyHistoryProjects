@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jckh_relyout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topLayout"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- 该布局为两个Activity共用通过设置显示Visibility显示部分布局 -->
+        <!--
+  <LinearLayout 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_vertical"
+  android:background="@drawable/bg_title"
+  >
+  <TextView 
+  android:text="  稽查考核"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:textSize="20sp"
+  android:textColor="@color/white"
+  />
+  </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:id="@+id/jctj_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_title_datasync"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <AutoCompleteTextView
+                android:id="@+id/jckh_edit_account"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password_edit"
+                android:gravity="center"
+                android:maxLength="10"
+                android:saveEnabled="true" >
+            </AutoCompleteTextView>
+
+            <ImageButton
+                android:id="@+id/jckh_search_time"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/more_select" />
+
+            <RadioGroup
+                android:id="@+id/jckh_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/jckh_city"
+                    android:text="@string/csdw"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/jckh_county"
+                    android:layout_marginLeft="1dp"
+                    android:text="@string/qxdw"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/jckh_search_linyout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/listViewOnlineData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qxzsjdw"
+                android:textColor="@color/black" />
+
+            <AutoCompleteTextView
+                android:id="@+id/jckh_edit_sjdanwei"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/password_edit"
+                android:saveEnabled="true" >
+            </AutoCompleteTextView>
+
+            <ImageButton
+                android:id="@+id/jckh_search_duiwu"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/more_select" />
+        </LinearLayout>
+
+        <ExpandableListView
+            android:id="@+id/jckh_expandview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000" >
+        </ExpandableListView>
+    </LinearLayout>
+
+</RelativeLayout>

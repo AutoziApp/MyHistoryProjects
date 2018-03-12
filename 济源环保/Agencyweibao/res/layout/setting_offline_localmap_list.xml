@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:background="#fff"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:textColor="#333333"
+        android:layout_height="wrap_content"
+        android:text="已下载城市 " />
+
+     <TextView 
+        android:id="@+id/update"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:text=""/>
+     
+     <TextView 
+        android:id="@+id/ratio"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:textColor="#333333"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/display"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="查看" />
+
+    <ImageView
+        android:id="@+id/remove"
+        android:layout_width="wrap_content"
+        android:background="@drawable/remove_drawable"
+        android:layout_height="wrap_content"
+         />
+
+</LinearLayout>

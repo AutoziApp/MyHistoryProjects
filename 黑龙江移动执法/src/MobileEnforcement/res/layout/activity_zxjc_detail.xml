@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    tools:context=".ZxjcDetailActivity" >
+
+    <LinearLayout
+        android:id="@+id/zxjc_SelectCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="排放口:"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/zxjc_WasteWG"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:prompt="@string/pleaseSelectOuts" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="统计图/表:"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/sp_chatgraph"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="1"
+            android:prompt="@string/pleaseSelectChatGraph" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/zxjc_qy_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/zxjc_seriesSelection"
+        android:layout_margin="4dp"
+        android:cacheColorHint="#000"
+        android:visibility="gone" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@id/zxjc_seriesSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zxjc_SelectCondition"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/zxjc_seriesSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zxjc_SelectCondition"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="监测因子:"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/wastes_series"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:prompt="@string/pleaseSelectChems" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="污染物:"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/wastes_series_chem"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:prompt="@string/pleaseSelectWaste" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/zxjc_seriesSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zxjc_SelectCondition"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/wastes_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:prompt="@string/pleaseSelectDate"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/date_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="selectDate"
+                android:text="1989-4-12"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="至"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/date_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="selectDate"
+                android:text="1989-4-12"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间" />
+
+            <RadioGroup
+                android:id="@+id/rg_zxjc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="时间"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radiou_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="24小时"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radiou_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="一周"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radiou_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="一月"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:onClick="queryZxjcData"
+                android:text="查询" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_graph"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/zxjc_seriesSelection"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptyTipView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/queryEnterprise"
+        android:gravity="center"
+        android:text="没有找到符合条件的数据"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

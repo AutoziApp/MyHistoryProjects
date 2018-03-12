@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/father_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/tasksend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rwgl_cxbj_bt_bg"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="任务创建"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+    
+    <ScrollView
+        android:id="@+id/scrollView_showMessages"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tasksend"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="@string/rwm"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/etTaskName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.0"
+                    android:completionThreshold="1"
+                    android:focusable="true" 
+                    android:singleLine="true">
+                </AutoCompleteTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="true"
+                    android:gravity="right"
+                    android:text="@string/bjqx"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/completeTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6.0"
+                    android:focusable="false"
+                    android:hint="请选择日期" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sendTimeGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="发送时间："
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/sendTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:focusable="false"
+                    android:hint="请选择发送时间" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="*任务类型："
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TaskType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:focusable="false"
+                    android:hint="请选择类型" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/jjcd_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="false"
+                    android:gravity="right"
+                    android:text="@string/jjcd"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/TaskState"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:focusable="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_nextpeople"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="true"
+                    android:gravity="right"
+                    android:text="@string/blry"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+                
+                <EditText
+                    android:id="@+id/leader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:focusable="false"
+                    android:hint="请选择办理人员" />
+
+               <!--  <Spinner
+                    android:id="@+id/leader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:focusable="false" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:focusable="true"
+                    android:gravity="right"
+                    android:text="@string/rwms"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/etRemark"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="6"
+                    android:focusable="true"
+                    android:minLines="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="7dp"
+                    android:text="注:若上传更多格式文件请安装"
+                    android:textColor="@color/blue"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/apk_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rwgl_rwxx_rwzx_installapk"
+                    android:onClick="InstallAPK" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/pz_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/rwgl_rwxx_rwzx_takephoto"
+                    android:onClick="photograph" />
+
+                <Button
+                    android:id="@+id/xz_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lookpic"
+                    android:onClick="takefigure" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/taskedit_list1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+   
+</RelativeLayout>

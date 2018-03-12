@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">济南市网格化环境监管平台</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_xia_fa_detail">XiaFaDetailActivity</string>
+	<string name="startlocation">开始定位</string>
+	<string name="stoplocation">停止定位</string>
+</resources>

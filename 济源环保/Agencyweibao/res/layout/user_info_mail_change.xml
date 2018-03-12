@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginForm"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="修改邮箱地址"
+            android:textColor="@color/deep_green"
+            android:textSize="15pt" />
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="fill_parent" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="fill_parent"
+            android:singleLine="false"
+            android:hint="如果你更改了邮箱地址，需要对邮件地址进行重新验证"
+            android:textSize="10pt" />
+       
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rrr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+ >
+
+        <TextView
+            android:id="@+id/bangong"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="30dp"
+            android:text="办公电话:" />
+
+         <ImageView
+               android:id="@+id/dianhuatupian1"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bodadianhua" />
+         
+        <TextView
+            android:id="@+id/phone_text"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/bangong"
+            android:layout_toLeftOf="@+id/dianhuatupian1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="20dp"
+                     android:layout_centerVertical="true"
+            />
+
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rrr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        >
+
+        <TextView
+            android:id="@+id/liantong"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="30dp"
+            android:text="联通电话:" />
+         <ImageView
+              android:id="@+id/dianhuatupian2"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bodadianhua"/>
+
+        <TextView
+            android:id="@+id/phone_text2"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/liantong"
+            android:layout_toLeftOf="@+id/dianhuatupian2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="20dp"
+                     android:layout_centerVertical="true" />
+
+       
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rrr3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+   >
+
+        <TextView
+           android:id="@+id/liantongxiaohao"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="30dp"
+            android:text="家庭电话:" />
+
+        <ImageView
+           android:id="@+id/dianhuatupian3"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bodadianhua" />
+        
+        
+        <TextView
+         android:id="@+id/phone_text3"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/liantongxiaohao"
+            android:layout_toLeftOf="@+id/dianhuatupian3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="20dp"
+                     android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="ToastBgColor">#FF424242</color>
+    <color name="btnColor">#FFFFFF</color>
+    <color name="textColorforItemTitle">#FF666666</color>
+    <color name="secondbtntextColor">#FF496ea3</color>
+    <color name="textColorforCheckBox">#FF333333</color>
+    <color name="bgColor">#FFF2F2F2</color>
+    <color name="downLoadTextNomal">#FF3366CC</color>
+    <color name="downLoadTextPressed">#FFFFFFFF</color>
+    <color name="downLoadBackNomal">#FFFFFFFF</color>
+    <color name="downLoadBackFocus">#FF6698E7</color>
+    <color name="downLoadBackPressed">#FF3366CC</color>
+    <color name="dialog_tiltle_blue">#2277BB</color>
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="color_text_blue">#2487ca</color>
+    <color name="grey">#808080</color>
+    <color name="color_list_item_press">#f7f7f7</color>
+    <color name="color_list_item_defalut">#ffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="translucent">#00000000</color>
+
+    <!-- 日历 -->
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <!-- <color name="calendar_viewbg_selected">#f65656</color> -->
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#888888</color>
+    <color name="gogo_color_text_tabhost_rb_f">#ffffff</color>
+    <color name="gogo_color_text_tabhost_rb_s">#3FCFFE</color>
+    <color name="circle_color_filter_text_select">#e9e9e9</color>
+    <color name="circle_color_filter_text_defalut">#ffffff</color>
+    <color name="color_text_work_platform_titile_f">#F9B03C</color>
+    <color name="color_text_work_platform_titile_s">#9F9F9F</color>
+    <color name="daily_color_text_menu_btn_f">#333333</color>
+    <color name="daily_color_text_menu_btn_s">#888888</color>
+    <color name="daily_color_refreshlistview_background">#F5F5F5</color>
+    <!-- 大妈小厨 -->
+    <color name="color_main_orange">#ff875c</color>
+    <color name="color_main_orange_s">#ea764c</color>
+    <color name="color_main_coffee_s">#2b2620</color>
+    <color name="color_title_gray">#888888</color>
+    <color name="color_title_gray_s">#333333</color>
+    <color name="color_text_black_s">#888888</color>
+    <color name="color_text_orange_s">#ffa892</color>
+    <color name="color_text_login_btn_f">#258de5</color>
+    <color name="color_text_login_btn_s">#2183d6</color>
+
+    <!-- 帮你GO -->
+    <color name="color_main_green">#40B6E6</color>
+    <color name="color_text_green_f">#1ca563</color>
+    <color name="color_text_green_s">#94edc2</color>
+    <color name="color_bg_delete_f">#da372a</color>
+    <color name="color_bg_delete_s">#b93126</color>
+    <color name="categroy_list_group_h">#1cab66</color>
+    <color name="categroy_list_group_n">#333333</color>
+    <color name="categroy_item_background">#f0f0f0</color>
+    <color name="color_text_grey">#999999</color>
+    <color name="color_text_grey_s">#dedede</color>
+    <color name="color_text_red_f">#dd6040</color>
+    <color name="color_text_white_f">#ffffff</color>
+    <color name="color_text_white_s">#93e7bf</color>
+    <color name="color_menu_text_black">#212121</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="et_hint_color">#949CA4</color>
+
+    <!-- dialog -->
+    <color name="dc_container_show">#66000000</color>
+    <color name="dc_white">#FFFFFFFF</color>
+    <color name="dc_cancel_press">#FFEBEBEB</color>
+    <color name="dc_item_gray">#FFEBEBEB</color>
+    <color name="dc_item_press">#FFDBDBDB</color>
+    <color name="dc_green_text">#FF40B6E6</color>
+    <color name="dc_content_text">#FF343434</color>
+    <color name="dc_green_text_press">#FF31b0e2</color>
+    <color name="dc_default_line">#FFDBDBDB</color>
+    <!-- BouncyEditText -->
+    <color name="hint_color">#9e9e9e</color>
+    
+     <!--SwipeNumberPicker-->
+    <color name="background">#E5E5E5</color>
+    <color name="arrows">#757575</color>
+    <color name="text">#212121</color>
+
+    <color name="grid_bg">#FFFFFFFF</color>
+    <color name="grid_border">#FFC6C6C6</color>
+
+</resources>

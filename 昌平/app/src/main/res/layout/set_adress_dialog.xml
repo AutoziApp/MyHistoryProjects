@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:singleLine="true"
+        android:hint="http://218.246.81.181"
+        android:id="@+id/set_ip"/>
+</LinearLayout>

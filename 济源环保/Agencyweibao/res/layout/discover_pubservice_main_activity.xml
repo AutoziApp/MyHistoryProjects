@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiscoverPubServiceMainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/suhscribe_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:id="@+id/sms_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="公众服务"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/subscribe_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginBottom="50dp"
+         >
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/subscribe_more"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#fff" >
+
+ 		<TextView
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_centerHorizontal="true"
+ 		    android:layout_centerVertical="true"
+ 		    android:text="+ 更多公众服务"
+ 		    android:textSize="18sp" />
+ 
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/subscribe_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="166dp" />
+
+    <TextView
+        android:id="@+id/subscribe_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subscribe_bar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="亲，还没有公众服务,赶紧添加吧" />
+
+</RelativeLayout>

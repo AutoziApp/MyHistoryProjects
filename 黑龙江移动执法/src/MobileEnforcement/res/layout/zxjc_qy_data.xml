@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout 
+    android:id="@+id/linear_out01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="检测时间" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="平均流量" />
+             
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_below="@id/linear_out01"
+    >
+     <TextView
+         android:id="@+id/time_01"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="检测时间" />
+
+    <TextView
+        android:id="@+id/liulang_01"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="平均流量" />
+    
+</LinearLayout>
+   
+
+</RelativeLayout>

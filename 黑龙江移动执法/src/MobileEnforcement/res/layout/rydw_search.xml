@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:text="开始时间:"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/start_time_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_btn"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:text="结束时间:"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/end_time_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_text_btn"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/select_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_menu_height"
+                android:layout_weight="1"
+                android:text="查询"
+                android:background="@drawable/btn_click"
+                android:textColor="@android:color/background_light" />
+            
+              <Button
+                android:id="@+id/back_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_menu_height"
+                android:layout_weight="1"
+                android:text="返回"
+	            android:layout_marginLeft="5dip"
+                android:background="@drawable/btn_click"
+                android:textColor="@android:color/background_light" />
+              
+        </LinearLayout>
+
+</LinearLayout>

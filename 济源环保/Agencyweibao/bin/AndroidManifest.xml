@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jy.environment"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <permission
+        android:name="com.jy.environment.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required 一些系统要求的权限，如访问网络等 -->
+    <!-- 注：解锁，启动，切换场景激活广播需加权限，如启动完成，及手机机状态等。 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- sdcard中读写数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="com.jy.environment.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--
+         <uses-permission android:name="android.permission.READ_PHONE_STATE" 
+		/>
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 读取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 读取sd卡权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name="com.jy.environment.controls.WeiBaoApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo31"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="BDAPPID"
+            android:value="9983934" />
+        <meta-data
+            android:name="BDAPPKEY"
+            android:value="FeRbjyj0eaukSWp40IHQ2rT13ZOogHx4" />
+        <!-- 添加的widget -->
+        <receiver android:name="com.jy.environment.provider.WeiBaoWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <!-- widget中刷新按钮action -->
+                <action android:name="com.jy.environment.UPDATE" >
+                </action>
+                <!-- widget中切换城市action -->
+                <action android:name="com.jy.environment.SWITCH" >
+                </action>
+                <action android:name="com.jy.environment.UPDATE.BUTTON" >
+                </action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/my_widget" />
+        </receiver>
+
+        <service android:name="com.jy.environment.services.WidgetService" >
+        </service>
+        <service android:name="com.jy.environment.services.LocationService" >
+            <intent-filter>
+                <action android:name="com.jy.environment.services.LocationService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.jy.environment.activity.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1101263093" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.jy.environment.activity.Debug"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme" />
+        <activity
+            android:name="com.jy.environment.activity.CityElementCharsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme" />
+        <activity
+            android:name="com.jy.environment.activity.CopyOfEnvironmentWeatherRankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.ActivitySet"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentCurrentWeatherPullActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.ThreeDayAqiTrend"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentWeatherRankActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.MonitorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.invitefriends.RequestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.invitefriends.SmsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.baidu.cloudsdk.social.share.handler.LocalShareActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.baidu.cloudsdk.social.oauth.SocialOAuthActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <!--
+             <activity android:name="com.baidu.cloudsdk.social.share.handler.QQFriendShareReceiverActivity" 
+			android:launchMode="singleTask" > <intent-filter> <action android:name="android.intent.action.VIEW" 
+			/> <category android:name="android.intent.category.DEFAULT" /> <category 
+			android:name="android.intent.category.BROWSABLE" /> <data android:scheme="tencent100358052" 
+			/> </intent-filter> </activity>
+        -->
+        <!-- 噪声监测 -->
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentDrawDialActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 用户微信回调的 activity -->
+        <activity
+            android:name="com.jy.environment.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.jy.environment" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingOfflineMapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.TestShare"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.MapAboutEnterpriseDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.WelcomePagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentCurrentWeatherActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentAQIDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentSelectCtiyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/startTheme" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.LifeActivity1"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverBlogShowPhotoPagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserInfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserInfoncActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserInfomailActitvity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserInfoUnbindMailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserInfogenderActitvity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.Custom_push"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.MapMianActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverAlbumSelectActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverAlbumSelectCompleteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.ShowPushMsgActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPostBlogCheckPicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentCityManagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.ShareActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentWeatherTrendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPostBlogActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserLoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserFindPsswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserRegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingFeedbackActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingAboutActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DailyDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPubServiceAttentionCancelActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPubServiceSearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPubServiceMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverBlogPostCommentsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.MapSeachActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.HbdtWbActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverBlogListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverMySelfBlogListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.LargeImg"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UpdateNotificationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.HbdtWbMainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.WeiBoDetails"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentNoiseHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentNoiseMuchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.map.MapImageView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentAQIDetailMoreActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.KongqizhiliangyubaoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentLineMonitorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentMonitorPmActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <receiver android:name="com.jy.environment.receiver.NetBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.jy.environment.services.DownloadService" >
+        </service>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required 显示通知栏 -->
+                <category android:name="com.jy.environment" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="com.jy.environment" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver
+            android:name="com.jy.environment.receiver.MyJPushReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <category android:name="com.jy.environment" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="db15557145cbc8712d567a49" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="LsYNV17H6vv05PaFbAurINqG2RCMtax0" />
+        <!-- 应用修改部分配置，其中：appId, appKey 从开放平台申请； -->
+        <meta-data
+            android:name="QHOPENSDK_APPID"
+            android:value="201300371" />
+        <meta-data
+            android:name="QHOPENSDK_APPKEY"
+            android:value="5e00b2cebc2fd50a7f3dd883fc6e6bfb" />
+        <!-- 友盟分析 -->
+        <!--
+             <meta-data android:name="UMENG_APPKEY" android:value="5472f41bfd98c51273000011" 
+			>
+        -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5747acd567e58e612f000c98" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yingyongbao" />
+
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPubServiceNewsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPubServiceSearchResultActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPubServiceWebViewActivity"
+            android:label="@string/title_activity_full_news"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentWeatherRankPaiMingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.MicroStationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.baidu.frontia.activity.share.FrontiaSocialOAuthActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.baidu.frontia.activity.share.FrontiaLocalShareActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.baidu.frontia.activity.share.FrontiaQQFriendShareReceiverActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100358052" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPubServiceAddAttentionActivity"
+            android:label="@string/title_activity_particular_cancel"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.jy.environment.services.UniService" >
+        </service>
+        <service android:name="com.jy.environment.services.NewsPushService" >
+        </service>
+
+        <receiver android:name="com.jy.environment.receiver.MyPubServiceReceiver" >
+            <intent-filter android:priority="2147483647" >
+
+                <!-- 优先级加最高 -->
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!-- 解锁完成后会调用 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 监听情景切换 -->
+                <action android:name="android.media.RINGER_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.jy.environment.activity.DiscoverPubServiceHistoryNewsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverNearbyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverNearbyListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.WebViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserValidatePhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.UserUnbindPhoneActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.StationViewPagerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverExposureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.DiscoverExposureListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingPersonActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingPersonOldActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingUpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.WebviewloadActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize|adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingDengJIActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.SettingCaifuActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentWarmHistoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentMonitorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmnetAqi24hStationTrendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentWeatherRankkActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.AuthorityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.MapMainNewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.EnvironmentMapActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SettingPersonOldActivity"
+            android:label="@string/title_activity_setting_person_old" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.AuthorityOldActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.StationDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jy.environment.activity.StatisticalActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+</manifest>

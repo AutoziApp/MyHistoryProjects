@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+     <id>1</id>
+     <img>grid_tzgg_selector</img>
+     <qymc>通知公告</qymc>
+     <qxid>vmob1A1B</qxid>
+   </item>
+
+  <item>
+     <id>2</id> 
+     <img>grid_swdb_selector</img>
+     <qymc>待办管理</qymc>
+     <qxid>vmob1A2B</qxid>
+   </item>
+
+   <item>
+     <id>2</id>
+     <img>grid_swyb_selector</img>
+     <qymc>已办管理</qymc>
+     <qxid>vmob1A3B</qxid>
+   </item>
+  <!--  
+   <item>
+     <id>1</id>
+     <img>grid_yjgl_selector</img>
+     <qymc>邮件管理</qymc>
+     <qxid>vmob1A6B</qxid>
+   </item>	
+   -->
+   <item>
+     <id>1</id>
+     <img>grid_grrl_selector</img>
+     <qymc>个人日历</qymc>
+     <qxid>vmob1A6B</qxid>
+   </item> 
+<!--     
+   <item>
+     <id>1</id>
+     <img>grid_jldrcap_selector</img>
+     <qymc>局领导日程安排</qymc>
+     <qxid>vmob1A6B</qxid>
+   </item>  
+    --> 
+  <item>
+     <id>1</id>
+     <img>grid_txl_selector</img>
+     <qymc>通讯录</qymc>
+     <qxid>vmob1A7B</qxid>
+   </item>
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

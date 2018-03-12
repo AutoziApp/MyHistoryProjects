@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/two_class_interface_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:scaleType="center"
+        android:src="@drawable/user_image" />
+
+    <TextView
+        android:id="@+id/two_class_interface_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/two_class_interface_image"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/two_class_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

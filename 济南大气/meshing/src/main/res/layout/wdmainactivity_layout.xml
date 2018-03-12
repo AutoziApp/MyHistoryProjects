@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#117201"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/wd_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/wd_tx" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/wd_tx"
+            android:orientation="vertical"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:id="@+id/yhm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="admin"
+                android:textColor="#eeeeee"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingTop="7dp"
+                android:text="晴  4~8c"
+                android:textColor="#eeeeee"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:background="#EEEEEE"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/xcjl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/wd_button_bg"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginTop="21dp"
+                        android:drawableLeft="@drawable/wd_xcjl"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="巡查记录"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="0.3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="#a0a0a0"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_centerVertical="true"
+                        android:minHeight="35dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/czfk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/wd_button_bg"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginTop="21dp"
+                        android:drawableLeft="@drawable/wd_czfk"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="处置反馈"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="0.3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="#a0a0a0"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_centerVertical="true"
+                        android:minHeight="35dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/xtgl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/wd_button_bg"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="21dp"
+                        android:layout_marginTop="21dp"
+                        android:drawableLeft="@drawable/wd_xtgl"
+                        android:drawablePadding="6dp"
+                        android:gravity="center"
+                        android:text="系统管理"
+                        android:textColor="#000"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="0.3dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="#a0a0a0"
+                        android:minHeight="35dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="15dp"
+                android:background="#EEEEEE" />
+
+            <GridView
+                android:id="@+id/wgy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

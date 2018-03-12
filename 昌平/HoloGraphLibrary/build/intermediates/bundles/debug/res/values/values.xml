@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ciclesize">4px</dimen>
+    <dimen name="circlealphasize">10px</dimen>
+    <dimen name="downsize">15px</dimen>
+    <dimen name="line_size1">50px</dimen>
+    <dimen name="linesize">2px</dimen>
+    <dimen name="linesize1">3px</dimen>
+    <dimen name="pointsize1">6px</dimen>
+    <dimen name="tem_text_size">14px</dimen>
+    <dimen name="textsize">40px</dimen>
+    <dimen name="ttt">14px</dimen>
+    <dimen name="upsize">45px</dimen>
+    <string name="app_name">昌平环保</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

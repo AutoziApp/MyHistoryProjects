@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/city_linout"
+    android:paddingTop="5dp"
+    android:paddingBottom="3dp"
+    android:orientation="horizontal" 
+    android:gravity="center">
+ <TextView 
+     android:layout_alignParentLeft="true"
+     android:id="@+id/city_text"
+     android:layout_marginLeft="30dp"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textColor="@color/black"/>  
+   <ImageView 
+       android:layout_centerVertical="true"
+     
+      android:layout_alignParentRight="true" 
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/righticon_default"/>  
+
+</RelativeLayout
+    >

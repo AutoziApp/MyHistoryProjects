@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/father_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/xczf_bottom_layout"
+        android:orientation="vertical" >
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:background="@drawable/bg_layout1" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="horizontal" -->
+<!--             android:paddingTop="2dp" > -->
+
+<!--             <AutoCompleteTextView -->
+<!--                 android:id="@+id/cityauto" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="50dp" -->
+<!--                 android:layout_marginRight="2px" -->
+<!--                 android:layout_weight="3.0" -->
+<!--                 android:background="@drawable/bg_spinner" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="选择市" /> -->
+
+<!--             <AutoCompleteTextView -->
+<!--                 android:id="@+id/quauto" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="50dp" -->
+<!--                 android:layout_marginRight="2dp" -->
+<!--                 android:layout_weight="3.0" -->
+<!--                 android:background="@drawable/bg_spinner" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="选择县" /> -->
+
+<!--             <AutoCompleteTextView -->
+<!--                 android:id="@+id/contorler" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="50dp" -->
+<!--                 android:layout_weight="3.0" -->
+<!--                 android:background="@drawable/bg_spinner" -->
+<!--                 android:gravity="center" -->
+<!--                 android:text="控制级别" /> -->
+<!--         </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_layout2"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp" >
+
+            <AutoCompleteTextView
+                android:id="@+id/editName"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/sitelaw_edittext_bg"
+                android:hint="  请输入企业名称" />
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/sitelaw_search" />
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/add_qylist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="true"
+            android:padding="2dp" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/xczf_bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/company_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="8dp" >
+
+            <Button
+                android:id="@+id/add_com"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确 定" />
+
+            <Button
+                android:id="@+id/add_cancle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清 空" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

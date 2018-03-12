@@ -1,0 +1,475 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <FrameLayout
+            android:id="@+id/discover_blog_list_itemqq_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <org.kymjs.aframe.ui.widget.RoundImageView
+                android:id="@+id/discover_blog_list_itemqq_usericon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_weibo"
+             /><org.kymjs.aframe.ui.widget.RoundImageView
+                android:id="@+id/baoguangtie"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/baoguangtie"
+                android:visibility="gone" />
+
+            <org.kymjs.aframe.ui.widget.RoundImageView
+                android:id="@+id/baoguangtiee"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/baoguangtiee"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/name_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/discover_blog_list_itemqq_layout"
+            android:orientation="horizontal" 
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/discover_blog_list_itemqq_nc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/discover_blog_list_itemqq_usericon"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/discover_blog_list_itemqq_usericon"
+                android:layout_weight="1"
+                android:textColor="#395486"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/discover_blog_list_itemqq_tm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/discover_blog_list_itemqq_nc"
+                android:layout_marginRight="5dip"
+                android:layout_toLeftOf="@+id/discover_blog_list_itemqq_db"
+                android:textColor="#999999"
+                android:textSize="13sp"
+                />
+
+            <ImageView
+                android:id="@+id/discover_blog_list_itemqq_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/discover_blog_list_itemqq_nc"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/weibo_delet" />
+        </LinearLayout>
+
+       <!--  <LinearLayout
+            android:id="@+id/discover_star"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_linear"
+            android:layout_toRightOf="@+id/discover_blog_list_itemqq_layout"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/item_env"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@id/item_city"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/item_city"
+                android:gravity="center_vertical"
+                android:text="曝光星级"
+                android:textColor="#999"
+                android:textSize="11dp" />
+
+            <RatingBar
+                android:id="@+id/discover_blog_list_itemqq_rb"
+                style="@style/roomRatingBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="0" />
+        </LinearLayout>
+ -->
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_linear"
+            android:layout_toRightOf="@+id/discover_blog_list_itemqq_layout"
+            android:orientation="vertical"
+            android:paddingTop="8dip" >
+
+            <TextView
+                android:id="@+id/discover_blog_list_itemqq_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dip"
+                android:text=""
+                android:textColor="#212121"
+                android:textSize="16sp" />
+
+            <com.jy.environment.widget.NoScrollGridView
+                android:id="@+id/discover_blog_list_itemqq_gvi"
+                android:layout_width="285dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:horizontalSpacing="2.5px"
+                android:numColumns="3"
+                android:verticalSpacing="5dp"
+                android:visibility="gone" />
+            <!-- android:stretchMode="columnWidth" android:horizontalSpacing="5px" -->
+
+            <LinearLayout
+                android:id="@+id/layout_pollutionType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/pollutionType_qi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="气"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_shui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="水"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_tu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="土"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_gong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="工"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_nong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="农"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_cheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="城"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_hai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="海"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_hua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="化"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_sheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="生"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_zao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="噪"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_gu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="固"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pollutionType_neng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pollutiontype_bac"
+                    android:gravity="center"
+                    android:text="能"
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/discover_blog_list_itemqq_wz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/locate_succeeded" />
+
+        <TextView
+            android:id="@+id/discover_blog_list_itemqq_ct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/discover_blog_list_itemqq_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="好环境"
+            android:textColor="#212121"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+     
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#4c000000"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/upload_history"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/discover_blog_list_itemqq_rb"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/upload_btn_selector"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/discover_blog_list_pinglunzan"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:id="@+id/discover_blog_list_itemqq_ping"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/skin_feed_icon_comment" />
+
+            <TextView
+                android:id="@+id/discover_blog_list_itemqq_pl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="评论"
+                android:textColor="#395486"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/discover_blog_list_itemqq_zanll"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/discover_blog_list_itemqq_ping"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/discover_blog_list_itemqq_zaniv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/skin_feed_icon_praise_click" />
+
+            <TextView
+                android:id="@+id/discover_blog_list_itemqq_zan1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="赞"
+                android:textColor="#395486"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/discover_blog_list_itemqq_zan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dip" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/skin_feed_icon_review_praise" />
+
+            <TextView
+                android:id="@+id/discover_blog_list_itemqq_zan_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#395486"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1sp" />
+        <!-- android:src="@drawable/blog_line" -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/discover_blog_list_itemqq_tm_pinglunlie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dip"
+        android:paddingTop="1dip" >
+
+        <com.jy.environment.widget.MyListView
+            android:id="@+id/discover_blog_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" >
+
+            <!-- android:listSelector="@android:color/transparent" -->
+        </com.jy.environment.widget.MyListView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/discover_blog_list_item_edit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="45dip"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/skin_btn_upload"
+        android:gravity="left|center_vertical"
+        android:hint="我也说一句..."
+        android:paddingLeft="8dp"
+        android:textSize="12sp" />
+
+</LinearLayout>

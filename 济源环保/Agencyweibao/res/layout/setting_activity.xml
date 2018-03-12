@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/title"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:background="@color/top_bg"
+		android:gravity="center_horizontal|center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="我"
+			android:textColor="#fff"
+			android:textSize="20sp" />
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/rl1"
+		android:layout_width="match_parent"
+		android:layout_height="200dp"
+		android:background="@drawable/discover_top_bg">
+
+		<Button
+			android:id="@+id/button1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:text="登陆 /注册"
+			android:visibility="gone" />
+
+		<com.jy.environment.widget.CircularBigImageView
+			android:id="@+id/person_nc"
+			android:layout_width="68dip"
+			android:layout_height="68dip"
+			android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="17dp"
+			android:background="@drawable/logo31"
+			android:scaleType="fitXY" />
+
+		<TextView
+			android:id="@+id/person_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/person_nc"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="16dp"
+			android:text="我是阿狸" />
+
+		<LinearLayout
+			android:id="@+id/person_st"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentTop="true"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:gravity="center_horizontal">
+
+			<ImageView
+				android:id="@+id/imageView1"
+				android:layout_width="20dp"
+				android:layout_height="20dp"
+				android:src="@drawable/ixv" />
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/person_dj"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignTop="@+id/person_nc"
+			android:layout_marginLeft="15dp"
+			android:text="Lv16" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/person_map"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/preference_first_item"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:id="@+id/push"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="离线地图"
+			android:textColor="#000"
+			android:textSize="17sp" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:scaleType="matrix"
+			android:src="@drawable/mm_submenu" />
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/person_invite"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:clickable="true"
+		android:background="@drawable/preference_item"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="邀请"
+			android:textColor="#000"
+			android:textSize="17sp" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:scaleType="matrix"
+			android:src="@drawable/mm_submenu" />
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/person_request"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:clickable="true"
+		android:background="@drawable/preference_item"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="意见反馈"
+			android:textColor="#000"
+			android:textSize="17sp" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:scaleType="matrix"
+			android:src="@drawable/mm_submenu" />
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:id="@+id/person_check"
+		android:layout_width="fill_parent"
+		android:layout_height="40dp"
+		android:clickable="true"
+		android:background="@drawable/preference_item"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="检测新版本"
+			android:textColor="#000"
+			android:textSize="17sp" />
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:scaleType="matrix"
+			android:src="@drawable/mm_submenu" />
+
+	</RelativeLayout>
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="50dp"
+		android:id="@+id/person_about"
+		android:background="@drawable/preference_last_item"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:id="@+id/yushengy"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="关于微保"
+			android:textColor="#000"
+			android:textSize="17sp" />
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:scaleType="matrix"
+			android:src="@drawable/mm_submenu" />
+
+	</RelativeLayout>
+
+</LinearLayout>

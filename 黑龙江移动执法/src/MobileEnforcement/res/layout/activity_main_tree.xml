@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+      <!--   android:background="#404E8B"-->
+      <LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:background="#404E8B"
+     android:padding="5dp"
+    >
+    <ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/yutu"
+    android:visibility="gone"/>
+          
+          
+  <TextView 
+        android:layout_gravity="center_vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="选择办理人员"
+        android:paddingLeft="20dp"
+        android:textSize="22sp"
+       android:id="@+id/select_fshr"
+        android:textColor="@android:color/white"
+        android:gravity="left|center_vertical"/>
+      </LinearLayout>
+      
+  
+    <ListView
+        android:id="@+id/id_tree"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:divider="#aaa"
+        android:dividerHeight="1px" >
+    </ListView>
+    
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rwsc_testback"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="#FFF">
+	<!--  -->
+        <LinearLayout
+            android:id="@+id/popu_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"        
+            android:background="@drawable/details_section_bg"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:gravity="center_vertical"
+             >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 
+                android:src="@drawable/rwsc_upload" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/jgsc"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popu_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:background="@drawable/details_section_bg"
+            android:orientation="horizontal"
+            android:paddingRight="5dp" 
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 
+                android:src="@drawable/rwsc_zhipai" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/rwzp"
+                 
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popu_layout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:background="@drawable/details_section_bg"
+            android:orientation="horizontal"
+            android:paddingRight="5dp" 
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 
+                android:src="@drawable/rwsc_detail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                 android:textSize="18sp"
+                android:text="@string/rwxq"
+               
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popu_layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:background="@drawable/details_section_bg"
+            android:orientation="horizontal"
+            android:paddingRight="5dp" 
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 
+                android:src="@drawable/rwsc_type" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/dyqd"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

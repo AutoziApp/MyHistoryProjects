@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gis_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.esri.android.map.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        initExtent="111.539037400513 34.4309115824473 112.60014562043 35.0899156348166" >
+    </com.esri.android.map.MapView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/map_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获得经纬度"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/map_gps_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:contentDescription="@string/hello_world" -->
+<!--                 android:src="@drawable/hbdt_gis_one_grid" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="主体网格" -->
+<!--                 android:textColor="@android:color/background_dark" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:contentDescription="@string/hello_world" -->
+<!--                 android:src="@drawable/hbdt_gis_two_gird" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="单元网格" -->
+<!--                 android:textColor="@android:color/background_dark" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:contentDescription="@string/hello_world" -->
+<!--                 android:src="@drawable/hbdt_gis_icon_electricity" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="电力" -->
+<!--                 android:textColor="@android:color/background_dark" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:contentDescription="@string/hello_world" -->
+<!--                 android:src="@drawable/hbdt_gis_icon_cement" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="钢铁" -->
+<!--                 android:textColor="@android:color/background_dark" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:contentDescription="@string/hello_world" -->
+<!--                 android:src="@drawable/hbdt_gis_icon_papermaking" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="造纸" -->
+<!--                 android:textColor="@android:color/background_dark" /> -->
+<!--         </LinearLayout> -->
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:orientation="horizontal" > -->
+
+<!--             <ImageView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:contentDescription="@string/hello_world" -->
+<!--                 android:src="@drawable/hbdt_gis_icon_steel" /> -->
+
+<!--             <TextView -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:text="水泥" -->
+<!--                 android:textColor="@android:color/background_dark" /> -->
+<!--         </LinearLayout> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gis_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/hbdt_gis_toolbar_bg"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- 点线面范围查询 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/test_geometry_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点线面" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 辽宁企业定位 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             >
+
+            <Button
+                android:id="@+id/btn_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hbdt_gis_around_find" />
+
+            <ImageView
+                android:id="@+id/btn_company_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 人员定位 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/btn_teammate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hbdt_gis_tool_personnel"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_teammate_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 车辆定位 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/btn_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hbdt_gis_car_loction"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_car_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!--  -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_hotQuery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hbdt_gis_tool_hotquery"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_hotQuery_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 周边查询 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/around_find"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hbdt_gis_qy_find"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:id="@+id/around_find_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 图层查看 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_layerDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gis_tool_layerdisplay"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_layerDisplay_divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 位置共享 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_locationShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gis_tool_locationshare"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 网格化显示 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_bMeshing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hbdt_gis_grid_open"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 网格信息查询 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_grid_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hbdt_gis_grid_query"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 登录用户管辖企业查询 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_grid_jur_ent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hbdt_gis_company_search_img"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+
+        <!-- 经纬度查询 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_grid_coordinate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/hbdt_gis_coord_query_img"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:paddingTop="5dp"
+                android:src="@drawable/hbdt_gis_toolbar_divider" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hbdt_gis_location"
+            android:text=""
+            android:visibility="gone"
+             />
+
+        <Button
+            android:id="@+id/btn_zoomout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hbdt_gis_zoomout"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_zoomfull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hbdt_gis_zoomfull"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btn_zoomin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hbdt_gis_zoomin"
+            android:text="" />
+    </LinearLayout>
+
+</RelativeLayout>

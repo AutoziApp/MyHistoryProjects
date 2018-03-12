@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_grid_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mapuni.administrator.activity.gridMgAc.GridNameActivity">
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/assess_text_style"
+            android:drawableLeft="@drawable/count"
+            android:text=" 查询统计："/>
+
+        <TextView
+            android:id="@+id/tv_startTime"
+            style="@style/assess_time_style"
+            android:text="0000-00-00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" — "/>
+
+        <TextView
+            android:id="@+id/tv_endTime"
+            style="@style/assess_time_style"
+            android:text="0000-00-00"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_query"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/login_btn_check"
+                android:clickable="true"
+                android:padding="4dp"
+                android:src="@drawable/query"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="     区域类型："
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/btn_showArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请选择查询区域地点"
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e7e7"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="任务状态："
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <RadioGroup
+            android:id="@+id/rg_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_haveToDo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="办结"
+                android:textColor="@color/my_fragment_text_color"
+                android:textSize="@dimen/text_size_16sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:gravity="center|left"
+                android:text="上报"
+                android:textColor="@color/my_fragment_text_color"
+                android:textSize="@dimen/text_size_16sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_qiandao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:gravity="center|left"
+                android:text="签到率"
+                android:textColor="@color/my_fragment_text_color"
+                android:textSize="@dimen/text_size_16sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <include layout="@layout/line_one_dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="排名"
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="网格员"
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="@dimen/text_size_16sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="数值"
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="@dimen/text_size_16sp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/line_one_dip"/>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recyclerView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+    <include layout="@layout/my_recyclerview"/>
+
+
+</LinearLayout>

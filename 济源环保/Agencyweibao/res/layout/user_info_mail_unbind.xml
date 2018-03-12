@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/afterlogin_return_iv_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="解绑邮箱"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+       
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/userinfo_mail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        android:enabled="false"
+        android:text="yunlong199015@163.com" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="请填写正确的邮箱格式！"
+        android:textColor="#696969"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/user_info_mail_btnUnBound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_unbind" />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/city_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relsyl"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip" >
+
+        <ImageView
+            android:id="@+id/city_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:id="@+id/city_title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="城市管理"
+            android:textColor="#fff"
+            android:textSize="24.0dip" />
+
+        <ImageView
+            android:id="@+id/edit_btn"
+            android:layout_width="43dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/city_mgr_top_bar_edit_icon"
+            android:visibility="visible" />
+
+        
+    </RelativeLayout>
+    <View
+        android:id="@+id/rank_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:layout_below="@+id/relsyl"
+        android:background="@drawable/weather_line_title" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/c_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:horizontalSpacing="5dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

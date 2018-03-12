@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+       >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/green_envirenment_icon"
+            android:layout_gravity="center_horizontal|bottom"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="昌平区环境监管信息平台"
+        android:textSize="20dp"
+        android:layout_marginTop="@dimen/DIMEN_10dp"
+        android:textColor="#585858"
+        android:id="@+id/textView2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/DIMEN_280dp"
+        android:layout_marginTop="@dimen/DIMEN_30dp"
+        android:layout_height="@dimen/DIMEN_48dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zhanghao_icon"
+            android:id="@+id/imageView2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:hint="@string/hint_key"
+            android:textColorHint="@color/hintColor"
+            android:maxLength="20"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/login_kuang"
+            android:id="@+id/userName"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="@dimen/DIMEN_280dp"
+        android:layout_height="@dimen/DIMEN_48dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/password_icon"
+            android:id="@+id/imageView3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/hint_password"
+            android:textColorHint="@color/hintColor"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textCursorDrawable="@null"
+            android:background="@drawable/login_kuang"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:id="@+id/userPass"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        >
+
+        <Button
+            android:layout_width="@dimen/DIMEN_280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            android:background="@drawable/selector_press"
+            android:textColor="@color/white"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="center_horizontal" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/DIMEN_280dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:id="@+id/remember_btn"
+            android:layout_width="@dimen/DIMEN_100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="190dp"
+            android:layout_marginEnd="190dp">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/remember_view"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/dui"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/DIMEN_20dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="#949494"
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/remember_view"
+                android:paddingLeft="@dimen/DIMEN_5dp"
+                android:text="@string/remember_password"
+                android:layout_centerVertical="true"
+                android:id="@+id/rightEdit" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

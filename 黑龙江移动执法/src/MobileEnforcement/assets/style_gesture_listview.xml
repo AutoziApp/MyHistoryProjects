@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	
+	 <!-- 任务列表 -->
+    <item>
+        <name>FlipperTaskList</name>
+  		<tab id = "0" condition = "002" style="ListView">待执行</tab>
+  		<tab id = "1" condition = "000" style="ListView">执行中</tab>
+  		<tab id = "2" condition = "003" style="ListView">已上传</tab>
+  		<tab id = "3" condition = "005" style="ListView">待下发</tab>
+  		<tab id = "4" condition = "009" style="ListView">已下发</tab>
+    </item> 
+    
+	<!-- 在线监测 -->
+    <item>
+        <name>FlipperZXJC</name>
+  		<tab id = "0" condition = "001" style="ListView">超标</tab>
+  		<tab id = "1" condition = "002" style="ListView">实时数据</tab>
+    </item>
+    <!-- 现场执法-->
+    <item>
+        <name>FlipperXCZF</name>
+  		<tab id = "0" condition = "" style="View">现场执法</tab>
+  		<tab id = "1" condition = "" style="ListView">执法记录</tab>
+    </item>  
+        <!-- 历史检查记录-->
+    <item>
+        <name>FlipperJCJL</name>
+  		<tab id = "0" condition = "001" style="ListView">常规任务</tab>
+  		<tab id = "1" condition = "003" style="ListView">现场任务</tab>
+    </item> 
+          <!-- 移动办公的待办管理  -->
+    <item>
+        <name>sjz_FlipperDBGL</name>
+  		<tab id = "0" condition = "02" style="ListView">发文待办</tab>
+  		<tab id = "1" condition = "01" style="ListView">收文待办</tab>
+    </item> 
+     <item>
+        <name>qhd_FlipperDBGL</name>
+  		<tab id = "0" condition = "grup6zb4-b9" style="ListView">发文待办</tab>
+  		<tab id = "1" condition = "h8qzqok4-ko" style="ListView">收文待办</tab>
+    </item> 
+        <!-- 移动办公的已办管理-->
+     <item>
+        <name>sjz_FlipperYBGL</name>
+  		<tab id = "0" condition = "02" style="ListView">发文已办</tab>
+  		<tab id = "1" condition = "01" style="ListView">收文已办</tab>
+    </item> 
+      <item>
+        <name>qhd_FlipperYBGL</name>
+  		<tab id = "0" condition = "grup6zb4-b9" style="ListView">发文已办</tab>
+  		<tab id = "1" condition = "h8qzqok4-ko" style="ListView">收文已办</tab>
+    </item>
+</list>
+
+
+
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wd_click_default">#ffffff</color>
+    <color name="wd_click">#e0f5ea</color>
+    <color name="wd_rwxx_dcl_click">#EEEEEE</color>
+    <color name="forget_pwd">#8d8d8d</color>
+	<color name="shizhou">#4B4B4B</color>
+	<color name="yellow">#FFFF00</color>
+</resources>

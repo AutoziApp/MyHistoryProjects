@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:divider="@drawable/divider"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <!--android:drawableLeft="@drawable/count"-->
+
+        <TextView
+            style="@style/assess_text_style"
+            android:text="选择时间："/>
+
+        <TextView
+            android:id="@+id/tv_startTime"
+            style="@style/assess_time_style"
+            android:text="0000-00-00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" — "/>
+
+        <TextView
+            android:id="@+id/tv_endTime"
+            style="@style/assess_time_style"
+            android:text="0000-00-00"
+            />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="6dp"-->
+        <!--android:gravity="center"-->
+        <!--android:visibility="gone">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/btn_query"-->
+        <!--android:layout_width="24dp"-->
+        <!--android:layout_height="24dp"-->
+        <!--android:background="@drawable/login_btn_check"-->
+        <!--android:clickable="true"-->
+        <!--android:padding="4dp"-->
+        <!--android:src="@drawable/query"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_task_statistic"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="请选择统计类型："
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="16sp"/>
+
+        <!--解决android5.0下拉列表 默认会盖住 标签的问题-->
+        <!--android:overlapAnchor="false"-->
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_statistic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overlapAnchor="false"
+            android:padding="@null"
+            android:spinnerMode="dropdown"
+            >
+        </android.support.v7.widget.AppCompatSpinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="请选择区域类型："
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/btn_showArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请选择查询区域地点"
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_task_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="请选择任务类型："
+                android:textColor="@color/my_fragment_text_color"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tv_taskType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:maxLength="5"
+                android:textColor="@color/my_fragment_text_color"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gv_task_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3"
+            android:verticalSpacing="4dp">
+        </GridView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_hellocharts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="请选择图表类型："
+            android:textColor="@color/my_fragment_text_color"
+            android:textSize="16sp"/>
+
+        <!--解决android5.0下拉列表 默认会盖住 标签的问题-->
+        <!--android:overlapAnchor="false"-->
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overlapAnchor="false"
+            android:padding="@null"
+            android:spinnerMode="dropdown"
+            >
+        </android.support.v7.widget.AppCompatSpinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_pic"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="4dp"
+            android:numColumns="2"
+            android:verticalSpacing="4dp">
+        </GridView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_btn_check"
+            android:gravity="center"
+            android:text="查  询"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

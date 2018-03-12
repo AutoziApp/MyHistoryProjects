@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+        <menuname>数据同步</menuname> <!-- 按钮的名字 -->
+        <order>1</order> <!-- 在更多菜单中显示的顺序-->
+        <lefticon>base_icon_datasync</lefticon><!-- 左边的图片名称-->
+        <fakeboldtext>true</fakeboldtext><!-- 是否字体加粗-->
+        <textcolor>base_black</textcolor><!-- 默认字体颜色-->
+        <textsize>20.0f</textsize><!-- 默认字体大小-->
+        <listenername>dataBtnListener</listenername><!-- 要添加的监听器的名字-->
+    </item>
+   <!--  <item>
+        <menuname>通讯录</menuname> 用于区分不同类的样式模块  与类中的DetailedStyleName对应
+        <order>2</order> 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示
+        <lefticon>base_icon_txl</lefticon>
+        <fakeboldtext>true</fakeboldtext>
+        <textcolor>base_black</textcolor>
+        <textsize>20.0f</textsize>默认字体大小
+        <listenername>communicateBtnListener</listenername>
+    </item>
+    <item>
+        <menuname>法规标准</menuname> 用于区分不同类的样式模块  与类中的DetailedStyleName对应
+        <order>3</order> 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示
+        <lefticon>base_icon_fgbz</lefticon>
+        <fakeboldtext>true</fakeboldtext>
+        <textcolor>base_black</textcolor>
+        <textsize>20.0f</textsize>默认字体大小
+        <listenername>LawBtnListener</listenername>
+    </item> -->
+    <!-- <item>
+        <menuname>应急手册</menuname> 用于区分不同类的样式模块  与类中的DetailedStyleName对应
+        <order>4</order> 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示
+        <lefticon>base_icon_yjsc</lefticon>
+        <fakeboldtext>true</fakeboldtext>
+        <textcolor>base_black</textcolor>
+        <textsize>20.0f</textsize>默认字体大小
+        <listenername>YinjiBtnListener</listenername>
+    </item> -->
+<!--     <item> -->
+<!--         <menuname>执法百事通</menuname> 用于区分不同类的样式模块  与类中的DetailedStyleName对应 -->
+<!--         <order>5</order> 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示 -->
+<!--         <lefticon>base_icon_bst</lefticon> -->
+<!--         <fakeboldtext>true</fakeboldtext> -->
+<!--         <textcolor>base_black</textcolor> -->
+<!--         <textsize>20.0f</textsize>默认字体大小 -->
+<!--         <listenername>LawKnowBtnListener</listenername> -->
+<!--     </item> -->
+    <item>
+        <menuname>系统管理</menuname> 用于区分不同类的样式模块  与类中的DetailedStyleName对应
+        <order>11</order> 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示
+        <lefticon>base_icon_setting</lefticon>
+        <fakeboldtext>true</fakeboldtext>
+        <textcolor>base_black</textcolor>
+        <textsize>20.0f</textsize>默认字体大小
+        <listenername>settingBtnListener</listenername>
+    </item>
+    <item>
+        <menuname>添加企业</menuname> 用于区分不同类的样式模块  与类中的DetailedStyleName对应
+        <order>5</order> 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示
+        <lefticon>base_icon_add_company</lefticon>
+        <fakeboldtext>true</fakeboldtext>
+        <textcolor>base_black</textcolor>
+        <textsize>20.0f</textsize>默认字体大小
+        <listenername>addCompanyBtnListener</listenername>
+    </item>
+<!--     <item> -->
+<!--         <menuname>计算器</menuname>  -->
+<!--         <order>7</order>  -->
+<!--         <lefticon>base_icon_jsq</lefticon> -->
+<!--         <fakeboldtext>true</fakeboldtext> -->
+<!--         <textcolor>base_black</textcolor> -->
+<!--         <textsize>20.0f</textsize> -->
+<!--         <listenername>counterBtnListener</listenername> -->
+<!--     </item> -->
+<!--     <item> -->
+<!--         <menuname>刷新</menuname> -->
+<!--         <order>8</order>  -->
+<!--         <lefticon>base_icon_refresh</lefticon> -->
+<!--         <fakeboldtext>true</fakeboldtext> -->
+<!--         <textcolor>base_black</textcolor> -->
+<!--         <textsize>20.0f</textsize> -->
+<!--         <listenername>refurbishBtnListener</listenername> -->
+<!--     </item> -->
+<!--     <item> -->
+<!--         <menuname>全局搜索</menuname> 用于区分不同类的样式模块  与类中的DetailedStyleName对应 -->
+<!--         <order>9</order> 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示 -->
+<!--         <lefticon>base_icon_query</lefticon> -->
+<!--         <fakeboldtext>true</fakeboldtext> -->
+<!--         <textcolor>base_black</textcolor> -->
+<!--         <textsize>20.0f</textsize>默认字体大小 -->
+<!--         <listenername>queryAllBtnListener</listenername> -->
+<!--     </item> -->
+<!--     <item> -->
+<!--         <menuname>返回主页</menuname>  -->
+<!--         <order>10</order>  -->
+<!--         <lefticon>base_icon_home</lefticon> -->
+<!--         <fakeboldtext>true</fakeboldtext> -->
+<!--         <textcolor>base_black</textcolor> -->
+<!--         <textsize>20.0f</textsize> -->
+<!--         <listenername>backmainBtnListener</listenername> -->
+<!--     </item> -->
+</list>

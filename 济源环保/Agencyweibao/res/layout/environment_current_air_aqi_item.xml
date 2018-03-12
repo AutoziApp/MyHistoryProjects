@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/yy4"
+    android:orientation="vertical" 
+   >
+    <!--
+    android:background="@drawable/yy4
+    android:background="@drawable/cityrank_bg"  -->
+
+    <LinearLayout
+        android:id="@+id/line_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+   
+        android:orientation="horizontal" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:gravity="center"
+            android:text="城市排名"
+            android:textColor="#000000"
+            />
+        <!-- android:textColor="#b4ffffff" -->
+
+        <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="城市名称"
+           
+            android:textColor="#000000"
+             />
+
+        <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+          android:gravity="center"
+            android:text="AQI指数"
+            android:textColor="#000000"
+           />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+      
+        android:layout_marginBottom="8dp"
+        android:background="#220A2103">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:divider="@null"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000">
+        </ListView>
+
+        <ImageView
+            android:id="@+id/search_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30.0dip"
+            android:src="@drawable/network_error"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".NoticeActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/vpRadioGroup" />
+
+    <RadioGroup
+        android:id="@+id/vpRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_menu_height"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" 
+        android:layout_margin="4dp">
+
+        <RadioButton
+            android:id="@+id/vp_radio0"
+            style="@style/noticeStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:text="发件箱" />
+
+        <RadioButton
+            android:id="@+id/vp_radio1"
+            style="@style/noticeStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="收件箱" />
+
+        <RadioButton
+            android:id="@+id/vp_radio2"
+            style="@style/noticeStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:text="发布公告" />
+    </RadioGroup>
+
+</RelativeLayout>

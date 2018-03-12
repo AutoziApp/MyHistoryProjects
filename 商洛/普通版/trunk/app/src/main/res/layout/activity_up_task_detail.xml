@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:showDividers="middle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="监管对象名称："/>
+
+                    <TextView
+                        android:id="@+id/tv_patrolObject"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="监管对象类型："/>
+
+                    <TextView
+                        android:id="@+id/tv_objectType"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="上报网格名称："/>
+
+                    <TextView
+                        android:id="@+id/tv_grid"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="网&#12288;&#8194;格&#12288;&#8194;员："/>
+
+                    <TextView
+                        android:id="@+id/tv_operator"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="网&#160;格&#160;员&#160;电&#160;话："/>
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="事&#160;&#160;&#160;件&#160;&#160;编&#160;&#160;&#160;号："/>
+
+                    <TextView
+                        android:id="@+id/tv_eventNo"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="问&#160;&#160;&#160;题&#160;&#160;类&#160;&#160;&#160;型："/>
+
+                    <TextView
+                        android:id="@+id/tv_problemType"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="问&#160;&#160;&#160;题&#160;&#160;描&#160;&#160;&#160;述："/>
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="巡&#160;&#160;&#160;查&#160;&#160;位&#160;&#160;&#160;置："/>
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="经&#12288;&#12288;&#12288;&#12288;度："/>
+
+                    <TextView
+                        android:id="@+id/tv_longitude"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="纬&#12288;&#12288;&#12288;&#12288;度："/>
+
+                    <TextView
+                        android:id="@+id/tv_latitude"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="创&#160;&#160;&#160;建&#160;&#160;时&#160;&#160;&#160;间："/>
+
+                    <TextView
+                        android:id="@+id/tv_creattime"
+                        style="@style/tvStyle2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/tvStyle4"
+                        android:text="处理流程"/>
+
+                    <include layout="@layout/line_one_dip"/>
+
+                    <include layout="@layout/layout_recyclerview"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <!--android:background="#ffe48d"-->
+
+                    <TextView
+                        style="@style/tvStyle1"
+                        android:text="处理方式："/>
+
+                    <com.mapuni.shangluo.view.RadioGroupEx
+                        android:id="@+id/radioGroupID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/rb_upload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="上报"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="下发"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_distribution"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="分配"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_zhuanban"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="转办"
+                            android:visibility="gone"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rb_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="回退"
+                            android:visibility="gone"/>
+
+
+                        <RadioButton
+                            android:id="@+id/rb_finish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="办结"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="结束"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="通过"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_no_pass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="不通过"
+                            android:visibility="gone"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_applyTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="延时申请"
+                            android:visibility="gone"/>
+
+                    </com.mapuni.shangluo.view.RadioGroupEx>
+
+                    <LinearLayout
+                        android:id="@+id/ll_xiafa"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="下发网格："/>
+
+                        <Spinner
+                            android:id="@+id/sp_xiafa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:animationCache="true"
+                            android:background="@drawable/spinner_bg"
+                            android:drawSelectorOnTop="true"
+                            android:spinnerMode="dialog"/>
+                        </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_zhuanBan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="转办部门："/>
+
+                        <TextView
+                            android:id="@+id/tv_zhuanBan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_vertical"
+                            android:background="@drawable/spinner_bg"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_distribution"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_selectGrid"
+                            style="@style/tvStyle1"
+                            android:text="分配人员："/>
+
+                        <Spinner
+                            android:id="@+id/sp_distribution"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:animationCache="true"
+                            android:background="@drawable/spinner_bg"
+                            android:drawSelectorOnTop="true"
+                            android:spinnerMode="dialog"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_applyTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/tvStyle1"
+                                android:text="开始时间："/>
+
+                            <TextView
+                                android:id="@+id/tv_selectStartTime"
+                                style="@style/tvStyle1"
+                                android:text="2017-01-02"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/tvStyle1"
+                                android:text="结束时间："/>
+
+                            <TextView
+                                android:id="@+id/tv_selectEndTime"
+                                style="@style/tvStyle1"
+                                android:text="2017-01-02"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+                    <!--<TextView-->
+                    <!--style="@style/tvStyle1"-->
+                    <!--android:text="意&#12288;&#12288;见："/>-->
+                    <EditText
+                        android:id="@+id/et_opinion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/edit_bg"
+                        android:gravity="center_vertical|top"
+                        android:hint="请输入处理意见..."
+                        android:textColor="@color/base_black"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_attach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:layout_marginTop="10dp"
+                            android:text="图片信息："/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:choiceMode="singleChoice"
+                            android:divider="@null"
+                            android:fadingEdge="none"
+                            android:listSelector="@android:color/transparent"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:scrollbarStyle="outsideOverlay"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/audio_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_view_right_arrow_border"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvAudio"
+                            style="@style/TxtSmallDark"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="语&#12288;&#12288;音"/>
+
+                        <LinearLayout
+                            android:id="@+id/audio_info"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/audio_time"
+                                style="@style/TxtSmallGrey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1分20秒"/>
+
+                            <ImageView
+                                android:id="@+id/playAudio"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_paly"/>
+
+
+                            <ImageView
+                                android:id="@+id/deleteAudio"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_close"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vedio_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_view_right_arrow_border"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvVideo"
+                            style="@style/TxtSmallDark"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="录制视频"/>
+
+                        <LinearLayout
+                            android:id="@+id/vedio_info"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="invisible">
+
+                            <TextView
+                                android:id="@+id/vedio_time"
+                                style="@style/TxtSmallGrey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1分20秒"/>
+
+                            <ImageView
+                                android:id="@+id/playVedio"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="5dp"
+                                android:src="@drawable/icon_paly"/>
+
+                            <ImageView
+                                android:id="@+id/deleteVedio"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_close"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_handle"
+                    android:layout_width="240dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/login_btn_check"
+                    android:gravity="center"
+                    android:text="处&#8194;理"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

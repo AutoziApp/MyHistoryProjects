@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@drawable/bg_menu_xxcx"
+                android:id="@+id/xxcx_wghjg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_wgh1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="网格化监管"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_menu_xxcx"
+                android:layout_marginRight="20dp"
+                android:id="@+id/xxcx_gssk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_gssk1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="国省市控"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:background="@drawable/bg_menu_xxcx"
+                android:id="@+id/xxcx_wry"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_wry1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="污染源"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@drawable/bg_menu_xxcx"
+                android:id="@+id/xxcx_jzyc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_jzyc1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="建筑扬尘"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_menu_xxcx"
+                android:layout_marginRight="20dp"
+                android:id="@+id/xxcx_ztyc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_ztyc1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="渣土扬尘"
+                android:textColor="#000000" />
+
+            <TextView
+                android:background="@drawable/bg_menu_xxcx"
+                android:id="@+id/xxcx_zgdyc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_zgdyc1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="主干道扬尘"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@drawable/bg_menu_xxcx"
+                android:id="@+id/xxcx_ztc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_ztc1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="渣土车GPS"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_menu_xxcx"
+                android:layout_marginRight="20dp"
+                android:id="@+id/xxcx_jcqyc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_jcqyc1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="建成区扬尘"
+                android:textColor="#000000" />
+
+            <TextView
+                android:background="@drawable/bg_menu_xxcx"
+                android:id="@+id/xxcx_jcqklh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/grid_jcqklhlltd1"
+                android:gravity="center_horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="裸露土地"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

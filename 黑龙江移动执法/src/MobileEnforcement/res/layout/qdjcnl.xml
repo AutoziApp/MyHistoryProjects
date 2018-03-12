@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zsgl_wfxq_relayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.mapuni.android.base.SlideLayout
+        android:id="@+id/slidelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/dblue"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/two_list_tool_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light" >
+
+            <LinearLayout
+                android:id="@+id/topLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal" />
+
+            <RelativeLayout
+                android:id="@+id/node_list_enter"
+                android:layout_width="fill_parent"
+                android:layout_height="36sp"
+                android:layout_below="@id/topLayout"
+                android:background="#eff8fd"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/qdjc_qymc_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="marquee"
+                    android:padding="2sp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_arrow_yellow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/task_site_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/node_list_enter"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="4dp" >
+
+                <Button
+                    android:id="@+id/task_site_obtain_evidence_btn"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:onClick="obtain_evid_click"
+                    android:text="摄录取证" />
+
+                <Button
+                    android:id="@+id/task_site_clerical_btn"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:onClick="record_click"
+                    android:text="执法文书" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/task_site_scoll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_linelayout"
+                android:layout_below="@id/task_site_layout"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_linelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/task_site_upload_btn"
+                    style="@style/buttonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/bottom_menu_height"
+                    android:layout_weight="1"
+                    android:onClick="upload_click"
+                    android:text="暂存" />
+
+                <Button
+                    android:id="@+id/task_site_check_list_btn"
+                    style="@style/buttonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/bottom_menu_height"
+                    android:layout_weight="1"
+                    android:onClick="qdjc_complete"
+                    android:text="执行完成" />
+
+                <Button
+                    android:id="@+id/task_site_print_btn"
+                    style="@style/buttonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/bottom_menu_height"
+                    android:layout_weight="1"
+                    android:onClick="preview_click"
+                    android:text="打印预览" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dblue"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dblue"
+                android:orientation="vertical" >
+
+                <include layout="@layout/more_user_info" />
+
+                <ListView
+                    android:id="@+id/sort_listview"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="#dedfde"
+                    android:dividerHeight="1dp"
+                    android:fadingEdgeLength="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.mapuni.android.base.SlideLayout>
+
+</RelativeLayout>

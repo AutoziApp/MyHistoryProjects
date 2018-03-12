@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noise_history_item_map"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<!-- 放入百度地图的mapview     -->
+<!--     <com.baidu.mapapi.map.MapView 
+        android:id="@+id/noise_history_bmapsView"  
+        android:layout_width="fill_parent"  
+        android:layout_height="100dp"  
+        android:clickable="true"/> -->
+    </RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_company_pollution_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mapuni.mobileenvironment.activity.CompanyPollutionDetailActivity">
+
+    <include layout="@layout/toolbar_activity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#6f9ada"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="监测值(mg/m3)"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标准值(mg/m3)"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="时间"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#E5E7E9"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/starttime_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:drawableLeft="@drawable/timelock"
+                android:text=" 开始时间"
+                android:textSize="@dimen/DIMEN_12SP" />
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edging"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="2016-10-11"
+                android:textSize="@dimen/DIMEN_12SP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/endtime_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:drawableLeft="@drawable/timelock"
+                android:text=" 结束时间"
+                android:textSize="@dimen/DIMEN_12SP" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edging"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="2016-10-11"
+                android:textSize="@dimen/DIMEN_12SP" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <com.mapuni.mobileenvironment.widget.NiceSpinner
+            android:id="@+id/portSpinner"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selector_tab_bg"
+            android:button="@null"
+            android:drawableRight="@mipmap/arrow_down"
+            android:gravity="center"
+            android:textColor="@drawable/selector_text_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/searchBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:background="@mipmap/search" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

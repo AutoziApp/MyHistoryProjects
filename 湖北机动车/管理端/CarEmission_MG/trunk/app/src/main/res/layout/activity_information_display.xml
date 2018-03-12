@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yutu.car.activity.DetailActivity">
+    <include layout="@layout/toolbar_activity"/>
+    <include layout="@layout/request_failed"
+        android:id="@+id/showFailed"/>
+ <TextView
+     android:paddingTop="16dp"
+     android:paddingRight="10dp"
+     android:paddingLeft="10dp"
+     android:lineSpacingExtra="3dp"
+     android:lineSpacingMultiplier="1.5"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/show_info"
+     android:textSize="21sp"/>
+</LinearLayout>

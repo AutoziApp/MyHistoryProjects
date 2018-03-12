@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+    <RelativeLayout android:id="@+id/relaLayout"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        >
+	    <ImageView android:id="@+id/item_image"
+	        android:scaleType="centerCrop"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"/>
+	    <TextView android:id="@+id/item_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+	<TextView android:id="@+id/item_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+</LinearLayout>

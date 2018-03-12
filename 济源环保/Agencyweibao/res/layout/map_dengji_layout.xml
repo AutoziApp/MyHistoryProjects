@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:orientation="vertical">
+
+
+		<TextView
+			android:id="@+id/pointtext"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/map_1you"
+			android:gravity="center"
+			android:paddingBottom="1dip"
+			android:paddingLeft="5dip"
+			android:paddingRight="5dip"
+			android:paddingTop="1dip"
+			android:text="200"
+			android:textColor="#fff"
+			android:textSize="11sp" 
+			/>
+		<TextView
+			android:id="@+id/pointvalue"
+			android:layout_width="wrap_content"
+			android:layout_height="20dip"
+			android:background="@drawable/map_city_bg"
+			android:minWidth="20dp"
+			android:paddingBottom="2.5dip"
+			android:paddingLeft="2.5dp"
+			android:paddingRight="2.5dp"
+			android:paddingTop="2.5dip"
+			android:textColor="#353535"
+			android:textSize="10sp"
+			android:visibility="invisible" />
+
+</LinearLayout>

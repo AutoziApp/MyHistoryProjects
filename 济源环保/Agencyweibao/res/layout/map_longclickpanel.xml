@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    
+     android:background="#cccccc"
+  >
+
+<LinearLayout 
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    
+    android:layout_margin="20dp"
+    
+     >
+
+    <TextView android:id="@+id/txt_find_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/map_longclickpanel_find"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="查附近"/>
+    
+    <TextView android:id="@+id/txt_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/map_longclickpanel_share"
+        android:gravity="center_horizontal"
+        android:text="地图分享"/>
+    
+</LinearLayout>
+</RelativeLayout>

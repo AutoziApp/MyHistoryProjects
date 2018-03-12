@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_settingperson_old"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dip"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/liebiao"
+            android:layout_width="70dp"
+            android:layout_height="35dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_left_press"
+            android:gravity="center"
+            android:text="实时"
+            android:textColor="#3b506f"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@drawable/menu_fenge" />
+
+        <TextView
+            android:id="@+id/center"
+            android:layout_width="70dp"
+            android:layout_height="35dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_center_default"
+            android:gravity="center"
+            android:text="日报"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@drawable/menu_fenge" />
+
+        <TextView
+            android:id="@+id/yubao"
+            android:layout_width="70dp"
+            android:layout_height="35dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_center_default"
+            android:gravity="center"
+            android:text="预报"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@drawable/menu_fenge" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="70dp"
+            android:layout_height="35dip"
+            android:layout_weight="1"
+            android:background="@drawable/menu_center_default"
+            android:gravity="center"
+            android:text="月累计"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:background="@drawable/menu_fenge" />
+
+        <TextView
+            android:id="@+id/map"
+            android:layout_width="70dp"
+            android:layout_height="35dip"
+            android:layout_weight="1"
+            android:background="@drawable/right_default"
+            android:gravity="center"
+            android:text="年累计"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/listline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/top"
+        android:background="@drawable/list_line" />
+
+    <LinearLayout
+        android:id="@+id/xuanzeshijian"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/listline"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/xuanzeshijie"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_start_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/list_time_icon"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="选择日期 :"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/statistics_start_timee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_time_input"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_end_date"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/list_time_icon"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="结束日期 :"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/statistics_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_time_input"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statistics_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/list_press"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="查询"
+            android:textColor="#2064a3" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tishi"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_below="@+id/xuanzeshijian" >
+
+        <TextView
+            android:id="@+id/tishi_niandu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="bottom"
+            android:textColor="#EFF3F8"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tishi_lifangmi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="bottom"
+            android:text="单位:微克/立方米"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:id="@+id/tishi_xuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:drawableLeft="@drawable/list_time_icon"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="选择日期 :"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/statistics_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_time_input"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/air_head"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tishi" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="城市"
+            android:textColor="#86e4ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/air_headtv1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PM10"
+            android:textColor="#86e4ff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/air_headtv2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PM2.5"
+            android:textColor="#86e4ff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/youliangtianshu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AQI"
+            android:textColor="#86e4ff"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/first_polluction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首要\n污染物"
+            android:textColor="#86e4ff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/zhuangkuang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="状况"
+            android:textColor="#86e4ff"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- 预报 -->
+
+    <LinearLayout
+        android:id="@+id/yubao_head"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/air_head"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/yubao_city"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="城市"
+            android:textColor="#86e4ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/yubao_tv1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PM10"
+            android:textColor="#86e4ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/yubao_tv2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="PM2.5"
+            android:textColor="#86e4ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/yubao_tv3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AQI"
+            android:textColor="#86e4ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/yubao_tv4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AQI"
+            android:textColor="#86e4ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/yubao_tv5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AQI"
+            android:textColor="#86e4ff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/yuce_lin"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/yubao_head" >
+
+        <ListView
+            android:id="@+id/monitoring_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:divider="@drawable/list_line"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ImageView
+            android:id="@+id/nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/no_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/yuce_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#23556B"
+        android:visibility="gone"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="图例"
+            android:textColor="#86e4ff"
+             />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" 
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/map_value"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:src="@drawable/yubao"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

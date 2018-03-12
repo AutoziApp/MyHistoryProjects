@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="50dp">
+        <com.mapuni.mobileenvironment.widget.NiceSpinner
+            android:id="@+id/spinnerL"
+            android:layout_width="wrap_content"
+            android:text="年份/2012"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:drawableRight="@drawable/color_selector"
+            android:layout_marginLeft="20dp"
+            />
+        <com.mapuni.mobileenvironment.widget.NiceSpinner
+            android:id="@+id/spinnerR"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:textColor="@color/factory_item_value_color"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:text="排放量"
+            android:drawableRight="@drawable/color_selector"
+            />
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dip"
+    android:background="@color/whiteblack"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dip" >
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="fill_parent"
+            android:layout_height="218dip"
+            android:layout_marginBottom="22dip"
+            android:background="@drawable/discover_top_bg"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_alignParentBottom="true" >
+
+            <RelativeLayout
+                android:id="@+id/pic"
+                android:layout_width="68dip"
+                android:layout_height="68dip"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/logo31" >
+
+                <org.kymjs.aframe.ui.widget.RoundImageView
+                    android:id="@+id/login_nc"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="1.5dip"
+                    android:layout_marginTop="1.5dip"
+                    android:src="@drawable/logo31"
+                    android:scaleType="fitXY" />
+                <!-- android:background="@drawable/bg_border" -->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/nickname_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/pic"
+                android:paddingTop="10dip"
+                android:text="游客"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_alignParentRight="true"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/nweibo_difang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:text="郑州"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/tansuo_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/spinner_post" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_blog"
+                android:layout_width="70dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/pic" >
+
+                <TextView
+                    android:id="@+id/huanjingshuo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_centerHorizontal="true"
+                    android:text="环境说" />
+
+                <TextView
+                    android:id="@+id/huanjingshuo_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_below="@+id/huanjingshuo"
+                    android:layout_centerHorizontal="true"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="35dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#666666" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_blog_pic"
+                android:layout_width="70dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/my_blog" >
+
+                <TextView
+                    android:id="@+id/pinglun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_centerHorizontal="true"
+                    android:text="图片" />
+
+                <TextView
+                    android:id="@+id/pic_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_below="@+id/pinglun"
+                    android:layout_centerHorizontal="true"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="35dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="#666666" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_blog_pinglun"
+                android:layout_width="70dip"
+                android:layout_height="50dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/my_blog_pic" >
+
+                <TextView
+                    android:id="@+id/pinglun1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_centerHorizontal="true"
+                    android:text="评论" />
+
+                <TextView
+                    android:id="@+id/pinglun_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dip"
+                    android:layout_below="@+id/pinglun1"
+                    android:layout_centerHorizontal="true"
+                    android:text="0" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

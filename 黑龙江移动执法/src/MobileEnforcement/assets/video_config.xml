@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+
+	<!-- 宇图四楼摄像头地址 -->
+	<item>
+		<qymc>本地测试一</qymc>
+		<ip>192.168.5.50</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>0</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>骊骅淀粉</qymc>
+		<ip>121.22.113.251</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>第一污水处理厂--排水口</qymc>
+		<ip>121.22.34.202</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>第一污水处理厂--水处理设施</qymc>
+		<ip>121.22.34.210</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>山海关污水处理厂--排水口</qymc>
+		<ip>121.22.45.46</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>山海关污水处理厂--水处理设施</qymc>
+		<ip>121.22.45.250</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>泰盛水务龙海道--排水口</qymc>
+		<ip>121.22.36.218</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>泰盛水务龙海道--水处理设施</qymc>
+		<ip>121.22.36.235</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>抚宁污水处理厂--进水口</qymc>
+		<ip>121.22.113.10</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>抚宁污水处理厂--水处理设施</qymc>
+		<ip>121.22.113.243</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>昌黎污水处理厂--排水口</qymc>
+		<ip>121.22.53.66</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>昌黎污水处理厂--水处理设施</qymc>
+		<ip>121.22.53.91</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>青龙满源污水处理厂--排水口</qymc>
+		<ip>121.22.65.150</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>青龙满源污水处理厂--水处理设施</qymc>
+		<ip>121.22.65.251</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>卢龙污水处理厂--排水口</qymc>
+		<ip>121.22.122.70</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>卢龙污水处理厂--水处理设施</qymc>
+		<ip>121.22.122.251</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>海天一色楼顶观测点</qymc>
+		<ip>121.22.41.154</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>抚宁石门寨地区</qymc>
+		<ip>121.22.113.2</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok  -->
+	<item>
+		<qymc>汤河河口</qymc>
+		<ip>121.22.24.147</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- Not-->
+	<item>
+		<qymc>洋河河口</qymc>
+		<ip>121.22.113.227</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>宏启胜（富士康）--排水口</qymc>
+		<ip>121.22.36.58</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>宏启胜（富士康）--水处理设施</qymc>
+		<ip>121.22.38.251</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!--  Not -->
+	<item>
+		<qymc>鹏远淀粉</qymc>
+		<ip>121.22.53.74</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>北部工业区（一）</qymc>
+		<ip>121.22.22.102</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>北部工业区（二）</qymc>
+		<ip>121.22.53.46</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- Not -->
+	<item>
+		<qymc>卢龙石门与昌黎朱各庄区</qymc>
+		<ip>121.22.53.62</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>戴河河口</qymc>
+		<ip>121.22.41.251</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	
+	
+	<!-- ok -->
+	<item>
+		<qymc>人工河河口</qymc>
+		<ip>121.22.113.235</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>正大公司</qymc>
+		<ip>121.22.45.62</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>三融公司--水处理设施</qymc>
+		<ip>121.22.45.58</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>燕山啤酒厂--水处理设施</qymc>
+		<ip>121.22.81.30</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>绿之翊--水处理设施</qymc>
+		<ip>121.22.81.33</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>丰满造纸--水处理设施</qymc>
+		<ip>121.22.112.150</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>沅泰造纸--水处理设施</qymc>
+		<ip>121.22.113.46</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>前韩造纸--水处理设施</qymc>
+		<ip>121.22.113.42</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>豪峰造纸--水处理设施</qymc>
+		<ip>121.22.113.38</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>金茂源造纸--水处理设施</qymc>
+		<ip>121.22.113.34</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>长白机械厂--水处理设施</qymc>
+		<ip>121.22.113.30</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>昌兴纸页--水处理设施</qymc>
+		<ip>121.22.53.46</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	
+	<!-- ok -->
+	<item>
+		<qymc>天成化工--水处理设施</qymc>
+		<ip>121.22.122.54</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>双益磷化--水处理设施</qymc>
+		<ip>121.22.122.58</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- not -->
+	<item>
+		<qymc>圣源玉米--水处理设施</qymc>
+		<ip>121.22.122.66</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>33</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>中红三融--水处理设施</qymc>
+		<ip>121.22.126.58</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>金海食品--水处理设施</qymc>
+		<ip>121.22.45.54</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>中粤浦项马口铁--水处理设施</qymc>
+		<ip>121.22.44.226</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>中油石化沥青厂--水处理设施</qymc>
+		<ip>121.22.33.82</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+	<!-- ok -->
+	<item>
+		<qymc>林海垃圾发电--水处理设施</qymc>
+		<ip>121.22.33.86</ip>
+		<user>admin</user>
+		<pass>12345</pass>
+		<port>8000</port>
+		<status>1</status>
+		<channel>0</channel>
+	</item>
+	
+</list>
+

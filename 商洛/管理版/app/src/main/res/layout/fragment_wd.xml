@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/wd_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/wd_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/wd_tx"/>
+
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wd_tx"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Admin"
+                android:textColor="#eeeeee"
+                android:textSize="17dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        android:showDividers="beginning|middle">
+
+
+        <TextView
+            android:id="@+id/my_notSignTask"
+            style="@style/tvStyle"
+            android:background="@drawable/txt_check"
+            android:drawableLeft="@drawable/no_sign"
+            android:text="待签收任务"/>
+
+        <TextView
+            android:id="@+id/my_msg"
+            style="@style/tvStyle"
+            android:background="@drawable/txt_check"
+            android:drawableLeft="@drawable/wdxx"
+            android:text="我的消息"/>
+
+        <TextView
+            android:id="@+id/query_history"
+            style="@style/tvStyle"
+            android:background="@drawable/txt_check"
+            android:drawableLeft="@drawable/xcjl"
+            android:text="查询记录"/>
+
+        <TextView
+            android:id="@+id/contact_method"
+            style="@style/tvStyle"
+            android:background="@drawable/txt_check"
+            android:drawableLeft="@drawable/lxfs"
+            android:text="联系方式"/>
+
+        <TextView
+            android:id="@+id/study_store"
+            style="@style/tvStyle"
+            android:background="@drawable/txt_check"
+            android:drawableLeft="@drawable/zsk"
+            android:text="知&#8194;识&#8194;库"/>
+
+        <TextView
+            android:id="@+id/tv_modifyPassword"
+            style="@style/tvStyle"
+            android:background="@drawable/txt_check"
+            android:drawableLeft="@drawable/pass_word"
+            android:text="修改密码"/>
+
+        <TextView
+            android:id="@+id/my_about"
+            style="@style/tvStyle"
+            android:background="@drawable/txt_check"
+            android:drawableLeft="@drawable/about"
+            android:text="关        于"/>
+
+        <TextView
+            android:id="@+id/exit_account"
+            style="@style/tvStyle"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/txt_check"
+            android:gravity="center"
+            android:text="注销登录"
+            android:textColor="#999999"/>
+    </LinearLayout>
+</LinearLayout>

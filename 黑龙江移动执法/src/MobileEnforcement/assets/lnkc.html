@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+  
+ 
+    <style type="text/css">
+       
+       
+      
+        body
+        {
+            margin: auto;
+            color: #000;
+			font-size: 18px;
+			font-family: 宋体;
+        }
+        tr td
+        {
+            height: 22pt;
+            color: #000;
+            font-size: 18px;
+			font-family: 宋体;
+			
+        }
+       
+        span.left
+        {
+            text-align: left;
+            text-decoration: underline;
+            border: 1px solid #ff0000;
+            width: 98%;
+            display: block;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+        span
+        {
+            text-align: left;
+            float: left;
+            color: #000;
+            font-size: 18px;
+			font-family: 宋体;
+        }
+     
+       
+       
+        span.content
+        {
+            width: 80px;
+            text-align: center;
+            float: left;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+        
+        span.content120
+        {
+            width: 250px;
+            float: left;
+            border-bottom: 1px solid #000;
+            height: 20px;
+            color: #000;
+        }
+		.abiaoqian{
+			margin-bottom:50px;
+		}
+        
+     
+		
+    </style>
+    
+    
+</head>
+<body >
+    <form id="form1" runat="server">
+    <div id="msg">
+    </div>
+   
+    <div id="printArea" style="height: 25cm;">
+        <table style=" margin: 5px auto; width: 800px; margin-top: 65px">
+			
+            <tr style="height: 45px;">
+                <td style="text-align: center;">
+                    <font style="font-size: 20px; font-weight: 700;letter-spacing:4px">{region}</font><br /><br />
+                    <font style="font-size: 30px; font-weight: 900;letter-spacing:8px">现场检查(勘察)笔录</font>
+                    <br /><br />
+                    <hr style="width: 800px; float: left; border: 1px solid #000" />
+                </td>
+            </tr>
+             <tr>
+                 <td>
+                    <span style="width: 80px;">当事人：</span><span class="content120" style="width: 720px"
+                        id="jlr"  runat="server">&nbsp;{dutypeople}</span>
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    <span style="width: 60px;">地址：</span><span class="content120" style="width: 740px"
+                        id="GZDW1"  runat="server">&nbsp;{dutypeopleaddress}</span>
+                </td>
+            </tr>
+      
+  
+            <tr>
+                <td>
+                    <span style="width: 150px;">检查(勘察)时间：</span> <span id="spanyear" style="border-bottom: 1px solid #000;"
+                        runat="server">{year}年{month}月
+                               {day}日{hour1}时{min1}
+                        分至{hour2}时{min2}分 &nbsp;&nbsp;</span> 
+                </td>
+            </tr>
+                   <tr>
+                 <td>
+                    <span style="width: 60px;">地点：</span><span class="content120" style="width: 740px"
+                        id="address"  runat="server">&nbsp;{surveryaddress}</span>
+                </td>
+            </tr>
+            
+            
+            
+            
+           
+            <tr>
+                <td>
+                    <span style="width: 170px;">检查(勘察)人姓名：</span><span class="content120" 
+                        style="width: 300px;" id="jcrxm" runat="server">{SurveyPeople1}</span> <span style="width: 90px;">执法证号：</span>
+                    <span class="content120" style="width: 240px; color: #000000" id="zfzhS" 
+                        runat="server">{jiancharenzhifazhenghao}</span>
+                </td>
+            </tr>
+            <tr>
+                 <td>
+                    <span style="width: 80px;">记录人：</span><span class="content120" 
+                        style="width: 320px;" id="jlr" runat="server">{recordpeoplename}</span> <span style="width: 90px;">执法证号：</span>
+                    <span class="content120" style="width: 310px" id="GZDW1"  runat="server">{zhifazhenghao}
+                    </span>
+                </td>
+            </tr>
+
+			<tr>
+                <td>
+
+                     <span style="width: 150px;">检查(勘察)记录：</span> <a 
+
+id="spanyear" style="border-bottom: 1px solid #000; line-height:30px;"
+                        runat="server" >{year}年{month}月
+                               {day}日{hour1}时{min1}
+                        分至{hour2}时{min2}分,我厅（局）
+                        执法人员对 {dutypeopledepartment}单位进行监督检查，第三方证人参与，已按规定出示执法证，说明来意，该单位拒绝环保部门进厂检查。在对企业进行说服教育后，企业仍拒不改正。                                                        </a> 
+                     <span style="width:1">
+                </td>
+            </tr>
+           
+            <tr >
+                <td width="800px"  >
+                    <font style="font-weight:bold;font-size:20px">其它需要勘察的内容：</font><font style="text-decoration:underline;word-break: break-all; word-wrap:break-word;line-height:35px;letter-spacing:2px;font-size:20px ">
+                   {sitecondition}</font>
+																							
+                </td>
+           
+            </tr>
+           
+           
+           
+           
+            <tr >
+                <td width="800">&nbsp;</td>
+            </tr>
+  <tr >
+                <td width="800">&nbsp;</td>
+            </tr>
+            <tr >
+                <td width="800"  >&nbsp;</td>
+           
+            </tr>
+            
+           
+			
+		</table>
+    </div>
+	 <div id="mydiv" >
+		<table  style="text-align:center;width: 800px;margin:0 auto;">
+			<tr>
+                <td>
+                    <hr style="width: 800px; float: left; border: 1px solid #000" />
+                </td>
+            </tr>
+			 <tr>
+                 <td>							
+                    <span style="width: 290px;">以上笔录已阅属实。</span>
+                </td>
+            </tr>
+			<tr>
+                <td>
+                    <span style="width: 155px;">当事人签名盖章：</span><span class="content120" style="width: 375px"
+                        id="data1" runat="server">&nbsp;</span><span style="width: 50px;">&nbsp;</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data2" runat="server">
+                        &nbsp;</span> <span style="width: 10px;">年</span> <span class="content120" style="width: 60px;
+                            text-align: center" id="data3" runat="server">&nbsp;</span><span style="width: 10px;">月</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data4" runat="server">
+                        &nbsp;</span><span style="width: 20px;">日</span>
+                </td>
+            </tr>
+          
+			 <tr>
+                <td>
+                    <span style="width:240px;">检查（勘察）人签名或盖章：</span>
+					<span class="content120" style="width: 136px" id="data5" runat="server">&nbsp;</span>
+					<span>、</span>
+					<span class="content120" style="width: 136px" id="data5" runat="server">&nbsp;</span>
+					<span style="width: 50px;">&nbsp;</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data14" runat="server">&nbsp;</span>
+					<span style="width: 10px;">年</span>
+					<span class="content120" style="width: 60px; text-align: center" id="data15" runat="server">&nbsp;</span>
+					<span style="width: 10px;">月</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data16" runat="server">&nbsp;</span>
+					<span style="width: 10px;">日</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <span style="width: 150px;">当事人拒签理由：</span> <a 
+
+id="spanyear" style="border-bottom: 1px solid #000; width:200px;"
+                        runat="server"></a>
+<span style="width:1">
+</td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="width: 270px;">见证人签名或盖章并注明其身份：</span>
+					<span class="content120" style="width: 260px" id="data13" runat="server">&nbsp;</span>
+					<span style="width: 50px;">&nbsp;</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data14" runat="server">&nbsp;</span>
+					<span style="width: 10px;">年</span>
+					<span class="content120" style="width: 60px; text-align: center" id="data15" runat="server">&nbsp;</span>
+					<span style="width: 10px;">月</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data16" runat="server">&nbsp;</span>
+					<span style="width: 10px;">日</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <hr style="width: 800px; float: left; border: 1px solid #000" />
+                </td>
+            </tr>
+			<tr>
+                <td align="center">
+                   		<font style="font-weight:bold;">（第 1 页 共  {TotalPage} 页）</font>
+                </td>
+            </tr>
+		</table>
+	</div>
+	
+	<addTwoPage>
+
+    </form>
+</body>
+</html>

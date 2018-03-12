@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <list>
+ 
+
+	   <item>
+	        <id>2</id>
+			<tablename>任务信息</tablename>
+			<table>T_YDZF_RWXX,T_YDZF_RWXX_USER,TaskEnpriLink,T_Attachment,T_YDZF_RWLY,T_YDZF_RWLX,YDZF_RWLC</table>
+			<qxid>vmob</qxid>
+		</item>
+		
+	    <item>
+		    <id>3</id>
+			<tablename>污染源基本信息</tablename>
+			<table>T_WRY_QYJBXX,Attention,T_WRY_XFTS,T_WRY_PWSF,T_WRY_PWXKZ,T_WRY_XZCF,T_WRY_GLXXXX,Industry,GridEntMapping</table>
+			<qxid>vmob10A</qxid>
+		</item>
+		
+		<item>
+		    <id>7</id>
+			<tablename>一厂一档信息</tablename>
+			<table>T_WRY_HBSXLXQK,T_WRY_SCSSYXQK,T_WRY_FSPFKXX,T_WRY_FQPFKXX,T_WRY_FQZLSS,T_WRY_FSZLSSXX,T_WRY_FSPFKPFWRWXX,T_WRY_LSZF</table>
+			<qxid>vmob10A</qxid>
+		</item>
+		<item>
+		    <id>8</id>
+			<tablename>环保手册</tablename>
+			<table>T_ZSK_FLFGBZ,T_ZSK_HJZLRGJCSJ,T_ZSK_EnterSoluAndSave,T_ZSK_Expert_New,T_ZSK_DangerChem</table>
+			<qxid>vmob11A</qxid>
+		</item>
+		<item>
+		    <id>11</id>
+			<tablename>行政管理</tablename>
+			<table>T_YDZF_Auditor,T_YDZF_SSQYHC,T_All_TZGG</table> 
+			<qxid>vmob11A</qxid>
+		</item>
+		
+		<item>
+		       <id>9</id>
+		       <tablename>模版信息</tablename>
+		       <table>YDZF_IndustryTemplateLink,YDZF_ResultType,YDZF_SpecialItem,YDZF_SpecialTemplate,YDZF_TaskSpecialItem,YDZF_TemplateSpacialItem</table>
+		       <qxid>vmob2A2B</qxid>
+		</item>
+		<item>
+	        <id>15</id>
+	        <tablename>用户信息</tablename>
+	        <table>PC_Users,Region,PC_DepartmentInfo,PC_Role</table>
+	        <qxid>vmob</qxid>
+	    </item>
+	     <item>
+	        <id>16</id>
+	        <tablename>系统权限</tablename>
+	        <table>PC_UserModelPession</table>
+	        <qxid>vmob</qxid>
+	    </item>
+	     <item>
+	        <id>17</id>
+	        <tablename>配置文件</tablename>
+	        <table>config.xml,gis_config.xml</table>
+	        <qxid>vmob</qxid>
+	    </item>
+	   
+	    <item>
+		<id>3</id>
+		<tablename>模版信息</tablename>
+		<table>YDZF_IndustryTemplateLink,YDZF_ResultType,YDZF_SpecialItem,YDZF_SpecialTemplate,YDZF_TaskSpecialItem,YDZF_TemplateSpacialItem</table>
+		<qxid>vmob2A2B</qxid>
+		</item>
+	
+		
+		    <id>4</id>
+			<tablename>污染源_环评三同时</tablename>
+			<table>T_WRY_HPSTSYS</table>
+			<affix >MobileEnforcement/Attach/ZSK/HPSTS/</affix>
+			<listing>fj</listing>
+			<qxid>vmob10A</qxid>
+		</item>
+		<item>
+		    <id>6</id>
+			<tablename>污染源_限期治理</tablename>
+			<table>T_WRY_XQZL</table>
+			<affix >MobileEnforcement/Attach/ZSK/XQZL/</affix>
+	        <listing>fj</listing>
+	        <qxid>mob2A1B4C</qxid>
+		</item>
+
+		<item>
+		    <id>9</id>
+			<tablename>应急手册</tablename>
+			<table></table> 
+			<qxid>vmob11A</qxid>
+		</item>
+		<item>
+		    <id>10</id>
+			<tablename>应急手册_危化品</tablename>
+			<table>T_ZSK_DangerChem</table> 
+			<qxid>vmob11A</qxid>
+		</item>
+		
+		
+	   <item>
+	        <id>10</id>
+	        <tablename>重要文件</tablename>
+	        <table>T_ZSK_ZYWJ</table>
+	        <affix>MobileEnforcement/Attach/ZSK/ZYWJ/</affix>
+	        <listing>fjswf</listing>
+	        <qxid>vmob11A</qxid>
+	    </item> 
+	   
+	    
+	     <item>
+	        <id>11</id>
+	        <tablename>作业指导书</tablename>
+	        <table>T_ZSK_ZYZDS</table>
+	        <affix >MobileEnforcement/Attach/ZSK/ZYWJ/</affix>
+	        <listing>fjswf</listing>
+	        <qxid>mob2A2B8C</qxid>
+	    </item>
+	    <item>
+	        <id>12</id>
+	        <tablename>处理意见</tablename>
+	        <table>T_ZSK_CLYJ</table>
+	        <affix >MobileEnforcement/Attach/ZSK/ZYWJ/</affix>
+	        <listing>fjswf</listing>
+	        <qxid>mob2A2B7C</qxid>
+	    </item>
+	   
+	    <item>
+	        <id>13</id>
+	        <tablename>队伍管理</tablename>
+	        <table>TeamBuildingPerson</table>
+	        <qxid>vmob12A</qxid>
+	    </item>
+		
+	    <item>
+	        <id>14</id>
+	        <tablename>知识库_预案</tablename>
+	        <table>T_ZSK_YAJAL</table>
+	        <affix >MobileEnforcement/Attach/ZSK/YAJAL/</affix>
+	        <listing>fj</listing>
+	        <qxid>vmob7A</qxid>
+	    </item> 
+
+	     <item>
+	        <id>18</id>
+	        <tablename>视频配置文件</tablename>
+	        <table>video_config.xml</table>
+	        <qxid>vmob3A3B</qxid>
+	    </item>
+	    <item>
+	        <id>19</id>
+	        <tablename>一企一档文件</tablename>
+	        <table>T_WRY_SCSSYXQK,T_WRY_FSZLSSXX,T_WRY_FQZLSS,T_WRY_FSPFKPFWRWXX,T_WRY_FQPFKPFWRWXX,T_ZDWRY_GTFW,T_WRY_ZSY,T_WRY_FSPFKXX,T_WRY_FQPFKXX,T_WRY_HBSXLXQK</table>
+	        <qxid>vmob</qxid>
+	    </item>
+	    <item>
+	        <id>19</id>
+	        <tablename>系统模块</tablename>
+	        <table>AppSystem,AppSystemModule</table>
+	        <qxid>vmob4A1B</qxid>
+	    </item> 
+	   <item>
+	        <id>15</id>
+	        <tablename>数据库同步</tablename>
+	        <table>Mob_SqlScript</table>
+	        <qxid>mobsssssssss</qxid>
+	    </item>
+	            <item>
+	        <id>1</id>
+	        <tablename>系统基本信息</tablename>
+	        <table>T_YDZF_BDLX,T_YDZF_JJCD,KINDTYPE,T_YDZF_RWJH</table>
+	        <qxid>vmob</qxid>
+	    </item>
+    </system>
+    
+</list> -->
+<list>
+
+
+	   <item>
+	        <id>2</id>
+			<tablename>任务信息</tablename>
+			<!-- <table>T_YDZF_RWXX,T_YDZF_RWXX_USER,TaskEnpriLink,T_Attachment,T_YDZF_RWLY,T_YDZF_RWLX,YDZF_RWLC</table>
+		 -->	<table>T_YDZF_RWXX,T_YDZF_RWXX_USER,TaskEnpriLink,T_Attachment,T_YDZF_RWLX,YDZF_RWLC</table>
+			<affix >Attach/RWXF/</affix>
+			<listing>fileattachmentpath</listing>
+			<qxid>vmob</qxid>
+		</item>
+		
+	    <item>
+		    <id>3</id>
+			<tablename>污染源基本信息</tablename>
+			<table>T_WRY_QYJBXX,Attention,T_WRY_XFTS,T_WRY_PWSF,T_WRY_PWXKZ,T_WRY_XZCF,T_WRY_GLXXXX,Industry,GridEntMapping,Grid,GridUserMapping</table>
+			<affix ></affix>
+			<listing></listing>
+			<qxid>vmob10A</qxid>
+		</item>
+		<item>
+		    <id>7</id>
+			<tablename>一厂一档信息</tablename>
+			<table>T_WRY_HBSXLXQK,T_WRY_SCSSYXQK,T_WRY_FSPFKXX,T_WRY_FQPFKXX,T_WRY_FQZLSS,T_WRY_FSZLSSXX,T_WRY_FSPFKPFWRWXX,T_WRY_LSZF</table>
+			<affix>MobileEnforcement/Attach/ZSK/HPSTS/</affix>
+			<listing></listing>
+			<qxid>vmob10A</qxid>
+		</item>
+		<item>
+		    <id>8</id>
+			<tablename>环保手册</tablename>
+			<table>T_ZSK_FLFGBZ,T_ZSK_HJZLRGJCSJ,T_ZSK_EnterSoluAndSave,T_ZSK_Expert_New,T_ZSK_DangerChem</table>
+			<affix >MobileEnforcement/Attach/ZSK/FLFGBZ/</affix>
+	        <listing>fj</listing>
+	        <qxid>vmob11A</qxid>
+		</item>
+		<!-- <item>
+		    <id>11</id>
+			<tablename>行政管理</tablename>
+			<table>T_YDZF_Auditor,T_YDZF_SSQYHC,T_All_TZGG,V_YDZF_JXPG</table> 
+			<affix ></affix>
+			<listing></listing>
+			<qxid>vmob11A</qxid>
+		</item> -->
+		<item>
+		       <id>9</id>
+		       <tablename>模版信息</tablename>
+		       <table>YDZF_IndustryTemplateLink,YDZF_ResultType,YDZF_SpecialItem,YDZF_SpecialTemplate,YDZF_TaskSpecialItem,YDZF_TemplateSpacialItem</table>
+		       <qxid>vmob2A2B</qxid>
+		</item>
+		<item>
+	        <id>15</id>
+	        <tablename>用户信息</tablename>
+	        <table>PC_Users,Region,PC_DepartmentInfo,PC_Role</table>
+	        <affix ></affix>
+			<listing></listing>
+	        <qxid>vmob</qxid>
+	    </item>
+	     <item>
+	        <id>16</id>
+	        <tablename>系统权限</tablename>
+	        <table>PC_UserModelPession</table>
+	        <affix ></affix>
+			<listing></listing>
+	        <qxid>vmob</qxid>
+	    </item>
+</list>

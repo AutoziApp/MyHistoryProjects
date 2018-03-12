@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qylb_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/qylb_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/specialitem_right" />
+
+        <TextView
+            android:id="@+id/qymc_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imgzf"
+            android:layout_toRightOf="@+id/img"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:singleLine="false"
+            />
+
+        <TextView
+            android:id="@+id/qyzt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qymc_text"
+            android:layout_toRightOf="@+id/img"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:singleLine="false"
+            />
+        <Button
+            android:id="@+id/imgzf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@drawable/task_list_law_enforcement" />
+
+    </RelativeLayout>
+
+</LinearLayout>

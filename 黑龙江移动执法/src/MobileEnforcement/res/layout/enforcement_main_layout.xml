@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:orientation="vertical" >  
+    <!--  <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/enforcement_main_company_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/xczf"
+            android:textColor="#000000"
+            android:textSize="20.0dip" />
+
+        <TextView
+            android:id="@+id/enforcement_main_record_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/zfjl"
+            android:textColor="#000000"
+            android:textSize="20.0dip" />
+
+       
+    </LinearLayout> -->
+    
+     <RadioGroup
+        android:id="@+id/enforcement_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/enforcement_main_company"
+            style="@style/noticeStyle"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="现场执法" />
+
+        <RadioButton
+            android:id="@+id/enforcement_main_record"
+            style="@style/noticeStyle"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="执法记录" />
+    </RadioGroup>
+
+   <!--  <ImageView
+        android:id="@+id/enforcement_main_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/imagepager_divider" /> -->
+    <android.support.v4.view.ViewPager  
+        android:id="@+id/enforcement_main_viewpager"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:layout_gravity="center" >  
+                
+       
+           
+    </android.support.v4.view.ViewPager>  
+  
+</LinearLayout>  

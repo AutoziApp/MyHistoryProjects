@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="area_list">
+        <item>全部</item>
+        <item>高新区</item>
+        <item>槐荫区</item>
+        <item>济阳县</item>
+        <item>历城区</item>
+        <item>平阴县</item>
+        <item>章丘区</item>
+        <item>长清区</item>
+        <item>市中区</item>
+        <item>历下区</item>
+        <item>天桥区</item>
+        <item>商河县</item>
+    </string-array>
+
+    <string-array name="check_types">
+        <item>时间段考核</item>
+        <item>周考核</item>
+        <item>月考核</item>
+        <item>季度考核</item>
+    </string-array>
+
+
+
+</resources>

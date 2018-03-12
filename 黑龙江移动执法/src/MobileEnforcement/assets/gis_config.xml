@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+		<url>http://192.168.5.52/ArcGIS/rest/services/HFS_Color/MapServer/6</url>
+		<cname>重污染源</cname>
+		<showdetail>0</showdetail>
+	</item>
+	
+	<item>
+		<url>http://192.168.5.52/ArcGIS/rest/services/HFS_Color/MapServer/21</url>
+		<cname>教育科研</cname>
+		<showdetail>1</showdetail>
+	</item>
+	
+	<item>
+		<url>http://192.168.5.52/ArcGIS/rest/services/HFS_Color/MapServer/15</url>
+		<cname>村庄小区</cname>
+		<showdetail>1</showdetail>
+	</item>
+</list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

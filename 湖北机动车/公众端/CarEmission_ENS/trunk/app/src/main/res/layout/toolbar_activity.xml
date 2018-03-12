@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/top_color"
+    tools:context=".activity.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/leftIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:src="@mipmap/fanhui"
+        android:visibility="gone"
+
+        />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/title_spinner"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:overlapAnchor="false"
+        android:padding="@null"
+        android:spinnerMode="dropdown"
+        android:visibility="gone">
+    </android.support.v7.widget.AppCompatSpinner>
+    
+    
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:src="@drawable/add"/>
+
+    <LinearLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <com.mapuni.caremission_ens.views.NewsBar
+            android:id="@+id/newsBar"
+            android:layout_width="70dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#0ca566"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="30dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

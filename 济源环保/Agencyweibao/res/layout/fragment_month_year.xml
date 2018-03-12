@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_time_selected" />
+
+    <LinearLayout
+        android:id="@+id/air_head"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="城市"
+            android:textColor="@color/color_statistical_list_head"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/air_headtv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM10/同比"
+                android:textColor="@color/color_statistical_list_head"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/danwei_headtv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ug/m3"
+                android:textColor="@color/color_statistical_list_head_bottom"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/air_headtv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM2.5/同比"
+                android:textColor="@color/color_statistical_list_head"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/danwei_headtv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ug/m3"
+                android:textColor="@color/color_statistical_list_head_bottom"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/youliangtianshu_liner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/youliangtianshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优良天数"
+                android:textColor="@color/color_statistical_list_head"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pm2.5 pm10"
+                android:textColor="@color/color_statistical_list_head_bottom"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_statistical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:divider="@drawable/list_line"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ImageView
+            android:id="@+id/img_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/no_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

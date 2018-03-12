@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/yy15"
+    >
+    <!-- 
+    android:background="@drawable/yy15"
+    android:background="@drawable/b1y" -->
+
+    
+                   
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="暂无数据，敬请期待！"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:id="@+id/tv_nodata"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"/>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="@null" 
+        android:id="@+id/scrollView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        >
+
+           
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#120A2103" >
+           
+     
+         <ListView
+             android:id="@+id/listView_weekly"
+            android:layout_width="fill_parent"
+            android:layout_height="245dp"
+            android:cacheColorHint="#00000000"
+           
+            android:divider="@null"
+            
+            android:listSelector="#00000000" />
+            
+             <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="空气质量趋势"
+        android:gravity="center"
+        android:textSize="18dp"
+         android:background="#33AAC69D"
+      
+        android:textColor="#000000"/>
+             <!-- android:textColor="#fff" -->
+            
+            <LinearLayout 
+           
+            android:id="@+id/linearlayout_weekly"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+          
+            android:orientation="vertical" >
+                
+            </LinearLayout>
+          
+              
+        </LinearLayout>
+    </ScrollView>
+  
+
+</LinearLayout>

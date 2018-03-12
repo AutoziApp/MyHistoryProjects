@@ -1,0 +1,87 @@
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#EBEBEB"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout
+		android:id="@+id/relativeLayout1"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:background="@color/top_bg"
+		android:orientation="horizontal">
+
+		<ImageView
+			android:id="@+id/caifu_back"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:background="@drawable/update_btn"
+			android:src="@drawable/title_back_selector" />
+
+		<TextView
+			android:id="@+id/sms_tv1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerInParent="true"
+			android:layout_centerVertical="true"
+			android:gravity="center_horizontal"
+			android:text="什么是微保币"
+			android:textColor="#fff"
+			android:textSize="20sp" />
+	</RelativeLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:background="@drawable/mm_listitem">
+			<TextView
+				android:id="@+id/textView1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:text="我的财富:" />
+			<TextView
+				android:id="@+id/caifu_tv1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="8dp"
+				android:textColor="#ff6c00"
+				android:text="TextView" />
+
+		</LinearLayout>
+	
+		
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/mm_listitem">
+
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="8dp"
+			android:text="财富来源" />
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="0.5px"
+			android:background="#CCCCCC" />
+		<ListView
+			android:id="@+id/caifu_lv1"
+			android:layout_width="match_parent"
+			android:listSelector="#00000000"
+			android:layout_height="match_parent"
+			android:scrollbars="none"></ListView>
+	</LinearLayout>
+</LinearLayout>

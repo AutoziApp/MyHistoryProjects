@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/parent_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textColor="#565656"
+        android:text="这是父item"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/selected_expandlist_mark"
+        android:layout_margin="5dp"/>
+</RelativeLayout>

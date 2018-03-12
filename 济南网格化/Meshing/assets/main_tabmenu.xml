@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <!-- 巡查 -->
+	<item>
+        <menuname>xc</menuname> <!-- 按钮的名字 -->
+        <order>0</order> <!-- 菜单中显示的顺序 -->
+        <ywl>Xc_business</ywl><!-- 业务类的名字 -->
+        <imagename>tab_menu_xc</imagename>
+        <contextname>cn.com.mapuni.meshing.activity.gis</contextname><!-- 跳转intent的包名 -->
+        <classname>MapMainActivity</classname><!-- 跳转class的名字 -->
+        <ifchecked>true</ifchecked><!-- 是否默认被选中 -->
+        <tabname>tab_tag_home</tabname><!-- tab页的名字 -->
+        <qxid>vmob2A</qxid><!-- 权限id -->
+    </item>
+ 
+	<!--待办 -->
+	<item>
+        <menuname>db</menuname> <!-- 按钮的名字 -->
+        <order>1</order> <!-- 菜单中显示的顺序-->
+        <ywl>Db_business</ywl><!-- 业务类的名字 -->
+        <imagename>tab_menu_db</imagename><!--<imagename>menu_2_normal</imagename> 图片名称-->
+        <contextname>cn.com.mapuni.meshing.activity.gis</contextname><!-- 跳转intent的包名-->
+        <classname>MapMainActivity</classname><!-- 跳转class的名字-->
+        <ifchecked>false</ifchecked><!-- 是否默认被选中-->
+        <tabname>tab_tag_home</tabname><!-- tab页的名字-->
+        <qxid>vmob6A</qxid><!-- 权限id-->
+    </item>
+    
+	<!-- 我的 -->
+    <item>
+        <menuname>wd</menuname> <!-- 按钮的名字 -->
+        <order>2</order> <!-- 菜单中显示的顺序-->
+        <ywl>Wd_business</ywl><!-- 业务类的名字 -->
+        <imagename>tab_menu_wd</imagename><!-- <imagename>menu_3_normal</imagename>图片名称-->
+        <contextname>cn.com.mapuni.meshing.activity.wd_activity</contextname><!-- 跳转intent的包名-->
+        <classname>WdMainActivity</classname><!-- 跳转class的名字-->
+        <ifchecked>false</ifchecked><!-- 是否默认被选中-->
+        <tabname>tab_tag_wd</tabname><!-- tab页的名字-->
+        <qxid>vmob10A</qxid><!-- 权限id-->
+    </item>
+      
+</list>

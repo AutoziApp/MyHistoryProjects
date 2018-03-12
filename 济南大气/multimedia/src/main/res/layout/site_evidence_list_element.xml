@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout 
+      xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:orientation="horizontal"
+    android:paddingRight="8dp"
+    android:minHeight="45dp"
+    >
+        <ImageView 
+      	android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"    
+        android:id="@+id/siteevidence_label_imageView" 
+        android:src="@drawable/icon_video"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"/>
+         
+        <TextView 
+         android:layout_centerVertical="true"        
+        android:layout_toRightOf="@+id/siteevidence_label_imageView"    
+        android:textSize="18sp"
+        android:layout_marginLeft="3dp"
+        android:textColor="#000000" 
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:id="@+id/siteevidence_medianame_textView" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"/>
+        
+        <ImageButton
+          android:layout_centerVertical="true"  
+         android:layout_toLeftOf="@+id/siteevidence_delete_imageView"       
+         android:layout_marginRight="10dp"
+        android:id="@+id/siteevidence_preview_imageView" 
+        android:background="@drawable/icon_review"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"/>
+        
+        <ImageButton 
+            android:layout_centerVertical="true"  
+           android:layout_marginRight="10dp"  
+         android:layout_toLeftOf="@+id/siteevidence_rename_imageView"       
+        android:layout_marginLeft="2dp"
+        android:visibility="gone"
+        android:id="@+id/siteevidence_delete_imageView" 
+        android:src="@drawable/icon_delete"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"/>
+        
+        <ImageView 
+          android:layout_centerVertical="true"  
+         android:layout_marginRight="10dp"
+         android:layout_toLeftOf="@+id/siteevidence_bluetooth_imageView"   
+        android:layout_marginLeft="4dp"
+         android:visibility="gone"
+        android:id="@+id/siteevidence_rename_imageView" 
+          android:src="@drawable/icon_rename"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"/>
+         <ImageButton 
+         android:layout_centerVertical="true"    
+         android:layout_alignParentRight="true"    
+        android:layout_marginLeft="4dp"
+        android:id="@+id/siteevidence_bluetooth_imageView" 
+        android:background="@drawable/icon_bluetooth"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"/>
+    
+    
+    
+    </RelativeLayout>
+    
+   

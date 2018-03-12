@@ -1,0 +1,433 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F0F6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bg" >
+
+        <ImageView
+            android:id="@+id/activity_main_suggest"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="空气质量预报"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+ 
+
+        <LinearLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/yuce_tv1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D2D0D5" />
+
+                <TextView
+                    android:id="@+id/yucetv2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D2D0D5" />
+
+                <TextView
+                    android:id="@+id/yucetv3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D2D0D5" />
+
+                <TextView
+                    android:id="@+id/yucetv4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/fenge1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D2D0D5" />
+
+                <TextView
+                    android:id="@+id/yucetv19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/fenge2"
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D2D0D5" />
+
+                <TextView
+                    android:id="@+id/yucetv20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/fenge3"
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D2D0D5" />
+
+                <TextView
+                    android:id="@+id/yucetv21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#D2D0D5" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/yucelinear1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/yucetv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/yucetv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-2dp"
+                    android:background="#D2D0D5" />
+
+                <LinearLayout
+                    android:id="@+id/yucelinear2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/yucetv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/yucetv8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#D2D0D5" />
+
+                <LinearLayout
+                    android:id="@+id/yucelinear3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/yucetv9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/yucetv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#D2D0D5" />
+
+                <LinearLayout
+                    android:id="@+id/yucelinear4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/yucetv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/yucetv12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/fenge4"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#D2D0D5" />
+
+                <LinearLayout
+                    android:id="@+id/yucelinear5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/yucetv13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/yucetv14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/fenge5"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#D2D0D5" />
+
+                <LinearLayout
+                    android:id="@+id/yucelinear6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/yucetv15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/yucetv16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/fenge6"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="#D2D0D5" />
+
+                <LinearLayout
+                    android:id="@+id/yucelinear7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/yucetv17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/yucetv18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/aqi_level_1"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.jy.environment.view.LineChart
+                android:id="@+id/linechart"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_marginTop="15dp" >
+            </com.jy.environment.view.LineChart>
+        </LinearLayout>
+
+    <ImageView
+        android:id="@+id/air_biaoz"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/air_biaoz"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/air_biaoz2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:gravity="center"
+        android:minHeight="30dip"
+        android:text="上述预报表示最高至最低AQI级别\n（*以臭氧为首要污染物的轻度及以上污染。）"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:visibility="gone"  />
+
+</LinearLayout>

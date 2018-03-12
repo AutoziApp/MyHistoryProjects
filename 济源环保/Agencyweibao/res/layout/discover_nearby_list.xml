@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     >
+    <RelativeLayout android:id="@+id/toppanel"
+        android:layout_width="match_parent"
+        android:background="@color/top_bg"
+        android:layout_height="45dp">
+        
+                <ImageView
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+        
+        <TextView android:id="@+id/panel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="#ffffffff"
+            />
+        
+        <TextView android:id="@+id/btn_returntomap"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/dingwei111"
+            android:layout_marginRight="20dp"
+            android:text=" "/>
+        
+    </RelativeLayout>
+    
+   <LinearLayout android:id="@+id/selectpanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toppanel"
+        android:background="#f4f6ed"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginTop="20dp"
+			android:padding="10dp"            
+            >
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询地址："/>
+        <TextView
+            android:id="@+id/nearby_xiangxidizhi" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        </LinearLayout>
+        <ImageView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nearby_xuxian"
+            />
+
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            
+            <RadioButton android:id="@+id/radion_500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textSize="15sp"
+                android:text="500m"/>
+            
+            <RadioButton android:id="@+id/radion_1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="1000m"/>
+            
+            <RadioButton android:id="@+id/radion_2000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:text="2000m"/>
+            
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:id="@+id/layout_btm"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+            
+            <RadioButton android:id="@+id/radion_5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="5000m"/>
+
+            <RadioButton
+                android:id="@+id/radion_allcity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="22dp"
+                android:layout_toRightOf="@+id/radion_5000"
+                android:text="当前城市所有"
+                android:textSize="15sp" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    <LinearLayout android:id="@+id/scrol_reslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/selectpanel"
+            android:layout_alignParentBottom="true">
+        
+        <ListView android:id="@+id/list_reslist"
+               
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               
+           </ListView> 
+        
+
+        
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_activity"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/homepage">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="170dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/homepage_ract"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!--AQI PM2.5-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/homepage_text_style"
+                            android:gravity="right"
+                            android:text="AQI:"/>
+
+                        <TextView
+                            android:id="@+id/tv_aqi"
+                            style="@style/homepage_text_style"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:text="--"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/homepage_text_style"
+                            android:gravity="right"
+                            android:text="PM2.5:"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_pm25"
+                            style="@style/homepage_text_style"
+
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+                            android:text="--"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!--PM10 NO2-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/homepage_text_style"
+                            android:gravity="right"
+                            android:text="PM10:"/>
+
+                        <TextView
+                            android:id="@+id/tv_pm10"
+                            style="@style/homepage_text_style"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+
+                            android:text="--"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/homepage_text_style"
+                            android:gravity="right"
+                            android:text="NO2:"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_no2"
+                            style="@style/homepage_text_style"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+
+                            android:text="--"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!--SO2 CO-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/homepage_text_style"
+                            android:gravity="right"
+                            android:text="SO2:"/>
+
+                        <TextView
+                            android:id="@+id/tv_so2"
+                            style="@style/homepage_text_style"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+
+                            android:text="--"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/homepage_text_style"
+                            android:gravity="right"
+                            android:text="CO:"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_co"
+                            style="@style/homepage_text_style"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+
+                            android:text="--"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!--AQI PM2.5-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/homepage_text_style"
+                            android:gravity="right"
+                            android:text="O3:"/>
+
+                        <TextView
+                            android:id="@+id/tv_o3"
+                            style="@style/homepage_text_style"
+                            android:layout_marginLeft="2dp"
+                            android:gravity="left"
+
+                            android:text="--"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/jcyz"
+            android:gravity="center"
+            android:text="监测因子"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="22dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_aqi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="--"
+                    android:textColor="#FFC601"
+                    android:textSize="40sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_leve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="4dp"
+                        android:background="#1b9178"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="**"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="AQI指数"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#A0E6D7">
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/id_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
+            android:src="@drawable/sun"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/wgcz"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:text="违规操作"
+            android:textColor="#444444"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#EFEFEF"
+            android:divider="@color/line_onedp_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:showDividers="beginning|end">
+
+
+            <TextView
+                style="@style/home_page_text_style"
+                android:text="车牌号码"/>
+
+            <TextView
+                style="@style/home_page_text_style"
+                android:text="车辆颜色"/>
+
+            <TextView
+                style="@style/home_page_text_style"
+                android:text="车主"/>
+
+            <TextView
+                style="@style/home_page_text_style"
+                android:text="原因"/>
+
+            <TextView
+                style="@style/home_page_text_style"
+                android:text="记录日期"/>
+
+        </LinearLayout>
+
+
+
+        <include
+            android:id="@+id/showFailed"
+            layout="@layout/request_failed"/>
+
+        <com.andview.refreshview.XRefreshView
+            android:id="@+id/xrefreshview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+            
+        </com.andview.refreshview.XRefreshView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

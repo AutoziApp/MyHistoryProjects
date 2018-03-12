@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="search_hint">请输入搜索内容</string>
+
+    <string name="app_name">环保通</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">环保通</string>
+	<string name="srzh">输入账号</string>
+	<string name="zh">账号</string>
+	<string name="mm">密码</string>
+	<string name="jzmm">记住密码</string>
+	<string name="zddl">自动登录</string>
+	<string name="xlsx">下拉刷新</string>
+	<string name="scgx">上次更新</string>
+	<string name="yjfk">意见反馈</string>
+	<string name="jzz">加载中</string>
+	<string name="cxqy">在此输入查询企业</string>
+	<string name="gd">更多</string>
+	<string name="jcd">请选择监测点：</string>
+	<string name="call">拨打电话</string>
+	<string name="send">发送信息</string>
+	<string name="putin">提交</string>
+    <string name="cancel">取消</string>
+    <string name="zf">执法</string>
+    <string name="ck">查看</string>
+    
+    <string name="add">添加联系人</string>
+    <string name="zdmc">终端名称：</string>
+    <string name="system">系 统 名 称 ：</string>
+    <string name="fwq">服务器地址：</string>
+    <string name="fg">    界面风格：</string>
+    <string name="tab">页式布局</string>
+    <string name="grid">宫格布局</string>
+    <string name="jzts">列表每次加载数据条数</string>
+    <string name="ts">100条</string>
+    <string name="k">开</string>
+    <string name="g">关</string>
+    <string name="superma">超级管理员</string>
+    <string name="addqy">添加污染源</string>
+    <string name="addqytext">请点击按钮添加污染源</string>
+    
+    
+    <string name="pull_to_refresh">下拉可以刷新</string>
+	<string name="release_to_refresh">释放立即刷新</string>
+	<string name="refreshing">正在刷新…</string>
+	<string name="not_updated_yet">暂未更新过</string>
+	<string name="updated_at">上次更新于%1$s前</string>
+	<string name="updated_just_now">刚刚更新</string>
+	<string name="time_error">时间有问题</string>
+    
+    
+    
+    
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff" >
+
+    <LinearLayout
+        android:layout_above="@id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bottom_menu_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="序号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bottom_menu_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="污染物"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bottom_menu_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="污染当量数"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bottom_menu_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="收费金额"
+                android:textColor="@color/black" />
+            
+             <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/bottom_menu_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="计算"
+                android:textColor="@color/black" />
+            
+            
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview011"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_01" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_sum"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="总收费金额:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/edit_sum"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="2" 
+             android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <Button 
+           android:id="@+id/c_button"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:text="归零"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</RelativeLayout>

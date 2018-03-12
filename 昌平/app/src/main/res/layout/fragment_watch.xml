@@ -1,0 +1,323 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:TextView="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mapuni.mobileenvironment.fragment.WatchFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:scrollbars="none"
+        android:id="@+id/scrollView" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_65dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/DIMEN_30dp"
+                        android:layout_height="@dimen/DIMEN_30dp"
+                        android:src="@mipmap/execute_list"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/DIMEN_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_creat"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/DIMEN_13SP"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/DIMEN_30dp"
+                        android:layout_height="@dimen/DIMEN_30dp"
+                        android:src="@mipmap/report_list"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/DIMEN_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_send"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/DIMEN_13SP"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/DIMEN_30dp"
+                        android:layout_height="@dimen/DIMEN_30dp"
+                        android:src="@mipmap/check_list"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/DIMEN_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_ready"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/DIMEN_13SP"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/airMore"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@mipmap/air_icon"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_execute"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color"
+                    android:paddingLeft="@dimen/DIMEN_2dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="查看更多 "
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp"
+                    android:drawableRight="@drawable/right_icon"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/table_coloum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:text="监测站点"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="PM2.5"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="首要污染物"
+                    android:gravity="center"
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ededed"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pollutList"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/pollutionMoreLayout"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView4"
+                    android:src="@mipmap/pollution_icon"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_check"
+                    android:textColor="@color/text_color"
+                    android:id="@+id/textView3"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/DIMEN_2dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="查看更多 "
+                    android:textColor="@color/text_color_gray"
+                    android:textSize="12sp"
+                    android:drawableRight="@drawable/right_icon"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ededed"/>
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/weatherList"
+                    android:overScrollMode="never"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/PagerBg"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/air_jk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_30dp"
+                android:layout_height="@dimen/DIMEN_30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/aqi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_5dp"
+                android:text="@string/btn_airWatch"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/water_jk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="@dimen/DIMEN_30dp"
+                android:layout_height="@dimen/DIMEN_30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/shuizhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_5dp"
+                android:text="油烟监控"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pollution_source_jk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_30dp"
+                android:layout_height="@dimen/DIMEN_30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/wuranyuan_top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_5dp"
+                android:text="@string/btn_wuranyuan"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/company_cx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_30dp"
+                android:layout_height="@dimen/DIMEN_30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/company_search" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/DIMEN_5dp"
+                android:text="企业查询"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_13SP" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

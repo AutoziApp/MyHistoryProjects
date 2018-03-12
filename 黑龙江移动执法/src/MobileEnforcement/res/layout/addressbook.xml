@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/set_system"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:text="通讯录"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+         />
+   <ListView
+        android:id="@+id/addrbook_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#ffeeed"
+         >
+    </ListView>
+  
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noise_history_item"
+    android:layout_width="match_parent"
+    android:layout_height="52dp" >
+
+    <LinearLayout
+        android:id="@+id/noise_layout_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/noise_min"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/noise_history_text_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="45"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noise_layout_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/noise_max"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="max"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/noise_history_text_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="45"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/noise_phone_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/noise_phone" />
+
+    <ImageView
+        android:id="@+id/noise_yun_view"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/noise_yun"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:alpha="150"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/noise_history_layout_zz"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/noise_history_text"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical"
+        android:paddingRight="50dp" >
+
+        <TextView
+            android:id="@+id/noise_history_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京市安翔北里13号"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/noise_history_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014.09.03 10:24"
+            android:textColor="#dcdfee"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noise_history_text"
+        android:layout_width="45dp"
+        android:layout_height="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="45"
+        android:textSize="20dp" />
+
+</RelativeLayout>

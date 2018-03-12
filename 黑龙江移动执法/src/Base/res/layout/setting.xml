@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EDEDED" 
+    >
+    
+     <RelativeLayout 
+    	android:id="@+id/setting_userinfo"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:visibility="gone"
+    	android:background="@android:color/white">
+    
+    	<ImageView 
+    		android:id="@+id/setting_headimg"
+    		android:layout_width="240px"
+    		android:layout_height="240px"
+    		android:src="@drawable/ic_head"
+    		android:layout_marginLeft="20dp"
+    		android:layout_marginTop="15dp"
+    		android:layout_marginRight="20dp"
+    		android:layout_marginBottom="15dp"/>
+    	
+    	<TextView 
+    		android:id="@+id/setting_username"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toRightOf="@id/setting_headimg"
+    		android:paddingTop="30dp"
+    		android:textColor="@android:color/black"
+    		android:text="yutu"
+    		android:textSize="26sp"/>
+    	
+    	<TextView 
+    		android:id="@+id/setting_userrole"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_toRightOf="@id/setting_headimg"
+    		android:paddingTop="10dp"
+    		android:layout_below="@id/setting_username"
+    		android:textColor="@android:color/black"
+    		android:text="@string/superma"
+    		android:textSize="22sp"/>
+    </RelativeLayout>
+    
+    <ListView android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/separator_all"
+        android:layout_margin="10dp"
+        android:background="@drawable/setting_shape"/>
+    <ListView android:id="@+id/listView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/separator_all"
+        android:background="@drawable/setting_shape"
+        android:layout_margin="10dp"/>
+    <ListView android:id="@+id/listView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@drawable/separator_all"
+        android:background="@drawable/setting_shape"
+        android:layout_margin="10dp"/>
+    
+    <!-- <LinearLayout android:id="@+id/setLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/setting_shape"
+        >
+        
+    </LinearLayout> -->
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>维修站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--公共头部-->
+<div class="head">
+    <img src="images/fanhuianniu.png">
+    <p>维修站</p>
+</div>
+<!--查询条件-->
+<div id="search_option">
+    <table>
+        <tr>
+            <td style="width: 30%;">行政区域：</td>
+            <td style="width: 70%;" colspan="2">
+            	      <div class="title1">
+                        <span style="display: inline-block;padding-top: 5px;">行政区域</span>
+                        <div class="inputImg">
+                            <img src="images/xiala.png">
+                        </div>
+                    </div>
+                    <div class="titleList1">
+                        <ul>
+                          <li>武汉</li>
+                          <li>黄石</li>
+                          <li>恩施</li>
+                          <li>神农架</li>
+                          <li>仙桃</li>
+                          <li>襄阳</li>
+                          <li>荆门</li>
+                          <li>天门</li>
+                          <li>黄冈</li>
+                          <li>孝感</li>
+                          <li>宜昌</li> 
+                        </ul>
+                    </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width:30%">维修站名称：</td>
+            <td style="width: 50%;">
+                <div class="title2" style="width: 100%;">
+                        <span style="display: inline-block;padding-top: 5px;">行政区域</span>
+                        <div class="inputImg" >
+                            <img src="images/xiala.png">
+                        </div>
+                    </div>
+                    <div class="titleList2" style="line-height: 30px;">
+                        <ul>
+                          <li>诚通维修</li>
+                          <li>康顺汽修</li>
+                          <li>宏源汽修</li>
+                          <li>同胜汽修</li>
+                          <li>新起点汽修</li>
+                          <li>中盛汽修</li>
+                          <li>众旺汽修</li>
+                          <li>金铭博世</li>
+                          <li>恒先</li>
+                          <li>腾达</li>
+                          <li>永捷</li> 
+                        </ul>
+                    </div>
+    		</td>
+    		<td><button class="search_btn" style="width:100%; margin-left:10px">查询</button></td>
+        </tr>
+    </table>
+</div>
+<!--表格-->
+<div id="main_table_gc">
+    <table>
+        <thead>
+        <tr>
+            <th style="width:22%">行政区域</th>
+            <th style="width:22%">维修站简称</th>
+            <th style="width:22%">法人</th>
+            <th style="width:22%">注册时间</th>
+            <th style="width:12%">状态</th>
+        </tr>
+        </thead>
+        <tbody class="tbody">
+        <tr>
+            <td>武汉</td>
+            <td>诚通维修</td>
+            <td>王富久</td>
+            <td>2002-05-04</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>黄石</td>
+            <td>康顺汽修</td>
+            <td>王智</td>
+            <td>2012-03-02</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>恩施</td>
+            <td>宏源汽修</td>
+            <td>魏华</td>
+            <td>2005-07-04</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>神农架</td>
+            <td>同胜汽修</td>
+            <td>樊州</td>
+            <td>2016-07-11</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>仙桃</td>
+            <td>新起点汽修</td>
+            <td>郑文</td>
+            <td>2008-01-12</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>襄阳</td>
+            <td>中盛汽修</td>
+            <td>高帅虎</td>
+            <td>2009-05-26</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>荆门</td>
+            <td>众旺汽修</td>
+            <td>众旺</td>
+            <td>2013-03-12</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>天门</td>
+            <td>金铭博世</td>
+            <td>刘金铭</td>
+            <td>2015-11-11</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>黄冈</td>
+            <td>恒先</td>
+            <td>张恒</td>
+            <td>2017-01-12</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>孝感</td>
+            <td>腾达</td>
+            <td>周达</td>
+            <td>2014-04-12</td>
+            <td>正常</td>
+        </tr>
+        <tr>
+            <td>宜昌</td>
+            <td>永捷</td>
+            <td>王璐</td>
+            <td>2012-12-12</td>
+            <td>正常</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(".title1").click(function () {
+        $(".titleList1").toggle();
+    });
+    $(".titleList1 ul li").click(function () {
+        $(".titleList1").css("display","none");
+        var inputValue = $(this).html();
+        $(".title1 span").html(inputValue)
+         $(".title1").addClass("titl1-font");
+    });
+    $(".title2").click(function () {
+        $(".titleList2").toggle();
+    });
+    $(".titleList2 ul li").click(function () {
+        $(".titleList2").css("display","none");
+        var inputValue = $(this).html();
+        $(".title2 span").html(inputValue)
+         $(".title2").addClass("titl1-font");
+    });
+    $(".tbody>tr").click(function(){
+    	window.location="weixiuzhan_xiangqing.html";
+    })
+</script>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/setAdress"
+            android:icon="@mipmap/set_adress"
+            android:title="设置系统地址" />
+
+        <item
+            android:id="@+id/updateBtn"
+            android:icon="@mipmap/update"
+            android:title="检测更新" />
+
+
+        <!--<item-->
+            <!--android:id="@+id/section"-->
+            <!--android:icon="@mipmap/ic_launcher"-->
+            <!--android:title="分组1">-->
+            <!--<menu>-->
+                <!--<item-->
+                    <!--android:id="@+id/drawer_favourite"-->
+                    <!--android:icon="@mipmap/ic_launcher"-->
+                    <!--android:title="11" />-->
+
+                <!--<item-->
+                    <!--android:id="@+id/drawer_downloaded"-->
+                    <!--android:icon="@mipmap/ic_launcher"-->
+                    <!--android:title="33" />-->
+            <!--</menu>-->
+        <!--</item>-->
+
+        <!--<item-->
+            <!--android:id="@+id/section2"-->
+            <!--android:title="分组2">-->
+            <!--<menu>-->
+                <!--<item-->
+                    <!--android:id="@+id/drawer_more"-->
+                    <!--android:icon="@mipmap/ic_launcher"-->
+                    <!--android:title="333" />-->
+
+                <!--<item-->
+                    <!--android:id="@+id/drawer_settings"-->
+                    <!--android:icon="@mipmap/ic_launcher"-->
+                    <!--android:title="444" />-->
+            <!--</menu>-->
+        <!--</item>-->
+    </group>
+
+
+</menu>

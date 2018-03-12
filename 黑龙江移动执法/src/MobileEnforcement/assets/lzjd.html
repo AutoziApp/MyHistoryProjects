@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+  
+    
+    <style type="text/css">
+        .tdCenter {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        input[type=text] {
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            border-bottom: 1px solid;
+         
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        /*div {
+            margin: 0px auto;
+        }*/
+        .secondTd {
+            width: 500px;
+            text-align: center;
+        }
+
+        .secondTd1 {
+            width: 250px;
+            text-align: center;
+        }
+
+        #tab {
+            margin-top: 20px;
+        }
+
+            #tab tr {
+                height: 35px;
+            }
+		.body {
+            font-size:20px;
+        }
+    </style>
+  
+
+ 
+</head>
+<body>
+    <input id="hidID" type="hidden" value="@Model.Id" />
+ 
+    <div>
+        <h3>黑龙江省环境监察廉政监督卡（正联）</h3>
+    </div>
+    <center>
+        <table>
+            <tr><td colspan="3" style="border:none;">编号（<input id="SuperviseNumber" type="text" value="{SuperviseNumber}" />）
+			受监督人：
+						<input id="SupervisedPeople" type="text" value="{SupervisedPeople}" />
+			填卡日期：
+						<input id="MakeOutTime" type="text" value="{MakeOutTime}" /></td></tr>
+            <tr><td class="tdCenter">序号</td><td class="tdCenter">廉 政 要 求</td><td class="tdCenter">有无违犯行为<br />（具体表现可附另页）</td></tr>
+            <tr><td class="tdCenter">1</td><td>严禁包庇、纵容、袒护环境违法行为</td><td></td></tr>
+            <tr><td class="tdCenter">2</td><td>严禁在工作中弄虚作假、伪造数据</td><td></td></tr>
+            <tr><td class="tdCenter">3</td><td>严禁干预、插手环保工程项目招投标，严禁指定施工队伍或环保产品、设备</td><td></td></tr>
+            <tr><td class="tdCenter">4</td><td>不准索取、接受或者以借为名占用被检查者财物</td><td></td></tr>
+            <tr><td class="tdCenter">5</td><td>不准接受被检查者的礼品、礼金和有价证券，报销应由个人支付的费用</td><td></td></tr>
+            <tr><td class="tdCenter">6</td><td>不准接受被检查者宴请</td><td></td></tr>
+            <tr><td class="tdCenter">7</td><td>不准参加被检查者邀请的娱乐活动</td><td></td></tr>
+            <tr><td class="tdCenter">8</td><td>不准参与被检查者的营销活动</td><td></td></tr>
+            <tr><td class="tdCenter">9</td><td>不准向被检查者通风报信</td><td></td></tr>
+            <tr><td class="tdCenter">10</td><td>不准酒后开车、酒后执行公务</td><td></td></tr>
+        </table>
+        <div style="margin-top:20px;font-size:14px;">
+            填卡人或单位（公章）:<input type="text" readonly style="width:355px;background-color:white;" />
+            联系方式：<input id="Phone" type="text" value="{AskedPeopleName}" />
+            <br /><br />
+            通信地址：（<input id="Address" type="text" value="{Address}" />）
+            收件部门：（<input id="ReceivingDepartment" type="text" value="{ReceivingDepartment}" />）
+            邮政编码：	（<input id="PostCode" type="text" value="{PostCode}" />）
+            <br /><br />
+            注：有划“√”;无划“×”。请填好后按通信地址寄回<span style="padding-left:135px;"></span>监督投诉电话：(<input id="ComplaintTel" type="text" value="{ComplaintTel}" />)
+        </div>
+        <div style="width:750px;overflow:hidden;">
+            。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+        </div>
+    </center>
+    <div style="margin-top:50px;">
+        <h3>黑龙江省环境监察廉政监督卡（回执联）</h3>
+    </div>
+    <div style="width:750px;overflow:hidden;margin:0px auto;">
+        &nbsp;&nbsp;我单位工作人员在履行环境监察职责过程中将严格遵守环境监察执法廉政制度建设的有关规定。现诚挚地邀请您对我们的工作予以监督，并对我们的工作提出意见和建议。
+        <br />
+        &nbsp;&nbsp;衷心感谢您对我们工作的支持！
+    </div>
+    <center>
+        <table id="tab">
+            <tr><td colspan="2" style="border:none;">编号（<input id="SuperviseNumberCopy" style="background-color:white;" type="text" readonly value="{SuperviseNumber}" />）</td></tr>
+            <tr><td class="secondTd">被检查单位填写</td><td class="secondTd1">环境监察执法人员填写</td></tr>
+            <tr><td>被检查单位：</td><td style="border-bottom:none;">执法人员签名：</td></tr>
+            <tr><td>受卡人签名：</td><td rowspan="2" style="border-top:none;"></td></tr>
+            <tr><td>联系电话：</td></tr>
+            <tr><td>受卡日期：<span style="padding-left:300px;"></span>年&nbsp;&nbsp;月&nbsp;&nbsp;日</td><td>发卡日期：&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;月&nbsp;&nbsp;日</td></tr>
+        </table>
+    </center>
+</body>
+</html>

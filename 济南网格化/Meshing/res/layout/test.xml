@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="巡查任务："
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/editName_size"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_xuncha_task"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/task_tpye1"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/base_black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/object_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="监管对象："
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/editName_size"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Spinner
+                        android:id="@+id/sp_jianguan_object"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:animationCache="true"
+                        android:drawSelectorOnTop="true"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/base_black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cut_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/mbwz_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="目标位置:"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/editName_size"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mbwz_eit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/dingwei_bu"
+                    android:layout_toRightOf="@+id/mbwz_text"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="定位到当前位置"
+                    android:textColor="@color/base_black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/dingwei_bu"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/hqzb_icon"
+                    android:gravity="center_vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否存在环境问题:"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/editName_size"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_sfczhjwt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_has_problem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/rb"
+                        android:textSize="20dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/editName_size" />
+
+                    <RadioButton
+                        android:id="@+id/rb_no_problem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dip"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/rb"
+                        android:textSize="20dip" />
+
+                    <TextView
+                        android:id="@+id/fou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="否"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/editName_size" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/problem_type_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="问题类别："
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/editName_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myspinner_task_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner_bg"
+                    android:gravity="left|center_vertical"
+                    android:hint="请选择问题类型"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/line" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_preference_single_normal"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edt_problem_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dip"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint=" 请详细描述内容并拍照"
+                    android:maxLines="16"
+                    android:minLines="6"
+                    android:textColor="@color/base_black"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/saveLinearLayout" >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已保存图片："
+                        android:textColor="@color/base_black"
+                        android:textSize="14sp"/>
+
+                    <cn.com.mapuni.meshing.util.FlowLayout
+                        android:id="@+id/save_wtms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                    </cn.com.mapuni.meshing.util.FlowLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <com.mapuni.android.photograph.PhotoGridView
+                            android:id="@+id/noScrollgridview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fillViewport="true"
+                            android:horizontalSpacing="3dp"
+                            android:numColumns="3"
+                            android:padding="10dp"
+                            android:scrollbars="none"
+                            android:verticalSpacing="5dp" >
+                        </com.mapuni.android.photograph.PhotoGridView>
+                    </RelativeLayout>
+                </LinearLayout>
+            
+
+            <LinearLayout
+                android:id="@+id/problem_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="处理意见:"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/editName_size"
+                        android:textStyle="bold" />
+
+                   <RadioGroup
+                        android:id="@+id/rg_clyj"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rb_shangbao"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:button="@drawable/rb"
+                            android:text="@string/sb"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/editName_size" />
+
+                        <RadioButton
+                            android:id="@+id/rb_self_solve"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dip"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="2dp"
+                            android:button="@drawable/rb"
+                            android:text="@string/zxcl"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/editName_size" />
+
+                        <RadioButton
+                            android:id="@+id/rb_self_save"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="50dip"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:button="@drawable/rb"
+                            android:text="保存"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/editName_size" />
+                     
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shangbao_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请选择上报部门:"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/editName_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sp_choose_shangbao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/spinner_bg"
+                        android:gravity="left|center_vertical"
+                        android:hint="请选择上报部门"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_handling_suggestion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ic_preference_single_normal"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/edt_chuli_yijian"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dip"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint=" 请输入处理结果并拍照"
+                        android:maxLines="16"
+                        android:minLines="6"
+                        android:textColor="@color/base_black"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <com.mapuni.android.photograph.PhotoGridView
+                            android:id="@+id/noScrollgridview1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fillViewport="true"
+                            android:horizontalSpacing="3dp"
+                            android:numColumns="3"
+                            android:padding="10dp"
+                            android:scrollbars="none"
+                            android:verticalSpacing="5dp" >
+                        </com.mapuni.android.photograph.PhotoGridView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bt_save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_shap"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

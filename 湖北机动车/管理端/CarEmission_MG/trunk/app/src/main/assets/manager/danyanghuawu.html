@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>氮氧化物查询统计管理</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--公共头部-->
+    <div class="head">
+        <img src="images/fanhuianniu.png">
+        <p>氮氧化物查询统计管理</p>
+    </div>
+    <!--查询条件-->
+    <div id="search_option">
+        <table>
+        	<tr>
+        		<td style="width: 30%;">开始时间:</td>
+        		<td style="width: 70%;" colspan="2">
+        			<input placeholder="单行输入" style="width: 98%;border: 1px solid #ddd;height: 30px;padding-left: 2%;color: #000;" type="text"
+        				value="2017-04-18">
+        		</td >
+        	</tr>
+        	<tr>
+        		<td style="width: 30%;">结束时间:</td>
+        		<td style="width: 70%;" colspan="2">
+        			<input placeholder="单行输入" style="width: 98%;border: 1px solid #ddd;height: 30px;padding-left: 2%;color: #000;" type="text"
+        				value="2017-04-18">
+        		</td>
+        		
+        	</tr>
+            <tr>
+                <td style="width: 30%;">行政区域：</td>
+                <td style="width: 50%;">
+                    <div class="title1">
+                        <span style="display: inline-block;padding-top: 5px;">行政区域</span>
+                        <div class="inputImg">
+                            <img src="images/xiala.png">
+                        </div>
+                    </div>
+                    <div class="titleList1">
+                         <ul>
+                          <li>驿安</li>
+                          <li>安楚</li>
+                          <li>中远</li>
+                          <li>俪湖</li>
+                          <li>安安</li>
+                          <li>万畅</li>
+                          <li>安达</li>
+                          <li>保都</li>
+                          <li>宏运</li>
+                          <li>鑫诚</li>
+                          <li>汇海</li> 
+                        </ul>
+                    </div>
+                </td>
+                <td><button class="search_btn" style="width:100%; margin-left:10px">查询</button></td>
+            </tr>
+        </table>
+    </div>
+    <!--表格-->
+    <div id="main_table">
+        <table>
+            <thead>
+                <tr>
+                	<th>行政区</th>
+                    <th>车辆数</th>
+                    <th>排放量(吨)</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+		        	<td>武汉</td>
+		        	<td>70000</td>
+		            <td>15.55</td>
+		        </tr>
+		        <tr>
+		        	<td>黄石</td>
+		        	<td>50000</td>
+		            <td>10.14</td>
+		        </tr>
+		        <tr>
+		        	<td>恩施</td>
+		        	 <td>30000</td>
+		            <td>9.15</td>
+		        </tr>
+		        <tr>
+		        	<td>仙桃</td>
+		        	<td>53147</td>
+		            <td>11.04</td>
+		        </tr>
+		        <tr>
+		        	<td>襄阳</td>
+		        	<td>75724</td>
+		            <td>17.57</td>
+		        </tr>
+		        <tr>
+		        	<td>荆门</td>
+		        	<td>36547</td>
+		            <td>12.14</td>
+		        </tr>
+		        <tr>
+		        	<td>天门</td>
+		        	<td>57116</td>
+		            <td>13.56</td>
+		        </tr>
+		        <tr>
+		        	<td>黄冈</td>
+		        	<td>15684</td>
+		            <td>8.14</td>
+		        </tr>
+		        <tr>
+		        	<td>孝感</td>
+		        	<td>57198</td>
+		            <td>16.71</td>
+		        </tr>
+		        <tr>
+		        	<td>宜昌</td>
+		        	<td>84118</td>
+		            <td>20.71</td>
+		        </tr>
+		        <tr>
+		        	<td>神农架</td>
+		        	<td>81671</td>
+		        	<td>19.57</td>
+		        </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(".title1").click(function () {
+        $(".titleList1").toggle();
+    });
+    $(".titleList1 ul li").click(function () {
+        $(".titleList1").css("display","none");
+        var inputValue = $(this).html();
+        $(".title1 span").html(inputValue)
+         $(".title1").addClass("titl1-font");
+    });
+    $(".title2").click(function () {
+        $(".titleList2").toggle();
+    });
+    $(".titleList2 ul li").click(function () {
+        $(".titleList2").css("display","none");
+        var inputValue = $(this).html();
+        $(".title2 span").html(inputValue)
+        $(".title2").addClass("titl1-font");
+    });
+     $(".tbody>tr").click(function(){
+    	window.location="NOx_info.html";
+    })
+</script>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/siteevidence_layout"
+    android:background="@color/white"
+    >
+    
+<RelativeLayout android:id="@+id/parentLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<LinearLayout android:id="@+id/topLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"/>
+	</RelativeLayout>    
+    
+
+<!--  <ListView  -->
+<!-- android:id="@+id/siteevidence_ListView" -->
+<!-- android:cacheColorHint="#00000000" -->
+<!-- android:layout_width="fill_parent" -->
+<!-- android:layout_height="wrap_content" -->
+<!-- android:layout_below="@+id/parentLayout" -->
+<!-- android:layout_above="@+id/siteevidence_bottom_LinearLayout" -->
+<!-- ></ListView> -->
+
+
+<GridView android:id="@+id/siteevidence_gridview"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/parentLayout"
+	android:numColumns="3" 
+	android:horizontalSpacing="2dp"
+	android:verticalSpacing="2dp"
+	android:layout_above="@+id/siteevidence_bottom_LinearLayout"/>
+    
+<LinearLayout 
+android:id="@+id/siteevidence_bottom_LinearLayout"
+android:orientation="horizontal"
+android:layout_alignParentBottom="true"
+android:gravity="fill_horizontal"
+android:layout_width="fill_parent"
+android:layout_height="@dimen/bottom_menu_height"
+android:background="@drawable/bg_bottom_menu"
+>
+    
+</LinearLayout>    
+    
+    
+    
+    
+</RelativeLayout>

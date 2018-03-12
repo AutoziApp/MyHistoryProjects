@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list> 
+    <item>
+  <name>混煤</name> 
+  <values>0.024</values> 
+  </item>
+  
+     <item>
+  <name>褐煤</name> 
+  <values>0.028</values> 
+  </item>
+
+     <item>
+  <name>褐煤</name> 
+  <values>0.028</values> 
+  </item>
+  
+    <item>
+  <name>烟煤</name> 
+  <values>0.024</values> 
+  </item>
+  
+       <item>
+  <name>无烟煤</name> 
+  <values>0.027</values> 
+  </item>
+     <item>
+  <name>焦炉</name> 
+  <values>0.0255</values> 
+  </item>
+</list>

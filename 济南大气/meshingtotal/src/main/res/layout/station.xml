@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_marginTop="10dp"
+              android:background="#33000000"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<cn.com.mapuni.meshingtotal.view.ListViewForScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@null"
+    android:id="@+id/station_lv">
+
+</cn.com.mapuni.meshingtotal.view.ListViewForScrollView>
+
+</LinearLayout>

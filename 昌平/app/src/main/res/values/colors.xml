@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black1">#2E2E2E</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="item_blue">#ebf7ff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#9F35FF</color>
+    <color name = "gray">#FF77787B</color>
+    <color name="hintColor">#c1e0f4</color>
+    <color name="PagerBg">#3967a6</color>
+    <color name="BtnPress">#25569A</color>
+    <color name="text_color">#333333</color>
+    <color name="text_color_gray">#999999</color>
+    <color name="alph_wrihte_clear">#15ffffff</color>
+    <color name="input_text_color">#666666</color>
+    <color name="text_time_color">#8e8e8e</color>
+    <color name="tab_color">#3380a8</color>
+    <color name="commit">#3465a8</color>
+    <color name="cancel_text">#333333</color>
+    <color name="cancel_bg">#e0e0e0</color>
+    <color name="circle_gray">#8b8b8b</color>
+    <color name="line_color">#c5c5c5</color>
+    <color name="grid_text_color">#535353</color>
+    <color name="item_bg">#ECECEC</color>
+    <color name="line">#05152b</color>
+    <color name="pager_select">#25569a</color>
+    <color name="info_name">#3465a8</color>
+    <color name="info_value">#494545</color>
+    <color name="black_transparent">#0f000000</color>
+    <color name="flow_title_color">#5a5a5a</color>
+    <color name="flow_txt_color">#666666</color>
+    <color name="transparent_line">#2f5c9a</color>
+    <color name="item_line">#d9d9d9</color>
+    <color name="main_line">#2f5c9a</color>
+    <color name="item_text_color">#7a7a7a</color>
+    <color name="hide_text_color">#3973a6</color>
+    <color name="blue_item">#D9E8FF</color>
+    <color name="texthintColor">#96c1cef4</color>
+    <color name="item_text">#565656</color>
+    <color name="select_tab_bg">#e5e5e5</color>
+    <color name="factory_item_name_color">#3d3737</color>
+    <color name="factory_item_value_color">#494949</color>
+    <!--<color name="factory_item_value_color">#5e5e5e</color>-->
+    <color name="output_value_color">#3465a8</color>
+    <color name="login_btn_color">#076bd0</color>
+    <color name="login_btn_press_color">#005bb6</color>
+
+
+
+
+    <!--3973a6,397ca6-->
+
+
+
+</resources>

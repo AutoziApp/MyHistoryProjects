@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.mapuni.meshingtotal" >
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/yutu"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="cn.com.mapuni.meshing.activity.LoadingActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.com.mapuni.meshing.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.mapuni.meshing.activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="cn.com.mapuni.meshing.activity.gis.BaseMapActivityTDT" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.XxcxMainActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.wghcx_activity.WghcxMainActivity" />
+
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.JianChengQuYangChenActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.LuoLouTuDiActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.ZhaTuCheGPSActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.WghjgActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.WuRanYuanActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.JzycActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.ZtycActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.ZgdycActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.GsskActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.xxcx_activity.XzwlActivity" />
+
+        <activity android:name="cn.com.mapuni.meshing.activity.wghcx_activity.XccxMainActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.wghcx_activity.RwxxSlideActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.wghcx_activity.RwxxLiebiaoXQActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.wghcx_activity.QykhActivity" />
+        <activity android:name="cn.com.mapuni.meshing.activity.wghcx_activity.QykhXqActivity" />
+
+        <activity android:name="cn.com.mapuni.meshing.update.UpdateApkActivity" />
+        <service android:name="cn.com.mapuni.meshing.update.DownloadService" />
+
+        <service android:name="cn.com.mapuni.meshing.activity.gis.LocationService" />
+    </application>
+
+</manifest>

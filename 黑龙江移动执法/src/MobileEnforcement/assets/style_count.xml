@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<list>
+    <!--治理设施处理水量计算 -->
+    <item>
+         <name style="textview" datasource="">ZLSSCLSL</name>
+         <sfmc style="textview" datasource="">治理设施处理水量计算</sfmc>
+         <xsclnl style="textview" datasource="">每小时处理能力：</xsclnl>
+         <ryxsj style="textview" datasource="">日运行时间：</ryxsj>
+         <yxts style="textview" datasource="">运行天数：</yxts>
+    </item>
+	 <!-- 物料衡算法 -->
+	<item>
+		<name style="textview" datasource="">WLHSF</name>
+		<sfmc   style="textview" datasource="">物料衡算法</sfmc>
+		<rlmxhl style="textview" datasource="">燃料煤消费量：</rlmxhl>		
+		<hll style="textview" datasource="">含硫率：</hll>
+		<tll style="textview" datasource="">脱硫率：</tll>
+	</item>
+	<!-- 产排污系数法 -->
+	<item>
+	   <name style="textview" datasource="">CPWXSF</name>
+	   <sfmc   style="textview" datasource="">产排污系数法</sfmc>
+       <cpmc style="autocomplete" datasource="Computing_equipment">产品名称：</cpmc> 
+       <ylmc style="autocomplete" datasource="Computing_equipment">原料名称：</ylmc> 
+       <gymc style="spinner" datasource="Computing_equipment">工艺名称：</gymc> 
+       <gmdj style="spinner" datasource="Computing_equipment">规模等级：</gmdj> 
+       <wrwzb style="spinner" datasource="Computing_equipment">污染物指标：</wrwzb> 
+       <cpl style="textview" datasource="">产品量：</cpl> 
+       <!-- 
+       <mdzljs style="spinner" datasource="Computing_equipment">末端治理技术：</mdzljs>
+        --> 
+	</item>
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

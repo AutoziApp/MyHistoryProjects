@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WeatherModule"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:background="@drawable/module_bg2"
+        android:layout_height="30dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/water_contrall_icon" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView1"
+             android:textSize="12sp"
+            android:textColor="@color/white"
+             android:gravity="center"
+            android:text="最新超标污染源" />
+
+    
+		
+    </RelativeLayout>
+    
+        <TextView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            />
+        
+    <RelativeLayout
+        android:id="@+id/item_one"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" 
+        android:background="@drawable/module_bg2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/aName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:ellipsize="end"
+                android:textSize="15sp"
+            	android:textColor="@color/white"
+                android:text="北京瑞泽新城科技公司塑业分公司" />
+
+            <TextView
+                android:id="@+id/aAdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:maxLength="15"
+                android:ellipsize="end"
+            	android:textColor="@color/white"
+                 android:text="裕民中路1号" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/aGrain"
+            android:background="@drawable/contrall_btn_bg"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="20dp"
+        	android:layout_toLeftOf="@+id/imageView2"
+        	android:layout_marginRight="10dp"
+             android:layout_centerVertical="true"
+             android:gravity="center"
+              android:textSize="12sp"
+            	android:textColor="@color/white"
+            android:text="国控" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/src_icon" />
+
+    </RelativeLayout>
+    
+        <TextView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            />
+
+    <RelativeLayout
+         android:id="@+id/item_two"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/module_bg2">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:ellipsize="end"
+                android:textSize="15sp"
+            	android:textColor="@color/white"
+                android:text="北京北控污水净化有限公司" />
+
+            <TextView
+                android:id="@+id/bAdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+            	android:textColor="@color/white"
+                android:maxLength="15"
+                android:ellipsize="end"
+                 android:text="白浮泉路1号" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bGrain"
+            android:background="@drawable/contrall_btn_bg"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="20dp"
+        	android:layout_toLeftOf="@+id/imageView3"
+        	android:layout_marginRight="10dp"
+             android:layout_centerVertical="true"
+             android:gravity="center"
+              android:textSize="12sp"
+            	android:textColor="@color/white"
+            android:text="市控" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/src_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            />
+        
+    <RelativeLayout
+        android:id="@+id/item_three"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" 
+        android:background="@drawable/module_bg2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+            	android:textColor="@color/white"
+                android:maxLength="15"
+                android:ellipsize="end"
+                android:text="北京强进电子科技有限公司" />
+
+            <TextView
+                android:id="@+id/cAdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:maxLength="15"
+                android:ellipsize="end"
+            	android:textColor="@color/white"
+                 android:text="安宁庄东路" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cGrain"
+            android:background="@drawable/contrall_btn_bg"
+            android:layout_width="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_height="20dp"
+        	android:layout_toLeftOf="@+id/imageView4"
+        	android:layout_marginRight="10dp"
+             android:layout_centerVertical="true"
+             android:gravity="center"
+              android:textSize="12sp"
+            	android:textColor="@color/white"
+            android:text="国控" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/src_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

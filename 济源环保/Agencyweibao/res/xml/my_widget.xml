@@ -1,0 +1,7 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_provider_remoteviews1"
+    android:minHeight="110dip"
+    android:minWidth="320dip"
+    android:updatePeriodMillis="1800001" >
+    <!-- 半个小时更新一次，android限制最短时间是半小时 -->
+</appwidget-provider>

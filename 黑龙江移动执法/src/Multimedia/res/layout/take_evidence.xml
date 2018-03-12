@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/siteevidence_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/siteevidence_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/siteevidence_bottom_LinearLayout"
+        android:layout_alignParentTop="true"
+        android:horizontalSpacing="2dp"
+        android:numColumns="3"
+        android:verticalSpacing="2dp" />
+
+    <LinearLayout
+        android:id="@+id/siteevidence_bottom_LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_menu_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_menu"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emptyTipView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="请选择要执行的操作"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

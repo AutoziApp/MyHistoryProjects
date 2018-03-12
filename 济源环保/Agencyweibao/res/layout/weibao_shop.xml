@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/module_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dip"
+        android:background="@drawable/module_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/huanjingnews"
+            android:layout_width="0dip"
+            android:layout_height="65dip"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/module_bg" >
+
+            <ImageView
+                android:id="@+id/jinghuqi"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/news" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/jinghuqi"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="一周环境要闻"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/baike"
+            android:layout_width="0dip"
+            android:layout_height="65dip"
+            android:layout_marginLeft="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/module_bg" >
+
+            <ImageView
+                android:id="@+id/zaosheng"
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/baike" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dip"
+                android:layout_toRightOf="@+id/zaosheng"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="环保百科"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+      
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dip"
+        android:background="@drawable/module_bg"
+        android:orientation="horizontal" 
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:id="@+id/shangcheng"
+            android:layout_width="0dip"
+            android:layout_height="65dip"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/module_bg" >
+
+            <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/jinghuqi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="bottom|left"
+                    android:text="微保商城"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:text="购物"
+                    android:textColor="@color/alph_wrihte"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cezaosheng"
+            android:layout_width="0dip"
+            android:layout_height="65dip"
+            android:layout_marginLeft="0.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/module_bg" >
+
+            <ImageView
+                android:layout_width="35dip"
+                android:layout_height="35dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/zaosheng" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="bottom|right"
+                    android:text="噪声监测"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="吵不吵，测了就知道"
+                    android:textColor="@color/alph_wrihte"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </RelativeLayout>
+        <!--
+         <ImageView
+        android:id="@+id/weibao_shop_url" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/weibao_shop_bac"
+        />
+        -->
+
+    </LinearLayout>
+
+</LinearLayout>

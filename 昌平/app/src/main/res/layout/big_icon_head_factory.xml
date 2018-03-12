@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            >
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/output_value"
+                    android:id="@+id/imageView" />
+
+                <TextView
+                    android:text="工业总产值"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:textColor="@color/output_value_color"
+                    android:id="@+id/textView8" />
+
+                <TextView
+                    android:text="3.1515926"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/output_value_color"
+                    android:id="@+id/textView7" />
+        </RelativeLayout>
+
+        <com.mapuni.mobileenvironment.widget.NiceSpinner
+            android:id="@+id/spinnerR"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:textColor="@color/factory_item_value_color"
+            android:gravity="center"
+            android:layout_marginRight="22dp"
+            android:text="废气"
+            android:drawableRight="@drawable/color_selector"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="22dp" />
+</RelativeLayout>

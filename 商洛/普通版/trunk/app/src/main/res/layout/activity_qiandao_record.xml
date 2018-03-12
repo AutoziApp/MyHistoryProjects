@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qiandao_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mapuni.shangluo.activity.xcAc.QiandaoRecordActivity">
+
+    <include
+        layout="@layout/toolbar_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       >
+
+        <ImageView android:id="@+id/left_button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_centerVertical="true"
+                   android:padding="8dp"
+                   android:scaleType="fitXY"
+                   android:clickable="true"
+                   android:background="?attr/selectableItemBackground"
+                   android:src="@mipmap/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView android:id="@+id/date_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="@dimen/text_size_18sp"
+                  android:layout_centerInParent="true"
+                  android:tag="dateTitle" />
+
+        <ImageView android:id="@+id/right_button"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:padding="8dp"
+                   android:visibility="gone"
+                   android:scaleType="fitXY"
+                   android:clickable="true"
+                   android:background="?attr/selectableItemBackground"
+                   android:src="@mipmap/ic_keyboard_arrow_right_black_24dp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_noData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Database
+    DatabaseName="environment.sqlite"
+    Version="1" >
+
+    <DatabaseUpgrate
+        NewVersion="1"
+        OldVersion="0" >
+
+        <Sql>
+            DELETE FROM "ModelNoiseHistory";
+            <!--
+CREATE TABLE "ModelNoiseHistory" (
+"_id" INTEGER PRIMARY KEY AUTOINCREMENT,
+"time" NVARCHAR(1000),
+"phoneNumber" INTEGER,
+"location" NVARCHAR(1000),
+"imei" NVARCHAR(1000),
+"Result" NVARCHAR(100000),
+"userName" NVARCHAR(1000),
+"userId" NVARCHAR(1000),
+"longitude" NVARCHAR(1000),
+"latitude" NVARCHAR(1000),
+"isupload" NVARCHAR(50)
+);
+            -->
+        </Sql>
+    </DatabaseUpgrate>
+
+    <Table
+        ModelClassName="com.jy.environment.database.model.ModelWebServiceRequest"
+        TableName="ModelWebServiceRequest" >
+
+        <Column
+            ColumnName="_id"
+            Extra="INTEGER PRIMARY KEY AUTOINCREMENT"
+            FieldName="mID" />
+
+        <Column
+            ColumnName="UrlHashCode"
+            Extra="INTEGER"
+            FieldName="mUrlHashCode" />
+
+        <Column
+            ColumnName="UrlParamHashCode"
+            Extra="INTEGER"
+            FieldName="mUrlParamHashCode" />
+
+        <Column
+            ColumnName="BodyParamHashCode"
+            Extra="INTEGER"
+            FieldName="mBodyParamHashCode" />
+
+        <Column
+            ColumnName="Result"
+            Extra="NVARCHAR(100000)"
+            FieldName="mResult" />
+
+        <Column
+            ColumnName="editTime"
+            Extra="INTEGER"
+            FieldName="editTime" />
+    </Table>
+
+    <Table
+        ModelClassName="com.jy.environment.database.model.ModelNoiseHistory"
+        TableName="ModelNoiseHistory" >
+
+        <Column
+            ColumnName="_id"
+            Extra="INTEGER PRIMARY KEY AUTOINCREMENT"
+            FieldName="mID" />
+
+        <Column
+            ColumnName="time"
+            Extra="NVARCHAR(1000)"
+            FieldName="time" />
+
+        <Column
+            ColumnName="phoneNumber"
+            Extra="INTEGER"
+            FieldName="phoneNumber" />
+
+        <Column
+            ColumnName="location"
+            Extra="NVARCHAR(1000)"
+            FieldName="location" />
+
+        <Column
+            ColumnName="imei"
+            Extra="NVARCHAR(1000)"
+            FieldName="imei" />
+
+        <Column
+            ColumnName="Result"
+            Extra="NVARCHAR(100000)"
+            FieldName="mResult" />
+
+        <Column
+            ColumnName="userName"
+            Extra="NVARCHAR(1000)"
+            FieldName="userName" />
+
+        <Column
+            ColumnName="userId"
+            Extra="NVARCHAR(1000)"
+            FieldName="userId" />
+
+        <Column
+            ColumnName="longitude"
+            Extra="NVARCHAR(1000)"
+            FieldName="longitude" />
+
+        <Column
+            ColumnName="latitude"
+            Extra="NVARCHAR(1000)"
+            FieldName="latitude" />
+
+        <Column
+            ColumnName="isupload"
+            Extra="NVARCHAR(50)"
+            FieldName="isupload" />
+    </Table>
+
+</Database>

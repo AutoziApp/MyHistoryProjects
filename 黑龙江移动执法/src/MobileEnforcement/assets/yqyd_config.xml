@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+
+     <item>
+		<id>1</id>
+		<style>view</style>
+		<title>企业基本信息</title>
+		<qxid></qxid>
+		<ywl>QYJBXX</ywl>
+	</item>
+	
+<!--<item>
+		<id>2</id>
+		<style>view</style>
+		<title>企业简介</title>
+		<qxid></qxid>
+		<ywl>QYJJ</ywl>
+	</item> -->
+	
+<!--      <item>
+		<id>3</id>
+		<style>listview</style>
+		<title>企业平面图</title>
+		<qxid></qxid>
+		<ywl>QYPMT</ywl>
+	</item> -->
+	
+<!--      <item>
+		<id>4</id>
+		<style>listview</style>
+		<title>企业环境管理制度</title>
+		<qxid></qxid>
+		<ywl>QYHJGLZD</ywl>
+	</item> -->
+   
+<!--      <item>
+	
+		<id>5</id>
+		<style>listview</style>
+		<title>环保手续履行情况</title>
+		<qxid></qxid>
+		<ywl>HBSX</ywl>
+	</item> -->
+
+<!-- 	<item>
+		<id>6</id>
+		<style>listview</style>
+		<title>生产设施运行情况</title>
+		<qxid></qxid>
+		<ywl>SCSSYXQK</ywl>
+	</item> -->
+	
+<!-- 	<item>
+		<id>7</id>
+		<style>view</style>
+		<title>污染物治理设施</title>
+		<qxid></qxid>
+		<ywl>FQZLSSXX,FSZLSSXX</ywl>
+	</item> -->
+<!-- <item>
+	    <id>13</id>
+	    <style>listview</style>
+	    <title>环境风险防范设施</title>
+	    <qxid></qxid>
+	    <ywl>HJFXFFSS</ywl>
+	</item>  --> 
+<!-- 	<item> -->
+<!-- 		<id>8</id> -->
+<!-- 		<style>view</style> -->
+<!-- 		<title>污染物排放情况</title> -->
+<!-- 		<qxid></qxid> -->
+<!-- 		<ywl>WRWPFFS,WRWPFFQ,WRWPFGT,WRWPFZS</ywl> -->
+<!-- 	</item> -->
+	<!-- WRWPFWF,危废信息 -->
+	
+<!-- 	<item> -->
+<!-- 		<id>9</id> -->
+<!-- 		<style>view</style> -->
+<!-- 		<title>排污口情况</title> -->
+<!-- 		<qxid></qxid> -->
+<!-- 		<ywl>FSPWKQK,FQPWKQK</ywl> -->
+<!-- 	</item> -->
+		<!-- ,GFHZ,WFXX -->
+	
+	
+<!-- 	<item>
+		<id>11</id>
+		<style>listview</style>
+		<title>在线监控信息</title>
+		<qxid></qxid>
+		<ywl>ZXJKXX</ywl>
+	</item> -->
+	
+<!-- 	<item>
+		<id>12</id>
+		<style>listview</style>
+		<title>行政执法后监督</title>
+		<qxid></qxid>
+		<ywl>XZZFHDCXX</ywl>
+	</item> -->
+<!-- 	<item>
+		<id>10</id>
+		<style>view</style>
+		<title>环境监察档案</title>
+		<qxid></qxid>
+		<ywl>HJJCJL,XZCF,WXFWZYDA</ywl>
+	</item> -->
+<!-- 		,XFTS,PWSF信访投诉,排污收费 -->
+	
+</list>

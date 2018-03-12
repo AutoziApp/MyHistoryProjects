@@ -1,0 +1,552 @@
+[
+    {
+        "outputFile": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 39,
+                    "endOffset": 90
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 39,
+                        "endOffset": 90
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 95,
+                    "endColumn": 46,
+                    "endOffset": 137
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 95,
+                        "endColumn": 46,
+                        "endOffset": 137
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 142,
+                    "endColumn": 39,
+                    "endOffset": 177
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 142,
+                        "endColumn": 39,
+                        "endOffset": 177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 182,
+                    "endColumn": 41,
+                    "endOffset": 219
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 182,
+                        "endColumn": 41,
+                        "endOffset": 219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 224,
+                    "endColumn": 38,
+                    "endOffset": 258
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 224,
+                        "endColumn": 38,
+                        "endOffset": 258
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 263,
+                    "endColumn": 39,
+                    "endOffset": 298
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 263,
+                        "endColumn": 39,
+                        "endOffset": 298
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 303,
+                    "endColumn": 40,
+                    "endOffset": 339
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 303,
+                        "endColumn": 40,
+                        "endOffset": 339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 344,
+                    "endColumn": 44,
+                    "endOffset": 384
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 344,
+                        "endColumn": 44,
+                        "endOffset": 384
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 389,
+                    "endColumn": 39,
+                    "endOffset": 424
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 389,
+                        "endColumn": 39,
+                        "endOffset": 424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 429,
+                    "endColumn": 34,
+                    "endOffset": 459
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 429,
+                        "endColumn": 34,
+                        "endOffset": 459
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 464,
+                    "endColumn": 37,
+                    "endOffset": 497
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 464,
+                        "endColumn": 37,
+                        "endOffset": 497
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 502,
+                    "endColumn": 41,
+                    "endOffset": 539
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 502,
+                        "endColumn": 41,
+                        "endOffset": 539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 544,
+                    "endLine": 20,
+                    "endColumn": 12,
+                    "endOffset": 830
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 544,
+                        "endLine": 20,
+                        "endColumn": 12,
+                        "endOffset": 830
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 835,
+                    "endLine": 23,
+                    "endColumn": 12,
+                    "endOffset": 990
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 835,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 990
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 39,
+                    "endOffset": 90
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 39,
+                        "endOffset": 90
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 95,
+                    "endColumn": 46,
+                    "endOffset": 137
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 95,
+                        "endColumn": 46,
+                        "endOffset": 137
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 142,
+                    "endColumn": 39,
+                    "endOffset": 177
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 142,
+                        "endColumn": 39,
+                        "endOffset": 177
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 182,
+                    "endColumn": 41,
+                    "endOffset": 219
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 182,
+                        "endColumn": 41,
+                        "endOffset": 219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 224,
+                    "endColumn": 38,
+                    "endOffset": 258
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 224,
+                        "endColumn": 38,
+                        "endOffset": 258
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 263,
+                    "endColumn": 39,
+                    "endOffset": 298
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 263,
+                        "endColumn": 39,
+                        "endOffset": 298
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 303,
+                    "endColumn": 40,
+                    "endOffset": 339
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 303,
+                        "endColumn": 40,
+                        "endOffset": 339
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 344,
+                    "endColumn": 44,
+                    "endOffset": 384
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 344,
+                        "endColumn": 44,
+                        "endOffset": 384
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 389,
+                    "endColumn": 39,
+                    "endOffset": 424
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 389,
+                        "endColumn": 39,
+                        "endOffset": 424
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 429,
+                    "endColumn": 34,
+                    "endOffset": 459
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 429,
+                        "endColumn": 34,
+                        "endOffset": 459
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 464,
+                    "endColumn": 37,
+                    "endOffset": 497
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 464,
+                        "endColumn": 37,
+                        "endOffset": 497
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 502,
+                    "endColumn": 41,
+                    "endOffset": 539
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 502,
+                        "endColumn": 41,
+                        "endOffset": 539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 544,
+                    "endLine": 20,
+                    "endColumn": 12,
+                    "endOffset": 830
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 544,
+                        "endLine": 20,
+                        "endColumn": 12,
+                        "endOffset": 830
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 835,
+                    "endLine": 23,
+                    "endColumn": 12,
+                    "endOffset": 990
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 835,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 990
+                    }
+                }
+            }
+        ]
+    }
+]

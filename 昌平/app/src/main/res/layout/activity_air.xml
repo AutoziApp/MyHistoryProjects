@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_water"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WatchActivity"
+    android:orientation="vertical">
+  <include layout="@layout/toolbar_activity"></include>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="暂时无数据"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:visibility="gone" />
+</LinearLayout>

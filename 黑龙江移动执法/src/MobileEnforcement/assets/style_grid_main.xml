@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <system name="YDZF">
+  	<!-- 
+	<item>
+     <id>1</id>
+     <img>grid_tzgg_selector</img>
+     <qymc>通知公告</qymc>
+     <qxid>vmob1A</qxid>
+   </item>
+    -->
+	<!-- <item> 
+	    <id>1</id>
+	    <img>grid_menu_ydbg</img>
+	    <qymc>移动办公</qymc> 
+	    <qxid></qxid>
+	</item>  -->
+	
+    <item>
+		<id>1</id>
+		<img>grid_pwxkz_selector</img>
+		<qymc>现场执法</qymc>
+		<qxid>vmob6A</qxid>
+	</item>
+	<item>
+		<id>1</id>
+		<img>grid_rwgl1_selector</img>
+		<qymc>任务管理</qymc>
+		<qxid>vmob2A</qxid>
+	</item> 
+	<!-- 
+	<item>
+		<id>3</id>
+		<img>grid_menu_rwjc</img>
+		<qymc>执法监察</qymc>
+		<qxid>vmob13A</qxid>
+	</item>
+	 -->
+	<item>
+		<id>1</id>
+		<img>grid_wrycx_selector</img>
+		<qymc>信息查询</qymc>
+		<qxid>vmob10A</qxid>
+	</item>
+	<item>
+		<id>2</id>
+		<img>grid_menu_hbdt</img>
+		<qymc>环保地图</qymc>
+		<qxid>vmob5A</qxid>
+	</item>
+	<item>
+	    <id>1</id> 
+	    <img>grid_menu_rwtj</img>
+	    <qymc>任务统计</qymc> 
+	    <qxid>vmob1A</qxid> 
+	</item>  
+	<!-- 
+	<item>
+		<id>3</id>
+		<img>grid_menu_zxjk</img>
+		<qymc>在线监控</qymc>
+		<qxid>vmob3A</qxid>
+	</item>
+	 -->
+	 <!-- 
+	<item>
+		<id>3</id>
+		<img>grid_menu_zxjc</img>
+		<qymc>在线监测</qymc>
+		<qxid>vmob3A</qxid>
+	</item>
+	 -->
+	<!--视频监控权限  vmob3A3B -->
+<!-- 	<item> -->
+<!-- 	    <id>2</id> -->
+<!-- 		<img>grid_menu_spjk</img> -->
+<!-- 		<qymc>视频监控</qymc> -->
+<!-- 		<qxid>vmob3A3B</qxid> -->
+<!-- 	</item> -->
+<!-- 	<item> -->
+<!-- 		<id>2</id> -->
+<!-- 		<img>grid_yjsc_selector</img> -->
+<!-- 		<qymc>应急手册</qymc> -->
+<!-- 		<qxid>vmob7A</qxid> -->
+<!-- 	</item> -->
+<!-- 	<item> -->
+<!-- 		<id>2</id>  -->
+<!-- 		<img>grid_flfgbz_selector</img> -->
+<!-- 		<qymc>法规标准</qymc> -->
+<!-- 		<qxid>vmob11A</qxid> -->
+<!-- 	</item> -->
+<!-- 	<item> -->
+<!-- 		<id>3</id> -->
+<!-- 		<img>grid_menu_jckh</img> -->
+<!-- 		<qymc>稽查管理</qymc> -->
+<!-- 		<qxid>vmob12A</qxid> -->
+<!-- 	</item>  -->
+
+	<!-- 此处不需要权限，界面实现了权限控制 -->
+	<!-- 
+	<item>
+		<id>3</id>
+		<img>grid_menu_qjss</img>
+		<qymc>全局搜索</qymc>
+		<qxid>vmob15A</qxid>
+	</item>
+	 -->
+	<!-- 
+	<item>
+		<id>3</id>
+		<img>grid_xntj_selector</img>
+		<qymc>效能统计</qymc>
+		<qxid>vmob2A</qxid>
+	</item>
+	 -->
+	 <!-- 
+ 	<item>
+		<id>3</id>
+		<img>grid_qt_selector</img>
+		<qymc>系统管理</qymc>
+		<qxid></qxid>
+	</item>
+	 -->
+	<!-- 
+		</item> <item> <id>1</id> <img>grid_menu_sjtbl</img> <qymc>数据同步</qymc> <qxid></qxid> 
+		</item> <item> <id>2</id> <img>grid_txl_selector</img> <qymc>通讯录</qymc> <qxid>mob1A1</qxid> 
+		</item> -->
+ </system>
+ 
+
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

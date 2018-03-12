@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white">
+    <include layout="@layout/toolbar_activity"/>
+
+    <ExpandableListView
+        android:id="@+id/exList"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/white"
+        android:dividerHeight="18dp"
+        android:childDivider="@color/white"
+        android:groupIndicator="@null"
+        android:scrollbars="none"/>
+    <!-- TODO: Update blank fragment layout -->
+</LinearLayout>

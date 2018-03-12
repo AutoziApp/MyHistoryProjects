@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+
+	<item>
+		<id>1</id>
+		<img>grid_rwxx_rwyxf</img>
+		<qymc>已下发</qymc>
+		<qxid>vmob8A5B</qxid>
+		<ywl>RWXX</ywl>
+	</item>
+	<item>
+		<id>1</id>
+		<img>grid_rwxx_rwdsc</img>
+		<qymc>待下发</qymc>
+		<qxid>vmob8A5B</qxid>
+		<ywl>RWXX</ywl>
+	</item>
+	
+	 <item>
+		<id>1</id>
+		<img>grid_rwxx_rwdzx</img>
+		<qymc>待审核</qymc>
+		<qxid>vmob8A5B</qxid>
+		<ywl>RWXX</ywl>
+	</item> 
+	
+<!-- 	<item> -->
+<!-- 		<id>1</id>     -->
+<!-- 		<img>grid_rwxx_rwzxz</img> -->
+<!-- 		<qymc>执行中</qymc> -->
+<!-- 		<qxid>vmob8A5B</qxid> -->
+<!-- 		<ywl>RWXX</ywl> -->
+<!-- 	</item>  -->
+	
+	<item>
+		<id>1</id>
+		<img>grid_rwxx_rwysc</img>
+		<qymc>已归档</qymc>
+		<qxid>vmob8A5B</qxid>
+		<ywl>RWXX</ywl>
+	</item>
+
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+		<id>1</id>
+		<img>grid_whp_selector</img>
+		<qymc>危化品</qymc>
+		<qxid>vmob7A1B</qxid>
+		<ywl>WHPXX</ywl>
+	</item>
+	<item>
+		<id>2</id>
+		<img>grid_zjkcx_selector</img>
+		<qymc>专家库</qymc>
+		<qxid>vmob7A2B</qxid>
+		<ywl>ZJKXX</ywl>
+	</item>
+<!-- 	<item>
+		<id>2</id>
+		<img>grid_jywzcx_selector</img>
+		<qymc>救援物资</qymc>
+		<qxid>vmob7A3B</qxid>
+		<ywl>JYWZXX</ywl>
+	</item> -->
+<!-- 	<item>
+		<id>1</id>
+		<img>grid_yajal_selector</img>
+		<qymc>预案及案例</qymc>
+		<qxid>vmob7A4B</qxid>
+		<ywl>YAJALXX</ywl>
+	</item> -->
+	
+	<item>
+		<id>1</id>
+		<img>grid_yjsc_yuan_selector</img>
+		<qymc>预案</qymc>
+		<qxid>vmob7A4B</qxid>
+		<ywl>YAJALXX</ywl>
+	</item>
+	
+	<item>
+		<id>1</id>
+		<img>grid_yjsc_anli_selector</img>
+		<qymc>案例</qymc>
+		<qxid>vmob7A4B</qxid>
+		<ywl>YAJALXX</ywl>
+	</item>
+	
+		
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

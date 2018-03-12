@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_timeSelect_container"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:visibility="gone" >
+
+    <LinearLayout
+        android:id="@+id/ll_startTime_container"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/list_time_icon"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:text="选择日期 :"
+            android:textColor="#ffffff"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_time_input"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_endTimeSelect_container"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/list_time_icon"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:text="结束日期 :"
+            android:textColor="#ffffff"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/tv_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_time_input"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/list_press"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="查询"
+        android:textColor="#2064a3"
+        android:visibility="gone" />
+
+</LinearLayout>

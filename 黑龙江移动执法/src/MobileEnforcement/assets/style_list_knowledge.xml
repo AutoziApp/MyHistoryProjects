@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+   <item>
+     <id>1</id>
+     <img>grid_jywzcx_selector</img>
+     <qymc>救援物资</qymc>
+     <qxid>vmob7A3B</qxid>
+   </item>
+  <item>
+     <id>2</id>
+     <img>grid_whp_selector</img>
+     <qymc>危化品</qymc>
+     <qxid>vmob7A1B</qxid>
+   </item>
+
+   <item>
+     <id>3</id>
+     <img>grid_yajal_selector</img>
+     <qymc>预案及案例</qymc>
+     <qxid>vmob7A4B</qxid>
+   </item>	
+    
+  <item>
+     <id>4</id>
+     <img>grid_zjkcx_selector</img>
+     <qymc>专家库</qymc>
+     <qxid>vmob7A2B</qxid>
+   </item>
+   <item>
+     <id>5</id>
+     <img>grid_flfgcx_selector</img>
+     <qymc>法律法规标准</qymc>
+     <qxid>vmob11A</qxid>
+   </item>
+   <item>
+     <id>6</id>
+     <img>grid_pwsf_selector</img>
+     <qymc>重要文件</qymc>
+     <qxid>vmob11A9B</qxid>
+   </item>
+   <item>
+     <id>7</id>
+     <img>grid_flfgcx_selector</img>
+     <qymc>处理意见</qymc>
+     <qxid>vmob2A1B19C</qxid>
+   </item>
+   <item>
+     <id>8</id>
+     <img>grid_xqzl_selector</img>
+     <qymc>作业指导书</qymc>
+     <qxid>vmob8A4B</qxid>
+   </item>
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

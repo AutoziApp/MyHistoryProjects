@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <system name="YDZF">
+
+	   <item>
+	        <id>0</id>
+			<tablename>任务信息</tablename>
+			<!-- <table>T_YDZF_RWXX,T_YDZF_RWXX_USER,TaskEnpriLink,T_YDZF_RWLY,T_YDZF_RWLX,YDZF_RWLC,YDZF_SiteEnvironmentMonitorRecord</table>
+		 -->	<table>T_Attachment,T_YDZF_RWXX,T_YDZF_RWLX,T_YDZF_RWXX_USER,TaskEnpriLink,T_YDZF_RWLY,YDZF_RWLC,YDZF_SiteEnvironmentMonitorRecord,Supervision</table>
+			<qxid>vmob</qxid>
+		</item>
+		
+<!-- 	    <item> -->
+<!-- 		    <id>1</id> -->
+<!-- 			<tablename>污染源基本信息</tablename> -->
+<!-- 			<table>T_WRY_QYJBXX,Region,Industry,T_Attachment,JJLX,Attention,T_WRY_XFTS,T_WRY_PWXKZ,T_WRY_XZCF,T_WRY_GLXXXX,Industry</table> -->
+<!-- 			<qxid>vmob10A</qxid> -->
+<!-- 		</item> -->
+		
+		<item>
+		    <id>2</id>
+			<tablename>一企一档信息</tablename>
+		<!-- 	<table>T_Attachment,QJSHQK,GKYLB,T_WRY_JYXZCF,T_WRY_WXFWZYDA,T_WRY_QYHJGLZD,T_WRY_HBSXLXQK,T_WRY_SCSSYXQK,T_WRY_FSPFKXX,T_WRY_FQPFKXX,T_WRY_FQZLSS,T_WRY_FSZLSSXX,T_WRY_FSPFKPFWRWXX,T_WRY_FQPFKPFWRWXX,T_WRY_LSZFQK,T_WRY_ZXJKXX,T_WRY_XZZFHDCXX,T_WRY_HJFXFFSS,T_WRY_GTFW,T_WRY_ZSY,HJXXXYDJ,JJLX,LSGX,T_WRY_XFTS</table> -->
+			<!-- <table>T_Attachment,QJSHQK,GKYLB,T_WRY_JYXZCF,T_WRY_WXFWZYDA,T_WRY_QYHJGLZD,T_WRY_HBSXLXQK,T_WRY_SCSSYXQK,T_WRY_FQPFKXX,T_WRY_FQZLSS,T_WRY_FSZLSSXX,T_WRY_FSPFKPFWRWXX,T_WRY_FQPFKPFWRWXX,T_WRY_LSZFQK,T_WRY_ZXJKXX,T_WRY_XZZFHDCXX,T_WRY_HJFXFFSS,T_WRY_GTFW,T_WRY_ZSY,HJXXXYDJ,JJLX,</table> -->
+			<table>T_Attachment,Region,Industry,T_WRY_QYJBXX,JJLX</table>
+			<qxid>vmob10A</qxid>
+		</item>
+		<!-- T_WRY_WFXX,一企一档:排污口情况:危废信息 -->
+		<!-- T_WRY_GFHZ,一企一档:排污口情况:固废灰渣储存场所情况 -->
+		<!-- T_WRY_PWSF,一企一档:环境监察档案:排污收费 -->
+		<!-- T_WRY_WasteInformation,一企一档:污染物排放情况:危废信息 -->
+		<!-- WXFWMC,WXFWLB,危废-废物类别   行业来源,危废-危险废物名称 -->
+		<!-- HYLY, -->
+		
+		<item>
+		    <id>3</id>
+			<tablename>环保手册</tablename>
+			<!-- <table>T_HandBookCatalog,T_ZSK_FLFGBZ,T_ZSK_HJZLRGJCSJ,T_Attachment,T_ZSK_EnterSoluAndSave,PC_Exp,T_EmgPlan,T_Dangerous</table> -->
+			<table>T_Attachment,T_ZSK_DangerChem,T_HandBookCatalog,T_ZSK_FLFGBZ,T_ZSK_HJZLRGJCSJ,T_Attachment,T_ZSK_EnterSoluAndSave,PC_Exp,T_EmgPlan,T_Dangerous</table>
+			<qxid>vmob11A</qxid>
+		</item>
+		<item>
+		    <id>4</id>
+			<tablename>执法文书</tablename>
+			<table>ExeLawsTemplet,T_ZFWS_WFXW,T_ZFWS_WTZD,T_ZFWS_KCBL,T_ZFWS_XWBL,T_ZFWS_XWJLWD<!-- ,Survey_JSTZS --></table> 
+			<qxid>vmob10A</qxid>
+		</item>
+		
+		<item>
+		       <id>5</id>
+		       <tablename>模版信息</tablename>
+		       <table><!-- YDZF_IndustryTemplateLink, -->YDZF_ResultType,YDZF_SpecialItem,YDZF_SpecialTemplate,YDZF_TaskSpecialItem,YDZF_TemplateSpacialItem</table>
+		       <qxid>vmob2A2B</qxid>
+		</item>
+		<item>
+	        <id>6</id>
+	        <tablename>用户信息</tablename>
+	        <table>PC_Users,Region,PC_DepartmentInfo,PC_Role</table>
+	        <qxid>vmob</qxid>
+	    </item>
+<!-- 	     <item>
+	        <id>7</id>
+	        <tablename>系统权限</tablename>
+	        <table>PC_UserModelPession</table>
+	        <qxid>vmob</qxid>
+	    </item> -->
+	    <item>
+		    <id>8</id>
+			<tablename>网格化信息</tablename>
+<!-- 			<table>GridEntMapping,Grid,GridUserMapping</table> -->
+			<table>Grid</table>
+			<qxid>vmob10A</qxid>
+ 		</item>	    
+	    <item>
+		    <id>9</id>
+			<tablename>通知公告</tablename>
+			<table>T_Bas_Message,T_Rel_UserMsg,T_Attachment</table>
+			<qxid>vmob10A</qxid>
+		</item>	  
+	  
+	<!-- 	  <item>
+		    <id>10</id>
+			<tablename>测试</tablename>
+			<table>Supervision</table>
+			<qxid>vmob10A</qxid>
+ 		</item>	   
+ 			  
+		
+		  <item>
+		    <id>12</id>
+			<tablename>测试2</tablename>
+			<table>PC_Users</table>
+			<qxid>vmob10A</qxid>
+ 		</item>	    -->
+ 		
+		  	  <item>
+		    <id>11</id>
+			<tablename>基础数据</tablename>
+			<table>T_YDZF_RWLX,T_ZSK_DangerChem,PC_Exp,T_HandBookCatalog,T_EmgPlan,Region</table>
+			<qxid>vmob</qxid>
+ 		</item>	 
+		
+	    <!-- <item>
+		    <id>10</id>
+			<tablename>在线监测</tablename>
+			<table>BaseInfo,MonitorOutputInfo,PollutantCode,PollutantType</table>
+			<qxid>vmob10A</qxid>
+		</item>	  -->   
+	     
+</list>

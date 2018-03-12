@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#389BD8</color>
+    <color name="colorPrimaryDark">#389BD8</color>
+    <color name="base_black">#000000</color>
+    <color name="colorAccent">#389BD8</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--TextView点击时的颜色-->
+    <color name="txt_check_color">#f1f1f1</color>
+    <!--toolbar的颜色-->
+    <color name="color_main_green">#40B6E6</color>
+    <!--toolbar 搜索框的颜色-->
+    <color name="et_hint_color">#949CA4</color>
+
+    <!--bottomTab的背景颜色-->
+    <color name="tab_bottom_select">#FFFFFF</color>
+    <color name="tab_bottom_unselect">#FFFFFF</color>
+    
+    <!--bottomIcon的背景颜色-->
+    <color name="tab_icon_select">#2290D4</color>
+    <color name="tab_icon_unselect">#999</color>
+
+    <color name="gray_80">#808080</color>
+    <color name="red">#ff0000</color>
+
+
+    <color name="login_btn_check">#2290d4</color>
+    <color name="login_btn_uncheck">#479DD1</color>
+
+    <color name="text_color">#999999</color>
+    <color name="my_fragment_text_color">#333333</color>
+    <color name="grid_fragment_text_color">#353535</color>
+    <!--列表点击时的颜色-->
+    <color name="list_item_press_color">#f1f1f1</color>
+
+    <!--编辑框颜色-->
+    <color name="edittext">#E3E7EF</color>
+    <!--线颜色-->
+    <color name="line_color">#CCCCCC</color>
+
+    <!--延时申请txt颜色-->
+    <color name="delay_txt_title_background_color">#DAF0F9</color>
+    <color name="delay_txt_title_color">#0282B1</color>
+
+    <!--视频相关颜色-->
+    <color name="cl_default">#424242</color>
+    <color name="cl_error">#ffffff</color>
+
+    <color name="splash_txt1_color">#479DD1</color>
+    <color name="splash_txt2_color">#7DB1D1</color>
+    <color name="splash_txt3_color">#484848</color>
+    
+    <!--考核评价textcolor-->
+    <color name="assess_text_color">#555555</color>
+    <color name="assess_text_color2">#444444</color>
+    <color name="assess_text_color3">#026CAD</color>
+
+    <color name="time_text_color">#1E1E1E</color>
+    <color name="time_edit_color">#F3AB3B</color>
+    
+    
+    <color name="task_color1">#00FFFF</color>
+    <color name="task_color2">#54FF9F</color>
+    <color name="task_color3">#00CD66</color>
+    <color name="task_color4">#9ACD32</color>
+    <color name="task_color5">#CD5555</color>
+    <color name="task_color6">#EE3B3B</color>
+    <color name="task_color7">#FF34B3</color>
+    <color name="task_color8">#0000FF</color>
+    
+    <!--添加按钮-->
+    <color name="add_click_color">#23A567</color>
+    <color name="add_normal_color">#0ABD78</color>
+    <color name="sign_task_color">#449bdb</color>
+    
+    <color name="color_task_item">#f5f5f5</color>
+
+    <color name="menudialog_divider_color">#ededed</color>
+    <color name="menudialog_pressed_color">#e7e7e7</color>
+    <color name="menudialog_bg_gray">#f5f5f5</color>
+</resources>

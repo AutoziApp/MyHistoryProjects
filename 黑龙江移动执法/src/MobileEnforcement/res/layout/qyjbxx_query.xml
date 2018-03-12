@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qymc"
+                    android:textColor="@color/white1"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/qyjbxx_query_qymc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:textColor="@color/white1"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="1dp"
+                android:background="#c9c9c9" >
+            </TextView>
+
+            <TableRow
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="行业类别："
+                    android:textColor="@color/white1"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/qyxxcx_hylb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="行业类别选择" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清除"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sscs"
+                    android:textColor="@color/white1"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/qyjbxx_query_city_name"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/qyjbxx_query_city_name_fgx"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="1dp"
+                android:background="#c9c9c9"
+                android:visibility="gone" >
+            </TextView>
+
+            <TableRow
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ssqx"
+                    android:textColor="@color/white1"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/qyjbxx_query_county_name"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/qyjbxx_query_county_name_fgx"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="1dp"
+                android:background="#c9c9c9" >
+            </TextView>
+
+            <TableRow
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kzlb"
+                    android:textColor="@color/white1"
+                    android:textSize="18dp" />
+
+                <Spinner
+                    android:id="@+id/qyjbxx_query_control_name"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown" />
+            </TableRow>
+
+            <TextView
+                android:id="@+id/qyjbxx_query_control_name_fgx"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="1dp"
+                android:background="#c9c9c9"
+                android:visibility="gone" >
+            </TextView>
+
+            <!-- 以下默认隐藏 -->
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/enforcement_query_imagebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/rwgl_cxbj_bt_bg"
+                    android:gravity="center"
+                    android:text="查询"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/enforcement_Simple_law"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/xczf_cxbj_bt_bg"
+                    android:gravity="center"
+                    android:text="简易执法"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/enforcement_Simple_sync"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/xczf_cxbj_bt_bg"
+                    android:gravity="center"
+                    android:text="同步执法记录"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/addCom"
+                    style="@style/buttonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/bottom_menu_height"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/xczf_cxbj_bt_bg"
+                    android:text="添加企业" />
+            </LinearLayout>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

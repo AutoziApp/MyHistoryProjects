@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+		<icon style="icon">dzjg</icon>
+		<name style="name">党政机关</name>
+		<type style="type"></type>
+	</item>
+	<item>
+		<icon style="icon">xczf_gcqy</icon>
+		<name style="name">工厂企业</name>
+		<type style="type">51</type>
+	</item>
+	<item>
+		<icon style="icon">xqcz</icon>
+		<name style="name">小区村庄</name>
+		<type style="type">67</type>
+	</item>
+	<item>
+		<icon style="icon">ylws</icon>
+		<name style="name">医疗卫生</name>
+		<type style="type">57</type>
+	</item>
+	<item>
+		<icon style="icon">country</icon>
+		<name style="name">国控企业</name>
+		<type style="type">01</type>
+	</item>
+	<item>
+		<icon style="icon">province</icon>
+		<name style="name">省控企业</name>
+		<type style="type"></type>
+	</item>
+	<item>
+		<icon style="icon">city</icon>
+		<name style="name">市控企业</name>
+		<type style="type"></type>
+	</item>
+</list>

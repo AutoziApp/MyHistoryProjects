@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <ImageView
+       android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/yutu_logo"
+        android:scaleType="fitXY" />
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <TextView
+       		android:layout_marginLeft="15dp"
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中科宇图"
+            android:textColor="#7888a9"
+            android:textSize="18.0sp"
+            android:textStyle="bold" 
+            />
+
+        <RelativeLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="队伍圈测试数据"
+                android:textColor="#404040"
+                android:textSize="16.0sp" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/im_pics"
+            android:orientation="horizontal" >
+		<RelativeLayout 
+		     android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+		    >
+            <ImageView
+                android:id="@+id/im_pic1"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/yutu"
+                android:visibility="gone" />
+            
+            <ImageView 
+                android:id="@+id/video_play"
+                   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/video_play"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                
+                />
+            
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/im_pic2"
+               android:layout_width="0dp"
+		     android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/yutu"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/im_pic3"
+                 android:layout_width="0dp"
+		     android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/yutu"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/im_pic4"
+                android:layout_width="0dp"
+		       android:layout_weight="1"
+                android:layout_height="90dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/yutu"
+                android:visibility="gone" />
+        </LinearLayout>	
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="12dip" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                
+                <ImageView
+                    android:id="@+id/im_select"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/feed_more"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+         
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@drawable/line" />
+
+     
+        <LinearLayout
+            android:id="@+id/comment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e6e6e6"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

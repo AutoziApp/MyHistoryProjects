@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/ditu_work_location"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/monitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dip"
+            android:text="郑州金水区"
+            android:textColor="#4497FE"
+            android:textSize="11sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/alph_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.5dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="1.5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="水系："
+                android:textColor="#3F3F3F"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海河"
+                android:textColor="#3F3F3F"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.5dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="1.5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="河流："
+                android:textColor="#3F3F3F"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/river"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="包河"
+                android:textColor="#3F3F3F"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1.5dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="1.5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据时间："
+                android:textColor="#3F3F3F"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2014-04-05"
+                android:textColor="#3F3F3F"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+</LinearLayout>

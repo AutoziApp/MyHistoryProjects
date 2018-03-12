@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0e0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/sms_suggest"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <Button
+            android:id="@+id/sms_send"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/send_btn"
+            android:text="发送"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/sms_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sms_send"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="邀请人"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sms_edit_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:maxLines="3"
+		android:ellipsize="end"
+		android:textColor="#000"
+		android:textSize="16sp"
+        android:text="--" />
+
+    <EditText
+        android:id="@+id/sms_edit_text1"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:autoLink="web"
+        android:background="#fff"
+        android:clickable="true"
+        android:gravity="top"
+        android:enabled="false"
+        android:textColor="#000"
+        android:text="360手机助手、豌豆荚搜索微保,下载试用吧。微保是中科宇图提供的一款公益性产品，主题为环保、健康、生活。各路朋友多多提意见哦" />
+
+</LinearLayout>

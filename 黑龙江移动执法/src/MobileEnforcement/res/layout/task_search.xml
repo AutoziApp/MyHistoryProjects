@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/search_Taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务名称："
+            android:textColor="#021b3b"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/search_Taskname_et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:paddingLeft="10dp" 
+            android:background="@null"
+            android:textColor="#021b3b"
+            android:textSize="18dp">
+        </EditText>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#c9c9c9">
+    </TextView>
+<!--     <LinearLayout
+        android:id="@+id/renwulaiyuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+		<TextView
+            android:id="@+id/search_rwly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务来源："
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp" />
+ 		
+
+    </LinearLayout> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+         >
+
+        <TextView
+            android:id="@+id/search_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:layout_gravity="center_vertical"
+            android:text="创建时间："
+            android:textColor="#021b3b"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" 
+            android:paddingRight="10dp" >
+         
+            <EditText
+                android:id="@+id/startTime2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rwgl_sjjd"
+                android:focusable="false"
+                android:hint="开始日期"
+                android:textColor="#021b3b"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/linkTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" 
+            android:paddingRight="10dp">
+
+            <EditText
+                android:id="@+id/endTime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rwgl_sjjd"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="结束日期"
+                android:textColor="#021b3b"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#c9c9c9">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/search_Tasktype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务类型："
+            android:textColor="#021b3b"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp" 
+            android:paddingRight="10dp" >
+
+            <ImageButton
+                android:id="@+id/task_rwlx_delete_btn"
+                style="@style/btn_search_style"
+                android:layout_toLeftOf="@dimen/btn_back_margin_left"
+                android:background="@drawable/rwgl_rwlx_right" />
+
+            <EditText
+                android:id="@+id/search_Tasktype_et2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/task_rwlx_delete_btn"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:hint="请选择任务类型"
+                android:textSize="18dp" 
+                android:textColor="#021b3b"
+                android:singleLine="true" />
+        </RelativeLayout>
+        <!-- 搜索 -->
+    
+   
+    </LinearLayout>
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#c9c9c9">
+    </TextView>
+         <Button
+            android:id="@+id/search_Task_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="25dp"
+            android:text="查询"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rwgl_cxbj_bt_bg" />
+<!-- 	<LinearLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" > -->
+
+<!-- 		<Button -->
+<!-- 		    android:id="@+id/tree_btn" -->
+<!-- 		    android:layout_width="wrap_content" -->
+<!-- 		    android:layout_height="wrap_content" -->
+<!-- 		    android:text="Button" /> -->
+        
+<!--     </LinearLayout> -->
+</LinearLayout>

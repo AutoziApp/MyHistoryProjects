@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>空气质量</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--公共头部-->
+    <div class="head">
+        <img src="images/fanhuianniu.png">
+        <p>空气质量</p>
+    </div>
+    <!--查询条件-->
+    <div id="search_option">
+        <table>
+            <tr>
+             <td style="width: 30%;">行政区域：</td>
+       		 <td style="width: 50%;">
+               <div class="title1">
+                        <span style="display: inline-block;padding-top: 5px;">行政区域</span>
+                        <div class="inputImg">
+                            <img src="images/xiala.png">
+                        </div>
+                    </div>
+                    <div class="titleList1">
+                        <ul>
+                          <li>武汉</li>
+                          <li>黄石</li>
+                          <li>恩施</li>
+                          <li>神农架</li>
+                          <li>仙桃</li>
+                          <li>襄阳</li>
+                          <li>荆门</li>
+                          <li>天门</li>
+                          <li>黄冈</li>
+                          <li>孝感</li>
+                          <li>宜昌</li> 
+                        </ul>
+                    </div>
+        		</td>
+        		<td><button class="search_btn" style="width:100%; margin-left:10px">查询</button></td>
+            </tr>
+        </table>
+    </div>
+    <!--表格-->
+    <div id="main_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>行政区域</th>
+                    <th>空气质量指数</th>
+                    <th>空气质量</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+             	<tr>
+             		<td>武汉</td>
+             		<td>100</td>
+             		<td>良</td>
+             	</tr>
+             	<tr>
+             		<td>黄石</td>
+             		<td>78</td>
+             		<td>良</td>
+             	</tr>
+             	<tr>
+             		<td>恩施</td>
+             		<td>84</td>
+             		<td>良</td>
+             	</tr>
+             	<tr>
+             		<td>神农架</td>
+             		<td>50</td>
+             		<td>优</td>
+             	</tr>
+             	<tr>
+             		<td>仙桃</td>
+             		<td>79</td>
+             		<td>良</td>
+             	</tr>
+             	<tr>
+             		<td>襄阳</td>
+             		<td>148</td>
+             		<td>轻度污染</td>
+             	</tr>
+             	<tr>
+             		<td>荆门</td>
+             		<td>134</td>
+             		<td>轻度污染</td>
+             	</tr>
+             	<tr>
+             		<td>天门</td>
+             		<td>84</td>
+             		<td>良</td>
+             	</tr>
+             	<tr>
+             		<td>黄冈</td>
+             		<td>75</td>
+             		<td>良</td>
+             	</tr>
+             	<tr>
+             		<td>孝感</td>
+             		<td>59</td>
+             		<td>良</td>
+             	</tr>
+             	<tr>
+             		<td>宜昌</td>
+             		<td>107</td>
+             		<td>轻度污染</td>
+             	</tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(".title1").click(function () {
+        $(".titleList1").toggle();
+    });
+    $(".titleList1 ul li").click(function () {
+        $(".titleList1").css("display","none");
+        var inputValue = $(this).html();
+        $(".title1 span").html(inputValue)
+        $(".title1").addClass("titl1-font");
+    });
+    $(".tbody>tr").click(function(){
+    	window.location="air_info.html";
+    })
+</script>

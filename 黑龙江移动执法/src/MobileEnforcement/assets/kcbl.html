@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>天津市环境保护局现场检查(勘察)笔录</title>
+<style type="text/css">
+input{
+border-bottom:1px solid #000000;   
+font-family:Arial, Helvetica, sans-serif;
+color:#007eff;
+text-align:center;
+background:transparent;
+border-top:none;
+border-left:none;
+border-right:none;
+}
+.lable{
+  float:left;
+}
+.DivSelect
+ {
+     position: relative;
+     width:  80px;
+     height: 18px;
+	 line-height:18px;
+     overflow: hidden; /*隐藏了小三角，因为宽度为110px,而select宽度为130px*/
+     border-width:0px;
+     border-top-style: none; 
+     border-right-style: none; 
+     border-left-style: none; 
+     border-bottom-style: none;
+	 float:left;
+ }
+ 
+/*设置Select样式*/
+ .SelectList
+ {
+     position: relative;
+     background-color: transparent;
+     TOP:-1px;
+     left:-1px;
+     border-width: 0px;
+     border-top-style: none; 
+     border-right-style: none; 
+     border-left-style: none; 
+     border-bottom-style: none;
+     width:100px;     
+     height: 20px;
+	 line-height:20px;
+     overflow:hidden;
+ }
+
+</style>
+</head>
+<body >
+<h3 align="center">环境保护局<br>
+现场检查（勘察）笔录</h3>
+<form action="post">
+
+时间:<input id="timeyear" type="text" size="4">年<input id="timemonth" type="text" size="2">月<input id="timeday" type="text" size="2">日<input id="timehour" type="text" size="2">时<input  id="timeminute" type="text"size="2">分至<input  id="timenewhour" type="text" size="2">时<input  id="timenewminute" type="text" size="2">分<p/>
+地点:<input id="qydz" type="text" size="100"/>
+<div class='lable'>检查（勘察）人姓名:</div>
+<div class="DivSelect"><select class="SelectList">
+		 <option value="ligang" checked>请选择</option>
+		    <option value="ligang">李刚</option>
+		    <option value="2007">戴尚德</option>
+		    <option value="2008">林俊</option>
+		    <option value="2009">宇图</option>
+		</select>
+</div>
+工作单位及执法证号:<input type="text" id="number1" />
+<div style='clear:both'/>
+<div class='lable'>检查（勘察）人姓名:</div>
+<div class="DivSelect"><select class="SelectList">
+		 <option value="ligang" checked>请选择</option>
+		    <option value="ligang">李刚</option>
+		    <option value="2007">戴尚德</option>
+		    <option value="2008">林俊</option>
+		    <option value="2009">宇图</option>
+		</select>
+</div>
+工作单位及执法证号:<input type="text" id="number1" /><p>
+记录人姓名:<input type="text" id="names"  />工作单位及执法证号:<input type="text" id="numbers" /><p />
+被询问人姓名:<input type="text" id="">年龄:<input type="text" id="">公民身份证号:<input type="text" id=""><p/>
+工作单位:<input type="text" id="">职务:<input type="text" id="">与本案关系:<input type="text"><p/>
+地址:<input type="text" id="">电话:<input type="text" id="">邮编:<input type="text" id=""/><p/>
+其他参加人姓名及工作单位(地址):<input type="text" id="" /><p/>
+询问内容:<p/>
+问：我们是环境保护局的行政执法人员,这是我们的执法证件,执法证件号为:
+<input type="text" id="">请确认,今天我们依法了解有关情况,你应当配合调查,如实回答询问和提供材料，不得拒绝、阻碍、隐瞒或者提供虚假情况。 如果你认为我们与本次调查有利害关系，可能影响公正办案，可以申请我们回避，并说明理由。 
+现场情况:<input type="text" id="" /><p/>
+&nbsp;&nbsp;&nbsp;&nbsp;以上笔录已阅无误<p/>
+现场负责人签名:<input type="text" id="" />&nbsp;<input type="text" id=""  size="4"/>年<input type="text" id="" size="1">月<input type="text" id="" size="1" />日<p/>
+检查(勘察)人签名:<input type="text" id=""  />&nbsp;<input type="text" id=""  />&nbsp;<input type="text" id=""  size="4"/>年<input type="text" id="" size="1">月<input type="text" id="" size="1" />日<p/>
+
+记录人签名:<input type="text" id=""  />&nbsp;<input type="text" id=""  />&nbsp;<input type="text" id=""  size="4"/>年<input type="text" id="" size="1">月<input type="text" id="" size="1" />日<p/>
+其他参加人签名:<input type="text" id=""  />&nbsp;<input type="text" id=""  />&nbsp;<input type="text" id=""  size="4"/>年<input type="text" id="" size="1">月<input type="text" id="" size="1" />日<p/>
+
+</form>
+</body>
+</html>
+
+<script language="javascript" >
+
+//setTimeout(load,100);
+window.load = load();
+function load(){
+
+var temp=demo.mydata("");
+var jsonObj = eval("(" + temp+ ")");
+alert(jsonObj);
+for(var i=0;i< jsonObj.length;i++) {
+	     alert(i);
+    for (k in jsonObj[i]) {
+    	if(k=='qydz'){
+    		document.getElementById(k).value = jsonObj[i][k]; 	
+    	}
+             
+    
+    }
+ 
+
+}
+}
+
+
+function change(){
+//document.getElementById("timemonth").value='中科宇图';
+
+}
+function save(){
+//var addresse=document.getElementById("address").value;
+//var nameone=document.getElementById("name1").value;
+//var nametwo=document.getElementById("name2").value;
+//var numberone=document.getElementById("number1").value;
+//var munbertwo=document.getElementById("number2").value;
+//var namees=document.getElementById("names").value;
+//var numberes=document.getElementById("numbers").value;
+//var nameandnames=document.getElementById("nameandname").value;
+//var usernames=document.getElementById("username").value;
+var yeartime=document.getElementById("timeyear").value;
+var daytime=document.getElementById("timeday").value;
+window.demo.clickOnAndroid(yeartime+"|"+daytime);
+alert("保存成功");
+}
+</script>

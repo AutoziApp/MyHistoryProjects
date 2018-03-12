@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/news_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/title_back_selector"
+        android:background="@drawable/update_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/news_tv1"
+            android:ems="9"
+            android:ellipsize="end"
+            android:text="标题"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+          <ProgressBar
+              android:id="@+id/news_erji_bar"
+              style="?android:attr/progressBarStyleSmall"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="14dp" />
+
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/news_erji"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        
+        android:scrollbars="none"/>
+
+</LinearLayout>

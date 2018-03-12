@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <include layout="@layout/toolbar_activity"/>
+
+       <RelativeLayout
+        android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:text="车牌号码:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="15sp"
+            android:textColor="@color/item_group_text"
+            android:id="@+id/textView2" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:ems="10"
+            android:hint="鄂FX2706"
+            android:paddingLeft="10dp"
+            android:background="@drawable/kuang"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/carNumEdit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:text="VIN(后6位):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="15sp"
+            android:textColor="@color/item_group_text"
+          />
+
+        <EditText
+            android:id="@+id/vinEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:background="@drawable/kuang"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:text="查询"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/search_button_bg"
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/searchBtn" />
+
+
+</LinearLayout>

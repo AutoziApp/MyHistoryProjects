@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+    name标签：用于区分不同类，与类中的QueryStyleName对应
+           其他标签与数据库的字段名对应
+    "style="autocomplete""表示此列带有自动提示功能 
+    datasource 为表名
+    style="spinner"表示此列是下拉列表 
+ -->
+<list>
+    <!--污染源查询 -->
+    <item>
+        <name style="textview" datasource="division">JBXX</name>
+        <V_WHY_QYJBXX.qymc style="textview" datasource="">企业名称：</V_WHY_QYJBXX.qymc>
+        <attenname style="spinner" datasource="Attention">控制级别：</attenname>
+        <regionname2 style="spinner" datasource="V_WHY_QYJBXX" info="area" sql="select RegionCode,RegionName from Region ">所在地市：</regionname2>
+        <regionname style="spinner" datasource="region" info="city" sql="select RegionCode,RegionName from Region ">所在区县：</regionname>
+<!--         <regionname style="spinner" datasource="V_WHY_QYJBXX">所在地：</regionname> -->
+<!--         <industryname style="spinner" datasource="V_WHY_QYJBXX">行业类别：</industryname> --> 
+    </item>
+   <item>
+        <name style="textview" datasource="division">map_JBXX</name>
+        <V_WHY_QYJBXX.qymc style="textview" datasource="">企业名称：</V_WHY_QYJBXX.qymc>
+        <regionname2 style="spinner" datasource="region" info="area">所在地市：</regionname2>
+        <regionname style="spinner" datasource="region" info="city">所在区县：</regionname>
+<!--         <attenname style="spinner" datasource="Attention">控制级别：</attenname>  -->
+    </item>
+	 <!-- 危化品 -->
+	<item>
+		<name style="textview" datasource="">WHP</name>
+		<cname   style="autocomplete" datasource="V_WHY_WHP">物质名称：</cname>
+		<ename style="textview" datasource="">别名：</ename>		
+		<operation style="textview" datasource="">主要用途：</operation>
+	</item>
+	<!-- 预案及案例 -->
+	<item>
+	   <name style="textview" datasource="">YAJAL</name>
+       <bt style="autocomplete" datasource="V_ZSK_YAJAL">文件名称：</bt>
+       <type style="spinner" datasource="V_ZSK_YAJAL">文件类型：</type>      
+	</item>
+	<!-- 专家库 -->
+	<item>
+	   <name style="textview" datasource="">ZJK</name>
+	   <exp_name style="autocomplete" datasource="PC_Exp">姓名：</exp_name>
+    <!--    <sex  style="spinner" datasource="T_ZSK_Expert_New">性别：</sex> -->
+     <exp_place  style="spinner" datasource="PC_Exp">籍贯：</exp_place>
+       <exp_major style="textview" datasource="">专业：</exp_major>
+	</item>
+	<!-- 救援物资 -->
+	<item>
+	   <name style="textview" datasource="">JYWZ</name>
+       <soluname style="autocomplete" datasource="T_ZSK_EnterSoluAndSave">物资名称：</soluname>
+       <solufenl style="spinner" datasource="T_ZSK_EnterSoluAndSave">分类：</solufenl>
+	</item>
+	<!-- 法律法规标准 -->
+	<item>
+	    <name style="textview" datasource="">FLFGBZ</name>
+	    <sjlb style="spinner" datasource="T_ZSK_FLFGBZ">法规级别：</sjlb>
+	    <ymbt style="autocomplete" datasource="T_ZSK_FLFGBZ">标题：</ymbt>
+	</item>
+	<!-- 排污收费 -->
+	<item>
+	   <name style="textview" datasource="division">PWSF</name>
+	   <qymc style="textview" datasource="V_WRY_PWSF">企业名称：</qymc>
+	   <regionname2 style="spinner" datasource="region" info="area">所在地市：</regionname2>
+       <regionname style="spinner" datasource="region" info="city">所在区县：</regionname>
+	   <zpwf style="textview" datasource="">总排污费：</zpwf>
+	   <qjje style="textview" datasource="">欠缴金额：</qjje>
+	   <!-- 
+	   <regionname2  style="spinner" datasource="V_WRY_PWSF">地区：</regionname2>
+	    -->
+	</item>
+	<!-- 排污许可证 -->
+	<item>
+	   <name style="textview" datasource="division">PWXKZ</name>
+       <qymc style="autocomplete" datasource="V_WRY_PWXKZ">企业名称：</qymc>
+       <zycp style="textview" datasource="">主要产品：</zycp>
+	</item>
+	<!-- 信访投诉 -->
+	<item>
+	    <name style="textview" datasource="">XFTS</name>
+	    <qymc style="textview" datasource="V_WRY_XFTS">企业名称：</qymc>
+	    <fynr style="textview" datasource="">反映内容：</fynr>
+	    <regionname2 style="spinner" datasource="region" info="area">所在地市：</regionname2>
+        <regionname style="spinner" datasource="region" info="city">所在区县：</regionname>
+        <!-- 
+        <regionname style="spinner" datasource="V_WRY_XFTS">地区：</regionname>
+         -->
+	</item>
+	<!-- 行政处罚 -->
+	<item>
+	    <name style="textview" datasource="division">XZCF</name>
+	    <qymc style="textview" datasource="V_WRY_XZCF">企业名称：</qymc>
+	    <regionname2 style="spinner" datasource="region" info="area">所在地市：</regionname2>
+        <regionname style="spinner" datasource="region" info="city">所在区县：</regionname>
+        <!-- 
+	    <regionname  style="spinner" datasource="V_WRY_XZCF">地区：</regionname>
+         -->
+        <wfxw style="textview" datasource="">违法行为：</wfxw>
+        <dz style="textview" datasource="">地址：</dz>
+	</item>
+	<!-- 环评三同时 -->
+	<item>
+	    <name style="textview" datasource="division">HBSTSYS</name>
+	    <qymc style="textview" datasource="V_WRY_HPSTSYS">企业名称：</qymc>
+	    <xmmc style="textview" datasource="">项目名称：</xmmc>
+	</item>
+	<!-- 限期治理 -->
+	<item>
+        <name style="textview" datasource="division">XQZL</name>
+        <qymc style="textview" datasource="V_WRY_XQZL">企业名称：</qymc>
+        <type style="spinner" datasource="V_WRY_XQZL">限期治理类型：</type>
+        <regionname2 style="spinner" datasource="region" info="area">所在地市：</regionname2>
+        <regionname style="spinner" datasource="region" info="city">所在区县：</regionname>
+        <!-- 
+        <regionname  style="spinner" datasource="V_WRY_XQZL">地区：</regionname>
+         -->
+    </item>
+    <!-- 重要文件 -->
+    <item>
+        <name style="textview" datasource="">ZYWJBZ</name>
+        <wjbt style="autocomplete" datasource="T_ZSK_ZYWJ">标题：</wjbt>
+        <wjlb style="spinner" datasource="T_ZSK_ZYWJ">文件来源：</wjlb>
+    </item>
+    <!-- 处理意见 -->
+    <item>
+        <name style="textview" datasource="">CLYJBZ</name>
+        <wjbt style="autocomplete" datasource="T_ZSK_CLYJ">标题：</wjbt>
+        <wjlb style="spinner" datasource="T_ZSK_CLYJ">文件类别：</wjlb>
+    </item>
+    <!-- 作业指导书 -->
+    <item>
+        <name style="textview" datasource="">ZYZDSBZ</name>
+        <wjbt style="autocomplete" datasource="T_ZSK_ZYZDS">标题：</wjbt>
+        <wjlb style="spinner" datasource="T_ZSK_ZYZDS">文件类别：</wjlb>
+    </item>
+	<!-- 通讯录 -->
+	<item>
+	    <name style="textview" datasource="">USERS</name>
+	    <u_realname style="autocomplete" datasource="V_Users">姓名：</u_realname>
+	    <depname style="spinner" datasource="V_Users">部门：</depname>
+	</item>
+	<!-- 通知公告 -->
+    <item>
+        <name style="textview" datasource="">TZGGCX</name>
+        <timing style="autocomplete" datasource="T_YDZF_TZGG">公告名称：</timing>
+        <CREATEDATE style="time" datasource="">开始时间：</CREATEDATE>
+        <CREATEDATE style="time" datasource="">结束时间：</CREATEDATE>
+    </item>
+    <!-- 邮件管理 -->
+    <item>
+        <name style="textview" datasource="">YJGLCX</name>
+        <msgtitle style="autocomplete" datasource="V_YDZF_EMAIL">邮件名称：</msgtitle>
+        <msdate style="time" datasource="">开始时间：</msdate>
+        <msdate style="time" datasource="">结束时间：</msdate>
+    </item>
+        <!-- 个人日历 -->
+    <item>
+        <name style="textview" datasource="">RCAPBZ</name>
+        <stime style="time" datasource="">日程日期：</stime>
+    </item>
+     <!-- 局领导日常安排 -->
+    <item>
+        <name style="textview" datasource="">LDRCAPBZ</name>
+        <ldxm style="autocomplete" datasource="T_YDZF_JLD">领导姓名：</ldxm>
+        <ldxx style="textview" datasource="">领导信息：</ldxx>
+    </item>
+      <!-- 任务查询 -->
+    <item>
+        <name style="textview" datasource="">RWCX</name>
+        <rwmc style="autocomplete" datasource="V_YDZF_RWXX">任务名称：</rwmc>
+        <qymc style="textview" datasource="">企业名称：</qymc>
+        <lxname style="spinner" datasource="V_YDZF_RWXX">任务类型：</lxname>
+        <lyname style="textview" datasource="">任务来源：</lyname>
+        <!-- <rwztmc style="spinner" datasource="V_YDZF_RWXX">任务状态：</rwztmc> -->
+        <cdname style="spinner" datasource="V_YDZF_RWXX">紧急程度：</cdname>
+    </item>
+    <item>
+         <name style="textview" datasource="division">SJZ_ZXCX</name>
+         <qymc style="textview" datasource="">企业名称：</qymc>
+         <attenname style="spinner" datasource="Attention">控制级别：</attenname>
+    </item>
+</list>

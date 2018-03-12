@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="6.0dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/city_delete_btn"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/city_weatherinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/city_rect_bg"
+            android:paddingTop="5dip"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/city_name"
+                style="@style/clockWeatherText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center_horizontal|top"
+                android:paddingTop="10dp"
+                android:textColor="#ffffffff"
+                android:textSize="14.659973dip" />
+
+            <ImageView
+                android:id="@+id/add_weather_img"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:src="@drawable/w0" />
+
+            <TextView
+                android:id="@+id/city_weather"
+                style="@style/clockWeatherText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="2-12c"
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip" />
+
+            <TextView
+                android:id="@+id/auto_locate"
+                style="@style/clockWeatherText"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/city_bottom_select"
+                android:gravity="center_horizontal|bottom"
+                android:layout_marginTop="5dip"
+                android:text=""
+                android:textColor="#ffffffff"
+                android:textSize="12.0dip"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kuang_add"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="6.0dip"
+        android:background="@drawable/life_info_bg"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="132dp"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/kuang_add" />
+    </RelativeLayout>
+
+</RelativeLayout>

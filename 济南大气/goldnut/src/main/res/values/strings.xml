@@ -1,0 +1,55 @@
+<resources>
+
+    <string name="confirm_title">提示</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="content_description_icon">icon</string>
+    <string name="refresh">刷新</string>
+    <string name="processing">加载中</string>
+    <string name="download">下载</string>
+    <string name="download_fail">下载安装包失败</string>
+    <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
+    <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
+    <string name="redo">重试</string>
+    <string name="install_msp">你尚未安装支付宝移动快捷支付服务，请立即安装</string>
+    <string name="install_alipay">你尚未安装支付宝钱包，请立即安装</string>
+
+    <!-- pullrefresh -->
+    <string name="pushmsg_center_no_more_msg">没有更多了</string>
+    <string name="pushmsg_center_pull_down_text">下拉释放刷新</string>
+    <string name="pushmsg_center_pull_down_update_time">最后更新时间 :</string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载</string>
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉加载更多</string>
+    <string name="pull_to_refresh_header_hint_ready">松开后加载</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="click_to_reload_more">点击重新加载</string>
+    <string name="pickerview_cancel">取消</string>
+    <string name="pickerview_submit">确定</string>
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+    <string name="ds_cancel">取消</string>
+    <string name="ds_ok">确定</string>
+
+    <!-- 照片选择器 -->
+    <string name="app_name">multi-image-selector</string>
+    <string name="folder_all">全部图片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">未检测到摄像头</string>
+    <string name="msg_amount_limit">数量超过限制</string>
+    <string name="action_done">完成</string>
+    <string name="photo_unit">拍照</string>
+    <string name="tip_take_photo">拍照</string>
+    <!--文件选择器  -->
+    <string name="nnf_new_folder">New folder</string>
+    <string name="nnf_create_folder_error">Failed to create folder</string>
+    <string name="nnf_name">Name</string>
+    <string name="nnf_select_something_first">Please select something first</string>
+    <string name="nnf_permission_external_write_denied">Permisson to access filesystem denied</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/cotent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/img_tx"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/img_tx"
+            android:orientation="vertical" 
+            android:id="@+id/share_content">
+
+            <RelativeLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="宋体"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="13sp" 
+                    android:id="@+id/txt_user_name"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="宋体"
+                android:textColor="#666666"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp" 
+                android:text=""
+                android:id="@+id/txt_content"/>
+            <ImageView android:layout_width="200dp" 
+                android:layout_height="200dp"
+                android:src="@drawable/aqi"
+                android:id="@+id/img_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/cotent"
+        android:layout_margin="5dp"
+        android:background="#88eeeeee" />
+
+</RelativeLayout>

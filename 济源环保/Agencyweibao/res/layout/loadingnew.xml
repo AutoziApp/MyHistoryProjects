@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/app"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	android:paddingBottom="10dp">
+
+<!-- android:background="#3a94f3" -->
+
+
+
+	<ImageView
+		android:id="@+id/imageView1"
+		android:layout_width="300dp"
+		android:layout_height="200dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="100dp"
+		android:layout_centerHorizontal="true"
+		android:src="@drawable/kj_logo" />
+
+	<ImageView
+		android:id="@+id/imageView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:visibility="gone"
+		android:src="@drawable/kj_bot_bg" />
+
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:paddingBottom="-100dp"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:textSize="18sp"
+			android:text="济源市环保局" />
+		<TextView
+			android:id="@+id/textView3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:textSize="14sp"
+			android:layout_marginTop="2dp"
+			android:text="济源市环境监测站" />
+		<TextView
+			android:id="@+id/textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ffffff"
+			android:textSize="12sp"
+			android:layout_marginTop="2dp"
+			android:text="技术支持:中科宇图科技股份有限公司" />
+
+
+	</LinearLayout>
+
+
+</RelativeLayout>

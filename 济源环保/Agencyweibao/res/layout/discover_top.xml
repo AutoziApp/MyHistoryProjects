@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dip"
+    android:background="@color/whiteblack"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dip" >
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="fill_parent"
+            android:layout_height="248dip"
+            android:layout_marginBottom="22dip"
+            android:scaleType="centerCrop"
+            android:background="@drawable/discover_top_bg" />
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_alignParentBottom="true" >
+
+            <RelativeLayout
+                android:layout_width="68dip"
+                android:layout_height="68dip"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/logo31" >
+
+              <!--   <com.mapuni.weibao.widget.CircularBigImageView
+                    android:layout_width="68dip"
+                    android:layout_height="68dip"
+                    android:background="#fff"
+                    /> -->
+
+                <org.kymjs.aframe.ui.widget.RoundImageView
+                    android:id="@+id/login_nc"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="1.5dip"
+                    android:layout_marginTop="1.5dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo31" />
+                <!--  android:background="@drawable/bg_border"-->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/nickname_title"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:paddingTop="10dip"
+                android:text="游客"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:id="@+id/nweibo_difang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:text="郑州"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/tansuo_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/spinner_post" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="qq_length">710px</dimen>
+    <dimen name="alarm_top">850px</dimen>
+    <dimen name="alarm_left">100dp</dimen>
+    <dimen name="point_zize">7sp</dimen>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:minHeight="45dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/qylistitem_left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/qylistitem_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/qylistitem_left_image"
+            android:layout_toLeftOf="@+id/qy_check"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            />
+
+	<CheckBox
+        android:id="@+id/qy_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/qylistitem_left_image"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+	
+    </RelativeLayout>
+
+</LinearLayout>

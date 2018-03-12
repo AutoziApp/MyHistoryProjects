@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>违规操作曝光</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--公共头部-->
+<div class="head">
+    <img src="images/fanhuianniu.png">
+    <p>违规操作曝光</p>
+</div>
+<!--查询条件-->
+<div id="search_option">
+    <table>
+        <tr>
+            <td style="width: 30%;">车牌号码：</td>
+            <td style="width: 70%;" colspan="2">
+                <input placeholder="单行输入" style="width: 98%;border: 1px solid #ddd;height: 30px;padding-left: 2%;color: #ddd;" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td style="width:30%">违规检测站：</td>
+         	<td style="width: 50%;">
+                <div class="title2" style="width: 100%;">
+                        <span style="display: inline-block;padding-top: 5px;">检测站</span>
+                        <div class="inputImg" >
+                            <img src="images/xiala.png">
+                        </div>
+                    </div>
+                    <div class="titleList2" style="line-height: 30px;">
+                        <ul>
+                          <li>驿安</li>
+                          <li>安楚</li>
+                          <li>中远</li>
+                          <li>俪湖</li>
+                          <li>安安</li>
+                          <li>万畅</li>
+                          <li>安达</li>
+                          <li>保都</li>
+                          <li>宏运</li>
+                          <li>鑫诚</li>
+                          <li>汇海</li> 
+                        </ul>
+                    </div>
+    		</td>
+    		<td><button class="search_btn" style="width:100%; margin-left:10px">查询</button></td>
+        </tr>
+    </table>
+</div>
+<!--表格-->
+<div id="main_table_gc">
+    <table>
+        <thead>
+        <tr>
+        	<th style="width:25%">行政区域</th>
+        	<th style="width:25%">违规监测站</th>
+            <th style="width:25%">违规车辆</th>
+            <th style="width:25%">违规原因</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        	<td>武汉</td>
+        	<td>驿安</td>
+            <td>鄂A43W81</td>
+            <td class="name">检测管插入不全</td>
+        </tr>
+        <tr>
+        	<td>黄石</td>
+        	<td>安楚</td>
+            <td>鄂BGU308</td>
+            <td class="name">替换车辆</td>
+        </tr>
+        <tr>
+        	<td>恩施</td>
+        	 <td>中远</td>
+            <td>鄂Q3333P</td>
+            <td class="name">人为堵塞进气口</td>
+        </tr>
+        <tr>
+        	<td>仙桃</td>
+        	<td>俪湖</td>
+            <td>鄂M95W21</td>
+            <td class="name">替换车辆</td>
+        </tr>
+        <tr>
+        	<td>襄阳</td>
+        	<td>安安</td>
+            <td>鄂FGU308</td>
+            <td class="name">人为堵塞进气口</td>
+        </tr>
+        <tr>
+        	<td>荆门</td>
+        	<td>万畅</td>
+            <td>鄂HBS300</td>
+            <td class="name">替换车辆</td>
+        </tr>
+        <tr>
+        	<td>天门</td>
+        	<td>安达</td>
+            <td>鄂R60R78</td>
+            <td class="name">人为堵塞进气口</td>
+        </tr>
+        <tr>
+        	<td>黄冈</td>
+        	<td>保都</td>
+            <td>鄂JCW303</td>
+            <td class="name">替换车辆</td>
+        </tr>
+        <tr>
+        	<td>孝感</td>
+        	<td>宏运</td>
+            <td>鄂KAQ616</td>
+            <td class="name">人为堵塞进气口</td>
+        </tr>
+        <tr>
+        	<td>宜昌</td>
+        	<td>鑫诚</td>
+            <td>鄂E15637</td>
+            <td class="name">替换车辆</td>
+        </tr>
+        <tr>
+        	<td>神农架</td>
+        	<td>汇海</td>
+        	<td>鄂P96F78</td>
+        	<td class="name">检测管插入不全</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(".title1").click(function () {
+        $(".titleList1").toggle();
+    });
+    $(".titleList1 ul li").click(function () {
+        $(".titleList1").css("display","none");
+        var inputValue = $(this).html();
+        $(".title1 span").html(inputValue)
+    });
+    $(".title2").click(function () {
+        $(".titleList2").toggle();
+    });
+    $(".titleList2 ul li").click(function () {
+        $(".titleList2").css("display","none");
+        var inputValue = $(this).html();
+        $(".title2 span").html(inputValue)
+    });
+</script>

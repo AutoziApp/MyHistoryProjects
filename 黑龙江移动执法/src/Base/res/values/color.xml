@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+   <resources> 
+    
+    <!-- 增加蓝色 -->
+	<color name="base_xczf_qy_bg">#196CC8</color>
+	<!-- 在线监测曲线背景色 -->
+	<color name="base_zxjc_qx_bg">#e5f4fe</color>
+	<!--海绿色 -->
+	<color name="base_seagreen">#2E8B57</color>
+	<color name="darkblue">#008ED3</color><!--深蓝色 -->
+	<color name="base_black">#000000</color>
+	<color name="lightskyblue">#87CEFA</color><!--亮天蓝色 -->
+	<color name="skyblue">#87CEEB</color><!--天蓝色 -->
+	<color name="blueviolet">#8A2BE2</color><!--紫罗兰蓝色 -->
+	<color name="slateblue">#6A5ACD</color><!--石蓝色 -->
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	<color name="gray">#808080</color><!--灰色 -->
+	<color name="dvblue">#0096DA</color><!--深蓝色 -->
+	<color name="itemcolor">#0C6895</color><!--深蓝色 -->
+	<color name="hintcolor">#00000000</color><!--深蓝色 -->
+	<color name="dblue">#3f4244</color><!--深灰色 -->
+	
+
+	
+	<color name="transparent">#00000000</color><!--透明色 -->
+	<color name="base_grid_bg">#e9ecfa</color>
+	<color name="base_listitem_bg">#5061A6</color>
+	</resources>

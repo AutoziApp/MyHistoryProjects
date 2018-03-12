@@ -1,0 +1,752 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".CalculatorPaiwufei" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonBar"
+        android:layout_margin="4dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/arithmetic_name_1"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="排污费种类:"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/arithmetic_spinner_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/arithmetic_name_1"
+                android:layout_alignTop="@id/arithmetic_name_1"
+                android:layout_toRightOf="@id/arithmetic_name_1" />
+
+            <TextView
+                android:id="@+id/arithmetic_name_21"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arithmetic_name_1"
+                android:gravity="center"
+                android:text="计 算 方 法:"
+                android:textColor="@color/black"
+                android:visibility="gone" 
+                />
+
+            <Spinner
+                android:id="@+id/arithmetic_spinner_21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/arithmetic_name_21"
+                android:layout_alignLeft="@id/arithmetic_spinner_1"
+                android:layout_alignTop="@+id/arithmetic_name_21" 
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/arithmetic_name_2"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arithmetic_name_21"
+                android:gravity="center"
+                android:text="污染物种类:"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/arithmetic_spinner_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/arithmetic_name_2"
+                android:layout_alignLeft="@id/arithmetic_spinner_1"
+                android:layout_alignTop="@+id/arithmetic_name_2" />
+
+            <TextView
+                android:id="@+id/arithmetic_name_3"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arithmetic_name_2"
+                android:gravity="center"
+                android:text="具体污染物:"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+            <Spinner
+                android:id="@+id/arithmetic_spinner_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/arithmetic_name_3"
+                android:layout_alignLeft="@id/arithmetic_spinner_2"
+                android:layout_alignTop="@id/arithmetic_name_3"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram1"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/arithmetic_name_3"
+                android:gravity="center"
+                android:text="污染物浓度:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_98"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram1"
+                android:layout_alignLeft="@id/arithmetic_spinner_3"
+                android:layout_alignTop="@id/unitHint_kilogram1"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram2"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram1"
+                android:gravity="center"
+                android:text="污染物流量:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_99"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram2"
+                android:layout_alignLeft="@id/editText_98"
+                android:layout_alignTop="@id/unitHint_kilogram2"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram3"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram2"
+                android:gravity="center"
+                android:text="排 放 天 数:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_100"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram3"
+                android:layout_alignLeft="@id/editText_99"
+                android:layout_alignTop="@id/unitHint_kilogram3"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram11"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram3"
+                android:gravity="center"
+                android:text="排 放 浓 度:"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editText_123"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram11"
+                android:layout_alignLeft="@id/editText_100"
+                android:layout_alignTop="@id/unitHint_kilogram11"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/unitHint_kilogram12"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram11"
+                android:gravity="center"
+                android:text="废 气 流 量:"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editText_124"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram12"
+                android:layout_alignLeft="@id/editText_123"
+                android:layout_alignTop="@id/unitHint_kilogram12"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/unitHint_kilogram13"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram12"
+                android:gravity="center"
+                android:text="运 行 时 间:"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editText_125"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram13"
+                android:layout_alignLeft="@id/editText_124"
+                android:layout_alignTop="@id/unitHint_kilogram13"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram14"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram13"
+                android:gravity="center"
+                android:text="耗 煤 量:"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_126"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram14"
+                android:layout_alignLeft="@id/editText_124"
+                android:layout_alignTop="@id/unitHint_kilogram14"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram20"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram14"
+                android:gravity="center"
+                android:text="煤中含硫分:"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editText_140"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram20"
+                android:layout_alignLeft="@id/editText_126"
+                android:layout_alignTop="@id/unitHint_kilogram20"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram21"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram20"
+                android:gravity="center"
+                android:text="含 氮 量:"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_141"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram21"
+                android:layout_alignLeft="@id/editText_140"
+                android:layout_alignTop="@id/unitHint_kilogram21"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram22"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram21"
+                android:gravity="center"
+                android:text="氮氧物转化:"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/editText_142"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram22"
+                android:layout_alignLeft="@id/editText_141"
+                android:layout_alignTop="@id/unitHint_kilogram22"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram23"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram22"
+                android:gravity="center"
+                android:text="焦炭耗用量:"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_143"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram23"
+                android:layout_alignLeft="@id/editText_142"
+                android:layout_alignTop="@id/unitHint_kilogram23"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram24"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram23"
+                android:gravity="center"
+                android:text="不完全燃烧:"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/editText_144"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram24"
+                android:layout_alignLeft="@id/editText_143"
+                android:layout_alignTop="@id/unitHint_kilogram24"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram15"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram24"
+                android:gravity="center"
+                android:text="煤中的灰分:"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_127"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram15"
+                android:layout_alignLeft="@id/editText_144"
+                android:layout_alignTop="@id/unitHint_kilogram15"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:numeric="integer"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram16"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram15"
+                android:gravity="center"
+                android:text="灰分中烟尘:"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/editText_128"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram16"
+                android:layout_alignLeft="@id/editText_127"
+                android:layout_alignTop="@id/unitHint_kilogram16"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram17"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram16"
+                android:gravity="center"
+                android:text="除尘效率:"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/editText_129"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram17"
+                android:layout_alignLeft="@id/editText_128"
+                android:layout_alignTop="@id/unitHint_kilogram17"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram18"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram17"
+                android:gravity="center"
+                android:text="烟尘可燃物:"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/editText_130"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram18"
+                android:layout_alignLeft="@id/editText_129"
+                android:layout_alignTop="@id/unitHint_kilogram18"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram4"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram18"
+                android:gravity="center"
+                android:text="排 放 量:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram8"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram4"
+                android:gravity="center"
+                android:text="污水排放量:"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_555"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram8"
+                android:layout_alignLeft="@id/editText_100"
+                android:layout_alignTop="@id/unitHint_kilogram8"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram9"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram8"
+                android:gravity="center"
+                android:text="色度超标数:"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_666"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram9"
+                android:layout_alignLeft="@id/editText_555"
+                android:layout_alignTop="@id/unitHint_kilogram9"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram5"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram9"
+                android:gravity="center"
+                android:text="污染当量数:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_222"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram5"
+                android:layout_alignLeft="@id/editText_666"
+                android:layout_alignTop="@id/unitHint_kilogram5"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram6"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram5"
+                android:gravity="center"
+                android:text="征 收 标 准:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_333"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram6"
+                android:layout_alignLeft="@id/editText_222"
+                android:layout_alignTop="@id/unitHint_kilogram6"
+                android:ems="10"
+                android:text="0.7"
+                android:inputType="numberDecimal"
+                />
+
+            <TextView
+                android:id="@+id/unitHint_kilogram7"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/unitHint_kilogram6"
+                android:gravity="center"
+                android:text="收 费 金 额:"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_444"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram7"
+                android:layout_alignLeft="@id/editText_333"
+                android:layout_alignTop="@id/unitHint_kilogram7"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/unit_tv1"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/unitHint_kilogram1"
+                android:layout_alignBottom="@+id/unitHint_kilogram1"
+                android:layout_toRightOf="@+id/editText_98"
+                android:padding="10dp"
+                android:text="毫克/升(mg/L)"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/unit_tv2"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_99"
+                android:layout_alignBottom="@+id/editText_99"
+                android:layout_toRightOf="@+id/editText_99"
+                android:padding="10dp"
+                android:text="吨/天(t/d)"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/unit_tv3"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_100"
+                android:layout_alignBottom="@+id/editText_100"
+                android:layout_toRightOf="@+id/editText_100"
+                android:padding="10dp"
+                android:text="天(d)"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/unit_tv123"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_123"
+                android:layout_alignBottom="@+id/editText_123"
+                android:layout_toRightOf="@+id/editText_123"
+                android:padding="10dp"
+                android:text="mg/m³"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unit_tv124"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_124"
+                android:layout_alignBottom="@+id/editText_124"
+                android:layout_toRightOf="@+id/editText_124"
+                android:padding="10dp"
+                android:text="m³/h"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/unit_tv125"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_125"
+                android:layout_alignBottom="@+id/editText_125"
+                android:layout_toRightOf="@+id/editText_125"
+                android:padding="10dp"
+                android:text="h"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/unit_tv126"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_126"
+                android:layout_alignBottom="@+id/editText_126"
+                android:layout_toRightOf="@+id/editText_126"
+                android:padding="10dp"
+                android:text="t/月"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/unit_tv127"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_140"
+                android:layout_alignBottom="@+id/editText_140"
+                android:layout_toRightOf="@+id/editText_140"
+                android:padding="10dp"
+                android:text="%"
+                android:textColor="@color/black" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/unit_tv4"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_111"
+                android:layout_alignBottom="@+id/editText_111"
+                android:layout_toRightOf="@+id/editText_111"
+                android:padding="10dp"
+                android:text="千克"
+                android:textColor="@color/black" />
+
+            <!-- <CheckBox
+                android:id="@+id/unit_tv8"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/unit_tv4"
+                android:layout_alignBottom="@+id/unit_tv4"
+                android:layout_toRightOf="@+id/unit_tv4"
+                android:checked="false"
+                android:text="输入" /> -->
+
+            <TextView
+                android:id="@+id/unit_tv9"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_555"
+                android:layout_alignBottom="@+id/editText_555"
+                android:layout_toRightOf="@+id/editText_555"
+                android:padding="10dp"
+                android:text="吨(t)"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/unit_tv5"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_333"
+                android:layout_alignBottom="@+id/editText_333"
+                android:layout_toRightOf="@+id/editText_333"
+                android:padding="10dp"
+                android:text="元"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/unit_tv6"
+                style="@style/padding_t_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editText_444"
+                android:layout_alignBottom="@+id/editText_444"
+                android:layout_toRightOf="@+id/editText_444"
+                android:padding="10dp"
+                android:text="元"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editText_111"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/unitHint_kilogram4"
+                android:layout_alignLeft="@id/editText_100"
+                android:layout_alignTop="@+id/unitHint_kilogram4"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:inputType="numberDecimal" >
+            </EditText>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sum_button"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:text="小计" />
+
+        <Button
+            android:id="@+id/collect_button"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:text="总计" />
+    </LinearLayout>
+
+</RelativeLayout>

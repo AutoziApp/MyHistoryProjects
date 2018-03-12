@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/yutu_loadling_out"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+       android:minHeight="140dp"
+       android:minWidth="80dp"
+        android:background="@android:color/transparent"
+        >
+        <!--android:adjustViewBounds="true"-->
+        <!--android:minHeight="140dp"-->
+        <!--android:minWidth="60dp"-->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/loadMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toEndOf="@+id/progressBar"
+            android:layout_toRightOf="@+id/progressBar"
+            android:text="正在请求数据..." />
+    </RelativeLayout>
+
+</LinearLayout>

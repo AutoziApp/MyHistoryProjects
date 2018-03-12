@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list> 
+    - <item>
+  <name>总汞</name> 
+  <values>0.0005</values> 
+  </item>
+- <item>
+  <name>总镉</name> 
+  <values>0.005</values> 
+  </item>
+- <item>
+  <name>总铬</name> 
+  <values>0.4</values> 
+  </item>
+- <item>
+  <name>六价铬</name> 
+  <values>0.02</values> 
+  </item>
+<item> 
+    <name>总砷</name>  
+    <values>0.02</values>
+  </item>  
+  <item> 
+    <name>总铅</name>  
+    <values>0.025</values>
+  </item>  
+    <item> 
+    <name>总镍</name>  
+    <values>0.025</values>
+  </item> 
+  <item> 
+    <name>苯并芘</name>  
+    <values>0.0000003</values>
+  </item>  
+  <item> 
+    <name>总铍</name>  
+    <values>0.01</values>
+  </item>  
+  <item> 
+    <name>总银</name>  
+    <values>0.02</values>
+  </item>  
+</list>

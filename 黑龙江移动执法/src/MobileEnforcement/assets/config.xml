@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<list> 
+  <item> 
+    <servername>HEILONGJIANG</servername>  
+    <systemname1>黑龙江省环境监察</systemname1>  
+    <systemname2>移动执法系统</systemname2>  
+    <servertype>YDZF</servertype>  
+   <!--  <serverurl>http://192.168.4.108:8899</serverurl>  --> 
+    <serverurl>http://192.168.15.48:8189</serverurl>  
+    <typename>server</typename> 
+  </item>  
+  <item> 
+    <numeric>46001</numeric>  
+    <mcc>460</mcc>  
+    <isedited>false</isedited>  
+    <typename>apn_ydzf</typename>  
+    <name>移动执法</name>  
+    <mnc>01</mnc>  
+    <apn>SJZSHBJ.YDZF.HEAPN</apn>  
+    <type/> 
+  </item>  
+  <item> 
+    <versonnum>1.0.0</versonnum>  
+    <typename>config</typename> 
+  </item>  
+  <item> 
+    <numeric>46001</numeric>  
+    <mcc>460</mcc>  
+    <isedited>false</isedited>  
+    <typename>apn_net</typename>  
+    <name>中国联通3GNET设置</name>  
+    <mnc>01</mnc>  
+    <apn>3gnet</apn>  
+    <type>default</type> 
+  </item> 
+</list>

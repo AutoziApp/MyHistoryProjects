@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              tools:context="com.mapuni.caremission_ens.fragment.JXStationFragment">
+
+    <include layout="@layout/toolbar_activity"
+        />
+
+    <include
+        android:id="@+id/showFailed"
+        layout="@layout/request_failed"/>
+    <RelativeLayout
+        android:id="@+id/layout_mingcheng"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="@drawable/bg_view_border">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/title_btn_search_s" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/ivSearch"
+            android:background="@null"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/exList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/white"
+        android:divider="@color/white"
+        android:dividerHeight="18dp"
+        android:groupIndicator="@null"
+        android:scrollbars="none"/>
+
+    <!-- TODO: Update blank fragment layout -->
+</LinearLayout>

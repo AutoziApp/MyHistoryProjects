@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+// 注：需要配置符号表时，使用bugly插件
+apply plugin: 'bugly'
+bugly {
+    appId = 'e375962718'
+    appKey = 'bf2f7c46-0bdc-4c5b-9bdf-75a5d857b164'
+}
+android {
+    
+    
+    packagingOptions {
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.mapuni.shangluo"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 5
+        versionName "2.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a','x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : "com.mapuni.shangluo",
+                JPUSH_APPKEY : "a04a8fc791d44caf480d1509", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+        //分包依赖 解决方法数超过65535安装不成功的问题
+        multiDexEnabled true
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/AMap_Location_V3.5.0_20170731.jar')
+    compile files('libs/arcgis-android-api.jar')
+    compile files('libs/arcgis-android-app-toolkit.jar')
+    compile files('libs/jackson-core-1.9.5.jar')
+    compile files('libs/jackson-mapper-1.9.5.jar')
+    compile files('libs/jcifs-1.3.17.jar')
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.squareup.okhttp3:okhttp-urlconnection:3.2.0'
+    compile 'com.github.franmontiel:PersistentCookieJar:v0.9.3'
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.lzy.widget:ninegridview:0.2.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.android.support:support-v4:25.0.0'
+    testCompile 'junit:junit:4.12'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.bigkoo:svprogresshud:1.0.6'
+    compile 'com.xw.repo:xedittext:2.0.8@aar'
+    compile 'com.yanzhenjie:permission:1.1.0'
+    compile 'me.xiaopan:assemblyadapter:2.3.1'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.6.9'
+    compile 'me.texy.treeview:treeview_lib:1.0.3'
+    compile 'com.lzy.widget:imagepicker:0.5.5'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //ijkPlayer视频播放依赖库
+    compile 'com.dou361.ijkplayer:jjdxm-ijkplayer:1.0.6'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.github.TellH:RecyclerTreeView:1.2.0'
+    compile files('libs/AMap_2DMap_V2.8.1_20160202.jar')
+    compile 'cn.jiguang.sdk:jpush:3.0.8'
+    // 此处以JPush 3.0.3 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.6'
+    // 此处以JCore 1.1.1 版本为例。
+
+    //分包依赖 解决方法数超过65535安装不成功的问题
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.lin:timeline:1.1@aar'
+    compile 'com.lin:poweradapter:1.7@aar'
+    compile 'com.android.support:cardview-v7:25.0.0'
+    //仿qq左滑删除
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+}

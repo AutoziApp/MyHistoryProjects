@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#389BD8</color>
+    <color name="colorPrimaryDark">#389BD8</color>
+    <color name="colorAccent">#389BD8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="base_black">#000000</color>
+    <color name="red"> #FF0000</color>
+    
+    
+    <color name="splash_txt1_color">#479DD1</color>
+    <color name="splash_txt2_color">#7DB1D1</color>
+    <color name="splash_txt3_color">#484848</color>
+    <!--toolbar的颜色-->
+    <color name="color_main_green">#40B6E6</color>
+    <!--toolbar 搜索框的颜色-->
+    <color name="et_hint_color">#949CA4</color>
+    <!--toolbar 分割线的颜色-->
+    <color name="divider_color">#CCCCCC</color>
+
+    <!--bottomTab的背景颜色-->
+    <color name="tab_bottom_select">#026CAD</color>
+    <color name="tab_bottom_unselect">#2290d4</color>
+    
+    <!--bottomIcon的背景颜色-->
+    <color name="tab_icon_select">#FFFFFF</color>
+    <color name="tab_icon_unselect">#FFFFFF</color>
+    
+    <color name="text_color">#353535</color>
+    
+    <!--编辑框颜色-->
+    <color name="edittext">#E3E7EF</color>
+    <!--线颜色-->
+    <color name="line_color">#CCCCCC</color>
+    <!--TextView点击时的颜色-->
+    <color name="txt_check_color">#f1f1f1</color>
+    
+    <color name="login_btn_check">#2290d4</color>
+    <color name="login_btn_uncheck">#479DD1</color>
+
+
+    <!--视频相关颜色-->
+    <color name="cl_default">#424242</color>
+    <color name="cl_error">#ffffff</color>
+    
+    
+    <!--延时申请txt颜色-->
+    <color name="delay_txt_title_background_color">#DAF0F9</color>
+    <color name="delay_txt_title_color">#0282B1</color>
+
+    <color name="menudialog_divider_color">#ededed</color>
+    <color name="menudialog_pressed_color">#e7e7e7</color>
+    <color name="menudialog_bg_gray">#f5f5f5</color>
+</resources>

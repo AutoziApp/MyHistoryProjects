@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/select_city_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/city_bg" >
+
+    <RelativeLayout
+        android:id="@+id/select_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip" >
+
+         <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/title_bar_return" />
+
+         <TextView
+            android:id="@+id/select_title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="添加城市"
+            android:textColor="#fff"
+            android:textSize="20.0dip" />
+
+       
+    </RelativeLayout>
+       <View
+        android:id="@+id/rank_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:layout_below="@+id/select_rl"
+        android:background="@drawable/weather_line_title" />
+    <!--
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/current_title_bg" >
+
+        <TextView
+            android:id="@+id/select_title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="添加城市"
+            android:textColor="#fff"
+            android:textSize="20.0dip" />
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/title_bar_return" />
+
+
+    </RelativeLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="45.0dip" >
+
+        <include
+            android:id="@+id/search_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/search_box" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_container"
+             >
+
+            <FrameLayout
+                android:id="@+id/city_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <GridView
+                    android:id="@+id/city_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/hotcity"
+                    android:layout_marginTop="20dp"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" >
+                </GridView>
+
+                <!--
+                <com.mapnui.hbdt.plistview.PinnedHeaderListView
+                    android:id="@+id/citys_list"
+                    style="@style/base_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none"
+                    android:cacheColorHint="#00000000"
+                    android:focusableInTouchMode="true" />
+
+                <include
+                    android:id="@+id/citys_list_empty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    layout="@layout/base_load_empty_layout" />
+
+                <com.mapnui.hbdt.plistview.BladeView
+                    android:id="@+id/citys_bladeview"
+                    android:layout_width="30.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginRight="2dip"
+                    />
+                -->
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/search_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ListView
+                    android:id="@+id/search_list"
+                    style="@style/base_listview_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/search_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10.0dip"
+                    android:src="@drawable/city_not_found1"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

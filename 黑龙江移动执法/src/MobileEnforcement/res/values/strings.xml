@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LiaoNing地图 -->
+
+    <string name="mapactivity_map_loading">正在查找，请稍等 &#8230;</string>
+    <string name="mapactivity_query_grid">网格化信息查询</string>
+    <string name="app_name">移动执法</string>
+    <string name="main_rwgl">任务管理</string>
+    <string name="main_zhcx">综合查询</string>
+    <string name="main_hbdt">环保地图</string>
+    <string name="main_zxjk">在线监测</string>
+    <string name="main_tzgg">通知公告</string>
+    <string name="main_ydbg">移动办公</string>
+    <string name="main_more">更多</string>
+    <string name="zxjk_qi"></string>
+    <string name="zxjk_sui"></string>
+    <string name="zxjk_online"></string>
+    <string name="main_home_rwlb">任务列表</string>
+    <string name="main_home_rwcx">任务查询</string>
+    <string name="main_home_rwzp">任务指派</string>
+    <string name="main_home_rwtj">任务统计</string>
+    <string name="gis_gps_error">GPS无法获取卫星信号!</string>
+    <string name="water_PollutantTypeCode">7</string>
+    <string name="gas_PollutantTypeCode">5</string>
+    <string name="putin">提交</string>
+    <string name="cancel">取消</string>
+    <string name="type">企业类型</string>
+    <string name="region">区域</string>
+    <string name="video_neterror">网络错误，无法播放视频，请更换监控点！</string>
+
+    <!-- 所有xml文件里的中文移植在这里 -->
+    <string name="pleaseSelectWaste">请选择废物种类</string>
+    <string name="pleaseSelectChems">请选择监测因子</string>
+    <string name="pleaseSelectOuts">请选择排口</string>
+    <string name="pleaseSelectChatGraph">请选择数据展示方式</string>
+    <string name="pleaseSelectTime">请选择排放时间间隔</string>
+    <string name="pleaseSelectDate">请选择日期</string>
+    <string name="control">控制级别：</string>
+    <string name="ssdq">所属地区：</string>
+    <string name="qymc">企业名称：</string>
+    <string name="sscs">所属城市：</string>
+    <string name="ssqx">所属区县：</string>
+    <string name="qydm">企业代码：</string>
+    <string name="fddbr">法定代表人：</string>
+    <string name="shyj">审核意见：</string>
+    <string name="zxr"> 执 行 人：</string>
+    <string name="zhr"> 协 办 人：</string>
+    <string name="zshr">办 理 人：</string>
+    <string name="fshr">协 办 人：</string>
+    <string name="shjg">审核结果：</string>
+    <string name="xzqh">行政区划：</string>
+    <string name="hblxr">环保联系人：</string>
+    <string name="lxrdh">联系人电话：</string>
+    <string name="qygm">企业规模：</string>
+    <string name="ssly">所属流域：</string>
+    <string name="tcsj">投产时间：</string>
+    <string name="jcrxm">检查人姓名：</string>
+    <string name="kzlb">控制类别：</string>
+    <string name="jd">经       度：</string>
+    <string name="wd">纬      度：</string>
+    <string name="cyzc">产业政策：</string>
+    <string name="gy">《关于发展热电联产的规定》（急计基础[2000]1268号）、《关于发布〈燃煤二氧化硫排放污染防治技术政策〉的通知》（环发[2002]26号）、《关于加强燃煤电厂二氧化硫污染防治工作的通知》（环发[2003]159号）、《国家发展改革委关于燃煤电站项目规划和建设有关要求的通知》（发改能源[2004]864号）等对新扩改建的电厂进行了严格规定。符合上述文件要求的热电联产项目且安装相应脱硫设施的电厂，才能符合火电行业的产业政策。</string>
+    <string name="bc">保存</string>
+    <string name="qx">取消</string>
+    <string name="s">是</string>
+    <string name="f">否</string>
+    <string name="wsj">未涉及</string>
+    <string name="ts">提示</string>
+    <string name="tckz">图层控制</string>
+    <string name="dttcxx">地图图层选项</string>
+    <string name="wsdt">无色地图</string>
+    <string name="csdt">彩色地图</string>
+    <string name="yxdt">影像地图</string>
+    <string name="qr">确     认</string>
+    <string name="yx">取    消</string>
+    <string name="cxnxy">查询你想要</string>
+    <string name="xxdz">详细地址：</string>
+    <string name="yb">邮         编：</string>
+    <string name="jgdm">机构代码：</string>
+    <string name="scgm">生产规模：</string>
+    <string name="lxrzw">联系人职务：</string>
+    <string name="lxdh">联系电话：</string>
+    <string name="zjjd">在建进度：</string>
+    <string name="jcsj">监察时间：</string>
+    <string name="gl">《关于发展热电联产的规定》（急计基础[2000]1268号）、《关于发布〈燃煤二氧化硫排放污染防治技术政策〉的通知》（环发[2002]26号）、《关于加强燃煤电厂二氧化硫污染防治工作的通知》（环发[2003]159号）、《国家发展改革委关于燃煤电站项目规划和建设有关要求的通知》（发改能源[2004]864号）等对新扩改建的电厂进行了严格规定。符合上述文件要求的热电联产项目且安装相应脱硫设施的电厂，才能符合火电行业的产业政策。</string>
+    <string name="xxxx">详细信息</string>
+    <string name="jcqd">稽查清单</string>
+    <string name="csdw">城市单位</string>
+    <string name="qxdw">区县单位</string>
+    <string name="qxzsjdw">请选择上级单位</string>
+    <string name="cgrw">常规任务</string>
+    <string name="fsss">废水设施</string>
+    <string name="fqss">废气设施</string>
+    <string name="fspf">废水排放</string>
+    <string name="fqpf">废气排放</string>
+    <string name="gtfw">固体废物</string>
+    <string name="zsy">噪声源</string>
+    <string name="fsk">废水排放口</string>
+    <string name="fqk">废气排放口</string>
+    <string name="xcrw">现场任务</string>
+    <string name="jzz">加载中....</string>
+    <string name="zcsrqy">在此输入查询企业</string>
+    <string name="srzh">输入帐号</string>
+    <string name="zh">帐号</string>
+    <string name="mm">密码</string>
+    <string name="jzmm">记住密码</string>
+    <string name="zddl">自动登录</string>
+    <string name="swdb">收文待办</string>
+    <string name="swyb">收文已办</string>
+    <string name="fwdb">发文待办</string>
+    <string name="fwyb">发文已办</string>
+    <string name="clxq">车辆详情</string>
+    <string name="clmc">车辆名称：</string>
+    <string name="zbsj">值班司机：</string>
+    <string name="cllx">车辆类型：</string>
+    <string name="clms">车辆描述：</string>
+    <string name="gncd">功能菜单</string>
+    <string name="ckxq">查看详情</string>
+    <string name="zxjc">在线监测</string>
+    <string name="xczf">现场执法</string>
+    <string name="zfjl">执法记录</string>
+    <string name="xjrw">新建任务</string>
+    <string name="hbt">环保通</string>
+    <string name="zwsj">暂无数据……</string>
+    <string name="gd">更多</string>
+    <string name="zbcx">周边查询</string>
+    <string name="ten">10公里</string>
+    <string name="zfqd">执法清单</string>
+    <string name="cx">查询</string>
+    <string name="bddh">拨打电话</string>
+    <string name="qyjbxx">企业基本信息</string>
+    <string name="fsxx">发送信息</string>
+    <string name="tjlxr">添加联系人</string>
+    <string name="jgsc">结果上传</string>
+    <string name="rwzp">任务指派</string>
+    <string name="rwxq">任务详情</string>
+    <string name="dyqd">打印清单</string>
+    <string name="ly">录音中 ...</string>
+    <string name="zdmc">终端名称：</string>
+    <string name="xzpk">选择排口：</string>
+    <string name="rwmc">任务名称：</string>
+    <string name="rwlx">任务类型：</string>
+    <string name="rwly">任务来源：</string>
+    <string name="jjcd">紧急程度：</string>
+    <string name="rwzt">任务状态：</string>
+    <string name="ksrq">开始日期：</string>
+    <string name="jsrq">结束日期：</string>
+    <string name="jzts">列表每次加载数据条数</string>
+    <string name="k">开</string>
+    <string name="g">关</string>
+    <string name="xzqx">选择区县</string>
+    <string name="kzjb">控制级别</string>
+    <string name="srqy">   请输入企业名称</string>
+    <string name="tjqy">添加企业</string>
+    <string name="zfmb">执法模版：</string>
+    <string name="dy">第一项</string>
+    <string name="rwsc">任务上传</string>
+    <string name="rwm">*任务名称：</string>
+    <string name="rwy">任务来源：</string>
+    <string name="jsbm">*主办科室：</string>
+    <string name="dwld">审核人员：</string>
+    <string name="blry">*办理人员：</string>
+    <string name="rwms">任务描述：</string>
+    <string name="bjqx">*办结期限：</string>
+    <string name="sfhf">是否回复：</string>
+    <string name="wxx">该科室暂无人员信息！</string>
+    <string name="qux">全选</string>
+    <string name="fx">反选</string>
+    <string name="qd">确  定</string>
+    <string name="xtzc">系统注册</string>
+    <string name="zcsq">注册申请</string>
+    <string name="xtrz">系统认证</string>
+    <string name="spjk">视频监控</string>
+    <string name="xcbl">现场笔录</string>
+    <string name="fr">法人姓名：</string>
+    <string name="dz">详细地址：</string>
+    <string name="zcy">中成药</string>
+    <string name="jg">机构代码：</string>
+    <string name="hyfl">制造行业分类</string>
+    <string name="sfyy">否化学药品原药</string>
+    <string name="hxzp">化学药品制剂</string>
+    <string name="syyp">兽用药品</string>
+    <string name="wscl">卫生材料及医药用品</string>
+    <string name="swp">生物、生化制品</string>
+    <string name="st">视图</string>
+    <string name="cbsj">超标数据</string>
+    <string name="sssj">实时数据</string>
+    <string name="xssj">小时数据</string>
+    <string name="zxsp">在线视频</string>
+    <string name="search_tips">请输入任务名称</string>
+    <string name="zf">执       法</string>
+    <string name="jyzf">        简易执法</string>
+    <string name="gtzf">        共同执法人</string>
+    <string name="qk">清    空</string>
+    <string name="action_settings">清    空</string>
+    <string name="create_V_YDZF_RWXX">CREATE VIEW [V_YDZF_RWXX]
+AS
+SELECT
+* FROM T_YDZF_RWXX left  join T_WRY_QYJBXX on T_YDZF_RWXX.QYDM=T_WRY_QYJBXX.QYDM</string>
+    <string name="create_V_YDZF_RWXX_B">CREATE VIEW [V_WRY_ZXJK_GasOutputPollutant]
+AS
+select distinct b.* from [T_WRY_ZXJK_GasOutput] a left  join [T_WRY_ZXJK_OutputPollutant] b on 
+a.OutportCode=b.OutportCode and a.entcode=b.entcode left join T_WRY_ZXJK_Pollutant
+ c on b.PollutantCode = c.PollutantCode</string>
+    <string name="create_V_WRY_ZXJK_WaterOutputPollutant">CREATE VIEW [V_WRY_ZXJK_WaterOutputPollutant]
+AS
+select distinct b.* from [T_WRY_ZXJK_WaterOutput] a left  join [T_WRY_ZXJK_OutputPollutant] b on 
+a.OutportCode=b.OutportCode and a.entcode=b.entcode left join T_WRY_ZXJK_Pollutant
+ c on b.PollutantCode = c.PollutantCode</string>
+    <string name="create_V_WRY_HPSTSYS">CREATE VIEW [V_WRY_HPSTSYS]
+    AS
+    SELECT * FROM T_WRY_HPSTSYS LEFT JOIN T_WRY_QYJBXX ON T_WRY_HPSTSYS . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_WRY_PWXKZ">CREATE VIEW [V_WRY_PWXKZ]
+    AS
+    SELECT * FROM T_WRY_PWXKZ LEFT JOIN T_WRY_QYJBXX ON T_WRY_PWXKZ . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_WRY_XFTS">CREATE VIEW [V_WRY_XFTS]
+    AS
+    SELECT * FROM T_WRY_XFTS LEFT JOIN T_WRY_QYJBXX ON T_WRY_XFTS . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_WRY_XQZL">CREATE VIEW [V_WRY_XQZL]
+    AS
+    SELECT * FROM T_WRY_XQZL LEFT JOIN T_WRY_QYJBXX ON T_WRY_XQZL . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_WRY_XZCF">CREATE VIEW [V_WRY_XZCF]
+    AS
+    SELECT * FROM T_WRY_XZCF LEFT JOIN T_WRY_QYJBXX ON T_WRY_XZCF . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_ZDWRY_GLJBQK">CREATE VIEW [V_ZDWRY_GLJBQK]
+    AS
+    SELECT * FROM T_ZDWRY_GLJBQK LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_GLJBQK . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_ZDWRY_GTFW">CREATE VIEW [V_ZDWRY_GTFW]
+    AS
+    SELECT * FROM T_ZDWRY_GTFW LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_GTFW . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_ZDWRY_SCCLGY">CREATE VIEW [V_ZDWRY_SCCLGY]
+    AS
+    SELECT * FROM T_ZDWRY_SCCLGY LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_SCCLGY . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_ZDWRY_WXFW">CREATE VIEW [V_ZDWRY_WXFW]
+    AS
+    SELECT * FROM T_ZDWRY_WXFW LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_WXFW . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_ZDWRY_YFCL">CREATE VIEW [V_ZDWRY_YFCL]
+    AS
+    SELECT * FROM T_ZDWRY_YFCL LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_YFCL . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_ZDWRY_YLJBQK">CREATE VIEW [V_ZDWRY_YLJBQK]
+    AS
+    SELECT * FROM T_ZDWRY_YLJBQK LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_YLJBQK . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_ZDWRY_ZYCP">CREATE VIEW [V_ZDWRY_ZYCP]
+    AS
+    SELECT * FROM T_ZDWRY_ZYCP LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_ZYCP . QYDM = T_WRY_QYJBXX . QYDM</string>
+    <string name="create_V_WHY_QYJBXX">CREATE VIEW [V_WHY_QYJBXX]
+    AS
+    SELECT * FROM T_WRY_QYJBXX LEFT JOIN Region ON T_WRY_QYJBXX . XZQH = Region . Regioncode</string>
+    <string name="create_V_WHY_WHP">CREATE VIEW [V_WHY_WHP]
+    AS
+    SELECT * FROM T_ZSK_DangerChem LEFT JOIN KINDTYPE ON T_ZSK_DangerChem . XZQH = KINDTYPE . KINDCODE</string>
+
+    <!--
+    <string name="select_T_SpecialItem">
+    SELECT TID,SpecialItemID,SpecialItemLevel,SpecialItemContent,ResultTypeID,IsLoadLastResult, RemarkTip 
+    FROM YDZF_IndustrySpacialItem WHERE TID = 
+    (SELECT IndustryID FROM YDZF_EnterIndustry WHERE EnterID = 
+    (SELECT QYDM FROM  T_YDZF_RWXX where RWBH =
+    </string>
+    -->
+
+    <string name="select_SpecialItem_FatherNode">  	SELECT * FROM YDZF_SpecialItem WHERE ID = 
+  	(SELECT PID FROM YDZF_SpecialItem WHERE ID =</string>
+    <string name="title_activity_zxjc_detail">ZxjcDetailActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="title_activity_supervise_card">SuperviseCardActivity</string>
+
+</resources>

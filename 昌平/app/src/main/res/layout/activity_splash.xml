@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcomeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/activity_load_bg" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="昌平区环境监管信息平台"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="55dp"
+            android:src="@mipmap/white_envirenment_icon"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:textColor="@color/black"
+
+        android:textSize="@dimen/DIMEN_25SP"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:id="@+id/textView" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginBottom="@dimen/DIMEN_10dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昌平区环境监管信息平台"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/versionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Companyname"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+          />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:ignore="UselessParent" >
+
+        <TextView
+            android:id="@+id/dummyTips"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/dummy_button"
+            android:textColor="#fff" />
+
+        <ProgressBar
+            android:id="@+id/unzip_indicator"
+            style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progressbar_drawable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/transparent"/>
+
+</LinearLayout>

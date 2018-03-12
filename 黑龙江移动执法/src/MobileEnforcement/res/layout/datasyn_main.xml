@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/set_system"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:text="数据同步"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <Button
+            android:id="@+id/datasyn_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_button_datasync"
+            android:padding="5dp"
+            android:text="同步全部" />
+
+        <Button
+            android:id="@+id/datasyn_lastest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/datasyn_all"
+            android:layout_alignBottom="@+id/datasyn_all"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/datasyn_all"
+            android:background="@drawable/bg_button_datasync"
+            android:padding="5dp"
+            android:text="同步最新" />
+
+        <CheckBox
+            android:id="@+id/datasyn_all_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/datasyn_lastest"
+            android:layout_alignBottom="@+id/datasyn_lastest"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/datasyn_check_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/datasyn_all_check"
+            android:layout_alignBottom="@+id/datasyn_all_check"
+            android:layout_toLeftOf="@+id/datasyn_all_check"
+            android:text="全选："
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/datasyn_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

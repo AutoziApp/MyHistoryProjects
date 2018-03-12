@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="#f4f4f4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/faceImga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:src="@mipmap/login" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="60dip">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="#d2d2d2" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/login_edit_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:completionThreshold="25"
+                    android:hint="输入账号"
+                    android:maxLength="16"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="13dp"
+                    android:saveEnabled="true" />
+
+
+                <ImageView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/login_edit_account"
+                    android:layout_alignLeft="@+id/login_edit_account"
+                    android:layout_alignTop="@+id/login_edit_account"
+                    android:layout_marginRight="15.0sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:src="@mipmap/yonghu" />
+
+                <!--  <ImageView
+                      android:id="@+id/down_list_ImageButton"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignBottom="@+id/login_edit_account"
+                      android:layout_alignRight="@+id/login_edit_account"
+                      android:layout_alignTop="@+id/login_edit_account"
+                      android:layout_marginRight="13dp"
+                      android:src="@drawable/xiala_login" >
+                  </ImageView>-->
+
+                <EditText
+                    android:id="@+id/login_edit_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/login_edit_account"
+                    android:layout_alignRight="@+id/login_edit_account"
+                    android:layout_below="@+id/login_edit_account"
+                    android:layout_marginRight="1.0dip"
+                    android:background="@null"
+                    android:hint="输入密码"
+                    android:maxLength="16"
+                    android:paddingBottom="13dp"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="13dp"
+                    android:password="true"
+                    android:saveEnabled="true"></EditText>
+
+               <!-- <CheckBox
+                    android:id="@+id/hide_pass_ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/login_edit_pwd"
+                    android:layout_alignRight="@+id/login_edit_pwd"
+                    android:layout_alignTop="@+id/login_edit_pwd"
+                    android:layout_marginRight="13dp"></CheckBox>-->
+
+                <ImageView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/login_edit_pwd"
+                    android:layout_alignRight="@+id/TextView01"
+                    android:layout_alignTop="@+id/login_edit_pwd"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="13dp"
+                    android:src="@mipmap/mima"/>
+            </RelativeLayout>
+
+             <TableLayout
+                  android:id="@+id/TableLayout01"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="15dip"
+                  android:layout_marginRight="15dip"
+                  android:layout_marginTop="30dip"
+                  android:stretchColumns="1" >
+
+             <TableRow>
+
+                 <CheckBox
+                     android:id="@+id/login_cb_visible"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="记住密码" />
+
+
+
+                 <TextView
+                     android:id="@+id/login_sz"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="right|center_vertical"
+                     android:gravity="center"
+                     android:visibility="gone"
+                     android:text="服务器IP设置"
+                     android:textColor="#023980" />
+
+
+             </TableRow>
+         </TableLayout>-->
+
+            <Button
+                android:id="@+id/login_btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="30dip"
+                android:background="@mipmap/click"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="登    录"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_IP"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_gravity="center|end"
+                android:layout_height="40dp"
+                android:text=">>IP设置"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

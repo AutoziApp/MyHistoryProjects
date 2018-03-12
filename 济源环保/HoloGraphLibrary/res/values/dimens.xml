@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="textsize">40px</dimen>
+    
+    <dimen name="ttt">14px</dimen>
+    <dimen name="ciclesize">4px</dimen>
+    <dimen name="linesize">2px</dimen>
+    <dimen name="tem_text_size">14px</dimen>
+    <dimen name="line_size1">50px</dimen>
+    <dimen name="pointsize1">6px</dimen>
+    <dimen name="circlealphasize">10px</dimen>
+    <dimen name="upsize">45px</dimen>
+    <dimen name="downsize">15px</dimen>
+    <dimen name="linesize1">3px</dimen>
+</resources>

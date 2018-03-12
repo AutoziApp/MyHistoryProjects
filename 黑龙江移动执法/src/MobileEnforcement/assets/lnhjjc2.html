@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+  
+ 
+    <style type="text/css">
+        table
+        {
+            text-align: center;
+            font-size: 12pt;
+            width: 800px;
+            margin-top: 5px;
+        }
+        
+        div
+        {
+            word-break: break-all;
+            
+        }
+        
+        input
+        {
+            margin-left: 0px;
+        }
+       
+      
+      	
+    </style>
+    
+    
+</head>
+<body>
+   <form id="form1" runat="server">
+    <center>
+        <center style="text-align: center; font-size: 18pt; font-weight: bold; margin-top: 70px">
+            现场监察记录单
+        </center>
+        <table border="1" cellpadding="1" cellspacing="0">
+            <tr  height="30">
+                <td width="38" rowspan="9">
+                    基本情况
+                </td>
+                <td colspan="2">
+                    企业名称
+                </td>
+                <td colspan="3">
+                    <span id="qymc" runat="server">{qymc}</span>
+                </td>
+                <td width="91">
+                    行业类别
+                </td>
+                <td width="141">
+                    <span id="hylb" runat="server">{hylb}</span>
+                </td>
+            </tr>
+            <tr  height="30">
+                <td colspan="2">
+                    详细地址
+                </td>
+                <td colspan="3">
+                    <span id="xxdz" runat="server">{xxdz}</span>
+                </td>
+                <td>
+                    法定代表人
+                </td>
+                <td>
+                    <span id="fddbr" runat="server">{fddbr}</span>
+                </td>
+            </tr>
+            <tr  height="30">
+                <td height="24" colspan="2">
+                    环保负责人
+                </td>
+                <td width="109">
+                    <span id="hbfzr" runat="server">{hbfzr}</span>
+                </td>
+                <td width="96">
+                    联系电话
+                </td>
+                <td width="136">
+                    <span id="lxdh" runat="server">{lxdh}</span>
+                </td>
+                <td>
+                    何种减排指标
+                </td>
+                <td>
+                    <span id="jpzb" runat="server">{jpzb}</span>
+                </td>
+            </tr>
+            <tr  height="26">
+                <td colspan="2">
+                    是否国控重点污染源
+                </td>
+                <td colspan="3">
+                    废气
+                    <input type="checkbox" id="fqtype" value="废气" runat="server" {fqtype} />&nbsp;&nbsp; 废水
+                    <input type="checkbox" id="fstype" value="废水" runat="server" {fstype}  />&nbsp;&nbsp;水处理厂
+                    <input type="checkbox" id="sclctype" value="水处理厂" runat="server" {sclctype}  />&nbsp;&nbsp;重金属
+                    <input type="checkbox" id="zjstype" value="重金属" runat="server" {zjstype}  />&nbsp;&nbsp;否
+                    <input type="checkbox" id="foutype" value="否" {foutype} />
+                </td>
+                <td>
+                    主要污染指标
+                </td>
+                <td>
+                    <span id="wrzb" runat="server">{wrzb}</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="4">
+                    生产情况
+                </td>
+                <td>
+                    目前生产状况
+                </td>
+                <td colspan="2">
+                    正常生产
+                    <input type="checkbox" id="zcsctype" value="正常生产" runat="server" {SCQK_SCZK0} />&nbsp;&nbsp;&nbsp;&nbsp;
+                    停产
+                    <input type="checkbox" id="tctype" value="停产" runat="server" {SCQK_SCZK1} />
+                </td>
+                <td rowspan="4">
+                    排污费缴纳情况
+                </td>
+                <td>
+                    废水
+                    {JFQK_FS}
+                    元/月
+                </td>
+            </tr>
+            <tr>
+                <td height="34" rowspan="2">
+                    主要原料及用量
+                </td>
+                <td colspan="2" rowspan="2">
+                    <div  id="yljyl" runat="server">{SCQK_YLYL}
+                    </div>
+                </td>
+                <td>
+                    废气
+                    {JFQK_FQ}
+                    元/月
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    噪声
+                   {JFQK_ZS}
+                    元/月
+                </td>
+            </tr>
+            <tr>
+                <td height="34">
+                  
+                        主要产品及产量
+                </td>
+                <td colspan="2">
+                    <div  id="cpjcl" runat="server">{SCQK_CPCL}
+                    </div>
+                </td>
+                <td>
+                    废渣
+                   {JFQK_FZ}
+                    元/月
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    建设项目执行环保制度情况
+                </td>
+                <td>
+                    未经审批建设情况
+                </td>
+                <td>
+                    <div  id="wspjsqk" runat="server">
+                    {HBZD_WSPJS}
+                    </div>
+                </td>
+                <td>
+                    未按期验收情况
+                </td>
+                <td colspan="2">
+                    <div  id="waqysqk" runat="server">
+                    {HBZD_WAQYS}
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="6">
+                    污染治理设施建设运行情况
+                </td>
+                <td colspan="2" height="39px">
+                    废水治理设施建设运行情况
+                </td>
+                <td colspan="5"  align="left">
+                    {WRZL_FS}
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="39px">
+                    废气治理设施运行情况
+                </td>
+                <td colspan="5" align="left">
+                    {WRZL_FQ}
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="39px">
+                    污染物自动监控系统运行情况
+                </td>
+                <td colspan="5"  align="left">
+                    {WRZL_WRW}
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="39px">
+                    固体废物治理设施运行情况
+                </td>
+                <td colspan="5" align="left">
+                   {WRZL_GTFW}
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="39px">
+                    噪声治理设施运行情况
+                </td>
+                <td colspan="5" align="left">
+                    {WRZL_ZS}
+                   
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="41px">
+                    新污水地方排放标准后污水处理设施升级改造
+                </td>
+                <td colspan="5" align="left">
+                   {WRZL_XWS}
+                    
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="12">
+                    污染物排放情况
+                </td>
+                <td width="41" rowspan="4">
+                    废水
+                </td>
+                <td width="96" height="30px">
+                    排放去向
+                </td>
+                <td colspan="2" height="30px">
+                    监测超标因子及浓度
+                </td>
+                <td height="30px">
+                    超标因子排放标准
+                </td>
+                <td colspan="2" height="30px">
+                    超标原因
+                </td>
+            </tr>
+            <tr height="30px">
+                <td>
+                    <div  id="pfqx" runat="server" >{WRW_FS_PFQX}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="cbyznd" runat="server">{WRW_FS_YZND}
+                    </div>
+                </td>
+                <td>
+                    <div  id="cbyzpfbz" runat="server">{WRW_FS_PFBZ}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="cbyy" runat="server">{WRW_FS_CBYY}
+                    </div>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td>
+                    在线监测超标情况
+                </td>
+                <td colspan="2">
+                    超标原因
+                </td>
+                <td>
+                    上季度监督性监测超标情况
+                </td>
+                <td colspan="2">
+                    上季度在线监测超标情况
+                </td>
+            </tr>
+            <tr height="30px">
+                <td>
+                    <div  id="zxjccbqk" runat="server">{WRW_FS_ZXJC}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="cbyy_c" runat="server">{WRW_FS_CBYY1}
+                    </div>
+                </td>
+                <td>
+                    <div  id="jdxjccbqk" runat="server">{WRW_FS_JDJC}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="sjdzxjccbqk" runat="server">{WRW_FS_ZXJCCB}
+                    </div>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td rowspan="4">
+                    废气
+                </td>
+                <td>
+                    考核时段
+                </td>
+                <td colspan="2">
+                    监测超标因子及浓度
+                </td>
+                <td>
+                    超标因子排放标准
+                </td>
+                <td colspan="2">
+                    超标原因
+                </td>
+            </tr>
+            <tr height="30px">
+                <td>
+                    <div  id="khsd" runat="server">{WRW_FQ_KHSD}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="cbyznd_c" runat="server">{WRW_FQ_YZND}
+                    </div>
+                </td>
+                <td>
+                    <div  id="cbyzpfbz_c" runat="server">{WRW_FQ_PFBZ}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="cbyy_cc" runat="server">{WRW_FQ_CBYY}
+                    </div>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td>
+                    在线监测超标情况
+                </td>
+                <td colspan="2">
+                    超标原因
+                </td>
+                <td>
+                    上季度监督性监测超标情况
+                </td>
+                <td colspan="2">
+                    上季度在线监测超标情况
+                </td>
+            </tr>
+            <tr height="30px">
+                <td>
+                    <div  id="zxjccbqk_c" runat="server">{WRW_FQ_ZXJC}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="cbyy_ccc" runat="server">{WRW_FQ_CBYY1}
+                    </div>
+                </td>
+                <td>
+                    <div  id="jdxjccbqk_c" runat="server">{WRW_FQ_JDJC}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="sjdzxjccbqk_c" runat="server">{WRW_FQ_ZXJCCB}
+                    </div>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td rowspan="2">
+                    固体废物
+                </td>
+                <td colspan="2">
+                    一般固体废物处置情况
+                </td>
+                <td colspan="2">
+                    危险废物暂存情况
+                </td>
+                <td colspan="2">
+                    危险废物转移情况
+                </td>
+            </tr>
+            <tr height="30px">
+                <td colspan="2">
+                    <div  id="ybgtfw" runat="server">{WRW_GTFW_FWCZ}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="wxfwzc" runat="server">{WRW_GTFW_FWZC}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="wxfwzy" runat="server">{WRW_GTFW_FWZY}
+                    </div>
+                </td>
+            </tr>
+            <tr height="30px">
+                <td rowspan="2">
+                    噪声
+                </td>
+                <td>
+                    功能区域
+                </td>
+                <td>
+                    排放标准
+                </td>
+                <td colspan="2">
+                    监测超标情况
+                </td>
+                <td colspan="2">
+                    超标原因
+                </td>
+            </tr>
+            <tr height="30px">
+                <td>
+                    <div  id="gnqy" runat="server">{WRW_ZS_GNQY}
+                    </div>
+                </td>
+                <td>
+                    <div  id="pfbz" runat="server">{WRW_ZS_PFBZ}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="jccbqk" runat="server">{WRW_ZS_JCCB}
+                    </div>
+                </td>
+                <td colspan="2">
+                    <div  id="cbyy_cccc" runat="server">{WRW_ZS_CBYY}
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    存在环境问题及意见
+                </td>
+                <td colspan="7" align="left">
+                    {CZHJWT}
+                    
+                </td>
+            </tr>
+        </table>
+        <table  cellpadding="1" cellspacing="0">
+            <tr>
+                <td style="width: 200px; text-align:left;">
+                    现场检查机构：
+                </td>
+                <td style="width: 200px;">
+                </td>
+                <td style="width: 200px;text-align:right;">
+                被调查单位负责人签字:
+                </td>
+                <td style="width: 200px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px;text-align:left;">
+                现场监察人员及执法证号：
+                </td>
+                <td style="width: 200px;">
+                </td>
+                <td style="width: 200px;">
+                </td>
+                <td style="width: 200px; text-align:right;">
+                {year}年{month}月{day}日
+                </td>
+            </tr>
+			<tr>
+                <td style="width: 200px;text-align:left;">
+                
+                </td>
+                <td style="width: 200px;">
+                </td>
+                <td style="width: 200px;">
+                </td>
+                <td style="width: 200px; text-align:right;">
+                </td>
+            </tr>
+        </table>
+    </center>
+    </form>
+</body>
+</html>

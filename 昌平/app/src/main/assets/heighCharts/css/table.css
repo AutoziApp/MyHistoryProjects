@@ -1,0 +1,78 @@
+.chars-table {
+	border: solid #add9c0;
+	width: 100%;
+	border-width: 1px 0px 0px 1px;
+	text-align: center;
+	margin: 0px;
+}
+
+.chars-table-title {
+	border: solid #add9c0;
+	border-width: 0px 1px 1px 0px;
+	padding: 5px 0px;
+}
+
+.chars-table-title-unit {
+	font-size: 14px;
+	font-family: 'Times New Roman', 'Microsoft YaHei';
+	float: right;
+}
+
+.chars-table-pollute-data {
+	border: solid #add9c0;
+	border-width: 0px 1px 1px 0px;
+	padding: 5px 0px;
+	align: center;
+}
+.chars-table-color-title{
+	background: #6495ED;
+}
+.chars-table-color-single{
+	background: #B0E2FF;
+}
+.chars-table-color-both{
+	background: #B0E2FF;
+}
+.indicator-btn,
+button,
+input[type=button], 
+input[type=reset],
+input[type=submit] {
+	width: 49%;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+	padding: 6px 0px;
+	cursor: pointer;
+	-webkit-transition: all;
+	transition: all;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	-webkit-transition-duration: .2s;
+	transition-duration: .2s;
+	text-align: center;
+	vertical-align: top;
+	white-space: nowrap;
+	color: #333;
+	border: 1px solid #ccc;
+	/*border-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;*/
+	background-color: #fff;
+	background-clip: padding-box
+}
+.mui-btn-blue,
+.mui-btn-primary,
+input[type=submit] {
+	color: #fff;
+	border: 1px solid #007aff;
+	background-color: #007aff
+}
+.mui-btn-outlined {
+	background-color: transparent
+}

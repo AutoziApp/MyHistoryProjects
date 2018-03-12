@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/tv_kzjb"
+        android:textColor="@color/item_group_text"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:text="控制级别"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    
+
+    <TextView
+        android:id="@+id/tv_carNumber"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="车辆数"
+        android:textColor="@color/item_group_text"
+        android:textSize="16sp"/>
+    
+    <TextView
+        android:id="@+id/tv_pfl"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="排放量"
+        android:textColor="@color/item_group_text"
+        android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/yy4"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#3B506F"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/environment_rank_itemf_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/update_btn"
+            android:visibility="gone"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:id="@+id/environment_rank_detailstv16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="微站"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="@drawable/weather_line_title" />
+
+    <LinearLayout
+        android:id="@+id/line_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/itemf_paiming"
+        android:layout_centerHorizontal="true"
+        android:background="#f4f4f4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="排名"
+            android:textColor="#313131" />
+
+        <LinearLayout
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="5" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/rank_focus" />
+
+            <TextView
+                android:layout_width="0.0dp"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="微站名称"
+                android:textColor="#313131" />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/air_polluction"
+            style="@style/spinner_style"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            />
+<!--         <TextView
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="AQI指数"
+            android:textColor="#313131" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#f4f4f4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="5"
+            android:gravity="center_vertical|left"
+            android:text=""
+            android:textColor="#313131" />
+
+        <TextView
+            android:id="@+id/paiming_paixu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/paiming_paixu_btn_pre_style"
+            android:drawableLeft="@drawable/paiming_show_btn_style"
+            android:gravity="center"
+            android:paddingBottom="3dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="3dip"
+            android:text="排序切换"
+            android:textColor="#313131" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/environment_current_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line_layout1"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/search_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/network_error"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/itemf_paiming"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="192"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+</RelativeLayout>

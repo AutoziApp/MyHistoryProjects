@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>检测过程数据</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--公共头部-->
+<div class="head">
+    <img src="images/fanhuianniu.png">
+    <p>检测过程数据</p>
+</div>
+<!--查询条件-->
+<div id="search_option">
+    <table>
+        <tr>
+            <td style="width: 30%;">开始时间：</td>
+            <td style="width: 70%;" colspan="2">
+                <input style="width: 98%;border: 1px solid #ddd;height: 30px;padding-left: 2%;" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 30%;">结束时间：</td>
+            <td style="width: 70%;" colspan="2">
+                <input style="width: 98%;border: 1px solid #ddd;height: 30px;padding-left: 2%;" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 30%;">车辆类型：</td>
+            <td style="width: 70%;">
+                <input style="width: 70%;height: 30px;border: 1px solid #ddd;padding-left: 2%;" type="text">
+          		<button id="video" class="search_btn" style="margin-left:10px">查询</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<!--表格-->
+<div id="main_table_gc">
+    <table>
+        <thead>
+        <tr>
+            <th style="width:25%">车牌号码</th>
+            <th style="width:25%">车牌颜色</th>
+            <th style="width:25%">监测站名字</th>
+            <th style="width:25%">检测人员</th>
+        </tr>
+        </thead>
+        <tbody class="tbody">
+        <tr>
+            <td>鄂A43W81</td>
+            <td>蓝色</td>
+            <td class="name">驿安</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+            <td>鄂BGU308</td>
+            <td>蓝色</td>
+            <td class="name">安楚</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+            <td>鄂Q3333P</td>
+            <td>蓝色</td>
+            <td class="name">中远</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+             <td>鄂M95W21</td>
+            <td>蓝色</td>
+            <td class="name">俪湖</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+            <td>鄂FGU308</td>
+            <td>蓝色</td>
+            <td class="name">安安</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+            <td>鄂HBS300</td>
+            <td>蓝色</td>
+            <td class="name">万畅</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+            <td>鄂R60R78</td>
+            <td>蓝色</td>
+            <td class="name">安达</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+           <td>鄂JCW303</td>
+            <td>蓝色</td>
+            <td class="name">保都</td>
+            <td>程度</td>
+            <td>无</td>
+        </tr>
+        <tr>
+            <td>鄂KAQ616</td>
+            <td>蓝色</td>
+            <td class="name">宏运</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+            <td>鄂E15637</td>
+            <td>蓝色</td>
+            <td class="name">鑫诚</td>
+            <td>程度</td>
+        </tr>
+        <tr>
+            <td>鄂P96F78</td>
+            <td>蓝色</td>
+            <td class="name">汇海</td>
+            <td>程度</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- 添加弹出框 -->
+<div class="addModal">
+    <div class="addModal-dialog">
+        <div class="addModal-content">
+            <p class="addModalTitle">
+                <span style="margin-left: 20px;margin-right: 20px;">视频</span><u title="关闭">×</u>
+            </p>
+            <div>
+                <video src="http://www.w3cschool.cc/try/demo_source/mov_bbb.mp4" width="100%" height="240" controls autobuffer autoplay></video>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    //弹出默认窗口
+     $(".tbody>tr").click(function(){
+    	 $('.addModal').show();
+    })
+//  $('#video').click(function(){
+//      $('.addModal').show();
+//  });
+    $('.addModalTitle u').click(function(){
+        $('.addModal').hide();
+    });
+</script>

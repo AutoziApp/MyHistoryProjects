@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="btn_back_margin_left">10dip</dimen>
+    <dimen name="btn_margin_left">5dip</dimen>
+    <dimen name="top_bar_progressbar_margin_right">10dip</dimen>
+    <dimen name="attach_height">10dip</dimen>
+    <dimen name="padding">4dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

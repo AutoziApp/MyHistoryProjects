@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zaosheng_bac"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/yun"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp" >
+
+        <!-- android:background="@color/top_bg" -->
+
+        <ImageView
+            android:id="@+id/record_return_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="噪声监测"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5px"
+        android:background="@drawable/weather_line_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/zaosheng_textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="65"
+            android:textColor="@color/white"
+            android:textSize="100dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/zaosheng_textView3"
+            android:layout_alignBottom="@+id/zaosheng_textView3"
+            android:layout_toRightOf="@+id/zaosheng_textView3"
+            android:text="分贝"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bodong_pic"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_noise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <ImageView
+                android:id="@+id/zaosheng_qq_pic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/zaosheng_start" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/zaosheng_qq_pic"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/zaosheng_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/zaosheng_text_pic"
+                    android:gravity="center"
+                    android:text="56"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/zaosheng_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/zaosheng_text_pic"
+                    android:gravity="center"
+                    android:text="56"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/zaosheng_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/zaosheng_text_pic"
+                    android:gravity="center"
+                    android:text="56"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/zaosheng_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/zaosheng_text_pic"
+                    android:gravity="center"
+                    android:text="56"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/zaosheng_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/zaosheng_text_pic"
+                    android:gravity="center"
+                    android:text="56"
+                    android:textColor="@color/white"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/zaosheng_suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/zaosheng_qq_pic"
+                android:text="我是Q博士，悄悄告诉你，测一测平均值，结果更准确！"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/zaosheng_btn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/zaosheng_suggestion"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/zaosheng_qq_pic"
+                android:background="@drawable/zaosheng_btn_pic"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="测一测平均值"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/record_title_share"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/zaosheng_btn"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/zaosheng_btn_pic_little"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="分享"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/zaosheng_textView3"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="86dp"
+            android:text="实时噪声"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/noise_history_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/noise_history_button" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/text_history"
+                android:background="@drawable/noise_history_icon" />
+
+            <TextView
+                android:id="@+id/text_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:text="查看噪声历史数据"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

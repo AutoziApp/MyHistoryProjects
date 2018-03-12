@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pager_title">
+        <item>企业基本信息</item>
+        <item>建设项目管理</item>
+        <item>环境统计</item>
+        <item>排污申报收费</item>
+        <item>信访投诉</item>
+    </string-array>
+    <string-array name="info_title">
+        <item>企业基本信息</item>
+    </string-array>
+    <string-array name="build_title">
+        <item>建设项目环评</item>
+        <item>建设项目验收</item>
+        <!--<item>项目变更</item>-->
+    </string-array>
+    <string-array name="environment_title">
+        <item>污染物排放分析</item>
+        <item>能源消耗分析</item>
+        <item>固废、危废排放分析</item>
+    </string-array>
+    <string-array name="grain_title">
+        <item>排污申报</item>
+        <item>排污收费</item>
+    </string-array>
+    <string-array name="letter_title">
+        <item>来访投诉</item>
+    </string-array>
+    <string-array name="info_list_key">
+        <!--PolSorCode,EntName,PolluterAbbreviation,EntAddress,Name,name1,
+        Longitude,Latitude,name2,FK_EIADirectoryIndustry,name3,name4,name5,
+        name6,FK_ReceivingWater,name7,LegalIDCardNum,LegalPersonTel,EnvPorPersonName,
+        EnvPorPersonTel,IfRiskSourceEnterprise,FK_EntAttributeType,UpdateDate,DataSource-->
+        <item>PolSorCode</item>
+        <item>EntName</item>
+        <item>PolluterAbbreviation</item>
+        <item>EntAddress</item>
+        <item>Name</item>
+        <item>name1</item>
+        <item>Longitude</item>
+        <item>Latitude</item>
+        <item>name2</item>
+        <item>FK_EIADirectoryIndustry</item>
+        <item>name3</item>
+        <item>name4</item>
+        <item>name5</item>
+        <item>name6</item>
+        <item>FK_ReceivingWater</item>
+        <item>name7</item>
+        <item>LegalIDCardNum</item>
+        <item>LegalPersonTel</item>
+        <item>EnvPorPersonName</item>
+        <item>EnvPorPersonTel</item>
+        <item>IfRiskSourceEnterprise</item>
+        <item>FK_EntAttributeType</item>
+        <item>UpdateDate</item>
+        <item>DataSource</item>
+    </string-array>
+    <string-array name="info_list">
+        <item>污染源编码:</item>
+        <item>污染源名称:</item>
+        <item>曾用名:</item>
+        <item>污染源地址:</item>
+        <item>所属街镇:</item>
+        <item>社区/村:</item>
+        <item>经度:</item>
+        <item>纬度:</item>
+        <item>国民经济行业类别:</item>
+        <item>环评名录行业分类:</item>
+        <item>六大行业:</item>
+        <item>污染类别:</item>
+        <item>监控等级:</item>
+        <item>污染源类型:</item>
+        <item>受纳水体名称:</item>
+        <item>污染源状态:</item>
+        <item>法人身份证号码:</item>
+        <item>法人代表联系电话:</item>
+        <item>环保联系人:</item>
+        <item>环保联系人电话:</item>
+        <item>是否风险源:</item>
+        <item>属性类别:</item>
+        <item>数据入库时间:</item>
+        <item>数据来源:</item>
+    </string-array>
+    <string-array name="build_assess_itemname_key">
+        <item>id</item>
+        <item>itemname</item>
+    </string-array>
+    <string-array name="build_assess_key">
+        <item>constructionunitname</item>
+        <item>atypename</item>
+        <item>approvalnumber</item>
+        <item>approvaldate</item>
+        <item>buildname</item>
+        <item>dataname</item>
+    </string-array>
+    <string-array name="build_assess_list">
+        <item>建设单位:</item>
+        <item>环评类别:</item>
+        <item>批复文号:</item>
+        <item>审批时间:</item>
+        <item>建设性质:</item>
+        <item>数据来源:</item>
+    </string-array>
+    <string-array name="build_accept_itemname_key">
+        <item>id</item>
+        <item>projectname</item>
+    </string-array>
+    <string-array name="build_accept_info_key">
+        <item>entname</item>
+        <item>acceptnumber</item>
+        <item>apprreplynumber</item>
+        <item>projectoverview</item>
+        <item>epmcompletestatus</item>
+        <item>accereplynumber</item>
+        <item>acceptanceopinion</item>
+        <item>asfk_acctype</item>
+        <item>acceptancedate</item>
+        <item>updatedate</item>
+        <item>datasource</item>
+    </string-array>
+    <string-array name="build_accept_list">
+        <item>建设单位:</item>
+        <item>受理编码:</item>
+        <item>环评批复文号:</item>
+        <item>项目概况:</item>
+        <item>环保措施落实情况:</item>
+        <item>验收批复文号:</item>
+        <item>验收意见:</item>
+        <item>验收种类:</item>
+        <item>验收时间:</item>
+        <item>数据入库时间:</item>
+        <item>数据来源:</item>
+    </string-array>
+    <!--SYW_YCPFL, FQ_PFL_EYHL,SYW_SCGYGZZPFL,FS_PFL_HXXYL,FS_PFL_AD-->
+    <string-array name="environment_out_list_key">
+        <item>syw_ycpfl</item>
+        <item>fq_pfl_eyhl</item>
+        <item>syw_scgygzzpfl</item>
+        <item>fs_pfl_hxxyl</item>
+        <item>fs_pfl_ad</item>
+    </string-array>
+    <string-array name="environment_out_list">
+        <item>烟尘/吨:</item>
+        <item>二氧化硫/吨:</item>
+        <item>氮氧化物/吨:</item>
+        <item>化学需氧物/吨:</item>
+        <item>氨氮/吨:</item>
+    </string-array>
+    <string-array name="environment_expend_list">
+        <item>生产时间/小时:</item>
+        <item>工业用水量/吨:</item>
+        <item>煤炭消耗量/吨:</item>
+        <item>用电量/万千瓦时:</item>
+        <item>其他燃料消耗/吨:</item>
+    </string-array>
+    <string-array name="environment_rubbish_out_list">
+        <item>废物名称:</item>
+        <item>废物产生量:</item>
+        <item>废物综合利用量:</item>
+        <item>废物处置量:</item>
+        <item>废物储存量:</item>
+    </string-array>
+
+</resources>

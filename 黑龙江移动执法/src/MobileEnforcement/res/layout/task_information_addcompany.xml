@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/task_addcomp_nothing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text=""
+        android:textColor="@color/blue"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/add_qy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/addqytableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:id="@+id/addqyRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" >
+
+                <Button
+                    android:id="@+id/addqyimg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/rwgl_task_list_add"
+                    android:visibility="gone" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/qylisttableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" >
+
+            <ListView
+                android:id="@+id/task_addcomp_qylist"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:descendantFocusability="beforeDescendants" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_fkinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/task_add_btn_layout"
+        android:layout_below="@+id/add_qy"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/add_fj"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/addfjtableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:stretchColumns="*" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反馈附件："
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/pz_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rwgl_rwxx_rwzx_takephoto"
+                    android:onClick="photograph" />
+
+                <Button
+                    android:id="@+id/xz_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/lookpic"
+                    android:onClick="takefigure" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:text="更多格式文件请安装"
+                    android:textColor="@color/blue"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/apk_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rwgl_rwxx_rwzx_installapk"
+                    android:onClick="InstallAPK" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/fjlisttableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" >
+
+                <ListView
+                    android:id="@+id/fjlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#00000000"
+                    android:descendantFocusability="beforeDescendants" >
+                </ListView>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/task_add_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/task_addcomp_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="反馈意见："
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/task_addcomp_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            android:minLines="4"
+            android:text="" />
+
+        <Button
+            android:id="@+id/task_addcomp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="执行完成" />
+    </LinearLayout>
+
+</RelativeLayout>

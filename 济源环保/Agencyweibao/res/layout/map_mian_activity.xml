@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hbdtlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    <!-- android:alpha="0.7" -->
+    <!-- android:background="@drawable/map_title_background" -->
+
+    <LinearLayout
+        android:id="@+id/hbdtactivity_toolbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include layout="@layout/map_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="45dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/aqi_show_btn"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:drawableTop="@drawable/aqi_show_btn_pre_style"
+            android:gravity="center_horizontal"
+            android:padding="5dip"
+            android:maxEms="2"
+            android:text="空气质量"
+            android:textColor="@color/base_black"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/aqi_show_btn_line"
+            android:layout_width="45dip"
+            android:layout_height="0.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/aqi_show_btn"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/xian" />
+
+        <TextView
+            android:id="@+id/source_pollution_show_btn"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/aqi_show_btn_line"
+            android:background="@color/white"
+            android:drawableTop="@drawable/source_pollution_show_btn_style"
+            android:gravity="center_horizontal"
+            android:padding="5dip"
+            android:text="企业污染源"
+            android:visibility="gone"
+            android:maxEms="2"
+            android:textColor="@color/base_black"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/source_pollution_show_btn_line"
+            android:layout_width="45dip"
+            android:layout_height="0.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/source_pollution_show_btn"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/xian" />
+
+        <TextView
+            android:id="@+id/map_more_show_btn"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/source_pollution_show_btn_line"
+            android:background="@color/white"
+            android:drawableTop="@drawable/map_more_show_btn_style"
+            android:gravity="center_horizontal"
+            android:padding="5dip"
+            android:text="更多"
+            android:textColor="@color/base_black"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/map_more_show_btn_line"
+            android:layout_width="45dip"
+            android:layout_height="0.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/map_more_show_btn"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/xian" />
+
+        <TextView
+            android:id="@+id/mapbtn_envclear"
+            android:layout_width="45dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/map_more_show_btn_line"
+            android:background="@color/white"
+            android:drawableTop="@drawable/map_clear_show_btn_style"
+            android:gravity="center_horizontal"
+            android:padding="5dip"
+            android:text="清除"
+            android:textColor="@color/base_black"
+            android:textSize="12sp" />
+
+        <!-- 原来是70dp -->
+
+
+        <!--
+        <ImageView
+            android:id="@+id/mapbtn_env"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/map_envpanel_button"
+            android:contentDescription="环境信息" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:id="@+id/mapbtn_basemap"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/map_sallite"
+            android:contentDescription="底图切换" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:id="@+id/mapbtn_envclear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mapclear"
+            android:contentDescription="清除环境信息" />
+        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/map_more_detail_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_layout"
+        android:layout_marginTop="-50dip"
+        android:layout_centerHorizontal="true" 
+        android:layout_marginRight="40dip"
+        android:layout_marginLeft="40dip"
+        android:visibility="gone" >
+    <include
+        layout="@layout/map_more_detail"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hbdtactivity_discription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:shadowColor="#0033cc"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_map_offline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginRight="10dp"
+        android:text="offlinemap"
+        android:visibility="gone" />
+
+    <!-- <ImageView android:id="@+id/map_clearbutton" -->
+    <!-- android:layout_width="40dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:layout_marginRight="10dp" -->
+    <!-- android:layout_marginTop="95dp" -->
+    <!-- android:layout_alignParentTop="true" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:background="@drawable/mapclear" -->
+    <!-- /> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="40dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:id="@+id/map_picture_show" -->
+    <!-- android:layout_marginBottom="210dp" -->
+    <!-- android:layout_marginRight="10dp" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:background="@drawable/icon_map_picture_false" -->
+    <!-- > -->
+
+
+    <!-- </ImageView> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="40dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:id="@+id/map_style_change" -->
+    <!-- android:layout_marginBottom="110dp" -->
+    <!-- android:layout_marginRight="10dp" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- > -->
+
+
+    <!-- </ImageView> -->
+
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="40dp" -->
+    <!-- android:layout_height="40dp" -->
+    <!-- android:id="@+id/map_traffic" -->
+    <!-- android:layout_marginBottom="160dp" -->
+    <!-- android:layout_marginRight="10dp" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:background="@drawable/icon_map_traffic_false" -->
+    <!-- > -->
+
+
+    <!-- </ImageView> -->
+
+    <ImageView 
+        android:id="@+id/surfacewater_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:src="@drawable/water_shuoming"
+        android:visibility="gone"
+        android:background="@color/white"
+        />
+    <RelativeLayout
+        android:id="@+id/map_legend_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="71dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:background="@drawable/map_title_icon_background"
+        android:visibility="gone" >
+
+        <HorizontalScrollView
+            android:id="@+id/map_legend_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/map_legend_scrollinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/map_lengend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp" >
+                </ImageView>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/map_legend_left_shadow" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="2dp"
+            android:background="@drawable/map_legend_right_shadow" />
+
+        <TextView
+            android:id="@+id/map_legend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="微保"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/map_legend_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <!-- <TextView android:id="@+id/mapdatatime" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_above="@id/map_legend_panel" -->
+    <!-- android:layout_marginLeft="10dp" -->
+    <!-- android:textSize="10sp" -->
+    <!-- android:layout_alignParentLeft="true"/> -->
+
+    <ImageView
+        android:id="@+id/map_location_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/map_title_icon_background"
+        android:src="@drawable/maplocation_no" />
+
+    <ImageView
+        android:id="@+id/maploading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/mapactivity_envbtn_panel"
+        layout="@layout/map_mainactivity_includepanel_envbtn"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/map_zoompanel"
+        android:layout_width="40dp"
+        android:layout_height="81dp"
+        android:layout_alignLeft="@+id/map_location_button"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/map_title_icon_background"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/map_zoomin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mapzoomin_btn" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#666666" />
+
+        <Button
+            android:id="@+id/map_zoomout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mapzoomout_btn" />
+    </LinearLayout>
+
+</RelativeLayout>

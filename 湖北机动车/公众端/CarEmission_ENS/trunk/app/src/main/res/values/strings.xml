@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">机动车尾气检测管理(公众版)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="capture_decode_failed">未发现二维码</string>
+    <string name="capture_camera_failed">相机异常</string>
+    <string name="setting">设置</string>
+    <string name="cancel">拒绝</string>
+    <string name="prompt_we_need_read_sd">该应用需要读写SD权限，否则可能导致该应用无法正常使用。</string>
+
+</resources>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+		<id>2</id>
+		<img>grid_qycx</img>
+		<qymc>企业查询</qymc>
+		<qxid>vmob2A1B13C</qxid>
+		<ywl>QYJBXX</ywl>
+	</item>
+	<!-- <item>
+		<id>2</id>
+		<img>grid_xzcf</img>
+		<qymc>行政处罚</qymc>
+		<qxid>vmob2A1B15C</qxid>
+		<ywl>XZCFXX</ywl>
+	</item> -->
+	<!-- <item>
+		<id>2</id>
+		<img>grid_hpsts</img>
+		<qymc>环评三同时</qymc>
+		<qxid>vmob2A1B16C</qxid>
+		<ywl>HBSTSYSXX</ywl>
+	</item> -->
+    <!--  <item>
+		<id>2</id>
+		<img>grid_zxjc_a</img>
+		<qymc>在线监测</qymc>
+		<qxid>vmob3A</qxid>
+	</item> -->
+	
+	<!-- <item> 
+ 		<id>1</id> 
+ 		<img>grid_xfts</img> 
+ 		<qymc>信访投诉</qymc> 
+ 		<qxid>vmob2A1B20C</qxid> 
+ 		<ywl>XFTSXX</ywl> 
+ 	</item>  -->
+ 	 <item>
+		<id>2</id>
+		<img>base_icon_txl</img>
+		<qymc>通讯录</qymc>
+		<qxid>ADDRESSBOOK</qxid>
+	</item>
+	 <item>
+		<id>2</id>
+		<img>base_icon_fgbz</img>
+		<qymc>百事通</qymc>
+		<qxid>LAWREGULATION</qxid>
+	</item>
+	<item>
+	     <id>2</id>
+	     <img>grid_hpsts</img>
+	     <qymc>稽查考核</qymc>
+	     <qxid>JCKH</qxid>
+   </item>
+	<item>
+	     <id>2</id>
+	     <img>grid_calculator</img>
+	     <qymc>排污费计算</qymc>
+	     <qxid>FWSFJSQ</qxid>
+   </item>
+    	<item>
+	     <id>2</id>
+	     <img>grid_icon_tzgg</img>
+	     <qymc>监察公告</qymc>
+	     <qxid>mob2A1B2C</qxid>
+   </item> 
+  
+<!--     	<item> -->
+<!-- 	     <id>2</id> -->
+<!-- 	     <img>grid_icon_zxjc</img> -->
+<!-- 	     <qymc>在线监测</qymc> -->
+<!-- 	     <qxid>mob2A1B2C</qxid> -->
+<!--    </item>  -->
+<!--   <item> -->
+<!-- 		<id>2</id> -->
+<!-- 		<img>grid_rydw</img> -->
+<!-- 		<qymc>人员定位</qymc> -->
+<!-- 		<qxid>RYDW</qxid> -->
+<!-- 	</item> -->
+  <item>
+		<id>2</id>
+		<img>share_icon_wechatfriends</img>
+		<qymc>队伍圈</qymc>
+		<qxid>DWQ</qxid>
+	</item>
+	
+    <item>
+		<id>2</id>
+		<img>grid_znss</img>
+		<qymc>智能搜索</qymc>
+		<qxid>ZNSS</qxid>
+	</item>
+	
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

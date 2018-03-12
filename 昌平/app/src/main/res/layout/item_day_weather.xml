@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/DIMEN_55dp"
+    android:layout_height="@dimen/DIMEN_140dp"
+    android:background="@mipmap/bg3"
+    android:gravity="top|center_horizontal"
+    android:paddingTop="@dimen/DIMEN_10dp"
+    android:layout_marginRight="@dimen/DIMEN_3dp"
+    >
+    <!---->
+    <TextView
+        android:id="@+id/item_day_dateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_15SP"
+        android:text="今日"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/item_day_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/DIMEN_10SP"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/DIMEN_4dp"
+        android:text="10/21"/>
+
+    <ImageView
+        android:id="@+id/item_day_weather"
+        android:layout_width="@dimen/DIMEN_40dp"
+        android:layout_height="@dimen/DIMEN_40dp"
+        android:src="@mipmap/cloud"/>
+</LinearLayout>

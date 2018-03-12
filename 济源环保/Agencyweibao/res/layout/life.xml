@@ -1,0 +1,479 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/WeatherModule"
+    android:layout_width="match_parent"
+    android:background="@drawable/module_bg"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/environment_itembackground"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="生活指数"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/environment_life" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/life_cy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/module_bg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/life_cy_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip" />
+
+            <ImageView
+                android:id="@+id/life_cy_height"
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/life_cy_tv2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_cy_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_cy_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/life_cy_tv2"
+                    android:ems="15"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="5dip"
+                    android:text="--"
+                    android:textColor="@color/alph_wrihte"
+                    
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/life_cy_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:visibility="gone"
+                android:background="@drawable/life_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/life_cl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/module_bg" >
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/life_cl_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip" />
+
+            <ImageView
+                android:id="@+id/life_cl_height"
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/life_cl_tv2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_cl_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dip"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_cl_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/life_cl_tv2"
+                    android:ems="15"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="5dip"
+                    android:text="--"
+                    android:textColor="@color/alph_wrihte"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/life_cl_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:visibility="gone"
+                android:background="@drawable/life_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/life_zwx"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" 
+        android:layout_marginTop="1dp"
+        android:background="@drawable/module_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/life_zwx_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip" />
+
+            <ImageView
+                android:id="@+id/life_zwx_height"
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/life_zwx_tv2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_zwx_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dip"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_zwx_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/life_zwx_tv2"
+                    android:ems="15"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="5dip"
+                    android:text="--"
+                    android:textColor="@color/alph_wrihte"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/life_zwx_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:visibility="gone"
+                android:background="@drawable/life_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/life_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" 
+        android:layout_marginTop="1dp"
+        android:background="@drawable/module_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/life_ly_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip" />
+
+            <ImageView
+                android:id="@+id/life_ly_height"
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/life_ly_tv2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_ly_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dip"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_ly_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/life_ly_tv2"
+                    android:ems="15"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="5dip"
+                    android:text="--"
+                    android:textColor="@color/alph_wrihte"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/life_ly_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:visibility="gone"
+                android:background="@drawable/life_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/life_ss"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" 
+        android:layout_marginTop="0.5dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="@drawable/module_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/life_ss_iv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dip" />
+
+            <ImageView
+                android:id="@+id/life_ss_height"
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/life_ss_tv2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dip"
+                    android:gravity="left"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_ss_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dip"
+                    android:paddingTop="10dip"
+                    android:text="--"
+                    android:textColor="#fff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/life_ss_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/life_ss_tv2"
+                    android:ems="15"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="5dip"
+                    android:text="--"
+                    android:textColor="@color/alph_wrihte"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/life_ss_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:visibility="gone"
+                android:background="@drawable/life_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_activity"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="处置意见："
+        android:id="@+id/textView6" />
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:textSize="15sp"
+        android:focusable="true"
+        android:background="@drawable/kuang"
+        android:id="@+id/editText" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_null"
+            android:textSize="15sp"
+            android:layout_marginRight="10dp"/>
+
+        <ImageView
+            android:id="@+id/cameraView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/camera"
+            />
+        <ImageView
+            android:id="@+id/fileView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/file"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:text="案卷完成"
+
+            android:gravity="center"
+            android:textColor="@color/cancel_text"
+            android:background="@drawable/cancel_bg"
+            android:id="@+id/endView" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="案卷转发"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/commit_bg"
+            android:id="@+id/turnView" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="案卷反馈"
+            android:textColor="@color/cancel_text"
+            android:gravity="center"
+            android:background="@drawable/cancel_bg"
+            android:id="@+id/returnView"
+            />
+    </LinearLayout>
+</LinearLayout>

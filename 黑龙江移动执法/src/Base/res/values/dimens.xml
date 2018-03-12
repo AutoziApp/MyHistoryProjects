@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="bottom_tab_padding_drawable">0.0dip</dimen>
+	<dimen name="bottom_tab_padding_up">2.0dip</dimen>
+	<dimen name="bottom_tab_font_size">12.0dip</dimen>
+	<dimen name="bottom_menu_height">38dp</dimen>
+	<dimen name="global_top_margin">5.0dip</dimen>
+	<dimen name="global_bottom_margin">0.0dip</dimen>
+	<dimen name="global_left_margin">5.0dip</dimen>
+	<dimen name="global_right_margin">5.0dip</dimen>
+	<dimen name="global_title_textsize">16sp</dimen>
+</resources>

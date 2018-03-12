@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/weather_aqi_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e3e3e3" >
+
+    <RelativeLayout
+        android:id="@+id/aqi_graphical_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="290dp" >
+
+        <!-- android:background="@drawable/yy10"bg2 -->
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/dailydetail_jun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:text="均值:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/aqi_number_text"
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="bottom"
+                    android:text="0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/aqi_level_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/aqi_level_tomorrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:text="明日:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/notif_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/aqi_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/ll_right"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/lv151" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/aqi_share_tips_layout"
+        android:layout_width="170dp"
+        android:layout_height="145dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/aqi_graphical_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/aqiclean_result_bg"
+        android:orientation="vertical"
+        android:padding="0.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/aqi_share_tips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dip"
+            android:textColor="#ff797979"
+            android:layout_gravity="center"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:id="@+id/aqi_share_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share_btn"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/daily_share"
+                android:drawablePadding="5.0dip"
+                android:gravity="center"
+                android:text="立即分享"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/aqi_options_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/aqi_graphical_layout"
+        android:fadingEdge="none"
+        android:padding="0.0dip"
+        android:scrollbars="none"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/aqi_options_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/aqi_option_1"
+                style="@style/aqi_option_style"
+                android:layout_marginLeft="10.0dip"
+                android:drawableTop="@drawable/aqi_option_subway"
+                android:text="地铁" />
+
+            <TextView
+                android:id="@+id/aqi_option_2"
+                style="@style/aqi_option_style"
+                android:drawableTop="@drawable/aqi_option_bus"
+                android:text="公交车" />
+
+            <TextView
+                android:id="@+id/aqi_option_3"
+                style="@style/aqi_option_style"
+                android:drawableTop="@drawable/aqi_option_bike"
+                android:text="自行车" />
+
+            <TextView
+                android:id="@+id/aqi_option_4"
+                style="@style/aqi_option_style"
+                android:drawableTop="@drawable/aqi_option_car"
+                android:text="汽车" />
+
+            <TextView
+                android:id="@+id/aqi_option_5"
+                style="@style/aqi_option_style"
+                android:drawableTop="@drawable/aqi_option_walk"
+                android:text="步行" />
+
+            <TextView
+                android:id="@+id/aqi_option_6"
+                style="@style/aqi_option_style"
+                android:drawableTop="@drawable/aqi_option_plant"
+                android:text="保护植物" />
+
+            <TextView
+                android:id="@+id/aqi_option_7"
+                style="@style/aqi_option_style"
+                android:drawableTop="@drawable/aqi_option_wash"
+                android:text="手洗衣服" />
+
+            <TextView
+                android:id="@+id/aqi_option_8"
+                style="@style/aqi_option_style"
+                android:drawableTop="@drawable/aqi_option_nodrinking"
+                android:text="不喝啤酒" />
+
+            <TextView
+                android:id="@+id/aqi_option_9"
+                style="@style/aqi_option_style"
+                android:drawableTop="@drawable/aqi_option_nosmoking"
+                android:text="不抽烟" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/aqi_detail_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aqi_graphical_layout"
+        android:background="#e3e3e3" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10.0dip" >
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PM2.5"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/aqi_detail_pm25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4.0dip"
+                        android:textColor="#30a900"
+                        android:textSize="17.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PM10"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/aqi_detail_pm10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4.0dip"
+                        android:text=""
+                        android:textColor="#30a900"
+                        android:textSize="17.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO2"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/aqi_detail_no2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4.0dip"
+                        android:textColor="#30a900"
+                        android:textSize="17.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SO2"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/aqi_detail_so2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4.0dip"
+                        android:textColor="#30a900"
+                        android:textSize="17.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#cccccc" />
+                <!-- android:background="@drawable/aqi_detail_devide" -->
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CO"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/aqi_detail_co"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4.0dip"
+                        android:textColor="#30a900"
+                        android:textSize="17.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="14.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#cccccc" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="O3"
+                        android:textColor="#777777" />
+
+                    <TextView
+                        android:id="@+id/aqi_detail_o3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4.0dip"
+                        android:textColor="#30a900"
+                        android:textSize="17.0sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="10.0dip"
+                android:text="（单位：微克/立方米）"
+                android:textColor="#777777" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp" >
+
+                <ImageView
+                    android:id="@+id/img_tip"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/tuzi_tips" />
+
+                <TextView
+                    android:id="@+id/aqi_advice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="天气适宜"
+                    android:textColor="#555555"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/ImageView011"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7.0dip"
+        android:layout_marginTop="2dip"
+        android:src="#00000000" >
+    </ImageView>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/LinearLayoutTop" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/zxjk_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/rw_tab_default"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_s"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/home_btn_bg_cbsj"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/cbsj"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/radio_q"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/home_btn_bg_sssj"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/sssj"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/radio_online_xssj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/home_btn_bg_xssj"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/xssj"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/radio_online_vedio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/home_btn_bg_spjk"
+                    android:button="@null"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:text="@string/zxsp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RadioGroup>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

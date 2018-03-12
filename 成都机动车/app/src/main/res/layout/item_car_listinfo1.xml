@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="87dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_carinfo"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_type_info"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/car_bule_im" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="蓝牌"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toRightOf="@id/rl_carinfo"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_unm_carinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="豫A12345"
+            android:textSize="@dimen/dp_14" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_unm_carinfo"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="监测方法"
+            android:textSize="@dimen/dp_14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_date_carinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toLeftOf="@id/view_right"
+        android:text="2017-11-23 00:00"
+        android:textSize="@dimen/dp_14" />
+
+    <!--android:background="#c1dce7"-->
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/albumback" />
+</RelativeLayout>

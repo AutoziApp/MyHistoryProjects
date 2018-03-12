@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_delay_application"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tvStyle4"
+                    android:text="任务详情"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/base_layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:divider="@drawable/divider"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:showDividers="middle"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="监管对象名称："/>
+
+                        <TextView
+                            android:id="@+id/tv_SupervisionName"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="监管对象类型："/>
+
+                        <TextView
+                            android:id="@+id/tv_SupervisionType"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="上报网格名称："/>
+
+                        <TextView
+                            android:id="@+id/tv_reportGridName"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="网&#12288;&#8194;格&#12288;&#8194;员："/>
+
+                        <TextView
+                            android:id="@+id/tv_reportName"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="网&#160;格&#160;员&#160;电&#160;话："/>
+
+                        <TextView
+                            android:id="@+id/tv_reportNumber"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="事&#160;&#160;&#160;件&#160;&#160;编&#160;&#160;&#160;号："
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_TaskNumber"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="问&#160;&#160;&#160;题&#160;&#160;类&#160;&#160;&#160;型："/>
+
+                        <TextView
+                            android:id="@+id/tv_questType"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="经&#12288;&#12288;&#12288;&#12288;度："/>
+
+                        <TextView
+                            android:id="@+id/tv_longitude"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="纬&#12288;&#12288;&#12288;&#12288;度："/>
+
+                        <TextView
+                            android:id="@+id/tv_latitude"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="问&#160;&#160;&#160;题&#160;&#160;描&#160;&#160;&#160;述："
+                            android:textColor="@color/base_black"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_quest_reason"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edit_bg"
+                            android:gravity="center_vertical|top"
+                            android:hint="问题描述..."
+                            android:textColor="@color/base_black"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/base_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:showDividers="middle"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            style="@style/tvStyle1"
+                            android:text="任务名称："/>
+
+                        <TextView
+                            android:id="@+id/tv_taskName"
+                            style="@style/tvStyle1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="任务类型："/>
+
+                        <TextView
+                            android:id="@+id/tv_taskType"
+                            style="@style/tvStyle1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="开始时间："/>
+
+                        <TextView
+                            android:id="@+id/tv_startTime"
+                            style="@style/tvStyle1"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv"
+                            style="@style/tvStyle1"
+                            android:text="结束时间："/>
+
+                        <TextView
+                            android:id="@+id/tv_endTime"
+                            style="@style/tvStyle1"
+                            android:layout_toRightOf="@id/tv"/>
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="任务描述："/>
+
+                        <TextView
+                            android:id="@+id/tv_description"
+                            style="@style/tvStyle1"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tvStyle4"
+                    android:text="申请详情"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:divider="@drawable/divider"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:showDividers="middle"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="起始时间："/>
+
+                        <TextView
+                            android:id="@+id/tv_applyTime"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="结束时间："/>
+
+                        <TextView
+                            android:id="@+id/tv_apply_end_Time"
+                            style="@style/tvStyle2"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="申请原因："
+                            android:textColor="@color/base_black"
+                            android:textSize="14sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_apply_reason"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/edit_bg"
+                            android:gravity="center_vertical|top"
+                            android:hint="申请原因..."
+                            android:textColor="@color/base_black"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/tvStyle4"
+                    android:text="处理"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:divider="@drawable/divider"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:showDividers="middle">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/tvStyle1"
+                            android:text="处理方式："/>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroupID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/btn_agree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="同意"/>
+
+                            <RadioButton
+                                android:id="@+id/btn_disagree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="不同意"/>
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="意&#12288;&#12288;见："
+                            android:textColor="@color/base_black"
+                            android:textSize="14sp"/>
+
+                        <EditText
+                            android:id="@+id/et_opinion"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edit_bg"
+                            android:gravity="center_vertical|top"
+                            android:hint="请输入处理意见..."
+                            android:textColor="@color/base_black"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_handle"
+                        android:layout_width="240dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/login_btn_check"
+                        android:gravity="center"
+                        android:text="处&#8194;理"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

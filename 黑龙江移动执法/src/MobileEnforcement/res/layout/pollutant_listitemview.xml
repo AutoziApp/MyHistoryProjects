@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white"
+ >
+ 
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:gravity="center_vertical">
+   	
+    <LinearLayout 
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="27dp"
+    android:orientation="horizontal">
+    
+    <TextView 
+  
+    style="@style/listViewOnlineData_data"   
+    android:layout_marginLeft="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/pollute_list_data_TextView"
+    />
+    
+    <TextView 
+    style="@style/listViewOnlineData_data"     
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:id="@+id/pollute_list_unit_data_TextView"/>
+    </LinearLayout>
+   <TextView 
+    style="@style/listViewOnlineData_data" 
+  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:layout_alignParentRight="true"
+    android:id="@+id/MinFlow"/>
+  
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:gravity="center_vertical"
+    >
+     <TextView  
+    style="@style/listViewOnlineData_name"    
+    android:layout_marginLeft="5dp"     
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:textColor="@color/black"
+    android:id="@+id/pollute_list_name_TextView"
+    />
+     
+     <TextView 
+    style="@style/listViewOnlineData_name"   
+    android:layout_alignParentRight="true"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   
+    android:id="@+id/pollute_list_time_data_TextView"
+    />
+     </RelativeLayout>
+  
+   
+   
+    
+</LinearLayout>

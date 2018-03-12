@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activity.wdAc.KnowledgeBaseActivity">
+
+
+    <item android:id="@+id/action_add_task"
+          android:title="添加"
+          android:orderInCategory="80"
+          android:icon="@mipmap/add_task"
+          app:showAsAction="always" />
+
+
+
+</menu>
+

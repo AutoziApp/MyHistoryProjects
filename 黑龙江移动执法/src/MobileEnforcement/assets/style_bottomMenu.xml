@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item name="RWGL">
+		<bottommenu>
+			<id>1</id>
+			<image></image>
+			<btnname>办 结</btnname>
+			<qxid>vmob2A2B</qxid>
+		</bottommenu>
+	    
+		<!-- <bottommenu>
+			<id>2</id>
+			<image></image>
+			<btnname>清单检查</btnname>
+			<qxid>vmob2A2B</qxid>
+		</bottommenu> 
+	 	<bottommenu>
+			<id>4</id>
+			<image></image>
+			<btnname>一企一档</btnname>
+			<qxid></qxid>
+		</bottommenu> 
+		 <bottommenu>
+			<id>5</id>
+			<image></image>
+			<btnname>现场取证</btnname>
+			<qxid>vmob2A3B</qxid>
+		</bottommenu>
+		<bottommenu>
+			<id>3</id>
+			<image></image>
+			<btnname>结果上传</btnname>
+			<qxid></qxid>
+		</bottommenu>
+		<bottommenu>
+			<id>6</id>
+			<image></image>
+			<btnname>现场笔录</btnname>
+			<qxid></qxid>
+			<qxid>vmob2A9B</qxid> 
+		</bottommenu>-->
+	</item>
+	<item name="XQ">
+		<bottommenu>
+			<id>1</id>
+			<image></image>
+			<btnname>现场执法</btnname>
+			<qxid>vmob6A</qxid>
+		</bottommenu>
+		<bottommenu>
+			<id>2</id>
+			<image></image>
+			<btnname>企业详情</btnname>
+			<qxid>vmob2A1B</qxid>
+		</bottommenu>
+<!-- 		<bottommenu>
+			<id>3</id>
+			<image></image>
+			<btnname>在线监测</btnname>
+			<qxid>vmob3A</qxid>
+		</bottommenu> -->
+		<bottommenu>
+			<id>4</id>
+			<image></image>
+			<btnname>新建任务</btnname>
+			<qxid>vmob2A5B</qxid>
+		</bottommenu>
+		
+	</item>
+	<item name="RCAP">
+		<bottommenu>
+			<id>1</id>
+			<image></image>
+			<btnname>编辑</btnname>
+			<qxid>vmob2A1B</qxid>
+		</bottommenu>
+		<bottommenu>
+			<id>2</id>
+			<image></image>
+			<btnname>保存</btnname>
+			<qxid>vmob2A1B</qxid>
+		</bottommenu>
+	</item>
+</list>

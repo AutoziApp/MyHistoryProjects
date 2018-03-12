@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fafafafa"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_weight="1"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/shuju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="该城市还没有环境说哦！"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <!-- android:text="该城市还没有生活贴哦！" -->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ptrHeaderBackground="@color/hui"
+            android:divider="#C9C9C9"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:headerDividersEnabled="true"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            ptr:ptrMode="both" >
+        </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/top_bg"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/exposure_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/update_btn"
+            android:scaleType="fitCenter"
+            android:src="@drawable/title_back_selector" />
+
+        <ImageView
+            android:id="@+id/tansuo_edit_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/toolbar_saysomthing_selector" />
+
+        <TextView
+            android:id="@+id/weibo_life"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="环境说"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/discover_blog_list_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#f0f0f0"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/discover_blog_list_send"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#395486"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/discover_blog_list_ed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/discover_blog_list_send"
+            android:background="@drawable/skin_btn_upload"
+            android:maxHeight="100dp"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/nopicture_View1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/blognopicture"
+        android:visibility="gone" />
+
+</RelativeLayout>

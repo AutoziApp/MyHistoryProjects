@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/edit_bg"
+              android:orientation="vertical"
+              android:layout_marginTop="4dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              >
+    <!--android:background="#bdd7ee"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tvStyle3"
+                android:text="网格名称："/>
+
+            <TextView
+                android:id="@+id/tv_grid"
+                style="@style/tvStyle3"
+                android:singleLine="true"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tvStyle3"
+                android:text="处理人："/>
+
+            <TextView
+                android:id="@+id/tv_operator"
+                style="@style/tvStyle3"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tvStyle3"
+                android:text="操作类型："
+                />
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/tv_operateType"
+                style="@style/tvStyle3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/tvStyle3"
+                android:text="操作时间："/>
+
+            <TextView
+                android:id="@+id/tv_operateTime"
+                style="@style/tvStyle3"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tvStyle3"
+            android:text="申请开始时间："
+            />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/tv_applayStartTime"
+            style="@style/tvStyle3"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tvStyle3"
+            android:text="申请结束时间："
+            />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/tv_applayEndTime"
+            style="@style/tvStyle3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tvStyle3"
+            android:text="下一办理人："
+            />
+
+        <TextView
+            android:textSize="12sp"
+            android:id="@+id/tv_nextHandlerName"
+            style="@style/tvStyle3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tvStyle3"
+            android:text="处理意见："/>
+
+        <TextView
+            android:id="@+id/tv_opinion"
+            style="@style/tvStyle3"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|right"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="查看附件"
+            style="@style/tvStyle1"
+            android:id="@+id/tv_attach"
+            android:textColor="@color/color_main_green"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"/>
+        <TextView
+            android:id="@+id/tv_reminders"
+            style="@style/tvStyle1"
+            android:textColor="@color/color_main_green"/>
+    </LinearLayout>
+
+</LinearLayout>

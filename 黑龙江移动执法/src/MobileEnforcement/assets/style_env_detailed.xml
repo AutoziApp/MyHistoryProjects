@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    <!-- 法律法规标准 -->
+    <item>
+        <checkname>ZSK_FLFGBZ</checkname>
+        <ymbt>页面标题：</ymbt>
+        <sjlb>法规级别：</sjlb>
+        <scsj>上传时间：</scsj>
+        <fj style="button">附件：</fj>
+    </item>
+    <!-- 制度文件 -->
+    <item>
+       <checkname>HJYJ_ZYWJBZ</checkname>
+       <wjbt>标题：</wjbt>
+       <wjlb>文件来源：</wjlb>
+       <fjswf style="button">附件：</fjswf>
+    </item>
+    <!-- 危化品 -->
+    <item>
+        <checkname>HJYJ_WHP</checkname>
+        <cname>物质名称：</cname>
+        <itemalias>别名：</itemalias>
+        <ename>英文名称：</ename>
+        <name>所属类别：</name>
+        <moleculew>分子量：</moleculew>
+        <fusibility>熔点：</fusibility>
+        <boil>沸点：</boil>
+        <stability>物质稳定性：</stability>
+        <steam>蒸汽压：</steam>
+        <aspect>外观气味：</aspect>
+        <dissolve>溶解性：</dissolve>
+        <cascode>CAS号：</cascode>
+        <density>密度：</density>
+        <flashp>闪点：</flashp>
+        <operation>主要用途：</operation>
+        <method style="webview">其他相关信息：</method>
+        <!-- style="webview"为打开页面展示 -->
+    </item>
+    <!-- 预案及案例 -->
+    <item>
+       <checkname>HJYJ_YAJAL</checkname>
+       <bt>标题：</bt>
+       <type>类型：</type>
+       <fj style="button">附件：</fj>
+    </item>
+    <!-- 专家库 -->
+    <item>
+       <checkname>HJYJ_ZJK</checkname>
+       <name>姓名：</name>
+       <sex>性别：</sex>
+       <birthday>出生日期：</birthday>
+       <nationality>民族：</nationality>
+       <folk>籍贯：</folk>
+       <polity_visage>政治面貌：</polity_visage>
+       <work_ent>工作单位：</work_ent>
+       <administration_business>职务：</administration_business>
+       <technical_post>最高学历：</technical_post>
+       <speciality>专业：</speciality>
+       <move_phone>联系电话：</move_phone>
+       <specialisttype>专家类型：</specialisttype>
+    </item>
+    <!-- 法律法规标准 -->
+    <item>
+       <checkname>HJYJ_FLFGBZ</checkname>
+       <sjlb>法规级别：</sjlb>
+       <ymbt>标题：</ymbt>
+   	   <fjswf style="zhengwen" datasource="">附件内容：</fjswf>
+       <fj style="button">附件：</fj>
+    </item>
+     <!-- 通讯录-->
+    <item>
+       <checkname>HELPER_BOOKS</checkname>
+       <u_realname>姓名：</u_realname>
+       <u_photo>移动电话：</u_photo>
+       <u_hometel>办公电话：</u_hometel>
+       <u_email>电子邮件：</u_email>
+       <depname>部门：</depname>        
+    </item>
+</list>

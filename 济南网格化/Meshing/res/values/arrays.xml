@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="task_tpye">
+        <item>工厂废气排放</item>
+        <item>秸秆焚烧</item>
+        <item>扬尘</item>
+        <item>垃圾</item>
+    </string-array>
+    <string-array name="task_tpye1">
+        <item>日常巡查</item>
+    </string-array>
+    <string-array name="task_tpye2">
+        <item>无</item>
+    </string-array>
+
+</resources>

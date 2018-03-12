@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list> 
+    <item>
+  <name>手烧炉</name> 
+  <values>0.20</values> 
+  </item>
+    <item>
+  <name>链条炉</name> 
+  <values>0.20</values> 
+  </item>
+  <item>
+  <name>往复推饲炉</name> 
+  <values>0.20</values> 
+  </item>
+  <item>
+  <name>振动炉</name> 
+  <values>0.30</values> 
+  </item>
+  <item>
+  <name>抛煤机炉</name> 
+  <values>0.30</values> 
+  </item> 
+  <item>
+  <name>沸腾炉</name> 
+  <values>0.50</values> 
+  </item>
+  <item>
+  <name>煤粉炉</name> 
+  <values>0.80</values> 
+  </item>
+  
+ 
+ 
+</list>

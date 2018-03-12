@@ -1,0 +1,278 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/logo_weibo" />
+
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageView_avatar"
+            android:text="正在加载..."
+            android:ems="6"
+            android:singleLine="true"
+            android:ellipsize="end" 
+            android:textColor="#6AA100"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/account_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageView_avatar"
+            android:text="content"
+            android:textSize="16sp" />
+
+        <com.jy.environment.widget.NoScrollGridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvText"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageView_avatar"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/account_name"
+            android:layout_below="@id/gridView"
+            android:layout_marginTop="5dp"
+            android:text="正在加载..."
+            android:textColor="#999" />
+
+        <TextView
+            android:id="@+id/item_env"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_city"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/item_city"
+            android:text="正在加载..."
+            android:textColor="#999" />
+
+        <RatingBar
+            android:id="@+id/item_ratingbar"
+            style="@style/roomRatingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/item_city"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/item_env"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="0" />
+
+
+
+        <ImageView
+            android:id="@+id/popwin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/item_ratingbar"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/pop" />
+<!--        
+        <ImageView 
+            android:id="@+id/upload_history"
+            android:layout_below="@+id/item_ratingbar"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/upload_btn_selector"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="40dip"  /> -->
+
+        <LinearLayout
+            android:id="@+id/pinglunbuju"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/account_name"
+            android:layout_below="@id/popwin"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/comment_list_normal"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/zan_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView 
+                    android:id="@+id/zan_xin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/zanguo" 
+                    android:layout_marginTop="7dp"/>
+                <TextView
+                    android:id="@+id/zan_names"
+                    android:layout_toRightOf="@+id/zan_xin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textColor="#6AA100" />
+
+                <!--  android:drawableLeft="@drawable/zanguo" android:singleLine="true" -->
+                <TextView
+                    android:id="@+id/zan_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/zan_names"
+                    android:layout_toRightOf="@id/zan_names"
+                    android:paddingTop="5dp"
+                    android:textColor="#6AA100" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/pinglun1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="8dp" >
+
+                <TextView
+                    android:id="@+id/zan_nickname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在加载..."
+                    android:textColor="#6AA100" />
+
+                <TextView
+                    android:id="@+id/zan_content1"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="正在加载..."
+                    android:textColor="#000" />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/weibo_delet"
+                    android:visibility="gone"
+                    android:id="@+id/delete_comment1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pinglun2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/zan_nickname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在加载..."
+                    android:textColor="#6AA100" />
+
+                <TextView
+                    android:id="@+id/zan_content2"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:text="正在加载..."
+                    android:textColor="#000" />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/weibo_delet"
+                    android:visibility="gone"
+                    android:id="@+id/delete_comment2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pinglun3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/zan_nickname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="正在加载..."
+                    android:textColor="#6AA100" />
+
+                <TextView
+                    android:id="@+id/zan_content3"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="正在加载..."
+                    android:textColor="#000" />
+                <ImageView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/weibo_delet"
+                    android:visibility="gone"
+                    android:id="@+id/delete_comment3"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/account_name"
+            android:orientation="horizontal"
+            android:layout_alignRight="@+id/tvText">
+            
+            <TextView
+            android:id="@+id/token_expired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:text="正在加载..."
+            android:textColor="#999"
+            android:textSize="14sp" />
+            
+            <ImageView
+            android:id="@+id/deleteBolg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/weibo_delet" />
+            
+        </LinearLayout
+            >
+        
+        
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="#C9C9C9" />
+
+</RelativeLayout>

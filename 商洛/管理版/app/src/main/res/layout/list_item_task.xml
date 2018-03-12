@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_container"
+              android:orientation="horizontal"
+              android:background="@drawable/txt_check"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:layout_height="50dp">
+    <TextView
+        android:id="@+id/tvTaskName"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:text="欧本化工"/>
+    <TextView
+        android:id="@+id/tvEndDate"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:text="2017-01-01"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvTaskSource"
+            android:layout_centerInParent="true"
+            android:maxLength="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/issued"
+            android:text="下发"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTaskDetail"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="#449bdb"
+        android:layout_height="wrap_content"
+        android:text="详情"/>
+</LinearLayout>

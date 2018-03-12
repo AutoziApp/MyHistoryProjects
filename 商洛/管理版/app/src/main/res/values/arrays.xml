@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="chattypes">
+        <item>柱状图</item>
+        <item>折线图</item>
+        <item>扇形图</item>
+    </string-array>
+    <string-array name="staticstic_types">
+        <item>区域</item>
+        <item>类型</item>
+    </string-array>
+    <string-array name="task_types">
+        <item>企事业单位和其他生产经营者</item>
+        <item>施工工地</item>
+        <item>各类道路</item>
+        <item>散乱污企业</item>
+        <item>公共水体</item>
+        <item>畜牧养殖单位</item>
+        <item>秸秆垃圾焚烧</item>
+        <item>其他问题</item>
+    </string-array>
+    
+</resources>

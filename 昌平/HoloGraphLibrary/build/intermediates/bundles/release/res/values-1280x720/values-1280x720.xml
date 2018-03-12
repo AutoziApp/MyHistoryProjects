@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="circlealphasize">12px</dimen>
+    <dimen name="downsize">20px</dimen>
+    <dimen name="line_size1">50px</dimen>
+    <dimen name="linesize1">4px</dimen>
+    <dimen name="pointsize1">6px</dimen>
+    <dimen name="tem_text_size">30px</dimen>
+    <dimen name="upsize">55px</dimen>
+</resources>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+		<id>1</id>
+		<img>grid_hbfl_selector</img>
+		<qymc>环保法律</qymc>
+		<qxid>vmob11A1B</qxid>
+		<ywl>HBFLXX</ywl>
+	</item>
+	<!--  <item>
+		<id>2</id>
+		<img>grid_hbfg_a</img>
+		<qymc>环保法规</qymc>
+		<qxid>mob2A2B4C4D</qxid>
+	</item>-->
+	<!-- <item>
+		<id>2</id>
+		<img>grid_hbfg_a</img>
+		<qymc>法律法规</qymc>
+		<qxid>vmob11A9B</qxid>
+		<ywl>HBFLXX</ywl>
+	</item> -->
+	<item>
+		<id>2</id>
+		<img>grid_hbbz_selector</img> 
+		<qymc>环保标准</qymc>
+		<qxid>vmob11A10B</qxid>
+		<ywl>XZFGXX</ywl>
+	</item>
+	<item>
+	<id>2</id>
+		<img>grid_xzfg_selector</img>
+		<qymc>行政法规</qymc>
+		<qxid>vmob11A2B</qxid>
+		<ywl>XZFGXX</ywl>
+	</item>
+	<item>
+	<id>2</id>
+		<img>grid_bwgz_selector</img>
+		<qymc>部委规章</qymc>
+		<qxid>vmob11A3B</qxid>
+		<ywl>BWGZXX</ywl>
+	</item>
+	
+	
+<!-- 	<id>2</id>
+		<img>grid_dfxfg_selector</img>
+		<qymc>地方法规</qymc>
+		<qxid>vmob11A4B</qxid>
+	</item> -->
+	
+	<item>
+	<id>2</id>
+		<img>grid_hjzlbz_selector</img>
+		<qymc>环境质量标准</qymc>
+		<qxid>vmob11A5B</qxid>
+		<ywl>HJZLBZXX</ywl>
+	</item>
+	<item>
+	<id>2</id>
+		<img>grid_wrypfbz_selector</img>
+		<qymc>排放标准</qymc>
+		<qxid>vmob11A6B</qxid>
+		<ywl>PFBZXX</ywl>
+	</item>
+	<item>
+	<id>2</id>
+		<img>grid_jczn_selector</img>
+		<qymc>监察指南</qymc>
+		<qxid>vmob11A7B</qxid>
+		<ywl>JCZNXX</ywl>
+	</item>
+	<item>
+	<id>2</id>
+		<img>grid_xgflfg_selector</img>
+		<qymc>相关法律法规</qymc>
+		<qxid>vmob11A8B</qxid>
+		<ywl>XGFLFGXX</ywl>
+	</item>
+	<item>
+		<id>2</id>
+		<img>grid_zywj_selector</img>
+		<qymc>重要文件</qymc>
+		<qxid></qxid>
+		<ywl>ZYWJXX</ywl>
+	</item>
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

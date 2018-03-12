@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="main_grid">
+        <item>辽东南</item>
+        <item>辽西</item>
+        <item>辽中</item>
+        <item>辽北</item>
+        <item>大伙房水源地</item>
+    </string-array>
+    <string-array name="noem_main">
+
+        <!-- 环境监察通知书主要添加项 -->
+        <item>检查单位:</item>
+        <item>被查单位地址:</item>
+        <item>现场接收人:</item>
+        <item>联系电话:</item>
+        <item>接受问询时间:</item>
+        <item>接受问询单位:</item>
+        <item>接受问询地点:</item>
+        <item>现场检查人:</item>
+        <item>现场检查人地址:</item>
+        <item>现场检查人电话:</item>
+    </string-array>
+    <string-array name="Survey_JSTZS">
+
+        <!-- 环境监察通知书存储数据库列名 -->
+        <item>entid</item>
+        <item>taskid</item>
+        <item>noticeno</item>
+        <item>entname</item>
+        <item>lawtime</item>
+        <item>surveytime</item>
+        <item>breakbehavior</item>
+        <item>takematerial</item>
+        <item>contactperson</item>
+        <item>phone</item>
+        <item>address</item>
+        <item>zipcode</item>
+        <item>updatetime</item>
+        <item>signtime</item>
+    </string-array>
+    <string-array name="noem_child">
+
+        <!-- 环境监察通知书附件复选项 -->
+        <item>辽东南</item>
+        <item>辽西</item>
+        <item>辽中</item>
+        <item>辽北</item>
+        <item>大伙房水源地</item>
+    </string-array>
+    <string-array name="noem_carryData">
+
+        <!-- 环境监察通知书携带附件项 -->
+        <item>环评报告书</item>
+        <item>环评报告表</item>
+        <item>环评登记表</item>
+        <item>环保审批</item>
+        <item>环保验收</item>
+        <item>排污费申请登记表 </item>
+        <item>排污费缴纳收据</item>
+        <item>危险废物转移联单</item>
+        <item>危险废物处置合同</item>
+        <item>相关情况说明</item>
+    </string-array>
+
+</resources>

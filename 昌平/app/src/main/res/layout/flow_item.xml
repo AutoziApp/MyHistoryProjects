@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/item_bg"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="@string/executer"
+            android:gravity="center"
+            android:textColor="@color/flow_txt_color"
+            android:id="@+id/createrView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="@string/execute_grid"
+            android:textColor="@color/flow_txt_color"
+            android:gravity="center"
+            android:id="@+id/gridView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="@string/execute_type"
+            android:textColor="@color/flow_txt_color"
+            android:gravity="center"
+            android:id="@+id/typeView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="@string/send_time"
+            android:textColor="@color/flow_txt_color"
+            android:gravity="center"
+            android:id="@+id/timeView" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+</RelativeLayout>

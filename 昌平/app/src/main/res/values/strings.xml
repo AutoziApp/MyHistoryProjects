@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">昌平环保</string>
+    <!--login-->
+    <string name="hint_key">账号</string>
+    <string name="hint_password">密码</string>
+    <string name="alert_net">网络连接失败</string>
+    <string name="alert_name_null">用户名不能为空</string>
+    <string name="alert_password_null">密码不能为空</string>
+    <string name="btn_login">登       录</string>
+    <string name="remember_password">记住密码</string>
+    <string name="auto_login">自动登录</string>
+    <string name="versionName">Version:</string>
+    <string name="Companyname">技术支持: 中科宇图科技股份有限公司</string>
+    <string name="dummy_button">文件解压中,请稍后…</string>
+
+    <!--tab name-->
+    <string name="tab_home">首页</string>
+    <string name="tab_execute">监察处置</string>
+    <string name="tab_oa">综合办公</string>
+    <string name="tab_watch">环境监测</string>
+    <string name="tab_map">环保地图</string>
+
+    <!--tab title-->
+    <string name="tab_home_title">昌平</string>
+
+    <!--tab watch-->
+    <string name="btn_creat">创建</string>
+    <string name="btn_send">已发记录</string>
+    <string name="add_check">巡查</string>
+    <string name="send_title">派发处置</string>
+    <string name="btn_ready">待办</string>
+    <string name="ready_title">待办处置</string>
+    <string name="ready_details">待办详情</string>
+    <string name="btn_execute">处置列表</string>
+    <string name="execute_details">查看详情</string>
+    <string name="btn_check">巡查记录</string>
+    <string name="title_check">污染源监控-最新超标</string>
+    <string name="title_ready">最新待办</string>
+    <string name="title_execute">空气质量监控-浏览记录</string>
+
+    <!--fragment OA-->
+    <string name="btn_receive">收文管理</string>
+    <string name="btn_send_oa">发文管理</string>
+    <string name="btn_book">单位通讯录</string>
+    <string name="btn_process">流程审批</string>
+    <string name="btn_plan">日程管理</string>
+    <string name="btn_io">签到/签退</string>
+    <string name="btn_log">日志记录</string>
+    <string name="btn_message">消息通知</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--环境监测-->
+    <string name="btn_wuranyuan">污染源监控</string>
+    <string name="btn_airWatch">空气质量监控</string>
+    <string name="btn_waterWatch">水质监控</string>
+    <string name="btn_sootWatch">油烟监控</string>
+    <string name="tite_pollution">在线监控企业列表</string>
+    <!--天气预报-->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="aqi_warn_text">气象预警</string>
+    <string name="text_zero">0</string>
+    <!--創建處置-->
+    <string name="cancel">取消</string>
+    <string name="commit">提交</string>
+    <string name="task_name">任务名称* :</string>
+    <string name="task_num">任务编号* :</string>
+    <string name="start_time">发现时间* :</string>
+    <string name="end_time">办结时间* :</string>
+    <string name="task_from">任务来源* :</string>
+    <string name="task_type">任务类型* :</string>
+    <string name="is_sure">领导确认* :</string>
+    <string name="grid_belong">所属网格* :</string>
+    <string name="task_arae">任务地址* :</string>
+    <string name="adress">经纬坐标* :</string>
+    <string name="describe">任务描述* :</string>
+    <string name="titlebar_gridcity">所属网格</string>
+    <string name="_null"></string>
+    <!--派发详情-->
+    <string name="task_detail">派发详情</string>
+    <string name="title_activity_activity_base">ActivityBase</string>
+    <string name="task_title">案卷详情:</string>
+    <string name="task_src">案卷来源:</string>
+    <string name="task_time">线索发现时间:</string>
+    <string name="task_grid">所属网格:</string>
+    <string name="task_creater">创建人:</string>
+    <string name="task_isSure">是否需要领导确认:</string>
+    <string name="task_describe">案卷描述:</string>
+    <string name="task_options">案卷附件:</string>
+    <string name="task_create_time">创建时间:</string>
+    <string name="task_type_">案卷类型:</string>
+    <string name="task_end_time">要求办结时间:</string>
+    <string name="task_adress">案卷地址:</string>
+    <string name="task_station">案卷状态:</string>
+    <string name="executer">执行人</string>
+    <string name="execute_type">执行方式</string>
+    <string name="execute_grid">执行网格</string>
+    <string name="send_time">发送时间</string>
+    <!--案卷转发-->
+    <string name="the_team">  *所属大队:</string>
+    <string name="the_executor">   *执行人:</string>
+    <string name="the_end_time">*要求办结时间:</string>
+    <string name="the_describe">  *处置描述:</string>
+    <!--创建巡查-->
+    <string name="check_the_team">*所属大队:</string>
+    <string name="check_tel">*联系电话:</string>
+    <string name="check_source">*案件来源:</string>
+    <string name="check_adress">*事件发生地点:</string>
+    <string name="check_is_execute">*是否需要处置:</string>
+    <string name="check_censor">*监督员:</string>
+    <string name="check_start_time">*事件发生时间:</string>
+    <string name="check_type">*分类:</string>
+    <string name="check_marker">*标志物方位:</string>
+    <string name="check_info">*基本情况:</string>
+    <string name="check_remark">*备注:</string>
+    <!--污染源-->
+    <string name="toast_no_air">企业未监控废气排口</string>
+    <string name="toast_no_water">企业未监控废水排口</string>
+    <string name="loading">加载中…</string>
+    <string name="please_all_select">查询失败</string>
+    <!--一企一档-->
+    <string name="pager_info">企业基本信息</string>
+    <string name="pager_build">建设项目环评</string>
+    <string name="pager_build_end">建设项目验收</string>
+    <string name="pager_build_change">项目变更</string>
+    <string name="pager_test_waste">污染物排放分析</string>
+    <string name="pager_test_energy">能源消耗分析</string>
+    <string name="pager_solid_waste">固废、危废排放分析</string>
+    <string name="pager_belowdown_pass">排污许可</string>
+    <string name="pager_belowdown_commit">排污申报</string>
+    <string name="pager_belowdown_cost">排污收费</string>
+    <string name="pager_report">信访投诉</string>
+
+</resources>

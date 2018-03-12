@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview_costum"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+    
+    <RelativeLayout android:id="@+id/toppanel"
+        android:layout_width="match_parent"
+        android:background="#ddffffff"
+        android:layout_height="40dp">
+        
+                <ImageView
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+        
+        <TextView android:id="@+id/panel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            
+            />
+        
+        <TextView android:id="@+id/btn_returntolist"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            
+            android:text="列表"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="#ddffffff"
+        android:orientation="vertical">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView android:id="@+id/com_no"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="#666666"
+                />
+            
+            <TextView android:id="@+id/com_dis"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"/>
+            <TextView android:id="@+id/com_name"
+            	android:layout_width="wrap_content"
+           	 	android:layout_height="wrap_content"
+           	 	android:layout_centerVertical="true"
+           	 	
+           	 	android:textSize="16sp"
+            	android:layout_toRightOf="@id/com_no"
+            	android:layout_toLeftOf="@id/com_dis"/>
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView android:id="@+id/com_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/map_enterprisetype_background"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            >
+            <View android:id="@+id/viewleft"
+                 android:layout_width="40dp"
+                android:layout_height="30dp"/>
+            <TextView android:id="@+id/com_address"
+            	android:layout_width="wrap_content"
+            	android:layout_height="30dp"
+            	android:layout_toRightOf="@id/viewleft"
+            	android:gravity="center"
+            	android:text="详情"/>
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>

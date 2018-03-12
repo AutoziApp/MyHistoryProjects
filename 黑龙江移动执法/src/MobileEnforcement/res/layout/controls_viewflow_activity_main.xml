@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.mapuni.android.MobileEnforcement"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.mapuni.android.base.SlideLayout
+        android:id="@+id/slidelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dblue"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+             <LinearLayout
+                android:id="@+id/topLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical" />
+
+          <LinearLayout
+                android:id="@+id/middleLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/bottomLayout"
+                android:layout_below="@+id/topLayout"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+            <LinearLayout
+                android:id="@+id/header_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                  <com.mapuni.android.viewflow.TitleFlowIndicator android:id="@+id/viewflowindic" 
+                      android:layout_height="wrap_content" android:layout_width="fill_parent" 
+                      app:footerLineHeight="2dp" app:customTypeface="fonts/Antic.ttf" 
+                      app:footerTriangleHeight="10dp" app:textColor="#000000" app:selectedColor="#3e97f9" 
+                      app:selectedBold="true" app:footerColor="#3e97f9" 
+                      app:titlePadding="10dp" app:textSize="15dp" 
+                      app:selectedSize="17dp" android:layout_marginTop="10dip" 
+                      app:clipPadding="10dp"
+                      android:visibility="gone"
+                      
+                       /> 
+                
+                
+                  <com.viewpagerindicator.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        
+        />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:paddingTop="3dp" >
+
+                <com.mapuni.android.viewflow.ViewFlow
+                    android:id="@+id/viewflow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:duplicateParentState="true" />
+
+                 <com.mapuni.android.viewflow.CircleFlowIndicator
+                      android:padding="10dip" 
+                      android:layout_height="wrap_content" 
+                      android:layout_width="wrap_content" 
+                      android:id="@+id/viewflowindicator" 
+                      android:layout_gravity="center_horizontal" 
+                      app:inactiveType="fill" app:fadeOut="1000" 
+                      android:layout_alignParentBottom="true" 
+                      android:layout_centerHorizontal="true" /> 
+                
+                
+                <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+
+            </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bottomLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bottom_menu"
+                android:visibility="gone" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dblue"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dblue"
+                android:orientation="vertical" >
+
+                <include layout="@layout/more_user_info" />
+
+                <ListView
+                    android:id="@+id/sort_listview"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:divider="#dedfde"
+                    android:dividerHeight="1dp"
+                    android:fadingEdgeLength="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.mapuni.android.base.SlideLayout>
+
+</LinearLayout>

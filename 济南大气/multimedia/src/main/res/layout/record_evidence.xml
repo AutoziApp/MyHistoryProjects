@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/bg_record">
+	<LinearLayout 
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" >
+	<LinearLayout 
+	android:orientation="horizontal" 
+	android:gravity="bottom"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:background="@drawable/bg_title">
+	
+	<TextView 
+	android:id="@+id/TextView01" 
+	android:text="录音中 ..."
+	android:textSize="16sp"
+	android:layout_marginTop="7dip"
+	android:layout_marginLeft="9dip"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:textColor="@android:color/white"/>
+	</LinearLayout>
+	
+	
+	
+	<LinearLayout
+	android:orientation="horizontal" 
+	android:gravity="center_horizontal"
+	android:layout_marginTop="80dp"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	
+	<TextView 
+	android:text="00" 
+	android:id="@+id/mini_TextView" 
+	android:textColor="@android:color/white"
+	android:textSize="64sp"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"/>
+	
+	<TextView 
+	android:text=":" 
+	android:id="@+id/sep_TextView" 
+	android:textColor="@android:color/white"
+	android:textSize="64sp"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"/>
+	
+	<TextView 
+	android:text="00" 
+	android:id="@+id/sec_TextView" 
+	android:textColor="@android:color/white"
+	android:textSize="64sp"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"/>
+	
+	</LinearLayout>
+	
+	
+	
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		
+
+		<ImageButton android:id="@+id/ibtnStartRecord" android:visibility="invisible"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			>
+		</ImageButton>
+		<ImageButton android:id="@+id/ibtnPlayRecord" android:visibility="invisible"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			>
+		</ImageButton>
+		<ImageButton android:id="@+id/ibtnDeleteRecord"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:visibility="invisible">		</ImageButton>
+		<ImageButton android:id="@+id/ibtnSubmitRecord" android:visibility="invisible"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:src="@drawable/stop">
+		</ImageButton>
+	</LinearLayout>
+	<ListView android:id="@+id/ListView01" android:layout_width="wrap_content" android:visibility="invisible"
+		android:layout_height="wrap_content" >
+	</ListView>
+	
+</LinearLayout>
+
+
+<LinearLayout 
+android:orientation="horizontal"
+android:layout_alignParentBottom="true"
+android:background="@drawable/bar_record"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:gravity="center_horizontal|bottom"
+>		
+</LinearLayout>
+	<LinearLayout 
+android:orientation="horizontal"
+android:layout_alignParentBottom="true"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:gravity="center_horizontal|bottom"
+>
+<ImageButton 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:background="@drawable/stop" 
+		android:id="@+id/ibtnStopRecord"/>
+
+</LinearLayout>
+</RelativeLayout>

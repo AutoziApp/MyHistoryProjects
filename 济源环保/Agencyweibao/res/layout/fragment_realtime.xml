@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!-- 更新时间 -->
+    <LinearLayout
+        android:id="@+id/ll_updateTime_container"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="更新时间："
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+
+        <TextView
+            android:id="@+id/tv_updateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="0000-00-00 00:00:00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+    <!-- 查询日期 -->
+	<include layout="@layout/layout_time_selected"/>
+    <LinearLayout
+        android:id="@+id/air_head"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="城市"
+            android:textColor="@color/color_statistical_list_head"
+            android:textSize="@dimen/text_size_16" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/air_headtv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM10"
+                android:textColor="@color/color_statistical_list_head"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/danwei_headtv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ug/m3"
+                android:textColor="@color/color_statistical_list_head_bottom"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/air_headtv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM2.5"
+                android:textColor="@color/color_statistical_list_head"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/danwei_headtv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ug/m3"
+                android:textColor="@color/color_statistical_list_head_bottom"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/youliangtianshu_liner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/youliangtianshu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AQI"
+                android:textColor="@color/color_statistical_list_head"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pm2.5 pm10"
+                android:textColor="@color/color_statistical_list_head_bottom"
+                android:textSize="@dimen/text_size_12"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/first_polluction"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="首要\n污染物"
+            android:textColor="@color/color_statistical_list_head"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/zhuangkuang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="状况"
+            android:visibility="gone"
+            android:textColor="@color/color_statistical_list_head"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+	<!-- ListView -->
+	<include layout="@layout/layout_statistical_listview"/>
+
+</LinearLayout>

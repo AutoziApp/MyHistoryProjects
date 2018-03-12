@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dip"
+    android:background="@color/white"
+    android:layout_marginRight="20dip"
+    android:orientation="horizontal" >
+
+    <TextView
+            android:id="@+id/ditu_water"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:drawableTop="@drawable/ditu_water_default_btn_style"
+            android:gravity="center_horizontal"
+            android:text="地表水"
+            android:textColor="@color/base_black"
+            android:textSize="12sp" />
+    
+    <TextView
+            android:id="@+id/ditu_weather"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:drawableTop="@drawable/ditu_weather_default_btn_style"
+            android:gravity="center_horizontal"
+            android:text="天气"
+            android:textColor="@color/base_black"
+            android:textSize="12sp" />
+    
+    <TextView
+            android:id="@+id/ditu_tem"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:drawableTop="@drawable/ditu_tem_default_btn_style"
+            android:gravity="center_horizontal"
+            android:text="气温"
+            android:textColor="@color/base_black"
+            android:textSize="12sp" />
+
+</LinearLayout>

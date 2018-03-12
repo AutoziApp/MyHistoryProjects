@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <TableRow 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|left"
+    android:visibility="gone"
+    >
+    <TextView 
+    android:layout_marginLeft="8dp"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"
+     android:textColor="@color/white"
+     android:text="@string/qymc"
+    />
+    <AutoCompleteTextView 
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/company_name_at"
+    />
+
+    </TableRow>
+    
+   <TableRow 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|left"
+    >
+    <TextView 
+    android:layout_marginLeft="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/ksrq"
+    />
+    <RelativeLayout 
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    >
+    <EditText 
+    android:layout_width="fill_parent" android:editable="false"
+    android:layout_height="wrap_content" android:focusable="false"
+    android:id="@+id/search_overdata_time_EditTextView"/>
+    
+    <ImageView
+    android:visibility="gone"    
+    android:id="@+id/overdata_time_button" 
+    android:layout_alignParentRight="true"
+    android:src="@drawable/icon_time" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"/>
+   
+    </RelativeLayout>
+    </TableRow>
+     <TableRow 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical|left"
+    >
+    <TextView 
+    android:layout_marginLeft="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/jsrq"
+    />
+    <RelativeLayout 
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    >
+    <EditText 
+    android:layout_width="fill_parent" android:editable="false"
+    android:layout_height="wrap_content" android:focusable="false"
+    android:id="@+id/search_overdata_time_EditTextView2"/>
+    
+    <ImageView
+    android:visibility="gone"        
+    android:id="@+id/overdata_time_button2" 
+    android:layout_alignParentRight="true"
+    android:src="@drawable/icon_time" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"/>
+   
+    </RelativeLayout>
+    </TableRow>
+    
+</LinearLayout>

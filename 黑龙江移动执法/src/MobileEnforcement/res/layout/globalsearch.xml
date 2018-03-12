@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+    
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eff8fd">
+    
+    	<EditText
+		android:id="@+id/globalsearch_et"  
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_margin="10dp"
+   	 	android:layout_marginTop="20dp"
+    	android:textColor="@android:color/black"
+    	android:drawableLeft="@drawable/icon_query"
+    	android:hint="@string/cxnxy"/>
+    
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:paddingTop="5dp"
+    android:background="@android:color/white">
+    
+    	 <com.mapuni.android.base.controls.listview.HorizontialListView
+  		android:id="@+id/globalsearch_type"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"/>
+    	
+    </LinearLayout>
+    
+    <ListView 
+    android:id="@+id/globalsearch_result"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:paddingTop="5dp"
+    android:cacheColorHint="@android:color/transparent"
+    android:background="@android:color/transparent"/>
+   
+   
+   
+</LinearLayout>

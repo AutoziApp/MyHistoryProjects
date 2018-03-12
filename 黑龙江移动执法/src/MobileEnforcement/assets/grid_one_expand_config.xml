@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<expand>
+    <item>
+        <id>1</id>
+        <name>稽查考核</name>
+        <image>grid_dwgl_a</image>
+    </item>
+     <item>
+        <id>2</id>
+        <name>绩效考核</name>
+        <image>grid_dwgl_a</image>
+    </item>
+     <item>
+        <id>3</id>
+        <name>上市核查</name>
+        <image>grid_dwgl_a</image>
+    </item>
+    <item>
+        <id>4</id>
+        <name>紧急执法</name>
+        <image>grid_dwgl_a</image>
+    </item>
+    <item>
+	    <id>5</id>
+	    <name>OA办公</name>
+	    <image>grid_dwgl_a</image> 
+	</item>
+</expand>

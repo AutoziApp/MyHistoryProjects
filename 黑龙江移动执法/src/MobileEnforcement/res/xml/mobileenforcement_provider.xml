@@ -1,0 +1,6 @@
+<appwidget-provider 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:minWidth="260dip" android:minHeight="150dip"
+	android:updatePeriodMillis="86400000" 
+	android:initialLayout="@layout/mobileenforcement_widget"/>
+	<!-- One Day -->

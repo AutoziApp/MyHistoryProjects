@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<list> 
+  <item> 
+    <name>禽畜养殖场  牛</name>  
+    <values>0.1</values>
+  </item>  
+  <item> 
+    <name>禽畜养殖场  猪</name>  
+    <values>1</values>
+  </item>  
+  <item> 
+    <name>禽畜养殖场  鸡,鸭等家禽</name>  
+    <values>30</values>
+  </item>  
+  <item> 
+    <name>小型企业</name>  
+    <values>1.8</values>
+  </item>  
+  <item> 
+    <name>饮食娱乐服务业</name>  
+    <values>0.5</values>
+  </item>  
+</list>
+ 

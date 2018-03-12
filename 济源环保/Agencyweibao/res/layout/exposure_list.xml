@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/exposure_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/exposure_return_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+          
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+             android:src="@drawable/title_back_selector"
+        android:background="@drawable/update_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="一键曝光"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <TextView 
+				android:id="@+id/exposure_title_bar_l"        
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:layout_below="@+id/exposure_title_bar"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:text="请选择污染类别（可多选）"
+                />
+    <RelativeLayout
+        android:id="@+id/exposure_list_bur"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/exposure_title_bar_l"
+        >
+
+        <LinearLayout
+            android:id="@+id/exposure_layout_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_daqi_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/exposure_daqi"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/exposure_background" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_daqi_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="大气"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_shuiti_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/exposure_shuiti"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/exposure_background"  />
+                        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_shuiti_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="水体"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_turang_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/exposure_turang"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/exposure_background"  />
+                                    <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_turang_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="土壤"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/exposure_layout_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exposure_layout_first"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+	
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_gongye_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_gongye"
+                android:background="@drawable/exposure_background"  />
+                                                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_gongye_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="工业环境"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_chengshi_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_chengshi"
+                android:background="@drawable/exposure_background"  />
+                                                            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_chengshi_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="城市环境"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_nongye_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_nongye"
+                android:background="@drawable/exposure_background"  />
+          <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_nongye_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="农业环境"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+                <LinearLayout
+            android:id="@+id/exposure_layout_third"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exposure_layout_second"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_haiyang_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_haiyang"
+                android:background="@drawable/exposure_background"  />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_haiyang_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="海洋"
+                />
+            </RelativeLayout>
+
+           <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_huaxue_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_huaxue"
+                android:background="@drawable/exposure_background"  />
+                       <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_huaxue_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="化学"
+                />
+            </RelativeLayout>
+           <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_shengwu_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_shengwu"
+                android:background="@drawable/exposure_background"  />
+                        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_shengwu_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="生物"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+                <LinearLayout
+            android:id="@+id/exposure_layout_fourth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exposure_layout_third"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_zaoyin_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_zaoyin"
+                android:background="@drawable/exposure_background"  />
+                        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_zaoyin_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="噪声"
+                />
+            </RelativeLayout>
+
+           <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_guti_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_guti"
+                android:background="@drawable/exposure_background"  />
+                        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_guti_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="固体废物"
+                />
+            </RelativeLayout>
+
+            <RelativeLayout 
+                android:layout_width="0.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                >
+            <ImageView
+                android:id="@+id/exposure_nengyuan_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/exposure_nengyuan"
+                android:background="@drawable/exposure_background"  />
+                        <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exposure_nengyuan_img"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:text="能源"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/exposure_list_bur"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        ></RelativeLayout>
+    <TextView 
+	    android:id="@+id/exposure_next"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/exposure_next_text"
+	    android:textSize="20dp"
+	    android:layout_below="@+id/exposure_list_bur"
+	    android:layout_marginLeft="30dp"
+	    android:layout_marginRight="30dp"
+	    android:layout_marginTop="30dp"
+	    android:gravity="center"
+	    android:textColor="#fff"
+	    android:background="@drawable/exposure_next"
+	    />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wd_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="35dp"
+        android:paddingBottom="35dp"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/wd_tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wd_rwxx" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/wd_tb"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <TextView
+                android:id="@+id/wd_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务信息"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/wd_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingTop="7dp"
+                android:text="展现所有上报的任务"
+                android:textColor="#939393"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/wd_fgx"
+        android:layout_width="0.3dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:minHeight="45dp"
+        android:layout_centerVertical="true"
+        android:background="#a0a0a0" />
+
+</RelativeLayout>

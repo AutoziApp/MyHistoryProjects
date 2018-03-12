@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    
+    <!-- 任务管理 -->
+	<item>
+        <menuname></menuname> 按钮的名字
+        <order>0</order> 菜单中显示的顺序
+        <ywl>RWXX</ywl>业务类的名字
+        <imagename>tab_menu_rwgl</imagename> 
+        <contextname>com.mapuni.android.taskmanager</contextname>跳转intent的包名
+        <classname>TaskMainActivity</classname>跳转class的名字
+        <ifchecked>true</ifchecked>是否默认被选中
+        <tabname>tab_tag_home</tabname>tab页的名字
+        <qxid>vmob2A</qxid>权限id
+    </item>
+  <!--   <item>
+        <menuname></menuname> 按钮的名字
+        <order>1</order> 菜单中显示的顺序
+        <ywl>RWXX</ywl>业务类的名字
+        <imagename>tab_menu_rwgl</imagename> <imagename>menu_1_normal</imagename>图片名称
+        <contextname>com.mapuni.android.newtaskmanager</contextname>跳转intent的包名
+        <classname>TaskMainActivity</classname>跳转class的名字
+        <ifchecked>false</ifchecked>是否默认被选中
+        <tabname>tab_tag_home</tabname>tab页的名字
+        <qxid>vmob2A</qxid>权限id
+    </item> -->
+	<!-- 现场执法 -->
+	<item>
+        <menuname></menuname> <!-- 按钮的名字 -->
+        <order>1</order> <!-- 菜单中显示的顺序-->
+        <ywl>XCZFXX</ywl><!-- 业务类的名字 -->
+        <imagename>tab_menu_xczf</imagename><!--<imagename>menu_2_normal</imagename> 图片名称-->
+        <contextname>com.mapuni.android.enforcement</contextname><!-- 跳转intent的包名-->
+        <classname>EnforcementActivity</classname><!-- 跳转class的名字-->
+        <ifchecked>false</ifchecked><!-- 是否默认被选中-->
+        <tabname>tab_tag_xczf</tabname><!-- tab页的名字-->
+        <qxid>vmob6A</qxid><!-- 权限id-->
+    </item>
+    
+	<!-- 信息查询 -->
+    <item>
+        <menuname></menuname> <!-- 按钮的名字 -->
+        <order>2</order> <!-- 菜单中显示的顺序-->
+        <ywl>ZHCXXX</ywl><!-- 业务类的名字 -->
+        <imagename>tab_menu_xxcx</imagename><!-- <imagename>menu_3_normal</imagename>图片名称-->
+        <contextname>com.mapuni.android.base</contextname><!-- 跳转intent的包名-->
+        <classname>GridActivity</classname><!-- 跳转class的名字-->
+        <ifchecked>false</ifchecked><!-- 是否默认被选中-->
+        <tabname>tab_tag_zhcx</tabname><!-- tab页的名字-->
+        <qxid>vmob10A</qxid><!-- 权限id-->
+    </item>
+     <!-- 环保地图 -->
+    <item>
+        <menuname></menuname> <!-- 按钮的名字 -->
+        <order>3</order> <!-- 菜单中显示的顺序-->
+        <ywl>HBDT</ywl><!-- 业务类的名字 -->
+        <imagename>tab_menu_hbdt</imagename><!-- <imagename>menu_4_normal</imagename>图片名称-->
+        <contextname>com.mapuni.android.gis</contextname><!-- 跳转intent的包名-->
+        <classname>MapActivity</classname><!-- 跳转class的名字-->
+        <ifchecked>false</ifchecked><!-- 是否默认被选中-->
+        <tabname>tab_tag_hbdt</tabname><!-- tab页的名字-->
+        <qxid>vmob10A</qxid><!-- 权限id-->
+    </item>
+   
+    
+    <!-- 更多 -->
+<!--     <item> -->
+<!--         <menuname></menuname> 按钮的名字 -->
+<!--         <order>4</order> 菜单中显示的顺序 -->
+<!--         <ywl>GD</ywl>业务类的名字 -->
+<!--         <imagename>menu_5_normal</imagename>图片名称 -->
+<!--         <checkdeimagename>menu_5_hover</checkdeimagename>图片名称 -->
+<!--         <contextname>com.mapuni.android.oa</contextname>跳转intent的包名 -->
+<!--         <classname>ExpandListSquaredActivity</classname>跳转class的名字 -->
+<!--         <ifchecked>false</ifchecked>是否默认被选中 -->
+<!--         <tabname>tab_tag_gd</tabname>tab页的名字 -->
+<!--         <qxid>vmob10A</qxid>权限id -->
+<!--     </item> -->
+    
+      
+</list>

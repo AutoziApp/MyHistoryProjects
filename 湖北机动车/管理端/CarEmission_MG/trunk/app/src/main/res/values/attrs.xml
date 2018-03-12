@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ButtonCircleProgressBar">
+        <!--无进度时的颜色-->
+        <attr name="progress_unreached_color" format="color"/>
+        <!--进度颜色-->
+        <attr name="progress_reached_color" format="color"/>
+        <!--进度条的高-->
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <!--无进度时的边框高-->
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+        <!--圆的半径-->
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+
+    <attr name="textwidth" format="integer"/>
+    <attr name="typeface">
+        <enum name="normal" value="0"/>
+        <enum name="sans" value="1"/>
+        <enum name="serif" value="2"/>
+        <enum name="monospace" value="3"/>
+    </attr>
+    <declare-styleable name="CYTextView">
+        <attr name="textwidth"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="textColor" format="reference|color"/>
+        <attr name="lineSpacingExtra" format="dimension"/>
+        <attr name="typeface"/>
+    </declare-styleable>
+    
+    <string-array name="carMassage">
+        <item>车辆公开信息</item>
+        <item>车辆达标信息</item>
+    </string-array>
+
+
+    <string-array name="carType">
+        <item>载客</item>
+        <item>载货</item>
+        <item>摩托</item>
+        <item>其他</item>
+    </string-array>
+</resources>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/duoyun" />
+
+    <RelativeLayout
+        android:id="@+id/today_weather_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#0000" >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/widget_time_marginLeft"
+            android:layout_marginTop="@dimen/fivedip"
+            android:singleLine="true"
+            android:text="- -"
+            android:textColor="#fff"
+            android:textSize="40.0sp" />
+
+        <TextView
+            android:id="@+id/weather_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/time"
+            android:layout_below="@+id/time"
+            android:layout_marginRight="@dimen/tendip"
+            android:text="- -"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/weather_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/weather_date"
+            android:layout_alignBottom="@+id/weather_date"
+            android:layout_toRightOf="@+id/weather_date"
+            android:text="- -"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/aqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/aqi_data"
+            android:layout_alignBottom="@+id/aqi_data"
+            android:layout_marginRight="4dip"
+            android:layout_toRightOf="@+id/aqi_data"
+            android:gravity="right"
+            android:text=" AQI"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/pm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/aqi_data"
+            android:layout_below="@+id/aqi_data"
+            android:layout_marginTop="@dimen/twodip"
+            android:background="@drawable/qingdu" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weather_image_widget"
+            android:layout_toRightOf="@+id/pm"
+            android:src="@drawable/shuaxin" />
+
+        <Button
+            android:id="@+id/weather_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignTop="@+id/site"
+            android:layout_toRightOf="@+id/site"
+            android:background="@drawable/switch_city_0"
+            android:text="- -"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/weather_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/refresh_time"
+            android:layout_marginTop="5dip"
+            android:layout_toLeftOf="@+id/weather_temperature"
+            android:text="- -"
+            android:textColor="#E8E8E8" />
+
+        <TextView
+            android:id="@+id/refresh_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/refresh_time"
+            android:layout_alignBottom="@+id/refresh_time"
+            android:layout_toLeftOf="@+id/refresh_time"
+            android:text="- -"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/weather_temp"
+            android:layout_toLeftOf="@+id/weather_image_widget"
+            android:gravity="bottom"
+            android:text="- -"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/pm2.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/keli"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_marginLeft="@dimen/threedip"
+            android:text="PM 2.5"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/site"
+            android:layout_toLeftOf="@+id/site"
+            android:paddingBottom="@dimen/twodip"
+            android:src="@drawable/dingwei" />
+
+        <TextView
+            android:id="@+id/img_refresh_btn"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignLeft="@+id/weather_temperature"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/weather_temp"
+            android:paddingBottom="@dimen/tendip" />
+
+        <ImageView
+            android:id="@+id/img_refresh_btn2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/refresh_time"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/refresh_time"
+            android:paddingBottom="@dimen/tendip"
+            android:src="@drawable/shuxian" />
+
+        <TextView
+            android:id="@+id/refresh_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/tendip"
+            android:layout_marginTop="@dimen/tendip"
+            android:layout_toLeftOf="@+id/weather_image_widget"
+            android:paddingBottom="10dip"
+            android:text="- -"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/aqi_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/keli"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="15dip"
+            android:text="- -"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/keli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/weather_temperature"
+            android:layout_alignBottom="@+id/weather_temperature"
+            android:layout_marginLeft="@dimen/threedip"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="入肺颗粒物"
+            android:textColor="#fff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/pm_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pm"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/pm"
+            android:text="- -"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/weather_image_widget"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_above="@+id/imageView4"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/w_duoyun" />
+    </RelativeLayout>
+
+</FrameLayout>

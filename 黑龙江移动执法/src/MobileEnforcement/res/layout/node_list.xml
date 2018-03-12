@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/father_scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!--
+    android:background="@drawable/icon_enter_detail"
+	android:background="@drawable/icon_enter_detail"
+        -->
+
+        <ImageView
+            android:id="@+id/top_list_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+             />
+
+        <RelativeLayout
+            android:id="@+id/node_list_list"
+            android:layout_width="fill_parent"
+            android:layout_height="36sp"
+            android:background="#eff8fd"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/node_list_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:padding="2sp"
+                android:text="@string/zfqd"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+             <TextView
+                 android:layout_marginLeft="20dp"
+                android:id="@+id/node_list_tv2"
+                android:layout_toRightOf="@+id/node_list_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="2sp"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/node_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_arrow_yellow_down"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/zhzd_tree"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000" />
+    </LinearLayout>
+
+</RelativeLayout>

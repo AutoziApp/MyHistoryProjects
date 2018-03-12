@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+   <item>
+     <id>2</id> 
+     <img>grid_wrycx_selector</img>
+     <qymc>企业查询</qymc>
+     <qxid>mob2A1B1C</qxid>
+   </item>
+   <item>
+     <id>1</id>
+     <img>grid_xczf_a</img>
+     <qymc>新增企业</qymc>
+     <qxid>mob2A1B6C</qxid>
+   </item>
+   <item>
+     <id>2</id>
+     <img>grid_xzcf_selector</img>
+     <qymc>文书生成</qymc>
+     <qxid>mob2A1B2C</qxid>
+   </item>
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/item_bg"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="填报单位"
+                    android:gravity="center"
+                    android:id="@+id/unitView" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="巡查人"
+                    android:gravity="center"
+                    android:id="@+id/nameView" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="巡查次数"
+                    android:gravity="center"
+                    android:id="@+id/countView" />
+
+        </LinearLayout>
+
+
+</RelativeLayout>

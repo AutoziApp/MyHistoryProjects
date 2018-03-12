@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list> 
+    <item>
+  <name>立帽式</name> 
+  <values>0.485</values> 
+  </item>
+    <item>
+  <name>干式沉降</name> 
+  <values>0.634</values> 
+  </item>
+  <item>
+  <name>湿法喷淋，冲击</name> 
+  <values>0.761</values> 
+  </item>
+  <item>
+  <name>XSW双极旋风</name> 
+  <values>0.806</values> 
+  </item>
+  <item>
+  <name>XPW平面旋风</name> 
+  <values>0.811</values> 
+  </item> 
+  <item>
+  <name>CIG,DGL旋风</name> 
+  <values>0.799</values> 
+  </item>
+  <item>
+  <name>XZZ-D450旋风</name> 
+  <values>0.903</values> 
+  </item>
+   <item>
+  <name>XZZ-D550、750</name> 
+  <values>0.936</values> 
+  </item> <item>
+  <name>XZD/G-578-110</name> 
+  <values>0.94</values> 
+  </item> <item>
+  <name>XZD/G</name> 
+  <values>0.889</values> 
+  </item> <item>
+  <name>XS-1A-4A旋风</name> 
+  <values>0.923</values> 
+  </item> <item>
+  <name>XS-6.5A-20A</name> 
+  <values>0.88</values> 
+  </item> <item>
+  <name>XNG/D旋风</name> 
+  <values>0.923</values> 
+  </item> <item>
+  <name>SG旋风</name> 
+  <values>0.895</values> 
+  </item> <item>
+  <name>XZY旋风</name> 
+  <values>0.8</values> 
+  </item> <item>
+  <name>XZS型旋风</name> 
+  <values>0.809</values> 
+  </item> <item>
+  <name>双选涡轮-6.5</name> 
+  <values>0.865</values> 
+  </item> <item>
+  <name>XCX/G旋风</name> 
+  <values>0.885</values> 
+  </item> <item>
+  <name>XPK旋风</name> 
+  <values>0.93</values> 
+  </item> <item>
+  <name>XCZ旋风</name> 
+  <values>0.92</values> 
+  </item> <item>
+  <name>XDF旋风</name> 
+  <values>0.751</values> 
+  </item> <item>
+  <name>埃索式旋风</name> 
+  <values>0.933</values> 
+  </item> <item>
+  <name>扩散式</name> 
+  <values>0.858</values> 
+  </item> <item>
+  <name>陶瓷多管</name> 
+  <values>0.713</values> 
+  </item> <item>
+  <name>金属多管</name> 
+  <values>0.833</values> 
+  </item> <item>
+  <name>XWD卧式多管</name> 
+  <values>0.941</values> 
+  </item> <item>
+  <name>同济(DE)旋风</name> 
+  <values>0.907</values> 
+  </item> <item>
+  <name>C型CLP</name> 
+  <values>0.833</values> 
+  </item> <item>
+  <name>管式水膜</name> 
+  <values>0.756</values> 
+  </item> <item>
+  <name>麻石水膜</name> 
+  <values>0.884</values> 
+  </item> <item>
+  <name>其他旋风水膜</name> 
+  <values>0.833</values> 
+  </item> <item>
+  <name>管式静电</name> 
+  <values>0.851</values> 
+  </item> <item>
+  <name>板式静电</name> 
+  <values>0.897</values> 
+  </item> <item>
+  <name>玻璃纤维布袋</name> 
+  <values>96.2</values> 
+  </item> <item>
+  <name>湿式文丘里水膜两级除尘</name> 
+  <values>0.968</values> 
+  </item> <item>
+  <name>百叶窗加电除尘</name> 
+  <values>0.952</values> 
+  </item> <item>
+  <name>SW型加钢管水膜</name> 
+  <values>0.93</values> 
+  </item>
+  <name>立式多管加灰斗抽风除尘</name> 
+  <values>0.93</values> 
+  </item>
+  
+ 
+ 
+</list>

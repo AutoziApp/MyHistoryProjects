@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/send_linearLayout2"
+        android:layout_alignParentTop="true"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="horizontal" >
+                 <RadioButton
+                     android:layout_marginLeft="20dp"
+                     android:id="@+id/rb1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     />
+<!--                  <CheckBox  -->
+<!--                      android:id="@+id/cb1" -->
+<!--                  	 android:layout_width="wrap_content" -->
+<!--             		 android:layout_height="wrap_content"></CheckBox> -->
+
+                 <TextView 
+                     android:layout_marginLeft="10dp"
+         		   android:layout_width="wrap_content"
+         		   android:layout_height="wrap_content" 
+         		    android:text="本单位"
+             android:textColor="#000"
+         		   android:textSize="16sp"></TextView>
+<!--                        <CheckBox  -->
+<!--                      android:id="@+id/cb2" -->
+<!--                        android:layout_marginLeft="10dp" -->
+<!--                  	 android:layout_width="wrap_content" -->
+<!--             		 android:layout_height="wrap_content"></CheckBox> -->
+
+
+                 <RadioButton
+                     android:layout_marginLeft="70dp"
+                     android:id="@+id/rb2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     />
+                 <TextView 
+                     android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="下级单位"
+             android:textColor="#000"
+         		   android:textSize="16sp"/>
+             </LinearLayout>
+            
+
+            <EditText
+                android:id="@+id/notice_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="公告标题:"
+                
+                android:imeOptions="actionNext"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/notice_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="公告内容:"
+                android:imeOptions="actionDone"
+                android:minLines="8" />
+
+            <LinearLayout
+                android:id="@+id/send_linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/noticeToUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="请选择告知对象"
+                    android:maxLines="1" />
+
+                <Button
+                    android:id="@+id/attachment_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:hint="附件选择"
+                    android:maxLines="1" />
+
+                <ListView
+                    android:id="@+id/taskedit_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:layout_weight="1" >
+                </ListView>
+
+                <!-- <Button -->
+                <!-- android:id="@+id/noticeSendTime" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="0dp" -->
+                <!-- android:layout_weight="1" -->
+                <!-- android:ellipsize="end" -->
+                <!-- android:gravity="center" -->
+                <!-- android:hint="请选择发布时间" -->
+                <!-- android:maxLines="1" /> -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/send_linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/noticeSend"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:text="发布" />
+
+        <Button
+            android:id="@+id/noticeCancel"
+            style="@style/buttonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottom_menu_height"
+            android:layout_weight="1"
+            android:text="清空" />
+    </LinearLayout>
+
+</RelativeLayout>

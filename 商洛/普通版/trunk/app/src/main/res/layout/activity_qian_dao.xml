@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qian_dao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mapuni.shangluo.activity.xcAc.QianDaoActivity">
+    <include
+        layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/tvStyle1"
+                    android:text="地址："/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/tvStyle2"/>
+            </LinearLayout>
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_qiandao"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/qd_bu1"-->
+                <!--android:layout_centerInParent="true"/> -->
+            <TextView
+                android:id="@+id/iv_qiandao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/qd_bg"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/top_color"
+    tools:context=".activity.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/leftIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:padding="3dp"
+        android:src="@mipmap/fanhui"
+        android:visibility="gone"
+
+        />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/title_spinner"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:overlapAnchor="false"
+        android:padding="@null"
+        android:spinnerMode="dropdown"
+        android:visibility="gone">
+    </android.support.v7.widget.AppCompatSpinner>
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:src="@drawable/add"/>
+
+    <ImageView
+        android:id="@+id/rightIconA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:padding="3dp"
+        android:paddingRight="10dp"
+        android:src="@mipmap/saoma"/>
+
+</RelativeLayout>
+

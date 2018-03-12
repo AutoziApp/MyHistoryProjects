@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:gravity="center_vertical"
+    android:paddingTop="8dp" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/logo31" />
+
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/image"
+        android:text="版本更新提示"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_alignLeft="@+id/name2"
+        android:text="更专业的环保数据,赶紧更新吧!"
+        android:textSize="11sp" 
+        android:textColor="#A1A1A1"/>
+
+    <TextView
+        android:id="@+id/notifi_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:textColor="#fff"
+        android:textSize="11sp"/>
+
+</RelativeLayout>

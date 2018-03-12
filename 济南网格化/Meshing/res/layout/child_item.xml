@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_height="wrap_content" >
+   
+
+    <TextView
+        android:id="@+id/two_class_interface_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/two_class_interface_image"
+        android:textColor="@color/black"
+        android:focusable="false"
+        android:textSize="20sp" 
+        android:singleLine="false"/>
+
+    <RadioButton
+        android:id="@+id/two_class_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:visibility="gone"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

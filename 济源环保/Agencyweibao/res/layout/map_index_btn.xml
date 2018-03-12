@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#d4d4d4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_aqi_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_index_bg_selecter"
+            android:gravity="center"
+            android:text="AQI"
+            android:textColor="@color/btn_index_textcolor_selecter" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/tv_pm25_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_index_bg_selecter"
+            android:gravity="center"
+            android:text="PM2.5"
+            android:textColor="@color/btn_index_textcolor_selecter" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/tv_pm10_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_index_bg_selecter"
+            android:gravity="center"
+            android:text="PM10"
+            android:textColor="@color/btn_index_textcolor_selecter" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/tv_so2_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_index_bg_selecter"
+            android:gravity="center"
+            android:text="SO2"
+            android:textColor="@color/btn_index_textcolor_selecter" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/tv_no2_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_index_bg_selecter"
+            android:gravity="center"
+            android:text="NO2"
+            android:textColor="@color/btn_index_textcolor_selecter" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/tv_o3_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_index_bg_selecter"
+            android:gravity="center"
+            android:text="O3"
+            android:textColor="@color/btn_index_textcolor_selecter" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/tv_co_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_index_bg_selecter"
+            android:gravity="center"
+            android:text="CO"
+            android:textColor="@color/btn_index_textcolor_selecter" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ciclesize">13px</dimen>
+    <dimen name="circlealphasize">18px</dimen>
+    <dimen name="downsize">25px</dimen>
+    <dimen name="line_size1">80px</dimen>
+    <dimen name="linesize">5px</dimen>
+    <dimen name="linesize1">8px</dimen>
+    <dimen name="pointsize1">10px</dimen>
+    <dimen name="tem_text_size">40px</dimen>
+    <dimen name="ttt">42px</dimen>
+    <dimen name="upsize">70px</dimen>
+</resources>

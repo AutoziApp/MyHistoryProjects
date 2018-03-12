@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "8g"
+    }
+
+    compileOptions.encoding = "utf-8"
+    tasks.withType(JavaCompile) {
+        options.encoding = "utf-8"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+}
+
+dependencies {
+    compile files('libs/universal-image-loader-1.9.2-with-sources.jar')
+    compile files('libs/zxing_core.jar')
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    //    compile 'org.apache.httpcomponents:httpcore:4.4.4'
+    //    compile 'com.karumi:dexter:2.2.2'
+    compile project(':base')
+}

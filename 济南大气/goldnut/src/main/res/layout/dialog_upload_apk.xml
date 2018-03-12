@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_bg_white"
+    android:minWidth="280dp"
+    android:layout_margin="30dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text="升级提示"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="20dp"
+            android:background="#eeeeee" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_msg_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:maxHeight="320dp"
+        android:minHeight="80dp"
+        android:text=""
+        android:textColor="#000000" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/tv_later"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="稍后再说"
+            android:textColor="@drawable/color_text_dialog_xml" />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical" 
+            android:background="#eeeeee"
+            />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="true"
+            android:text="立即更新"
+            android:textColor="@drawable/color_text_dialog_xml" />
+    </LinearLayout>
+
+</LinearLayout>

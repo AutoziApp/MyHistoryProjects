@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical"
+    >
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text="周三"
+        android:id="@+id/dayinfo"
+        android:textColor="#b4ffffff"
+         />
+
+    <ImageView
+        android:layout_width="0dip"
+        android:layout_height="40dp"
+        android:layout_weight="0.8"
+        android:src="@drawable/w0" 
+        android:id="@+id/weatherimage"
+        android:gravity="left|center_vertical"
+        />
+
+    <TextView
+        
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:text="晴"
+        android:id="@+id/tq_info"
+        android:textColor="#b4ffffff"
+       />
+
+    <TextView
+        
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:text="1-5"
+        android:id="@+id/tempinfo"
+        android:textColor="#b4ffffff"
+       />
+  <TextView
+        
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="微风"
+        android:id="@+id/wind"
+        android:textColor="#b4ffffff"
+       />
+    
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/login_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/afterlogin_return_iv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择性别"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+                <Button
+            android:id="@+id/user_info_gender_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_userinfo_nc"/>
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/userinfo_radiogroup" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:checkedButton="@+id/userinfo_btn1"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/userinfo_btn1"
+            android:text="男" 
+            />
+        <RadioButton
+            android:id="@+id/userinfo_btn2" 
+            android:text="女"
+            />
+    </RadioGroup>
+
+    
+    </LinearLayout>

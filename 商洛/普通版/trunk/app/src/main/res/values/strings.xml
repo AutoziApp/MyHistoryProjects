@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">商洛网格化</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="register_record"><u>签到记录</u></string>
+</resources>

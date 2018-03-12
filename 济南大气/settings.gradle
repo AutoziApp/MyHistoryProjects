@@ -1,0 +1,4 @@
+include ':netprovider', ':goldnut', ':loginauth', ':meshingtotal', ':gis', ':chart'
+include ':base'
+include ':hellocharts'
+include ':multimedia'

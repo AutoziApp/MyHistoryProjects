@@ -1,0 +1,278 @@
+[
+    {
+        "outputFile": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-1280x720\\values-1280x720.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 46,
+                        "endOffset": 97
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 39,
+                    "endOffset": 137
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 102,
+                        "endColumn": 39,
+                        "endOffset": 137
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 142,
+                    "endColumn": 41,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 142,
+                        "endColumn": 41,
+                        "endOffset": 179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 39,
+                    "endOffset": 219
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 184,
+                        "endColumn": 39,
+                        "endOffset": 219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 224,
+                    "endColumn": 40,
+                    "endOffset": 260
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 224,
+                        "endColumn": 40,
+                        "endOffset": 260
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 265,
+                    "endColumn": 44,
+                    "endOffset": 305
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 265,
+                        "endColumn": 44,
+                        "endOffset": 305
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 310,
+                    "endColumn": 37,
+                    "endOffset": 343
+                },
+                "from": {
+                    "file": "D:\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 310,
+                        "endColumn": 37,
+                        "endOffset": 343
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-1280x720\\values-1280x720.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 46,
+                    "endOffset": 97
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 46,
+                        "endOffset": 97
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 102,
+                    "endColumn": 39,
+                    "endOffset": 137
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 102,
+                        "endColumn": 39,
+                        "endOffset": 137
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 142,
+                    "endColumn": 41,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 142,
+                        "endColumn": 41,
+                        "endOffset": 179
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 39,
+                    "endOffset": 219
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 184,
+                        "endColumn": 39,
+                        "endOffset": 219
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 224,
+                    "endColumn": 40,
+                    "endOffset": 260
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 224,
+                        "endColumn": 40,
+                        "endOffset": 260
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 265,
+                    "endColumn": 44,
+                    "endOffset": 305
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 265,
+                        "endColumn": 44,
+                        "endOffset": 305
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 310,
+                    "endColumn": 37,
+                    "endOffset": 343
+                },
+                "from": {
+                    "file": "D:\\studioworks\\MobileEnvironment\\HoloGraphLibrary\\build\\intermediates\\bundles\\debug\\res\\values-1280x720\\values-1280x720.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 310,
+                        "endColumn": 37,
+                        "endOffset": 343
+                    }
+                }
+            }
+        ]
+    }
+]

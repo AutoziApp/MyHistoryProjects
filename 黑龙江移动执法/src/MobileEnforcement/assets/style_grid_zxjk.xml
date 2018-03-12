@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+	<item>
+		<id>3</id>
+		<img>grid_menu_zxjc</img>
+		<qymc>在线监测</qymc>
+		<qxid>vmob3A</qxid>
+	</item>
+	
+	<!--视频监控权限  vmob3A3B -->
+	<item>
+		<id>2</id>
+		<img>grid_menu_spjk</img>
+		<qymc>视频监控</qymc>
+		<qxid>vmob3A</qxid>
+	</item> 
+
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    
+    <!-- 危废信息 -->
+    <item>
+        <name>WRY_WFXX</name>
+         <pwkbh>排污口编号:</pwkbh>
+        <pwkmc>排污口名称:</pwkmc>
+        <czfs>处置方式:</czfs>
+        <dfzcbh>堆放贮存变化:</dfzcbh>
+        <wryly>来源:</wryly>
+        <wryzl>种类:</wryzl>
+        <wrysl>数量（吨）:</wrysl>
+        <WFXX_GFZZQK style="button">规范整治情况：</WFXX_GFZZQK>
+        <WFXX_LYQK style="button">利用情况：</WFXX_LYQK>
+        <WFXX_QTBCZL style="button">其他补充资料：</WFXX_QTBCZL>
+    </item>
+    
+    
+    
+    
+    <!-- 排污收费 -->
+    <item>
+        <name>WRY_PWSF</name>
+        <year>年份:</year>
+        <month>月份或者季度:</month>
+        <jfze>缴费总额:</jfze>
+        <jfqk>缴费情况:</jfqk>
+        <bz>备注:</bz>
+    </item>
+    
+     <!-- 固废、灰渣 -->
+    <item>
+        <name>WRY_GFHZ</name>
+         <pwkbh>排污口编号:</pwkbh>
+        <pwkmc>排污口名称:</pwkmc>
+       <!-- <pwkwz>排污口位置:</pwkwz> -->
+        <!-- <pfqx>排污去向:</pfqx> -->
+        <sfzhly>是否综合利用:</sfzhly>
+        <dfzcbh>堆放贮存变化:</dfzcbh>
+        <wryly>来源:</wryly>
+        <wryzl>种类:</wryzl>
+        <wrysl>数量（吨）:</wrysl>
+        <!-- <wrymc>污染源名称:</wrymc>
+        <bz>备注:</bz> -->
+        <GFHZ_GFZZQK style="button">规范整治情况：</GFHZ_GFZZQK>
+        <GFHZ_LYQK style="button">利用情况：</GFHZ_LYQK>
+        <GFHZ_QTBCZL style="button">其他补充资料：</GFHZ_QTBCZL>
+    </item>
+    <!-- 企业环境管理制度 -->
+    <item>
+        <name>T_WRY_QYHJGLZD</name>
+        <zdmc>制度名称:</zdmc>
+        <wjh>文件号:</wjh>
+        <fbrq style="time">发布日期:</fbrq>
+        <ssbm>实施部门:</ssbm>
+        <pzdw>批准单位:</pzdw>
+        <sfba>是否备案:</sfba>
+        <basj style="time">备案时间:</basj>
+        <babm>备案部门:</babm>
+        <ms>描述:</ms>
+        <QYHJGLZD_FJ style="button">附件:</QYHJGLZD_FJ>
+
+    </item>
+    
+    
+    
+    
+    
+    <!-- 人员定位信息 -->
+	<item>
+		<name>PC_RYDW</name>
+		<u_realname>名称：</u_realname>
+		<u_photo style="call">移动电话：</u_photo>
+		<u_hometel style="call">办公电话：</u_hometel>
+		<JTH>集团号：</JTH>
+		<u_email style="email">电子邮箱：</u_email>
+		<depname>部门：</depname>
+		<u_status>职位：</u_status>
+		<ZZ>职责：</ZZ>
+		<ZXWZ style="button">最新位置：</ZXWZ>
+		<GJCX style="button">轨迹查询：</GJCX>
+		<mysql>select
+			userid,u_realname,u_photo,u_hometel,u_email,depname,u_status,zfzh
+			from pc_users a LEFT JOIN Sex b ON a . u_sex = b . sexid LEFT JOIN
+			pc_departmentinfo c ON a . depid = c . depid where
+		</mysql>
+      <!--    <regioncode>行政区划：</regioncode>  <sexname>性别：</sexname>-->
+	</item>
+    
+    <!-- 存放详细页面显示的样式信息 -->
+    <!-- 环保手续履行情况                                                                                                                                                         9改完 -->
+	<item>
+		<name>WRY_HBSXLXQK</name> <!-- 用于区分不同类的样式模块  与类中的DetailedStyleName对应 -->
+		<xmmc>项目名称:</xmmc><!-- 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示-->
+		<sfwbaxm>是否为备案项目:</sfwbaxm>
+		<xmbh>项目编号:</xmbh>
+		<xmspdw>项目审批单位:</xmspdw>
+		<xmspsj>项目审批时间:</xmspsj>
+	    <xmspwh>项目审批文号:</xmspwh>
+	    <xmtz unit="(万元)">项目投资:</xmtz>
+	    <hbtz unit="(万元)">环保投资:</hbtz>
+	    <zyyl>主要原料:</zyyl>
+	    <zycp>主要产品:</zycp>
+	    <HBSXLXQK_GYT style="button">主要工艺:</HBSXLXQK_GYT>
+	    <XMSPDZDA style="button">项目审批电子档案或项目备案档案:</XMSPDZDA>
+	    <sscpfbm>试生产批复部门:</sscpfbm>
+	    <sscpfsj>试生产批复时间:</sscpfsj>
+	    <SSCSPDZDA style="button">试生产审批电子档案:</SSCSPDZDA>
+	    <hbysbm>环保验收部门:</hbysbm>	
+	    <hbyssj>环保验收时间:</hbyssj>
+	    <hbyspfwh>环保验收批复文号:</hbyspfwh>
+	    <hbjg>环保机构:</hbjg>
+		<HBYSDZDA style="button">环保验收电子档案:</HBYSDZDA>
+		<HBSXLXQK_GYLCT style="button">工艺流程图:</HBSXLXQK_GYLCT>
+		<qyhjfxpgqk>企业环境风险评估情况:</qyhjfxpgqk>
+		<hjyjabaqk>环境应急预案的备案情况:</hjyjabaqk>
+		<hpbzdw>环评编制单位:</hpbzdw>
+		<fzr>负责人:</fzr>
+		<bxr>编写人:</bxr>
+		<mysql>SELECT * FROM V_WRY_HBLXQK where</mysql>
+	</item>
+	<item>
+		<name>WRY_HBSX</name> 用于区分不同类的样式模块  与类中的DetailedStyleName对应
+<!-- 		<qymc>污染源编号:</qymc> -->
+		<xmmc>项目名称:</xmmc><!-- 标签名与从数据库中查询结果的列名对应 ，内容用于在Activity中显示-->
+		<xmbh>项目编号:</xmbh>
+			<xmspdw>项目审批部门:</xmspdw>
+		<xmspsj>项目审批时间:</xmspsj>
+	    <xmspwh>项目审批文号:</xmspwh>
+	    <xmtz unit="(万元)">项目投资:</xmtz>
+	    	<hbtz unit="(万元)">环保投资:</hbtz>
+	    		<zyyl>主要原料:</zyyl>
+	    			<zycp>主要产品:</zycp>
+	    			<ZYGY style="button">主要工艺:</ZYGY>
+	    			<XMSPDZDA style="button">项目审批电子档案:</XMSPDZDA>
+	    					<sscpfbm>试生产批复部门:</sscpfbm>
+	    				<sscpfsj>试生产批复时间:</sscpfsj>
+	    			<SSCSPDZDA style="button">试生产审批电子档案:</SSCSPDZDA>
+	    				<hbysbm>环保验收部门:</hbysbm>	
+	    					<hbyssj>环保验收时间:</hbyssj>
+	    					<hbyspfwh>环保验收批复文号:</hbyspfwh>
+	    					<hbjg>环保机构:</hbjg>
+	<HBYSDZDA style="button">环保验收电子档案:</HBYSDZDA>
+<!-- 			<fj>附件:</fj> -->
+		<mysql>SELECT * FROM V_WRY_HBLXQK where</mysql>
+   	</item>
+     <!-- 生产设施运行情况                                                                                                                                               13改完-->
+	<item>
+		<name>WRY_SCSSYXQK</name>
+		<scssxh>生产设施编号:</scssxh>
+		<scssmc>生产设施名称:</scssmc>
+		<scsslh>生产设施型号:</scsslh>
+		<trsysj style="time">投入使用时间:</trsysj>
+<!-- 		<scssxh>生产设施运行情况:</scssxh> -->
+		<!--  <scssjssj style="time">生产设施建设时间:</scssjssj>-->
+		<scssjssj style="time">生产设施改建时间:</scssjssj>
+		<dwcpysl unit="(吨)">单位产品用水量:</dwcpysl>
+		<dwcpyml unit="(吨)">单位产品耗煤量:</dwcpyml>
+		<yxqk>运行情况:</yxqk>
+		<SCSSYXQK_SCGYT style="button">生产工艺图:</SCSSYXQK_SCGYT>
+		<shejscnl>设计生产能力:</shejscnl>
+		<shijscnl>实际生产能力:</shijscnl>
+		<qslyjnysl>取水来源及年用水量:</qslyjnysl>
+		<rlmcjnxhl>燃料名称及年消耗量:</rlmcjnxhl>
+		<nyxts unit="(天)">年运行天数:</nyxts>
+		<bz>备注:</bz>
+		<mysql>SELECT * FROM V_WRY_SCSSYXQKXX where</mysql>
+	</item>
+        
+     
+        
+        
+         <!-- 污染物治理施运行情况 -->
+	<item>
+		<name>WRY_WRWZLSSYX</name>
+		<sclssmc>水处理设施名称:</sclssmc>
+	</item>
+             
+          
+         <!-- 污染物排放-->
+	<item>
+		<name>WRY_WRWPFFS</name>
+<!-- 		<pfbz>排放标准:</pfbz> -->
+		<pwkbh>排污口编号:</pwkbh>
+		<wrwdm>污染物名称:</wrwdm>
+		<pfbz>排放标准(mg/L):</pfbz>
+		<pfzlbz>排放标准(吨):</pfzlbz>
+		<npfl>年排放量(吨):</npfl>
+		<spjg>审批机关:</spjg>
+		<spqk>审批情况:</spqk>
+		<!-- <pfbzsz>排放标准数值(mg/L):</pfbzsz>
+		<hxxylpfbz unit="(mg/L)">化学需氧量排放标准:</hxxylpfbz>
+		<hxxylnpfl unit="(吨)">化学需氧量年排放量:</hxxylnpfl>
+		<adpfbz12x>氨氮排放标准(12度下):</adpfbz12x>
+		<adpfbz12s>氨氮排放标准(12度上含):</adpfbz12s>
+		<adnpfl unit="(吨)">氨氮年排放量:</adnpfl>
+		<xfwpfbz>悬浮物排放标准:</xfwpfbz>
+		<xfwpfl unit="(吨)">悬浮物年排放量:</xfwpfl>
+		<tzwrw1mc>特征污染物1名称:</tzwrw1mc>
+		<tzwrw1pfbz unit="(吨)">特征污染物1排放标准:</tzwrw1pfbz>
+		<tzwrw1pfl unit="(吨)">特征污染物1排放量:</tzwrw1pfl>
+		<tzwrw2mc>特征污染物2名称:</tzwrw2mc>
+		<tzwrw2pfbz unit="(吨)">特征污染物2排放标准:</tzwrw2pfbz>
+		<tzwrw2pfl unit="(吨)">特征污染物2排放量:</tzwrw2pfl> -->
+
+	</item>
+          
+         <!-- 废气污染物排放               10改完-->
+	<item> 
+		<name>WRY_FQWRWPF</name>
+		<!-- <wrybh>污染源编号:</wrybh> -->
+		<pwkbh>排污口编号:</pwkbh>
+		<wrwdm>污染物名称:</wrwdm>
+		<pfbz>排放标准:</pfbz>
+		<pfbzsz>排放标准值:</pfbzsz>
+		<pfbzzsx>排放标准值上限:</pfbzzsx>
+		<pfbzzxx>排放标准值下限:</pfbzzxx>
+		<eyhlpfbz>二氧化硫排放标准:</eyhlpfbz>
+		<eyhlpfl unit="(吨)">二氧化硫年排放量:</eyhlpfl>
+		<dyhwpfbz>氮氧化物排放标准:</dyhwpfbz>
+		<dyhwpfl unit="(吨)">氮氧化物年排放量:</dyhwpfl>
+	
+		<tzwrw1mc>特征污染物1名称:</tzwrw1mc>
+		<tzwrw1pfbz>特征污染物1排放标准:</tzwrw1pfbz>
+		<zxbz1>执行标准(文号):</zxbz1>
+		<bzz1>标准值:</bzz1>
+		<tzwrw1pfl unit="(吨)">特征污染物1排放量:</tzwrw1pfl>
+		<tzwrw2>特征污染物2名称:</tzwrw2>
+		<tzwrw2pfbz>特征污染物2排放标准:</tzwrw2pfbz>
+		<zxbz2>执行标准（文号）:</zxbz2>
+		<bzz2>标准值:</bzz2>
+		<tzwrw2pfl unit="(吨)">特征污染物2排放量:</tzwrw2pfl>
+		<spjg>审批机构:</spjg>
+		<spqk>审批情况:</spqk>
+	</item>
+         <!-- 固体污染物排放-->
+	<item>
+		<name>WRY_WRWPFGT</name>
+		<gtfwlbbh>固体废物类别编号:</gtfwlbbh>
+		<gtfwmc>固体废物类别名称:</gtfwmc>
+		<gtfwfldm>固体废物小类代码:</gtfwfldm>
+		<clfs>处理方式:</clfs>
+		<!-- <sfwf>是否危废:</sfwf> -->
+		<gfsjcsl unit="(吨/年)">固废设计产生量:</gfsjcsl>
+		<gfsjcslvalue unit="(吨/年)">固废实际产生量:</gfsjcslvalue>
+		<spjg>审批机构:</spjg>
+		<spqk>审批情况:</spqk>
+		<bz>备注:</bz>
+
+	</item>
+	
+	
+	<!-- 危废信息-->
+	<item>
+		<name>WRY_WRWPFWF</name>
+		<wastecategory>废物类别:</wastecategory>
+		<industrysources>行业来源:</industrysources>
+		<wastename>危险废物名称:</wastename>
+		<wastecode>废物代码:</wastecode>
+		<hazardouscharacteristics>危险特性:</hazardouscharacteristics>
+		<processmode>处理方式:</processmode>
+		<designproduction unit="(吨/年)">危废设计产生量:</designproduction>
+		<theactualquantity unit="(吨/年)">危废实际产生量:</theactualquantity>
+		<approvingorganization>审批机关:</approvingorganization>
+		<approvingstatus>审批情况:</approvingstatus>
+		<ishazardouswastesystem>是否有危险废物制度:</ishazardouswastesystem>
+		<hazardouswasteproductionname>生产工艺环节产生危险废物的名称:</hazardouswasteproductionname>
+		<monthproducequantity>每月产生数量:</monthproducequantity>
+		<whetherhavegasrecoveryfacilities>是否有油气回收设施:</whetherhavegasrecoveryfacilities>
+		<isperformsystem>转移是否执行危险废物转移审批及转移联单制度:</isperformsystem>
+		<ismanagementunitprocessing>危险废物是否交有危险废物经营资质的单位处理:</ismanagementunitprocessing>
+		<issettinghazardouswastemarks>是否设置规范的危险废物识别标志:</issettinghazardouswastemarks>
+		<ishiddendangers>危险废物储存、使用、转运是否存在安全隐患:</ishiddendangers>
+		<istransferofhazardouswaste>是否有未转运的危险废物:</istransferofhazardouswaste>
+		<rremark>备注:</rremark>
+	</item>
+	
+         <!-- 噪声污染物排放-->
+	<item>
+		<name>WRY_WRWPFGTZS</name>
+		<zsrbh>噪声源编号:</zsrbh>
+		<zsymc>噪声源名称:</zsymc>
+		<zsyxz>噪声源性质:</zsyxz>
+		<zsysl>噪声源数量:</zsysl>
+		<zswz>噪声源位置:</zswz>
+		<bzxzz unit="(dB(A))">标准限值(昼):</bzxzz>
+		<bzxxy unit="(dB(A))">标准限值(夜):</bzxxy>
+		<!-- <zsdw1mc>噪声点位1名称:</zsdw1mc>
+		<zsdw1pfbzz unit="(昼)">噪声点位1排放标准:</zsdw1pfbzz>
+		<zsdw1pfzvalue unit="(昼)">噪声点位1排放值:</zsdw1pfzvalue>
+		<zsdw1pfbzy unit="(夜)">噪声点位1排放标准:</zsdw1pfbzy>
+		<zsdw1pfyvalue unit="(夜)">噪声点位1排放值:</zsdw1pfyvalue>
+		<zsdw2mc>噪声点位2名称:</zsdw2mc>
+		<zsdw2pfbzz unit="(昼)">噪声点位2排放标准:</zsdw2pfbzz>
+		<zsdw2pfzvalue unit="(昼)">噪声点位2排放值:</zsdw2pfzvalue>
+		<zsdw2pfbzy unit="(夜)">噪声点位2排放标准:</zsdw2pfbzy>
+		<zsdw2pfyvalue unit="(夜)">噪声点位2排放值:</zsdw2pfyvalue>
+		<zsdw3mc>噪声点位3名称:</zsdw3mc>
+		<zsdw3pfbzz unit="(昼)">噪声点位3排放标准:</zsdw3pfbzz>
+		<zsdw3pfzvalue unit="(昼)">噪声点位3排放值:</zsdw3pfzvalue>
+		<zsdw3pfbzy unit="(夜)">噪声点位3排放标准:</zsdw3pfbzy>
+		<zsdw3pfyvalue unit="(夜)">噪声点位3排放值:</zsdw3pfyvalue>
+		<zsdw4mc>噪声点位4名称:</zsdw4mc>
+		<zsdw4pfbzy unit="(昼)">噪声点位4排放标准(昼):</zsdw4pfbzy>
+		<zsdw4pfzvalue unit="(昼)">噪声点位4排放(昼)值:</zsdw4pfzvalue>
+		<zsdw4pfbzy  unit="(夜)">噪声点位4排放标准(夜):</zsdw4pfbzy>
+		<zsdw4pfyvalue unit="(夜)">噪声点位4排放(夜)值:</zsdw4pfyvalue> -->
+		<bz>备注:</bz>
+
+	</item>
+         <!-- 废水排污口详情-->
+	<item>
+		<name>WRY_FSPWKQK</name>
+		<pwkbh>排污口编号:</pwkbh>
+		<pwkmc>排污口名称:</pwkmc>
+		<pwkwz>排污口位置:</pwkwz>
+		<pfqxlb>排放去向类别:</pfqxlb>
+		<pfqx>排放去向:</pfqx>
+		<pfgl>排放规律:</pfgl>
+		<pfksfgfh>排污口是否规范化:</pfksfgfh>
+		<!-- <jnwsstdm>接纳污水水体代码:</jnwsstdm>
+		<code_pipenetwork>接纳管网代码:</code_pipenetwork> -->
+		<outentername>排入污水处理厂名称:</outentername>
+		<FSPWKQK_YXQK style="button">运行情况:</FSPWKQK_YXQK>
+		<FSPWKQK_PFKQK style="button">排放口情况:</FSPWKQK_PFKQK>
+		<estuarylongitude>经度:</estuarylongitude>
+		<estuarylatitude>纬度:</estuarylatitude>
+		<zxbz>执行标准:</zxbz>
+		<sfazzxjksb>是否安装在线监控:</sfazzxjksb>
+		<FSPWKQK_SB style="button">设施:</FSPWKQK_SB>
+		<FSPWKQK_QTBCZL style="button">其他补充资料:</FSPWKQK_QTBCZL>
+		<bz>说明:</bz>
+	</item>
+         <!-- 废气排污口详情                                                                                                                                       1改完-->
+	<item>
+		<name>WRY_FQPWKQK</name>
+		<pfkbh>排放口编号:</pfkbh>
+		<pfkmc>排放口名称:</pfkmc>
+		<pfkwz>排放口位置:</pfkwz>
+<!-- 		<zxbz>执行标准:</zxbz> -->
+        <pfklx>排放口类型:</pfklx>
+		<pfgl>排放规律:</pfgl>
+		<pfkgd unit="(米)">排放口高度:</pfkgd>
+		<pqtjmj unit="(平方米)">排气筒截取面积:</pqtjmj>
+		<cknj unit="(平方米)">出口内径:</cknj>
+		<rszl>燃料种类:</rszl>
+		<rsfs>燃烧方式:</rsfs>
+		<zxbz>执行标准:</zxbz>
+		<cjgdmc>车间工段名称:</cjgdmc>
+		<pfksfgfh>排污口是否规范化:</pfksfgfh>
+		<sfazzxjksb>是否安装在线监控设备:</sfazzxjksb>
+	 	<FQPWKQK_SB style="button">设施:</FQPWKQK_SB>
+		<FQPWKQK_YXQK style="button">运行情况:</FQPWKQK_YXQK>
+		<FQPWKQK_PFKQK style="button">排放口情况:</FQPWKQK_PFKQK> 
+		<jd>经度:</jd>
+		<wd>纬度:</wd>
+		<bz>备注:</bz> 
+		<FQPWKQK_QTBCZL style="button">其他补充资料:</FQPWKQK_QTBCZL>
+	</item>
+        <!-- 历史执法情况-->
+	<item>
+		<name>WRY_LSZFQK</name>
+		<zfsj style="time">执法时间:</zfsj>
+		<zfmc>执法任务名称:</zfmc>
+		<zfjg>执法机构:</zfjg>
+		<zfry>执法人员:</zfry>
+		<czwt>存在问题:</czwt>
+		<LSZFQK_CZWT style="button">存在问题附件:</LSZFQK_CZWT> 
+		<cljg>处理结果:</cljg>
+		<LSZFQK_CLJG style="button">处理结果附件:</LSZFQK_CLJG> 
+		<bz>备注:</bz>
+		
+	</item>
+	
+	  <!-- 行政处罚-->
+	<item>
+		<name>WRY_JYXZCF</name>
+		<ajmc>案件名称:</ajmc>
+		<labh>立案编号:</labh>
+		<lasj>立案时间:</lasj>	
+		<wfxwjsyft>违法行为及使用法条:</wfxwjsyft>
+		<zlzgyq>责令整改要求:</zlzgyq>
+		<cfje>处罚金额:</cfje>
+		<ajblzt>案件办理进度:</ajblzt>
+		<ay>案由:</ay>
+		<cfnr>处罚内容:</cfnr>
+	</item>
+          
+	  <!-- 危险废物转移档案-->
+	<item>
+		<name>WRY_WXFWZYDA</name>
+		<wxfwmc>危险废品名称:</wxfwmc>
+		<zysj>转移时间:</zysj>
+		<zysl>转移数量（吨）:</zysl>
+		<fwclfs>废物处理方式:</fwclfs>
+		<jsdw>接受单位:</jsdw>
+		<czy>操作员:</czy>
+		<sfyzyld>是否有转移联单:</sfyzyld>
+		<ZYLDFJ style="button">转移联单附件:</ZYLDFJ>
+	</item>
+          
+    <!-- 废水治理设施                                                                                                                                    11改完-->
+	<item>
+		<name>WRY_FSZLSS</name>
+		<!-- <qymc>企业名称:</qymc> -->
+		<sclssbh>水处理设施编号:</sclssbh>
+		<sclssmc>水处理设施名称:</sclssmc>
+		<sclssggxh>生产设施型号:</sclssggxh>
+		<tzwrw>特征污染物:</tzwrw>
+		<gdzcyz unit="(万元)">固定资产原值:</gdzcyz>
+		<ztz unit="(万元)">总投资额:</ztz>
+		<sjclnl unit="(立方米/日)">设计处理能力:</sjclnl>
+		<sjclnli unit="(立方米/日)">实际处理能力:</sjclnli>
+		<fsclff>废水处理方法:</fsclff>
+		<nyxfy unit="(万元)">年运行费用:</nyxfy>
+		<tyrq style="time">投运时间:</tyrq>
+		<ssyxzt>设施运行状态:</ssyxzt>
+		<nyxts unit="(天)">年运行天数:</nyxts>
+		<FSZLSSYXQK_GYT style="button">生产工艺图:</FSZLSSYXQK_GYT>
+		<bz>备注:</bz>
+		
+		<mysql>SELECT * FROM V_WRY_FSZLSS where</mysql>
+	</item>
+    <!-- 废气治理设施                                                                                                                 12改完-->
+	<item>
+		<name>WRY_FQZLSS</name>
+<!-- 	<qymc>企业名称:</qymc> -->	
+		<jhzzbh>净化装置编号:</jhzzbh>
+		<jhzzmc>净化装置名称:</jhzzmc>
+		<tzwrw>特征污染物:</tzwrw>
+		<ggxh>规格型号:</ggxh>
+		<sjclnl unit="(立方米/时)">设计处理能力:</sjclnl>
+		<scjhl unit="(%)">实际处理率:</scjhl> 
+		<jhff>处理方法:</jhff>
+<!-- 		<ztz>总投资额:</ztz> -->
+		<gdzcyz unit="(万元)">固定资产原值:</gdzcyz>
+
+		<nyxfy unit="(万元)">年运行费用:</nyxfy>
+		<tyrq style="time">投运时间:</tyrq>
+		<ssyxzt>设备运行状态:</ssyxzt>
+<!-- 		<pfkbh>排放口编号:</pfkbh> -->
+		<nyxts unit="(天)">年运行天数:</nyxts>
+		<FQZLSSYXQK_GYDZDA style="button">工艺电子档案:</FQZLSSYXQK_GYDZDA>
+		<bz>备注:</bz>
+		<mysql>SELECT * FROM V_WRY_FQZLSS where</mysql>
+	</item>
+    <!-- 废水排污口信                                                                                                                                            2改完-->
+	<item>
+		<name>WRY_FSPWK</name>
+<!-- 		<qymc>企业名称:</qymc> -->
+		<pwkbh>排污口编号:</pwkbh>
+		<pwkmc>排污口名称:</pwkmc>
+		<wrymc>污染物名称:</wrymc>
+		<pwkwz>排污口位置:</pwkwz>
+		<pfqxlb>排放去向类别:</pfqxlb>
+		<pwqx>排污去向:</pwqx>
+		<pfgl>排放规律:</pfgl>
+		<sfazzxjksb>是否安装在线监控设备:</sfazzxjksb>
+<!-- 		<outentercode>排入污水处理厂:</outentercode> -->
+		<outentername>排入污水处理厂名称:</outentername>
+		<jd>排放口经度(小数):</jd>
+		<wd>排放口纬度(小数):</wd>
+		<FSPWKQK_SB style="button">设备:</FSPWKQK_SB>
+		<FSPWKQK_YXQK style="button">运行情况:</FSPWKQK_YXQK>
+		<zxbz>执行标准:</zxbz>
+		<FSPWKQK_PFKQK style="button">排放口情况:</FSPWKQK_PFKQK>
+		<bz>备注:</bz>
+		<mysql>SELECT * FROM V_WRY_FSPWK where</mysql>
+	</item>
+    <!-- 废气排污口 -->
+	<item>
+		<name>WRY_FQPWK</name>
+		<pfkbh>排放口编号:</pfkbh>
+		<pfkmc>排放口名称:</pfkmc>
+		<pfkwz>排放口位置:</pfkwz>
+		<pfklx>排放口类型:</pfklx>
+		<pfgl>排放规律:</pfgl>
+		<pfkgd unit="(米)">排放口高度:</pfkgd>
+		<pqtjmj unit="(平方米)">排气筒截取面积:</pqtjmj>
+		<cknj unit="(平方米)">出口内径:</cknj>
+		<rszl>燃料种类:</rszl>
+		<rsfs>燃烧方式:</rsfs>
+		<cjgdmc>车间工段名称:</cjgdmc>
+		<sfazzxjksb>是否安装在线监控设备:</sfazzxjksb>
+		<jd>排放口经度:</jd>
+		<wd>排放口纬度:</wd>
+		<zxbz>执行标准:</zxbz>
+		<pwksfgfh>排污口是否规范化:</pwksfgfh>
+		<FSPWKQK_SB style="button">设备:</FSPWKQK_SB>
+		<FSPWKQK_YXQK style="button">运行情况:</FSPWKQK_YXQK>
+		<zxbz>执行标准:</zxbz>
+		<FSPWKQK_PFKQK style="button">排放口情况:</FSPWKQK_PFKQK>
+		<bz>备注:</bz>
+		<mysql>SELECT * FROM V_WRY_FQPWK where</mysql>
+	</item>
+    <!-- 污染物排放标准                                                                                                                                             5改完 -->
+	<item>
+		<name>WRY_FSPFWRW</name>
+		<!--  <qymc>企业名称:</qymc>  -->  
+	    <wrybh>污染源编号:</wrybh> 
+		<pwkbh>排污口编号:</pwkbh>
+		<wrwmc>污染物名称:</wrwmc>
+		<wrwdm>污染物代码:</wrwdm>
+		<pfbzxz unit="(mg/L)">排放标准限值:</pfbzxz>
+		<pfzlbz unit="(吨)">排放总量标准:</pfzlbz>
+		<npfl unit="(吨)">年排放量:</npfl>
+		<spjg>审批机构:</spjg>
+		<spqk>审批情况:</spqk>
+		<!--  <pfbzdw unit="(mg/L)">排放标准值单位:</pfbzdw>
+		<pfbz>色度排放标准:</pfbz>
+		<hxxylpfbz unit="(吨)">化学需氧量排放标准:</hxxylpfbz>
+		<adpfbz12x>氨氮排放标准(12度下):</adpfbz12x>
+		<adpfbz12s>氨氮排放标准(12度上含):</adpfbz12s>
+		<xfwpfbz>悬浮物排放标准:</xfwpfbz>
+		<zdpfbz>总氮排放标准:</zdpfbz>
+		<tzwrw1mc>特征污染物1名称:</tzwrw1mc>
+		<tzwrw1pfbz unit="(吨)">特征污染物1排放标准:</tzwrw1pfbz>
+		<tzwrw2m >特征污染物2名称:</tzwrw2m>
+		<tzwrw2pfbz unit="(吨)">特征污染物2排放标准:</tzwrw2pfbz>
+		-->
+		<mysql>SELECT * FROM V_WRY_FSPFWRW where</mysql>
+	</item>
+	<!-- 废气排放污染物信息 -->
+	<item>
+		<name>WRY_FQPFWRW</name>
+		<pwkbh>排污口编号:</pwkbh>
+		<pfbz>排放标准:</pfbz>
+		<pfbzsz>排放标准数值:</pfbzsz>
+		<pfbzzsx>排放标准值上限:</pfbzzsx>
+		<pfbzzxx>排放标准值下线:</pfbzzxx>
+		<eyhlpfbz unit="(mg/L)">二氧化硫排放标准:</eyhlpfbz>
+		<eyhlnpfl unit="(吨)">二氧化硫年排放量:</eyhlnpfl>
+		<dyhwpfbz unit="(mg/L)">氨氮化物排放标准:</dyhwpfbz>
+		<dyhwnpfl unit="(吨)">氮氧化物年排放量:</dyhwnpfl>
+		<tzwrw1mc>特征污染物1名称:</tzwrw1mc>
+		<tzwrw1pfbz unit="(mg/L)">特征污染物1排放标准:</tzwrw1pfbz>
+		<tzwrw1pfl>特征污染物1排放量:</tzwrw1pfl>
+		<zxbz1 unit="(文号)">执行标准:</zxbz1>
+		<bzz1 unit="(吨)">标准值:</bzz1>
+		<tzwrw2>特征污染物2:</tzwrw2>
+		<tzwrw2pfbz unit="(mg/L)">特征污染物2排放标准:</tzwrw2pfbz>
+		<tzwrw2pfl>特征污染物2排放量:</tzwrw2pfl>
+		<zxbz2 unit="(文号)">执行标准:</zxbz2>
+		<bzz2 unit="(吨)">标准值:</bzz2>
+		<spjg>审批机构:</spjg>
+		<spqk>审批情况:</spqk>
+		<mysql>SELECT * FROM V_WRY_FQPFWRW where</mysql>
+	</item>
+    <!-- 固体废物信息                                          4改完 -->
+	<item>
+		<name>ZDWRY_GTFW</name>
+	<!-- 	<qymc>企业名称:</qymc>    -->
+       <wrybh>污染源编号:</wrybh> 
+		<gtfwlbbh>固体废物类别编号:</gtfwlbbh>
+		<gtfwmc>固体废物名称:</gtfwmc>
+		<gtfwfldm>固体废物小类代码:</gtfwfldm>
+		<clfs>处理方式:</clfs>
+		<sfwf>是否危废:</sfwf>
+		<gfsjcsl unit="(吨)">固废设计产生量:</gfsjcsl>
+		<gfsjcslvalue unit="(吨)">固废实际产生量:</gfsjcslvalue>
+		<spqk>审批情况:</spqk>
+		<spjg>审批机构:</spjg>
+		<bz>备注:</bz>
+		<mysql></mysql>
+	</item>
+     <!-- 噪声信息                                                                                                                               3改完 -->
+	<item>
+		<name>WRY_ZSY</name>
+		<qymc>企业名称:</qymc>   
+        <wrybh>污染源编号:</wrybh> 
+		<zsybh>噪声源编号:</zsybh>
+		<zsymc>噪声源名称:</zsymc>
+		<zsyxz>噪声源性质:</zsyxz>
+		<!-- <zsdw1mc>噪声点位1名称:</zsdw1mc>
+		<zsdw1pfbzz>噪声点位1排放标准:</zsdw1pfbzz>
+		<zsdw1pfbzy unit="(夜)">噪声点位1排放标准:</zsdw1pfbzy>
+		<zsdw2mc>噪声点位2名称:</zsdw2mc>
+		<zsdw2pfbzz unit="(昼)">噪声点位2排放标准:</zsdw2pfbzz>
+		<zsdw2pfbzy unit="(夜)">噪声点位2排放标准:</zsdw2pfbzy>
+		<zsdw3mc>噪声点位3名称:</zsdw3mc>
+		<zsdw3pfbzz unit="(昼)">噪声点位3排放标准:</zsdw3pfbzz>
+		<zsdw3pfbzy unit="(夜)">噪声点位3排放标准:</zsdw3pfbzy>
+		<zsdw4mc>噪声点位4名称:</zsdw4mc>
+		<zsdw4pfbzz unit="(昼)">噪声点位4排放标准:</zsdw4pfbzz>
+		<zsdw4pfbzy unit="(夜)">噪声点位4排放标准:</zsdw4pfbzy>
+		<sfzxjk>是否在线监控:</sfzxjk>
+		<bz>标准:</bz>
+		 -->
+		 <zsysl>噪声源数量:</zsysl>
+		 <zswz>噪声位置:</zswz>
+		 <bzxzz>标准限值(昼):</bzxzz>
+		 <bzxzy>标准限值(夜):</bzxzy>
+		<mysql>SELECT * FROM V_WRY_ZSY where</mysql>
+	</item>
+    
+ <!-- <zxjkjsqk>在线监控建设情况<zxjkjsqk>                   6改完-->   
+ <item>
+     <name>WRY_ZXJKXX</name>
+     <yqbh>仪器型号:</yqbh>
+     <sbscsmc>设备生产商名称:</sbscsmc>
+     <jcyz>监控因子:</jcyz>
+     <jsrq style="time">建设日期:</jsrq>
+     <sfys>是否验收:</sfys>
+     <ysdw>验收单位:</ysdw>
+     <wh>文号:</wh>
+     <sbyysmc>设备运营商名称:</sbyysmc>
+     <yxxshkzqk>有效性审核开展情况:</yxxshkzqk>
+ </item>
+ <!-- <xzzfhjd>行政执法后监督<xzzfhjd>                  7改完 --> 
+    <item>
+        <name>WRY_XZZFHDCXX</name>
+        <ay>案由:</ay>
+        <xzzflx>行政执法类型:</xzzflx>
+        <wh>文号:</wh>
+        <fwjg>发文机构:</fwjg>
+        <fwsj style="time">发文时间:</fwsj>
+        <cfje unit="(万元)">处罚金额:</cfje>
+        <xzmlnr>行政命令内容:</xzmlnr>
+        <zxqk>执行情况:</zxqk>
+    </item>
+    
+<!-- 环境风险防范设施                                                                                                             8改完 -->    
+    <item>
+     <name>WRY_HJFXFFSS</name>
+    <fxffssbh>风险防范设施编号:</fxffssbh>
+    <fxffssmc>风险防范设施名称:</fxffssmc>
+    <gdzcyz unit="(万元)">固定资产原值</gdzcyz>
+    <ztze unit="(万元)">总投资额:</ztze>
+    <ssly>所属流域/区域:</ssly>
+    <hbmgmb>环境保护敏感目标:</hbmgmb>
+    <fxffclff>风险防范处理方法:</fxffclff>
+    <nyxfy unit="(万元)">年运行费用:</nyxfy>
+    <nyxts unit="(天)">年运行天数:</nyxts>
+    <tysj style="time">投运时间:</tysj>
+    <ssyxzt>设施运行状态:</ssyxzt>
+    <HJFXFFSS_SGFSSJCLLXT style="button">事故废水手机处置路线图:</HJFXFFSS_SGFSSJCLLXT>
+    <bz>备注:</bz>
+    <HJFXFFSS_YJYA style="button">应急预案:</HJFXFFSS_YJYA>
+    </item>
+    
+    
+    
+    
+    
+    
+    
+    <!-- 环评三同时 -->
+	<item>
+		<name>WRY_HBSTSYS</name> <!-- 用于区分不同类的样式模块  与类中的DetailedStyleName对应 -->
+		<wjbh>文件名称:</wjbh>
+		<qymc>企业名称:</qymc>
+		<hpstsyslx>环评类型:</hpstsyslx>
+		<wjsj style="time">文件时间:</wjsj>
+		<fj style="button">附件:</fj>
+		style="button" 用于判断是否为附件字段，是的话在页面中显示为按钮
+		<mysql>SELECT T_WRY_HPSTSYS.guid guid,wjbh,qymc,wjsj,xmmc,hpstsyslx,fj
+			FROM T_WRY_HPSTSYS LEFT JOIN T_WRY_QYJBXX ON T_WRY_HPSTSYS.QYDM =
+			T_WRY_QYJBXX.QYDM where T_WRY_HPSTSYS.
+		</mysql>
+	</item>
+    <!-- 排污收费 -->
+	<!-- <item>
+		<name>WRY_PWSF</name>
+		<qymc>企业名称:</qymc>
+		<wjsj>时间:</wjsj>
+		<regionname>地区:</regionname>
+		<zpwf unit="元">总排污费:</zpwf>
+		unit="元" unit用于再数值后加单位
+		<yjje unit="元">应缴金额:</yjje>
+		<sjje unit="元">实缴金额:</sjje>
+		<qjje unit="元">欠缴金额:</qjje>
+		<jmje unit="元">减免金额:</jmje>
+		<znj unit="元">滞纳金:</znj>
+		<wspwf unit="元">污水排污费:</wspwf>
+		<fqpwf unit="元">废气排污费:</fqpwf>
+		<zspwf unit="元">噪声排污费:</zspwf>
+		<gtfwpwf unit="元">固废排污费:</gtfwpwf>
+		<tzzpwf unit="元">特值排污费:</tzzpwf>
+		<wscbpwf unit="元">污水排污费:</wscbpwf>
+		<wxfwpwf unit="元">放射排污费:</wxfwpwf>
+		<mysql>select
+			T_WRY_PWSF.qymc,wjsj,regionname,zpwf,yjje,sjje,qjje,jmje,znj,wspwf,fqpwf,zspwf,gtfwpwf,tzzpwf,wscbpwf,wxfwpwf
+			from T_WRY_PWSF,T_WRY_QYJBXX,Region where T_WRY_PWSF. QYDM =
+			T_WRY_QYJBXX . QYDM and T_WRY_QYJBXX . xzqh = Region.RegionCode and
+			T_WRY_PWSF.
+		</mysql>
+	</item> -->
+    <!-- 排污许可证 -->
+	<item>
+		<name>WRY_PWXKZ</name>
+		<qymc>企业名称:</qymc>
+		<zycp>主要产品:</zycp>
+		<sfblpwxkz>是否办理:</sfblpwxkz>
+		<xkzlx>许可证类型:</xkzlx>
+		<hppfwh>环评批复文号:</hppfwh>
+		<hbssyswh>环保设施验收文号:</hbssyswh>
+		<hbstsyswh>三同时元素文号:</hbstsyswh>
+		<hzxkzleyhl unit="毫克/立方米">总量二氧化硫:</hzxkzleyhl>
+		<hzxkzldyhw unit="毫克/立方米">总量氮氧化物:</hzxkzldyhw>
+		<hzxkzlhxxyl unit="毫克/立方米">化学需氧量:</hzxkzlhxxyl>
+		<hzxkzlad unit="毫克/立方米">总量氨氮:</hzxkzlad>
+		<hzxkzlqt unit="毫克/立方米">总量其他:</hzxkzlqt>
+		<zgyxpfndeyhl unit="毫克/升">最高二氧化硫:</zgyxpfndeyhl>
+		<zgyxpfnddyhw unit="毫克/升">最高氮氧化物:</zgyxpfnddyhw>
+		<zgyxpfndhxxyl unit="毫克/升">最高需氧量:</zgyxpfndhxxyl>
+		<zgyxpfndad unit="毫克/升">最高氨氮:</zgyxpfndad>
+		<zgyxpfndqt unit="毫克/升">最高其他:</zgyxpfndqt>
+		<fzrq>发证日期:</fzrq>
+		<yxq>有效期:</yxq>
+		<bz>备注:</bz>
+		<kzlx>控制类型:</kzlx>
+		<mysql>select
+			t_wry_pwxkz.guid,qymc,zycp,sfblpwxkz,xkzlx,hppfwh,hbssyswh,hbstsyswh,hzxkzleyhl,hzxkzldyhw,hzxkzlhxxyl,hzxkzlad,hzxkzlqt,zgyxpfndeyhl,zgyxpfnddyhw,zgyxpfndhxxyl,zgyxpfndad,zgyxpfndqt,fzrq,yxq,bz,kzlx
+			from T_WRY_PWXKZ left join T_WRY_QYJBXX ON T_WRY_PWXKZ.QYDM =
+			T_WRY_QYJBXX.QYDM where t_wry_pwxkz.
+		</mysql>
+	</item>
+    <!-- 企业基本信息                                                                                                                                                                                     14改完-->
+	<item>
+		<name>WRY_QYJBXX</name>
+		<qymc>企业名称:</qymc>
+<!-- 		<cym>曾用名:</cym> -->
+<!-- 		<qyjc>企业简称:</qyjc> -->
+		<qydz>企业地址:</qydz>
+		<wzh>网址:</wzh>
+		<yzbm>邮政编码:</yzbm>
+		<frdb>法人代表:</frdb>
+		<lxdh>手机号码:</lxdh>
+		<hblxr>环保联系人:</hblxr>
+		<hblxrdh style="call">环保联系人电话:</hblxrdh>
+		<yyzzdm>营业执照代码:</yyzzdm>
+		<YYZZ style="button">营业执照图片:</YYZZ>
+		<zzjgdm>组织机构代码:</zzjgdm>
+		<ZZJGDMTP style="button">组织机构图片:</ZZJGDMTP>
+		<jjlx>经济类型:</jjlx>
+		<ssds>所属地市:</ssds>
+		<ssqx>所属区县:</ssqx>
+		<ssxz>所属乡镇:</ssxz>
+		<ssjd>所属街道:</ssjd>
+		<gxgs>管辖归属:</gxgs>
+		<wrylb>污染源类别:</wrylb>
+		<zdwry>是否是重点污染源:</zdwry>
+		<gkylb>控制级别:</gkylb>
+		<ztz unit="(万元)">总投资:</ztz>
+		<hbtz unit="(万元)">环保投资:</hbtz>
+		<qygm>企业规模:</qygm>
+		<hylb>行业类型:</hylb>
+		<kysj style="time">投产时间:</kysj>
+		<tcrq style="time">建厂时间:</tcrq>
+    	<zxgkjsj style="time">最新改扩建时间:</zxgkjsj>
+		<tysj style="time">最近停业时间:</tysj>
+		<zzdmj unit="(平方米)">总占地面积:</zzdmj>
+	
+			
+			
+<!-- 		<frdm>法人代码:</frdm> -->
+<!-- 		<czhm>传真号码:</czhm> -->
+		
+		
+<!-- 		<hblxrlxdz>环保联系人地址:</hblxrlxdz> -->
+	
+		<szgyymc>所在工业园名称:</szgyymc>
+		<pwsbdm>排污申报登记号:</pwsbdm>
+		<pwxkzbh>排污许可证编号:</pwxkzbh>
+	<!-- 	<PWXKZFJ style="button">排污许可证附件:</PWXKZFJ> -->
+	<QYZPMSYT style="button">企业总平面示意图:</QYZPMSYT>
+	<SCGYLCT style="button">生产工艺流程图:</SCGYLCT>
+		<jd>经度:</jd>
+		<wd>纬度:</wd>
+		<sczt>生产状态:</sczt>
+		<wryjs>污染源介绍:</wryjs>
+											
+ 		<bz>备注:</bz>					
+	
+	
+<!-- 		<xzqh>行政区划:</xzqh> -->
+<!-- 		<sfszgqy>是否市直管企业:</sfszgqy> -->
+
+<!-- 		<bz>备注:</bz> -->
+		
+<!-- 		<ztz unit="(万元)">总投资:</ztz> -->
+<!-- 		<hbtz unit="(万元)">环保投资:</hbtz> -->
+<!-- 		<lsgx>隶属关系:</lsgx> -->
+<!-- 		<hbjg>环保机构:</hbjg> -->
+
+		
+	
+<!-- 		<nscsj unit="(天)">年生产天数:</nscsj> -->
+<!-- 		<hbqlb>保护区类别:</hbqlb> -->
+	
+<!-- 		<dzyx>电子邮箱:</dzyx> -->
+<!-- 		<jd>经度:</jd> -->
+<!-- 		<wd>纬度:</wd> -->
+	
+<!-- 		<szgyymc>所在工业园名称:</szgyymc> -->
+
+<!-- 		<ssly>所属流域:</ssly> -->
+<!-- 		<pwxkzbh>排污许可证编号:</pwxkzbh> -->
+<!-- 		<PWXKZFJ style="button">排污许可证附件:</PWXKZFJ> -->
+		
+<!-- 		<ybgyy>是否为重点风险源:</ybgyy> -->
+<!-- 		<gkylb>国控源类别:</gkylb> -->
+<!-- 		<sswqwdlqy>30万千瓦电力企业:</sswqwdlqy> -->
+<!-- 		<sczt>生产状态:</sczt> -->
+<!-- 		<sfqxgl>是否注销:</sfqxgl> -->
+<!-- 		<qxsj style="time">注销时间:</qxsj> -->
+<!-- 		<qxyy>注销原因:</qxyy> -->
+<!-- 		<qjshqk>清洁审核情况:</qjshqk> -->
+<!-- 		<pwsbsfdj>排污申报是否登记:</pwsbsfdj> -->
+<!-- 		<qyhbjdy>企业环保监督员:</qyhbjdy> -->
+<!-- 		<hjxxxydj>环境信用等级:</hjxxxydj> -->
+<!-- 		<sndpwfjnje unit="(万元)">上年度排污费缴纳金额:</sndpwfjnje> -->
+<!-- 		<wryjs>污染源介绍:</wryjs> -->
+		
+	</item>
+	
+	 <!-- 企业简介 -->
+	<item>
+		<name>WRY_QYJJ</name>
+		<qymc>企业名称:</qymc>
+		<qyjj>企业简	介:</qyjj>
+	</item>
+	
+
+    <!-- 信访投诉 -->
+	<item>
+		<name>WRY_XFTS</name>
+		<jfrq style="time">接访日期:</jfrq>
+		<jffs>接访方式:</jffs>
+		<tsxm>投诉人姓名:</tsxm>
+		<tslxfs>联系方式:</tslxfs>
+		<jbnrgs>举报内容概述:</jbnrgs>
+		<ccqk>查处情况:</ccqk>
+		<zgqk>整改情况:</zgqk>
+		
+		<!-- <qymc>企业名称:</qymc>
+		<regionname>投诉省市:</regionname>
+		<tssd>投诉属地:</tssd>
+		<bljd>办理进度:</bljd>
+		<fynr>反映内容:</fynr>
+		<blsj>办理时间:</blsj>
+		<cbdw>承办单位:</cbdw>
+		<cljg>处理结果:</cljg>
+		<tssx>投诉属性:</tssx>
+		<bz>备注:</bz> -->
+		<!-- <mysql>SELECT
+			T_WRY_XFTS.guid,qymc,regionname,tssd,bljd,fynr,blsj,cbdw,cljg,tssx,bz
+			FROM T_WRY_XFTS left JOIN T_WRY_QYJBXX ON T_WRY_XFTS . QYDM =
+			T_WRY_QYJBXX . QYDM left JOIN Region ON T_WRY_QYJBXX.xzqh = Region .
+			RegionCode where T_WRY_XFTS.
+		</mysql> -->
+	</item>
+    <!-- 限期治理 -->
+	<item>
+		<name>WRY_XQZL</name>
+		<qymc>企业名称:</qymc>
+		<type>治理类型:</type>
+		<wjbh>文件名称:</wjbh>
+		<wjsj style="time">文件时间:</wjsj>
+		<fj style="button">附件:</fj>
+		<mysql>select T_WRY_XQZL.Guid,qymc,type,wjbh,wjsj,fj from
+			T_WRY_XQZL,T_WRY_QYJBXX,Region where T_WRY_XQZL . QYDM =
+			T_WRY_QYJBXX. QYDM and T_WRY_QYJBXX . xzqh = Region . RegionCode and
+			T_WRY_XQZL.
+		</mysql>
+	</item>
+    <!-- 行政处罚 -->
+	<item>
+		<name>WRY_XZCF</name>
+		<qymc>企业名称:</qymc>
+		<dz>地址:</dz>
+		<wjsj style="time">时间:</wjsj>
+		<wfxw>违法行为:</wfxw>
+		<jde unit="元">决定额:</jde>
+		<jnfk unit="元">缴纳罚款:</jnfk>
+		<jz>进展:</jz>
+		<qksm>情况说明:</qksm>
+		<mysql>select qymc,dz,wjsj,wfxw,jde,jnfk,jz,qksm from
+			T_WRY_XZCF,T_WRY_QYJBXX,Region where T_WRY_XZCF . QYDM = T_WRY_QYJBXX
+			. QYDM and T_WRY_QYJBXX . xzqh = Region . RegionCode and
+			T_WRY_QYJBXX.
+		</mysql>
+	</item>
+     <!-- 锅炉基本情况 -->
+	<item>
+		<name>ZDWRY_GLJBQK</name>
+		<qymc>企业名称:</qymc>
+		<gllx>锅炉类型:</gllx>
+		<ts unit="台">台数:</ts>
+		<edcl unit="(%)">额定出率:</edcl>
+		<rsfs>燃烧方式:</rsfs>
+		<cctszzmc>除尘脱流装置名称:</cctszzmc>
+		<xl unit="(%)">效率:</xl>
+	</item>
+    <!-- 固体废物 -->
+	<item>
+		<name>ZDWRY_GTFW</name>
+		<qymc>企业名称:</qymc>
+		<wxfwmc>固废名称:</wxfwmc>
+		<csl unit="吨/年">产生量:</csl>
+		<czl unit="吨/年">处置量:</czl>
+		<lyl unit="吨/年">利用量:</lyl>
+		<wnlyl unit="吨/年">往年利用量:</wnlyl>
+		<wnczl unit="吨/年">往年处置量:</wnczl>
+		<bnzcl unit="吨/年">本年贮存量:</bnzcl>
+		<wnzcl unit="吨/年">往年贮存量:</wnzcl>
+		<bnpfl unit="吨/年">本年排放量:</bnpfl>
+		<wnpfl unit="吨/年">往年排放量:</wnpfl>
+		<mysql>select
+			T_ZDWRY_GTFW.guid,qymc,wxfwmc,csl,czl,lyl,wnlyl,wnczl,bnzcl,wnzcl,bnpfl,wnpfl
+			from T_ZDWRY_GTFW,T_WRY_QYJBXX where T_ZDWRY_GTFW.QYDM =
+			T_WRY_QYJBXX.QYDM and T_ZDWRY_GTFW.
+		</mysql>
+	</item>
+     <!-- 生产工艺 -->
+	<item>
+		<name>ZDWRY_SCCLGY</name>
+		<qymc>企业名称:</qymc>
+		<scgy>生产工艺:</scgy>
+		<clgy>处理工艺:</clgy>
+		<mysql>select T_ZDWRY_SCCLGY.guid,qymc,scgy,clgy from T_ZDWRY_SCCLGY
+			LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_SCCLGY.QYDM = T_WRY_QYJBXX.QYDM
+			where T_ZDWRY_SCCLGY.
+		</mysql>
+	</item>
+    <!-- 危险废物 -->
+	<item>
+		<name>ZDWRY_WXFW</name>
+		<qymc>企业名称:</qymc>
+		<wxfwmc>废物名称:</wxfwmc>
+		<csl unit="吨">产生量:</csl>
+		<lyl unit="吨">利用量:</lyl>
+		<czl unit="吨">处置量:</czl>
+		<wnlyl unit="吨">往年利用量:</wnlyl>
+		<wnczl unit="吨">往年处置量:</wnczl>
+		<bnzcl unit="吨">本年贮存量:</bnzcl>
+		<wnzcl unit="吨">往年贮存量:</wnzcl>
+		<bnpfl unit="吨">本年排放量:</bnpfl>
+		<wnpfl unit="吨">往年排放量:</wnpfl>
+		<mysql>select
+			T_ZDWRY_WXFW.guid,qymc,wxfwmc,csl,lyl,czl,wnlyl,wnczl,bnzcl,wnzcl,bnpfl,wnpfl
+			from T_ZDWRY_WXFW LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_WXFW.QYDM =
+			T_WRY_QYJBXX.QYDM where T_ZDWRY_WXFW.
+		</mysql>
+	</item>
+    <!-- 原辅材料 -->
+	<item>
+		<name>ZDWRY_YFCL</name>
+		<qymc>企业名称:</qymc>
+		<yfclmc>原辅材料名称:</yfclmc>
+		<sjsyl>实际使用量:</sjsyl>
+		<mysql>select T_ZDWRY_YFCL.guid,qymc,yfclmc,sjsyl from T_ZDWRY_YFCL
+			LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_YFCL.QYDM = T_WRY_QYJBXX.QYDM where
+			T_ZDWRY_YFCL.
+		</mysql>
+	</item>
+    <!-- 窑炉基本情况 -->
+	<item>
+		<name>ZDWRY_YLJBQK</name>
+		<qymc>企业名称:</qymc>
+		<yllx>窑炉类型:</yllx>
+		<ts unit="台">台数:</ts>
+		<nymc>能源名称:</nymc>
+		<nhl>能耗量:</nhl>
+		<clssmc>处理设施名称:</clssmc>
+		<clxl unit="(%)">处理效率:</clxl>
+	</item>
+    <!-- 主要产品 -->
+	<item>
+		<name>ZDWRY_ZYCP</name>
+		<qymc>企业名称:</qymc>
+		<cpmc>产品名称:</cpmc>
+		<scnl>生产能力:</scnl>
+		<sjcl>实际产量:</sjcl>
+		<mysql>select T_ZDWRY_ZYCP.guid,qymc,cpmc,scnl,sjcl from T_ZDWRY_ZYCP
+			LEFT JOIN T_WRY_QYJBXX ON T_ZDWRY_ZYCP.QYDM = T_WRY_QYJBXX.QYDM where
+			T_ZDWRY_ZYCP.
+		</mysql>
+	</item>
+    <!-- 法律法规标准 -->
+	<item>
+		<name>ZSK_FLFGBZ</name>
+		<sjlb>法规级别:</sjlb>
+		<ymbt>页面标题:</ymbt>
+		<scsj>上传时间:</scsj>
+		<fj style="button">附件:</fj>
+	</item>
+    <!-- 危化品 -->
+	<item>
+		<name>HJYJ_WHP</name>
+		<cname>物质名称:</cname>
+		<itemalias>别名:</itemalias>
+		<ename>英文名称:</ename>
+		
+	<!-- 	<name>所属类别:</name> -->
+        <!--<stability>稳定性和危害性:</stability>-->
+		<moleculew>分子量:</moleculew>
+		<itemcode>编号:</itemcode>
+		<fusibility>熔点:</fusibility>
+		<boil>沸点:</boil>
+		<stability>物质稳定性:</stability>
+		<steam>蒸汽压:</steam>
+		<aspect>外观气味:</aspect>
+		<dissolve>溶解性:</dissolve>
+		<cascode>CAS号:</cascode>
+		<density>密度:</density>
+		<flashp>闪点:</flashp>
+         <molecule>分子式:</molecule>
+        <estatecode>国标编号:</estatecode>
+        <criticality>危险标记:</criticality>
+		<operation>主要用途:</operation>
+		<method>门诊化验室监控方法:</method>
+<!-- 		<method style="webview">其他相关信息:</method>style="webview"为打开页面展示 -->
+		<mysql>select * from T_ZSK_DangerChem LEFT JOIN KINDTYPE ON T_ZSK_DangerChem.kindcode
+			= KINDTYPE.KINDCODE where
+		</mysql>
+	</item>
+    <!-- 预案及案例 -->
+	<item>
+		<name>HJYJ_YAJAL</name>
+		<bt>标题:</bt>
+		<type>关键字:</type>
+		<HBSC style="button">附件:</HBSC>
+		<mysql>select guid,EmgPlanName as bt,KeyWord as type from T_EmgPlan where
+		</mysql>
+	</item>
+    <!-- 专家库 -->
+	<item>
+		<name>HJYJ_ZJK</name>
+		<exp_name>姓名:</exp_name>
+		<exp_sex>性别:</exp_sex>
+		<exp_date>出生年月:</exp_date>
+		<exp_political>政治面貌:</exp_political>
+	<!-- 	<exp_place>籍贯:</exp_place>    -->
+	<!-- 暂时隐藏 -->
+	<!-- 	<exp_photo style="button">照片:</exp_photo> -->
+<!-- 		<exp_experttype>专家类型:</exp_experttype> -->
+		<exp_place>专家级别:</exp_place>
+		<exp_tel style="call">联系电话:</exp_tel><!-- “style=call”用于拨打电话 -->
+		<exp_workunit>工作单位:</exp_workunit>
+		<exp_native>民族:</exp_native>
+		    <exp_job>职务:</exp_job>
+		        <exp_highedt>最高学历:</exp_highedt>
+		            <exp_major>专业:</exp_major>
+		                <updatetime>时间:</updatetime>
+		<mysql>select
+			Exp_Name as name, exp_sex as sex,Exp_Date as birthday, Exp_Native as folk, Exp_Photo as photo,  Exp_Political as polity_visage,Exp_Place as regionname,Exp_Job as administration_business,Exp_Tel as move_phone,Exp_WorkUnit as work_ent
+			from PC_Exp where
+		</mysql>
+	</item>
+    <!-- 队伍管理 -->
+	<item>
+		<name>DWGL</name>
+		<name>姓名:</name>
+		<sex>性别:</sex>
+		<businesss>职位:</businesss>
+		<execcode>执法编号</execcode>
+		<workent>单位:</workent>
+		<phone style="call">电话:</phone>
+	</item>
+    <!-- 救援物质 <solufenl>分类:</solufenl>  <xsnumday>日销售量:</xsnumday>-->
+	<item>
+		<name>HJYJ_JYWZ</name>
+		<soluname>物质名称:</soluname>
+		<nownum>库存量:</nownum>
+		<neednum>需求量:</neednum>
+		<contactname>联系人:</contactname>
+		<contactphone style="call">电话:</contactphone>
+		<entname>单位名称:</entname>
+		<address>详细地址:</address>
+		<mysql>select
+			guid,soluname,nownum,neednum,contactname,contactphone,entname,address
+			from T_ZSK_EnterSoluAndSave where
+		</mysql>
+	</item>
+    <!-- 法律法规标准 -->
+	<item>
+		<name>HJYJ_FLFGBZ</name>
+		<sjlb>法规级别:</sjlb>
+		<ymbt>标题:</ymbt>
+   <!--     <scsj>上传时间:</scsj> -->
+		<fjswf style="zhengwen" datasource="">附件内容:</fjswf><!-- webview -->
+		<fj style="button">附件:</fj>
+		<mysql>select guid,sjlb,ymbt,fjswf,fj from T_ZSK_FLFGBZ where </mysql>
+	</item>
+     <!-- 重要文件 -->
+	<item>
+		<name>HJYJ_ZYWJBZ</name>
+		<wjlb> 文件来源:</wjlb>
+		<wjbt>标题:</wjbt>
+		<fjswf style="button">附件:</fjswf>
+	</item>
+    <!-- 重要文件 -->
+	<item>
+		<name>HJYJ_CLYJBZ</name>
+		<wjlb>文件类别:</wjlb>
+		<wjbt>标题:</wjbt>
+		<fjswf style="button">附件:</fjswf>
+	</item>
+     <!-- 作业指导书 -->
+	<item>
+		<name>HJYJ_ZYZDSBZ</name>
+		<wjlb>文件类别:</wjlb>
+		<wjbt>标题:</wjbt>
+		<fjswf style="button">附件:</fjswf>
+	</item>
+    <!-- 任务信息 -->
+	<item>
+		<name>RWXX</name>
+<!--        <rwbh>任务编号:</rwbh> -->
+		<TaskName>任务名称:</TaskName>
+		<TaskType>任务类型:</TaskType>
+		<Urgency>紧急程度:</Urgency>
+		<PublishedTime>发布时间:</PublishedTime>
+		<TransactedTime>办结期限:</TransactedTime>
+		<PublisherId>发布人:</PublisherId>
+		 <!-- <zxr>执行人:</zxr>
+		<xbr>协办人:</xbr> -->
+		<!-- <rwztmc>任务状态:</rwztmc> -->
+		<Remark>任务描述:</Remark>
+<!--        <filefijian style="rwxxtree">附件:</filefijian> -->
+	</item>
+    <!-- 办公室人的任务信息详情布局 -->
+	<item>
+		<name>RWXXOffice</name>
+		<rwmc>任务名称:</rwmc>
+		<lxname>任务类型:</lxname>
+		<rwztmc>执行状态:</rwztmc>
+		<cdname>紧急程度:</cdname>
+		<fbsj>发布时间:</fbsj>
+		<bjqx>办结期限:</bjqx>
+		<fbr>发布人:</fbr>
+		<rwms>任务描述:</rwms>
+	</item>
+    <!-- 用户信息 -->
+	<item>
+		<name>PC_USERS</name>
+		<u_realname>姓名:</u_realname>
+		<u_officetel style="call">办公电话:</u_officetel>
+
+		<u_unicomtel style="call">移动电话:</u_unicomtel>
+
+		<u_hometel style="call">家庭电话:</u_hometel>
+		<!-- u_unicomnum -->
+
+		<u_email style="email">电子邮箱:</u_email>
+		<depname>部门:</depname>
+
+<!-- 		<zz>职责:</zz> -->
+		<mysql>select userid,u_realname,u_officetel,u_hometel,u_unicomtel,u_mobilenum,u_unicomnum,u_fax,u_email,depname,zw,zfzh
+			from pc_users a LEFT JOIN pc_role b ON a.u_role = b.roleid LEFT JOIN
+			pc_departmentinfo c ON a.depid = c.depid where
+		</mysql>
+      <!--   <regioncode>行政区划:</regioncode>  <sexname>性别:</sexname>-->
+	</item>
+      <!-- 检查记录任务信息 -->
+	<item>
+		<name>JCJLRWXX</name>
+		<rwmc>任务名称:</rwmc>
+		<qymc>企业名称:</qymc>
+		<rwbh>任务编号:</rwbh>
+		<fbsj>发布时间:</fbsj>
+		<bjqx>办结期限:</bjqx>
+		<u_realname>发布人:</u_realname>
+		<rwztmc>任务状态:</rwztmc>
+		<lyname>任务来源:</lyname>
+		<lxname>任务类型:</lxname>
+		<cdname>紧急程度:</cdname>
+		<bz>备注信息:</bz>
+	</item>
+    <!-- 通知公告信息 -->
+	<item>
+		<name>TZGGXX</name>
+		<timing>通知名称:</timing>
+		<fabuzhe>发布人:</fabuzhe>
+		<fabubumen>所属部门:</fabubumen>
+		<zhengwen style="zhengwen" datasource="">公告内容:</zhengwen><!-- webview -->
+		<faburiqi style="time" datasource="">发布时间:</faburiqi>
+		<mysql>select id,timing,fabuzhe,fabubumen,zhengwen,faburiqi from
+			T_YDZF_TZGG where
+		</mysql>
+	</item>
+    <!-- 移动办公 -->
+	<item>
+		<name>YDBGXX</name>
+		<topic>标题:</topic>
+	</item>
+    <!-- 邮件管理信息 -->
+	<item>
+		<name>EmailXX</name>
+		<u_loginname style="spinner" datasource="PC_Users">发件人:</u_loginname>
+		<msgbuilddate style="time" datasource="">接收时间:
+		</msgbuilddate>
+		<msgtitle style="reply" datasource="">标题:</msgtitle>
+		<xxneir style="">内容:</xxneir>
+	</item>
+    <!-- 日程安排信息 -->
+	<item>
+		<name>HJYJ_RCAPBZ</name>
+		<u_loginname style="noAmend">姓名:</u_loginname>
+		<scontent>计划内容:</scontent>
+		<stime style="time">计划时间:</stime>
+	</item>
+        <!-- 局领导日程安排信息 -->
+	<item>
+		<name>HJYJ_LDRCAPBZ</name>
+		<juzhang style="noAmend">局长:</juzhang>
+		<content>计划名称:</content>
+		<address>所去地址:</address>
+		<day style="time">计划时间:</day>
+	</item>
+    <!-- 需要修改的日程安排信息 -->
+	<item>
+		<name>HJYJ_XGRCAPBZ</name>
+		<scontent>计划名称:</scontent>
+		<stime style="time">计划时间:</stime>
+	</item>
+      <!-- 历史更新信息 -->
+	<item>
+		<name>LSGX</name>
+		<apkversion>版本号:</apkversion>
+		<updatetime>更新时间:</updatetime>
+		<bz>更新信息:</bz>
+	</item>
+</list>

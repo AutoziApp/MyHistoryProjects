@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_new_air_day"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/PagerBg">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="东湖梨园"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingTop="0.5dp"
+        android:paddingBottom="0.5dp">
+
+        <RadioButton
+            android:id="@+id/rb_aqi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="AQI"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_pm25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="PM2.5"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_o3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="O3"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_pm10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="PM10"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_co"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="CO"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_so2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="SO2"
+            android:textColor="@drawable/selector_text_color" />
+
+        <RadioButton
+            android:id="@+id/rb_no2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="NO2"
+            android:textColor="@drawable/selector_text_color" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dfdfdf"/>
+    <TextView
+        android:id="@+id/char_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_50dp"
+        android:textColor="#666666"
+        android:background="#ffffff"
+        android:gravity="center"/>
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="50dp"
+        android:paddingTop="@dimen/DIMEN_10dp" />
+</LinearLayout>

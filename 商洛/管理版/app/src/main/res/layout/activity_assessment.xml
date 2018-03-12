@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_assessment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.mapuni.administrator.activity.AssessmentActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--上半部分布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <!--顶布局-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        style="@style/assess_text_style"
+                        android:drawableLeft="@drawable/count"
+                        android:text=" 查询统计："/>
+
+                    <TextView
+                        android:id="@+id/tv_startTime"
+                        style="@style/assess_time_style"
+                        android:text="0000-00-00"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" — "/>
+
+                    <TextView
+                        android:id="@+id/tv_endTime"
+                        style="@style/assess_time_style"
+                        android:text="0000-00-00"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/btn_query"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/login_btn_check"
+                            android:clickable="true"
+                            android:padding="4dp"
+                            android:src="@drawable/query"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--饼状图-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <lecho.lib.hellocharts.view.PieChartView
+                        android:id="@+id/chart_pie"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <!--统计信息-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/assess_text_style2"
+                            android:text="后督查任务："/>
+
+                        <TextView
+                            style="@style/assess_text_style3"
+                            android:text="5%"
+                            />
+
+                        <TextView
+                            style="@style/assess_text_style4"
+                            android:text="60次"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/assess_text_style2"
+                            android:text="双随机任务："/>
+
+                        <TextView
+                            style="@style/assess_text_style3"
+                            android:text="5%"
+                            />
+
+                        <TextView
+                            style="@style/assess_text_style4"
+                            android:text="60次"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/assess_text_style2"
+                            android:text="信访任务：&#12288;"/>
+
+                        <TextView
+                            style="@style/assess_text_style3"
+                            android:text="20%"
+                            />
+
+                        <TextView
+                            style="@style/assess_text_style4"
+                            android:text="120次"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/assess_text_style2"
+                            android:text="专项任务：&#12288;"/>
+
+                        <TextView
+                            style="@style/assess_text_style3"
+                            android:text="5%"
+                            />
+
+                        <TextView
+                            style="@style/assess_text_style4"
+                            android:text="60次"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/assess_text_style2"
+                            android:text="领导交办：&#12288;"/>
+
+                        <TextView
+                            style="@style/assess_text_style3"
+                            android:text="25%"
+                            />
+
+                        <TextView
+                            style="@style/assess_text_style4"
+                            android:text="180次"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/assess_text_style2"
+                            android:text="日常巡查：&#12288;"/>
+
+                        <TextView
+                            style="@style/assess_text_style3"
+                            android:text="40%"
+                            />
+
+                        <TextView
+                            style="@style/assess_text_style4"
+                            android:text="246次"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#f5f5f5"/>
+
+            <!--下半部分布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    style="@style/assess_text_style"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/assessment"
+                    android:text=" 评价考核"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <lecho.lib.hellocharts.view.ColumnChartView
+                        android:id="@+id/chart_column"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/addqyRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/addqytitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/addqytext"
+            android:textColor="@color/blueviolet" />
+
+        <Button
+            android:id="@+id/addqyimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rwgl_task_list_add" />
+    </RelativeLayout>
+<ListView
+    android:id="@+id/task_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+</ListView>
+</LinearLayout>

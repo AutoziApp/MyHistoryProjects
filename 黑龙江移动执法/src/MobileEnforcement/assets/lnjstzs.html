@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title></title>
+<script src="../../lib/jquery/jquery-1.8.1.js" type="text/javascript"></script>   
+<!--日历控件的引用 -->
+<script src="../../Scripts/MessageManager/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+<script src="../../Scripts/JScript.js" type="text/javascript"></script>
+<script type="text/javascript">
+        document.onreadystatechange = function () {
+            if (this.readyState == "complete") {
+                $("#loading", window.parent.document).hide();
+            }
+        }
+        $(function () {
+
+            isLookView();
+            InitCheckbox();
+        });
+        function InitCheckbox() {
+            var ckText = $("#hidZL").val();
+            var arrCks = ckText.split(',');
+            var cks = document.getElementsByName("ckZL");
+            for (var i = 0; i < arrCks.length; i++) {
+                for (var j = 0; j < cks.length; j++) {
+                    if (arrCks[i] == cks[j].value) {
+                        cks[j].checked = true;
+                    }
+                }
+            }
+            var qtZl = document.getElementById("QTZL");
+            if (qtZl.checked) {
+                $("#QT").attr("contenteditable", "true");
+            }
+        }
+        var isview = getParam("IsView");
+        //判断是浏览状态时屏蔽窗口内容不可编辑状态
+        function isLookView() {
+
+            if (isview == "0") {
+
+                $("span[contenteditable='true']").removeAttr("contenteditable");
+
+                $("#txtDate1").attr("disabled", "false");
+                $("#txtDate2").attr("disabled", "false");
+                $("#txtDate3").attr("disabled", "false");
+
+                $(".content120").css("background-color", "transparent");
+                $("#BH").css("background-color", "transparent");
+                $("#txtDate1").css("background-color", "transparent");
+                $("#txtDate2").css("background-color", "transparent");
+                $("#txtDate3").css("background-color", "transparent");
+                $("#QYMC").css("background-color", "transparent");
+
+                $("#XW").css("background-color", "transparent");
+                $("#ZL").css("background-color", "transparent");
+                $("#XW").removeAttr("contenteditable");
+                $("#ZL").removeAttr("contenteditable");
+                $("#BH").removeAttr("contenteditable");
+            }
+        }
+        //获取checkbox值
+        function GetCheckboxValues() {
+            var cksValues = "";
+            var cks = document.getElementsByName("ckZL");
+            if (cks != undefined && cks.length > 0) {
+                for (var i = 0; i < cks.length; i++) {
+                    if (cks[i].checked) {
+                        cksValues += cks[i].value;
+                        cksValues += ",";
+                    }
+                }
+            }
+            cksValues = cksValues.substring(0, cksValues.length - 1);
+            return cksValues;
+        }
+        function GetJson() {
+            var guid = $("#hidGuid").val();  //guid
+            var Taskid = $("#hidTaskID").val(); //任务id
+
+            var EntID = $("#hidEnprId").val();  //企业guid
+
+            //var LawTime = $("#txtDate1").val();  //执法时间
+            var SurveyTime = $("#txtDate2").val();  //执法时间
+            var SignTime = $("#txtDate3").val();  //签字时间
+
+            //var NoticeNo = $("#BH").text();  //询问人姓名及执法证号
+            var EntName = $("#QYMC").text();  //企业名称
+
+            var BreakBehavior = $("#XW").text();  //违法行为
+
+            var TakeMaterial = GetCheckboxValues();         //携带资料
+
+            var ContactPerson = $("#LXR").text();   //联系人
+            var Phone = $("#LXDH").text();          //联系电话
+            var Address = $("#DZ").text();      //地址
+            //var ZipCode = $("#YB").text();         //邮编
+
+            var BJCDZ = $("#BJCDZ").text();//被检查人
+            var XCJSR = $("#XCJSR").text();//现场执法人
+            var BJCLXDH = $("#BJCLXDH").text();//被检查联系电话
+            var FJ = $("#FJ").val();//分局           
+            var KS = $("#KS").val();//科室
+            var QTZL = $("#QT").text();
+            var fl = $("#WFFL").text();//违反法律
+
+            var strJson = {
+                "guid": guid, "TaskId": Taskid, "EntID": EntID, "SurveyTime": SurveyTime, "WFFL": encodeURIComponent(fl),
+                "SignTime": SignTime, "EntName": EntName,
+                "BreakBehavior": encodeURIComponent(BreakBehavior), "TakeMaterial": encodeURIComponent(TakeMaterial), "ContactPerson": ContactPerson, "Phone": Phone,
+                "Address": Address, "BJCDZ": BJCDZ, "XCJSR": XCJSR, "BJCLXDH": BJCLXDH, "FJ": FJ, "KS": KS, "QTZL": QTZL
+            };
+            return strJson;
+        }
+        //类型参数
+        function GetPostUrl() {
+            return "../TaskExecute/SceneRecord_LN/BaseLawHandler.ashx?Type=SaveTZS";
+        }
+        //保存数据
+        function TempSave(zd) {
+
+            var strJson = GetJson();
+            $.post("BaseLawHandler.ashx?Type=SaveTZS", strJson,
+            function (rep) {
+                if (rep.toString() != 'OK') {
+                    if (zd != "ZD") {
+                        alert('保存失败！');
+                    }
+                    return;
+                }
+                else {
+                    if (zd != "ZD") {
+                        alert('保存成功！');
+                    }
+                    location.href = location.href;
+                };
+            });
+        }
+        function cksClick() {
+            var qtCk = document.getElementById("QTZL");
+            if (qtCk.checked) {
+                $("#QT").attr("contenteditable", "true");
+            }
+            else {
+                $("#QT").attr("contenteditable", "false");
+            }
+        }
+        function FJBlur() {
+            var fjValue = $("#FJ").val();
+            $("#danweiFj").text(fjValue + "分局");
+
+        }
+    </script>
+<style type="text/css">
+        input[type="text"] {
+            border: 0px;
+            border-bottom: 1px solid #000;
+            background-color: #EFF3AB;
+        }
+
+        .textline {
+            width: 600px;
+            background-image: url(../../Images/line.png);
+            background-position: top;
+            vertical-align: bottom;
+            background-repeat: repeat;
+            border: 0px;
+            line-height: 31px;
+            padding-top: 1px;
+            overflow: hidden;
+        }
+
+        .divedit {
+            width: 600px;
+            line-height: 30px;
+            background-image: url(../../Images/line.png);
+            background-position: top;
+            background-repeat: repeat;
+            vertical-align: middle;
+            word-spacing: 5px;
+            font-size: 16pt;
+            font-family: 宋体;
+            word-break: break-all;
+        }
+
+        .l-button1 {
+            border: solid 1px #A3C0E8;
+            width: 80px;
+            height: 25px;
+            overflow: hidden;
+            line-height: 25px;
+            background: #E0EDFF url(../../images/controls/button-bg.gif) repeat-x center;
+            color: #2C4D79;
+            text-decoration: none;
+            cursor: pointer;
+            color: #000;
+        }
+
+        body {
+            margin: auto;
+            color: #000;
+        }
+
+        tr td {
+            height: 22pt;
+            color: #000;
+            font-size: 16pt;
+            font-family: 宋体;
+        }
+
+
+        span.left {
+            text-align: left;
+            text-decoration: underline;
+            border: 1px solid #ff0000;
+            width: 98%;
+            display: block;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+
+        span {
+            text-align: left;
+            float: left;
+            color: #000;
+            font-size: 16pt;
+            font-family: 宋体;
+            line-height: 150%;
+        }
+
+            span.right {
+                text-align: left;
+                float: right;
+                margin-right: 5px;
+                color: #000;
+                font-size: 16pt;
+                font-family: 宋体;
+                line-height: 150%;
+            }
+
+            span.lbl60 {
+                width: 60px;
+                float: left;
+                color: #000;
+            }
+
+            span.lbl80 {
+                width: 80px;
+                float: left;
+                color: #000;
+            }
+
+            span.lbl128 {
+                width: 128px;
+                float: left;
+                color: #000;
+            }
+
+            span.content {
+                width: 54px;
+                text-align: center;
+                float: left;
+                border-bottom: 1px solid #000;
+                color: #000;
+            }
+
+            span.content120right {
+                width: 120px;
+                float: right;
+                border-bottom: 1px solid #000;
+                height: 26px;
+                color: #000;
+                /*background-color: #EFF3AB;*/
+            }
+
+            span.content120 {
+                width: 120px;
+                float: left;
+                border-bottom: 1px solid #000;
+                height: 26px;
+                color: #000;
+				text-align:center;
+            }
+			            
+			span.content120center {
+                width: 120px;
+                float: right;
+                border-bottom: 1px solid #000;
+                height: 26px;
+                color: #000;
+				text-align:center;
+            }
+			
+			 span.content121 {
+                width: 120px;
+                float: left;
+                height: 26px;
+				border-bottom: 1px solid #000;
+                color: #000;
+				text-align:left;
+            }
+
+            span.contentNoWidth {
+                float: left;
+                border-bottom: 1px solid #000;
+                height: 20px;
+                color: #000;
+                /*background-color: #EFF3AB;*/
+            }
+
+            span.content120_Copy {
+                width: 120px;
+                float: left;
+                border-bottom: 1px solid #000;
+                height: 20px;
+                color: #000;
+            }
+
+            span.content200 {
+                width: 200px;
+                float: left;
+                border-bottom: 1px solid #000;
+                color: #000;
+            }
+
+            span.content680 {
+                width: 600px;
+                float: left;
+                border-bottom: 1px solid #000;
+                color: #000;
+            }
+
+            span.content60 {
+                width: 60px;
+                float: left;
+                border-bottom: 1px solid #000;
+                color: #000;
+            }
+
+        .divcontent {
+            font-family: 宋体;
+            font-size: 16pt;
+            /*text-decoration: underline;*/
+            line-height: 150%;
+            word-break: break-all;
+            background-color: #EFF3AB;
+        }
+    </style>
+<link href="../../App_Themes/blue/Blue.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/images/dialog/skins/default.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/jquery.treeview.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/jquery-ui-1.8.2.custom.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/layout-default-latest.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/lhgdialog/skins/chrome.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/lhgdialog/skins/default.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/Btn.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/EQOL_Gis.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/EQOL_RealTime.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/main.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/maintable.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/pagination.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/popstyle.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/ShadowNav.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/style_login.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/toolbar.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/topchannel.css" type="text/css" rel="stylesheet" />
+<link href="../../App_Themes/blue/Styles/video_style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<form name="form1" method="post" action="AcceptedSurveyNotice.aspx?tid=T201405281109314210&amp;entid=bd5fada9-c415-48ca-88b5-97013d3043f8&amp;IsView=1" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3Njg5MTYzODcPZBYCAgMPZBYMAgEPFgIeCWlubmVyaHRtbAUKMjEwMDAwMDExNmQCAw8WAh8ABQzpu5jpu5jpu5jpu5hkAhEPFgIfAAUY6L695a6B55yB546v5aKD55uR5a+f5bGAZAITDxYCHgdWaXNpYmxlaGQCFA8WAh8BaGQCIw8WAh8ABRjovr3lroHnnIHnjq/looPnm5Hlr5/lsYBkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBQRRVFpMki+OgF1HaHjpShnAbjymfx7quoE=" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBQK60ttpAsSEwP8HAuXv3vAMAsfD6/0OAsSE1FphD0g58NaB1AxsWeLYD8YJaZD9tw==" />
+</div>
+<div id="printArea" style="">
+<center style="text-align: center; font-size: 28pt; font-weight: bold; margin-top: 60px; margin-bottom: 10px;">
+环&nbsp;境&nbsp;监&nbsp;察&nbsp;通&nbsp;知&nbsp;书
+</center>
+            <table style="width: 800px; margin: 5px auto; margin-top: 0px">
+                <tr>
+                    <td>
+                        <span style="margin-left:620px;">编号:</span>
+                        <span id="BH" class="content120right" style="width: 120px; margin-right:5px;" contenteditable="false">{noticeno}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="width: 180px;">单位：</span>
+                        <span id="QYMC" class="content121" contenteditable="true" style="width: 610px;">{entname}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="width: 180px;">被查单位地址：</span>
+                        <span id="BJCDZ" class="content121" contenteditable="true" style="width: 610px;">{被查单位地址}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="width: 180px;">现场接收人：</span>
+                        <span id="XCJSR" class="content121" contenteditable="true" style="width: 610px;">{现场接收人}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="width: 180px;">联系电话：</span>
+                        <span id="BJCLXDH" class="content121" contenteditable="true" style="width: 610px;">{联系电话}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;依据《中华人民共和国环境保护法》第二章第十四条之规定，我们对你单位进行检查。<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你单位{违法行为}</span>
+								<span style="width: 180px;"></span>
+                                
+
+                                <span style="margin-top:15px;"> 行为违反以下法律规定：</span>
+								<span id="BJCLXDH" style="width: 730px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{违反法律}</span>
+								<span style="width: 180px;"></span>
+                                
+
+
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="width: 790px;margin-top:30px;">
+                            <div style="overflow:hidden">
+								<div style="overflow:hidden;">
+                                <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请你单位主要负责人于</span>
+                                <a style="text-decoration:underline;color:#000;">{接受调查时间}</a>
+                                <a style="color:#000;">时到{unit}{fj}</a>
+                                <a style="text-decoration:underline;color:#000;">{科室}</a><a>室,携带：</a>
+                                </div>
+                                <div style="padding-bottom:20px;"></div>
+                            </div>
+                            <div style="overflow:hidden; line-height:180%;">
+                                    <input type="checkbox" name="ckZL" value="环评报告书" {环评报告书}/>环评报告书
+                                    <input type="checkbox" name="ckZL" value="环评报告表" {环评报告表}/>环评报告表
+                                    <input type="checkbox" name="ckZL" value="环评登记表" {环评登记表}/>环评登记表
+                                    <input type="checkbox" name="ckZL" value="环保审批" {环保审批}/>环保审批
+                                    <input type="checkbox" name="ckZL" value="环保验收" {环保验收}/>环保验收<br />
+                                    <input type="checkbox" name="ckZL" value="排污费申请登记表" {排污费申请登记表}/>排污费申请登记表
+                                    <input type="checkbox" name="ckZL" value="排污费缴纳收据" {排污费缴纳收据}/>排污费缴纳收据
+                                    <input type="checkbox" name="ckZL" value="危险废物转移联单" {危险废物转移联单}/>危险废物转移联单<br />
+                                    <input type="checkbox" name="ckZL" value="危险废物处置合同" {危险废物处置合同}/>危险废物处置合同
+                                    <input type="checkbox" name="ckZL" value="相关情况说明" {相关情况说明}/>相关情况说明
+                                    <input type="checkbox" name="ckZL" value="相关情况说明" {其它}/>其他：
+									<a style="text-decoration:underline;color:#000;">{qtzl}</a>
+                            </div>
+                        </div>
+                        <span>等有关资料说明情况，接受问询和调查。</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="width: 180px;">现场检查人：</span>
+                        <span id="LXR" class="content121" contenteditable="true" style="width: 610px; text-align:left;">{现场检查人}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="width: 180px;">地址：</span>
+                        <span id="DZ" class="content121" contenteditable="true" style="width: 610px;">{现场检查人联系地址}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="width: 180px;">电话：</span>
+						<span id="LXDH" class="content121" contenteditable="true" style="width: 610px;">{现场检查人联系电话}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="height: 340px"></td>
+                </tr>
+                <tr>
+                    <td align="right" style="font-size: 16pt; font-weight: bold; margin-right: 5px;">
+                        <span id="danweiFj" style="margin-right: 50px;" class="right"></span><span id="danwei" class="right">{unit}{fj}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <span id="DZ" class="content120center" contenteditable="true" style="margin-right: 5px; width:150px;">{signtime}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="font-size: 16pt;">
+                        <span>注：本文书一式三联，第一联存根，第二联交当事人，第三联归档。</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <input name="hidTaskID" type="hidden" id="hidTaskID" value="T201405281109314210" />
+    <input name="hidEnprId" type="hidden" id="hidEnprId" value="bd5fada9-c415-48ca-88b5-97013d3043f8" />
+    <input name="hidGuid" type="hidden" id="hidGuid" value="85ce76fe-79dc-451a-b5b3-40b78d37ed41" />
+    <input name="hidZL" type="hidden" id="hidZL" />
+</body>
+</html>

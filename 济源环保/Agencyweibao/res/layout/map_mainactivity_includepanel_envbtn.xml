@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000" >
+
+    <!-- 加一个全屏的蒙版，点击蒙板就隐藏该窗口 -->
+
+    <View
+        android:id="@+id/envpanel_backclick"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <ImageView
+        android:id="@+id/hbdtactivity_envpanel_close_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/map_envpanel_button_selected"
+        android:contentDescription="环境信息面板关闭按钮" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/envpanel_background"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="25dp"
+            android:orientation="vertical" >
+
+            <!-- 正式内容如下 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/envpanel_childtitle_img_first"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/envpanel_childtitleimg_wuranwu" />
+
+                <TextView
+                    android:id="@+id/envpanel_childtitle_air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/envpanel_childtitle_img_first"
+                    android:gravity="center_vertical"
+                    android:text="大气污染物" />
+
+                <CheckBox
+                    android:id="@+id/envpanel_childtitle_air_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@drawable/selector_checkbox_envpanel"
+                    android:text="空气质量分布图" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/envpanel_txt_aqi"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/envpanel_txt_air_background_left"
+                    android:gravity="center"
+                    android:text="AQI" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_pm25"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/envpanel_txt_air_background_middle"
+                    android:gravity="center"
+                    android:text="PM2.5" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_pm10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/envpanel_txt_air_background_middle"
+                    android:gravity="center"
+                    android:text="PM10" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_so2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/envpanel_txt_air_background_middle"
+                    android:gravity="center"
+                    android:text="SO2" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_no2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/envpanel_txt_air_background_middle"
+                    android:gravity="center"
+                    android:text="NO2" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_co"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/envpanel_txt_air_background_middle"
+                    android:gravity="center"
+                    android:text="CO" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_o3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/envpanel_txt_air_background_right"
+                    android:gravity="center"
+                    android:text="O3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#88000000" /> -->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/envpanel_childtitle_img_second"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/envpanel_childtitleimg_qixiang" />
+
+                <TextView
+                    android:id="@+id/envpanel_childtitle_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/envpanel_childtitle_img_second"
+                    android:text="气象预报" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/envpanel_txt_tianqi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/tq"
+                    android:gravity="center_horizontal"
+                    android:text="天气" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_wu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_map_render_fog"
+                    android:gravity="center_horizontal"
+                    android:text="雾" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_mai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_map_render_haze"
+                    android:gravity="center_horizontal"
+                    android:text="霾" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_qiwen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/wd"
+                    android:gravity="center_horizontal"
+                    android:text="气温" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#88000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/envpanel_txt_jiaotongshikuang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_map_traffic"
+                    android:gravity="center_horizontal"
+                    android:text="交通实况" />
+
+                <TextView
+                    android:id="@+id/envpanel_txt_fenxiangtupian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/icon_map_sharepicture"
+                    android:gravity="center_horizontal"
+                    android:text="分享图片" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

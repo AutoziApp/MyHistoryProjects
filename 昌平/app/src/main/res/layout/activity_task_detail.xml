@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.mapuni.mobileenvironment.activity.TaskDetailActivity">
+    <include layout="@layout/toolbar_activity"/>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+       >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="查看任务"
+            android:background="@color/pager_select"
+            android:textColor="@color/white"
+            android:id="@+id/infoView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:background="@color/PagerBg"
+            android:gravity="center"
+            android:text="处置流程"
+            android:textColor="@color/white"
+            android:id="@+id/flowView" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/title_tab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/item_bg"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="@string/executer"
+            android:gravity="center"
+            android:textColor="@color/flow_title_color"
+            android:textSize="15sp"
+            android:id="@+id/createrView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="@string/execute_grid"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/flow_title_color"
+            android:id="@+id/gridView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="@string/execute_type"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/flow_title_color"
+            android:id="@+id/typeView" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:text="@string/send_time"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/flow_title_color"
+            android:id="@+id/timeView" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_marginTop="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/top_bg" >
+
+        <ImageView
+            android:id="@+id/activity_main_suggest"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="监测站点趋势图"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/monitor_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="更新时间:"
+        android:textColor="#3C3C3C"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/head_aqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#f4f4f4"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/monitor_aqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:minWidth="100dp"
+                    android:text=""
+                    android:textColor="#490701"
+                    android:textSize="53dp" />
+
+                <TextView
+                    android:id="@+id/monitor_polluction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/monitor_aqi"
+                    android:layout_below="@+id/monitor_aqi"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:minWidth="100dp"
+                    android:text="12312211"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/environment_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/monitor_aqi"
+                    android:layout_alignBottom="@+id/monitor_aqi"
+                    android:layout_toRightOf="@+id/monitor_aqi"
+                    android:text=""
+                    android:textColor="#3C3C3C"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/monitor_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/monitor_polluction"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/monitor_first"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="15dip"
+                        android:text="12312211"
+                        android:textColor="#3C3C3C"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/monitor_pm10"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="Pm10"
+                            android:textColor="#3C3C3C"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/monitor_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="12312211"
+                            android:textColor="#3C3C3C"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/monitor_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:background="#434343"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/line_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:minHeight="40dip"
+                    android:text="最近30天AQI指数"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:background="#434343"
+                    android:layout_height="265dip" >
+                </lecho.lib.hellocharts.view.LineChartView>
+
+                <com.jy.environment.widget.FixGridLayout
+                    android:id="@+id/all_station"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="#f4f4f4"
+                    android:visibility="visible" >
+                </com.jy.environment.widget.FixGridLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

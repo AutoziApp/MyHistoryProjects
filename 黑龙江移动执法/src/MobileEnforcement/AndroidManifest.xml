@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mapuni.android.MobileEnforcement"
+    android:versionCode="1"
+    android:versionName="2.7" >
+
+    <uses-sdk android:minSdkVersion="8"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- Push service 运行需要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- Push service 运行需要的权限 结束 -->
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:name="com.mapuni.android.base.Global"
+        android:icon="@drawable/yutu"
+        android:label="@string/app_name" android:allowBackup="true">
+        <activity
+            android:name="com.mapuni.android.main.MainTabActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppWelcome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 多表单-表单选择 -->
+        <activity android:name="com.mapuni.android.enforcement.SiteWriteRecordAddMoreActivity" />
+        <!-- 轨迹查询 -->
+        <activity
+            android:name="com.mapuni.android.infoQuery.RYDWActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zhy.tree_view.AddressListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <!-- 多级树形目录 -->
+        <activity
+            android:name="com.mapuni.android.mtree.TtDemoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.enforcement.QdjcnlActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.base.GridActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.base.DataSyncActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.base.QueryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.base.BaseDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.digitalchina.gallery.ImageGalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.base.WebViewer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.setting.APKManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.base.FaceDectectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.notice.NoticeMain"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.uitl.CalculatorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.notice.NoticeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 企业信息查询筛选界面 -->
+        <activity
+            android:name="com.mapuni.android.infoQuery.CompanySearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" >
+        </activity>
+        <!-- 现场执法模块 -->
+        <activity
+            android:name="com.mapuni.android.enforcement.EnforcementActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 任务管理 任务总状态 -->
+        <activity
+            android:name="com.mapuni.android.taskmanager.TaskInformationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 通用编辑页面 -->
+        <activity
+            android:name="com.mapuni.android.ui.EditorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 通用视图 -->
+        <activity
+            android:name="com.mapuni.android.common.QueryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.common.ListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.common.GridActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.common.QueryListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.common.ViewFlowCommonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.common.ListFlipperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.base.DailogListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.mapuni.android.common.DetailedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.DataSyncActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.FirmDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.VideoOnlineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.JCJLDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.CarteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.HistoryRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.WebViewFormActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.CalculatorActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.PWSBActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.GlobalSearchActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 视频监控 -->
+        <activity
+            android:name="com.mapuni.android.base.VideoOnlineActivity"
+            android:screenOrientation="portrait" />
+        <!-- 登陆管理 -->
+        <activity
+            android:name="com.mapuni.android.login.HomeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 任务管理 -->
+        <activity
+            android:name="com.mapuni.android.taskmanager.TaskMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.taskmanager.TaskSearchListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.taskmanager.TaskSiteLawStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.taskmanager.TaskFlowSildeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.enforcement.QDMiddleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.enforcement.SiteEvidenceActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.enforcement.SpecialItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.enforcement.SuperviseItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.enforcement.SiteRecorder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.taskmanager.TaskSearchInformationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <!-- 任务管理:添加污染源按钮进入的页面 -->
+        <activity
+            android:name="com.mapuni.android.base.DownloadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.taskmanager.DownloadActivityFromTaskinfo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.base.DownloadActivityFromTaskinfo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.taskmanager.SelectAddCompanyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.enforcement.TaskImageType"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.enforcement.SiteWriteRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.enforcement.NOEMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.enterpriseArchives.AddBusinessActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mapuni.android.helper.LawKnowAllActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.taskmanager.TaskRegisterActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mapuni.android.enforcement.MapuniHtmlActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 信息查询：稽查考核 -->
+        <activity
+            android:name="com.mapuni.android.infoQuery.JCKHSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.infoQuery.JCKHInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.infoQuery.JCKHDetailedActivity"
+            android:screenOrientation="portrait" />
+        <!-- 信息查询：排污费计算 -->
+        <activity
+            android:name="com.mapuni.android.uitl.CalculatorPaiwufei"
+            android:screenOrientation="portrait" />
+        <!-- 辽宁法律法规 -->
+        <activity
+            android:name="com.mapuni.android.infoQuery.LNFLFGExpandListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.mapuni.android.infoQuery.LNFLFGShow"
+            android:screenOrientation="portrait" />
+        <!-- 测试的页面 -->
+        <activity
+            android:name="com.mapuni.android.enforcement.TaskSiteEnforcementActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- android:windowSoftInputMode="stateUnchanged|adjustResize" -->
+        </activity>
+        <activity
+            android:name="com.mapuni.android.enforcement.TaskSimplelawEnforcementActivity"
+            android:screenOrientation="portrait" >
+
+            <!-- android:windowSoftInputMode="stateUnchanged|adjustResize" -->
+        </activity>
+        <!-- 在线监测 -->
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.ZxjcActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.ZXJKNRActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.ZXJKActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.ZXJKOverRuleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.ZXJKDataActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.ZXJCGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.HourDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.QuLinViewActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape" >
+        </activity>
+        <!-- 环保地图 -->
+        <activity
+            android:name="com.mapuni.android.gis.GISActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.gis.MapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <!-- 移动办公 -->
+        <activity
+            android:name="com.mapuni.android.oa.EMAILDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.RCAPListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.RCAPDetaileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.YDBGActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.FWDBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.FWYBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.SWDBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.SWYBActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.TZGGDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.oa.AddressbookActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+
+        <!-- 二级列表 -->
+        <activity
+            android:name="com.mapuni.android.oa.ExpandListSquaredActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 监察考核 -->
+        <activity
+            android:name="com.mapuni.android.assessment.JCKHActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mapuni.android.assessment.JCKHchildActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mapuni.android.assessment.JCKHItemActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mapuni.android.assessment.JCKHQDActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mapuni.android.assessment.JCKHQDMiddleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.mapuni.android.assessment.TeamManageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 扫描文件 -->
+        <activity
+            android:name="com.mapuni.android.ui.ScanningFileActivity"
+            android:label="扫描文件"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.enterpriseArchives.EnterpriseArchivesActivitySlide"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.enterpriseArchives.QYHJGLZDinfoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.enterpriseArchives.XZCFActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.enterpriseArchives.XZCFFJActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.mapuni.android.ui.ImageViewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+      
+        <!-- 上传服务 -->
+        <service android:name="com.mapuni.android.netprovider.NetworkService" />
+        <!-- 下载服务 -->
+        <service android:name="com.mapuni.android.service.DatasyncService" />
+        <!-- 执行脚本服务 -->
+        <service android:name="com.mapuni.android.base.service.UpdtaeScriptDownloadConfigService" />
+        <service android:name="com.mapuni.android.base.service.DownloadService" />
+        <service android:name="com.mapuni.android.helper.FloatingWindowService" />
+        <!-- wsc 2014.11.13 -->
+        <!-- 开机就会启动的广播 -->
+        <receiver android:name="com.mapuni.android.service.StartUpBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- wsc 2014.11.13 -->
+        <!-- 系统退出的广播 -->
+        <receiver android:name="com.mapuni.android.service.ReturnHome" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" >
+                </action>
+                <action android:name="com.mapuni.android.workservice" >
+                </action>
+                <action android:name="EXIT" >
+                </action>
+                <action android:name="com.mapuni.action.launch_service" >
+                </action>
+            </intent-filter>
+        </receiver>
+        <!-- 检查更新的广播 -->
+        <receiver android:name="com.mapuni.android.base.service.BaseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.mapuni.android.checkUpdate" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <!-- 后台服务 -->
+        <service
+            android:name="com.mapuni.android.service.MessageService"
+            android:label="环保通服务" >
+            <intent-filter>
+                <action android:name="ACTION_LOGIN" />
+                <action android:name="ACTION_TASKCHANGE" />
+                <action android:name="ACTION_BOOTSERVICE" />
+                <action android:name="ACTION_DISMISSNOTIFICATION" />
+            </intent-filter>
+        </service>
+        <!-- MobileEnforcement Widget -->
+        <service
+            android:name="com.mapuni.android.service.WidgetService"
+            android:label="环保通桌面小控件" >
+            <intent-filter>
+                <action android:name="com.mapuni.adnroid.MobileEnforcement.widget.change" />
+                <action android:name="com.mapuni.adnroid.MobileEnforcement.widget.up" />
+                <action android:name="com.mapuni.adnroid.MobileEnforcement.widget.down" />
+                <action android:name="com.mapuni.adnroid.MobileEnforcement.widget.text1" />
+                <action android:name="com.mapuni.adnroid.MobileEnforcement.widget.text2" />
+                <action android:name="com.mapuni.adnroid.MobileEnforcement.widget.text3" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.mapuni.android.widget.MobileEnforcementWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/mobileenforcement_provider" />
+        </receiver>
+
+        <!-- push应用定义消息receiver声明 -->
+        <receiver android:name="com.mapuni.android.baidupush.MyPushMessageReceiver" >
+            <intent-filter>
+
+                <!-- 接收push消息 -->
+                <action android:name="com.baidu.android.pushservice.action.MESSAGE" />
+                <!-- 接收bind,unbind,fetch,delete等反馈消息 -->
+                <action android:name="com.baidu.android.pushservice.action.RECEIVE" />
+                <action android:name="com.baidu.android.pushservice.action.notification.CLICK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- push必须的receviver和service声明 -->
+<!--         <receiver -->
+<!--             android:name="com.baidu.android.pushservice.PushServiceReceiver" -->
+<!--             android:process=":bdservice_v1" > -->
+<!--             <intent-filter> -->
+<!--                 <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+<!--                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+<!--                 <action android:name="com.baidu.android.pushservice.action.notification.SHOW" /> -->
+<!--                 <action android:name="com.baidu.android.pushservice.action.media.CLICK" /> -->
+<!--             </intent-filter> -->
+<!--         </receiver> -->
+<!--         <receiver -->
+<!--             android:name="com.baidu.android.pushservice.RegistrationReceiver" -->
+<!--             android:process=":bdservice_v1" > -->
+<!--             <intent-filter> -->
+<!--                 <action android:name="com.baidu.android.pushservice.action.METHOD" /> -->
+<!--                 <action android:name="com.baidu.android.pushservice.action.BIND_SYNC" /> -->
+<!--             </intent-filter> -->
+<!--             <intent-filter> -->
+<!--                 <action android:name="android.intent.action.PACKAGE_REMOVED" /> -->
+
+<!--                 <data android:scheme="package" /> -->
+<!--             </intent-filter> -->
+<!--         </receiver> -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3O1AzixEG490emsBKGiP4F72" />
+
+        <service
+            android:name="com.mapuni.android.service.RydwServices"
+            android:exported="true"
+            android:process=":rydwservice_v1" >
+            
+            
+   <intent-filter>  
+        <action android:name="com.baidu.location.service_v2.4"></action>  
+    </intent-filter>              
+        </service>
+<!--         <service -->
+<!--             android:name="com.baidu.android.pushservice.PushService" -->
+<!--             android:exported="true" -->
+<!--             android:process=":bdservice_v1" /> -->
+        <!-- push结束 -->
+
+
+        <!-- 在百度开发者中心查询应用的API Key -->
+        <meta-data
+            android:name="api_key"
+            android:value="q4M3vxKB1Ulhz9uVopcMWPb9" />
+
+        <activity
+            android:name="com.mapuni.android.onlinemonitor.ZxjcDetailActivity"
+            android:label="@string/title_activity_zxjc_detail" >
+        </activity>
+        <activity android:name="com.mapuni.android.helper.HelpActivity" >
+        </activity>
+        <activity android:name="com.mapuni.android.uitl.SumsActivity" >
+        </activity>
+
+        <!-- 队伍圈 -->
+        <activity android:name="com.mapuni.android.teamcircle.TeamCircleActivity" >
+        </activity>
+        <activity android:name="com.mapuni.android.teamcircle.ShowPicActivity" >
+        </activity>
+        <activity android:name="com.mapuni.android.teamcircle.PublishActivity" 
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="com.mapuni.android.teamcircle.ShowVideoActivity" >
+        </activity>
+         <activity android:name="com.mapuni.android.teamcircle.TeamCiroleInfoActivity" >
+        </activity>
+        <!-- 智能搜索web -->
+         <activity android:name="com.mapuni.android.witsearch.WitSrarchActivity"></activity>
+         <!-- 一起一档web -->
+        <activity 
+            android:name="com.mapuni.yqydweb.YqydWebActivity"
+            android:theme="@style/YqydWebAcStyle"
+             />
+        
+         <!-- 廉政监督卡 -->
+           <activity android:name="com.mapuni.android.enforcement.SuperviseCardActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list> 
+    <item>
+  <name>一般炉型</name> 
+  <values>0.45</values> 
+  </item>
+  
+     <item>
+  <name>煤粉炉</name> 
+  <values>0.08</values> 
+  </item>
+  
+      <item>
+  <name>沸腾炉</name> 
+  <values>0.25</values> 
+  </item>
+</list>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.mapuni.mobileenvironment"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 10
+        versionName "1.7.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.alibaba:fastjson:1.1.55.android'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'org.apache.commons:commons-compress:1.11'
+    compile project(':HoloGraphLibrary')
+    compile files('libs/hellocharts-library-1.5.8.jar')
+    compile files('libs/commons-lang-2.6.jar')
+    compile 'com.github.Sbingo:FreeRadioGroup:v1.0.0'
+    //WheelPicker
+    compile('cn.qqtheme.framework:WheelPicker:latest.release') {
+        exclude group: 'com.android.support'
+    }
+}

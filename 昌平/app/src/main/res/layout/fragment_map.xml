@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapuni.mobileenvironment.fragment.MapFragment">
+
+    <!-- TODO: Update blank fragment watch_dialog_layout -->
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></com.amap.api.maps2d.MapView>
+    <sbingo.freeradiogroup.FreeRadioGroup
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/black_bg"
+        android:orientation="vertical"
+        app:autoBack="true"
+        app:millisInFuture="2500"
+        app:moveable="true">
+    <Button
+        android:id="@+id/btn_street"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textColor="@color/white"
+        android:background="@color/transparent"
+        android:text="所有街道"/>
+    </sbingo.freeradiogroup.FreeRadioGroup>
+    <sbingo.freeradiogroup.FreeRadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/black_bg"
+        android:orientation="vertical"
+        app:autoBack="true"
+        app:millisInFuture="2500"
+        app:moveable="true">
+        <RadioButton
+            android:id="@+id/rb_map"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/relitu"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="热力图"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/rb_air"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/aqi"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="空气"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb_source"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/wuranyuan"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="污染源"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="13sp" />
+        <RadioButton
+            android:id="@+id/rb_yan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/youyanji"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="油烟"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="14sp" />
+
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_chazhao"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:drawableTop="@mipmap/chazhao1"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="查找"-->
+            <!--android:textColor="@drawable/text_color_selector"-->
+            <!--android:textSize="14sp" />-->
+
+
+        <RadioButton
+            android:id="@+id/rb_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/dingwei"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="定位"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="13sp" />
+
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rb_clear"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:drawableTop="@mipmap/qingkong1"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="5dp"-->
+            <!--android:paddingRight="5dp"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:text="清空"-->
+            <!--android:textColor="@drawable/text_color_selector"-->
+            <!--android:textSize="14sp" />-->
+
+    </sbingo.freeradiogroup.FreeRadioGroup>
+
+</RelativeLayout>

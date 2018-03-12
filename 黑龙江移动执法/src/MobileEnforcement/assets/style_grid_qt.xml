@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+
+
+
+	<!-- <item>
+		<id>2</id>
+		<img>grid_zyzds_selector</img>
+		<qymc>作业指导书</qymc>
+		<qxid>vmob8A4B</qxid>
+	</item> 
+	 -->
+	<!-- <item>
+		<id>2</id>    
+		<img>grid_zywj_selector</img>
+		<qymc>重要文件</qymc>
+		<qxid>mob2A2B6C</qxid>
+	</item> -->
+	<item>
+		<id>1</id>
+		<img>grid_menu_xtsz</img>
+		<qymc>系统设置</qymc>
+		<qxid>vmob8A5B</qxid>
+	</item>
+	<item>
+		<id>1</id>
+		<img>grid_menu_gyxt</img>
+		<qymc>关于系统</qymc>
+		<qxid>vmob8A2B</qxid>
+	</item>
+	<item>
+		<id>1</id>
+		<img>grid_menu_jcgx</img>
+		<qymc>检查更新</qymc>
+		<qxid>vmob8A5B</qxid>
+	</item>
+		<item>
+		<id>1</id>
+		<img>grid_menu_apkins</img>
+		<qymc>软件安装</qymc>
+		<qxid>vmob8A5B</qxid>
+	</item>
+	<!-- <item>
+		<id>1</id>
+		<img>grid_menu_jcgx</img>
+		<qymc>意见反馈</qymc>
+		<qxid>vmob8A5B</qxid>
+	</item> -->
+<!-- 	<item>
+		<id>1</id>
+		<img>grid_menu_xtbz</img>
+		<qymc>系统帮助</qymc>
+		<qxid>mob1A1</qxid>
+	</item> -->
+</list>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="网格名称:"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        
+        <TextView 
+            android:id="@+id/text_gridCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="济南食品有限公司"
+            android:textColor="#262626"
+            android:paddingLeft="5dip"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="巡查次数:"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        
+        <TextView 
+            android:id="@+id/text_checkNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="105个"
+            android:textColor="#262626"
+            android:paddingLeft="5dip"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="案件个数:"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        
+        <TextView 
+            android:id="@+id/text_msnNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="104个"
+            android:textColor="#262626"
+            android:paddingLeft="5dip"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="办理个数:"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        
+        <TextView 
+            android:id="@+id/text_doneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123次"
+            android:textColor="#262626"
+            android:paddingLeft="5dip"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="被考核人:"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        
+        <TextView 
+            android:id="@+id/text_userId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="92分"
+            android:paddingLeft="5dip"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#cccccc"/>
+    
+
+</LinearLayout>

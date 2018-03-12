@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/expand_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:paddingLeft="30dp"
+            android:background="@android:color/darker_gray"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ExpandableListView
+            android:id="@+id/expandablelistview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:drawSelectorOnTop="false" >
+        </ExpandableListView>
+    </LinearLayout>
+
+<!--     <LinearLayout -->
+<!--         android:id="@+id/sitelaw_LinearLayout_bottom" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:orientation="horizontal" > -->
+
+<!--         <Button -->
+<!--             android:id="@+id/sure_btn" -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_weight="1" -->
+<!--             android:gravity="center" -->
+<!--             android:text="确    定" /> -->
+
+<!--         <Button -->
+<!--             android:id="@+id/cancle_btn" -->
+<!--             android:layout_width="0dp" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_weight="1" -->
+<!--             android:text="取    消" /> -->
+<!--     </LinearLayout> -->
+
+</LinearLayout>

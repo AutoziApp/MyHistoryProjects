@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="备注："
+        android:id="@+id/textView6" />
+    <EditText
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="最多输入100个字"
+        android:textSize="15sp"
+        android:maxLength="100"
+        android:focusable="true"
+        android:background="@drawable/kuang"
+        android:id="@+id/editText" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:text="取消"
+            android:textColor="@color/cancel_text"
+            android:gravity="center"
+            android:background="@drawable/cancel_bg"
+            android:id="@+id/cancelView" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="督办"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/commit_bg"
+            android:id="@+id/sureView" />
+    </LinearLayout>
+</LinearLayout>

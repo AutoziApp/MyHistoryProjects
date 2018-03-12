@@ -1,0 +1,12 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+  <dimen name="widget_marginTop">14dip</dimen>
+    <dimen name="widget_time_marginTop">5dip</dimen>
+    <dimen name="widget_time_marginLeft">23dip</dimen>
+    <dimen name="widget_marginRight">25dip</dimen>
+     <dimen name="widget_weather_date_marginRight">27dip</dimen>
+</resources>

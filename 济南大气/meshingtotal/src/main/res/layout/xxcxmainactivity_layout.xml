@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_view_border">
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/title_btn_search_s" />
+
+        <ImageView
+            android:id="@+id/fl_imageView"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/category_icon"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/ivSearch"
+            android:background="@null"
+            android:hint="@string/search_hint"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <com.goldnut.app.sdk.view.pullrefresh.PullToRefreshListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+</LinearLayout>

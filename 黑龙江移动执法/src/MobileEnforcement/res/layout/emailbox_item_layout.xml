@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/notice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/notice_state"
+        android:paddingRight="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="公告标题"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/notice_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/notice_title"
+        android:text="发布人"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#888"
+        />
+
+    <TextView
+        android:id="@+id/notice_publishTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/notice_publisher"
+        android:layout_alignParentRight="true"
+        android:text="发布时间"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#888" />
+
+    <TextView
+        android:id="@+id/notice_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/notice_title"
+        android:layout_alignBottom="@+id/notice_title"
+        android:layout_alignRight="@+id/notice_publishTime"
+        android:text="状态"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#888" />
+    <TextView
+        android:id="@+id/notice_telluser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notice_title"
+        android:layout_alignTop="@+id/notice_publishTime"
+        android:ellipsize="end"
+        android:paddingRight="5dp"
+        android:paddingTop="25dp"
+        android:text="告知人"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+         />
+
+    
+
+</RelativeLayout>

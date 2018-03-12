@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:orientation="horizontal">
+
+
+    <com.mcxtzhang.swipemenulib.SwipeMenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvTaskName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="欧本化工"/>
+
+        <TextView
+            android:id="@+id/tvCreateTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2017-01-01 00:00:00"
+            android:textSize="10sp"/>
+
+
+        <TextView
+            android:id="@+id/tvTaskType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="下发"/>
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_distribute"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="分配"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#ecd50a"
+            android:clickable="true"
+            android:text="查看/修改"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:text="删除"
+            android:textColor="@android:color/white"/>
+
+    </com.mcxtzhang.swipemenulib.SwipeMenuLayout>
+</LinearLayout>

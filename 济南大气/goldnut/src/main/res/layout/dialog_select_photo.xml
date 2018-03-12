@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_bg_white"
+    android:minWidth="280dp"
+    android:layout_margin="30dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_album"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="true"
+        android:background="@drawable/btn_bg_corner_white_selector"
+        android:text="相册"
+        android:textColor="@color/color_text_blue" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/tv_photo"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:onClick="true"
+        android:background="@drawable/list_item_selector_xml"
+        android:text="照相"
+        android:textColor="@color/color_text_blue" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee" />
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/btn_bg_corner_white_selector"
+        android:onClick="true"
+        android:text="取消"
+        android:textColor="@color/color_text_blue" />
+
+</LinearLayout>

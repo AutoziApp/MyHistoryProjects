@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activity.wdAc.KnowledgeBaseActivity">
+
+
+    <item android:id="@+id/action_record"
+          android:title="查询"
+          android:orderInCategory="80"
+          android:icon="@mipmap/qiandao_record"
+          app:showAsAction="always" />
+
+
+
+</menu>
+

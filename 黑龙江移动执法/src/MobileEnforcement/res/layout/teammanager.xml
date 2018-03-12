@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="horizontal"  
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"    
+    android:layout_height="35dip">         
+    <FrameLayout 
+        android:layout_width="fill_parent"    
+        android:layout_height="35dip"  
+        android:layout_weight="1">          
+        <LinearLayout android:orientation="horizontal"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:gravity="center"
+            android:background="@drawable/jckh_addressbook">   
+        <AutoCompleteTextView   
+            android:id="@+id/oneatuo"  
+            android:layout_width="fill_parent"  
+            android:layout_height="35dip"  
+            android:gravity="center"  
+            android:focusable="false"  
+            android:background="@null"  
+            android:cacheColorHint="#00000000"/>   
+        </LinearLayout>   
+           
+        <LinearLayout android:orientation="horizontal"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:gravity="center"
+            >   
+        <Spinner   
+            android:id="@+id/onespinner"  
+            android:layout_width="fill_parent"  
+            android:layout_height="35dip"  
+            android:gravity="center"                       
+            android:clickable="false"
+            android:background="@drawable/jckh_addressbook"/>   
+        </LinearLayout>   
+        
+        <LinearLayout android:orientation="horizontal"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:gravity="center"
+           >   
+        <FrameLayout   
+            android:id="@+id/one_clicklayout"  
+            android:layout_width="fill_parent"    
+            android:layout_height="35dip"  
+            android:clickable="true"/>   
+        </LinearLayout> 
+           
+    </FrameLayout> 
+     <FrameLayout  
+        android:layout_width="fill_parent"    
+        android:layout_height="35dip"  
+        android:layout_weight="1"
+        >          
+        <LinearLayout android:orientation="horizontal"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:gravity="center" >   
+        <AutoCompleteTextView   
+            android:id="@+id/twoatuo"  
+            android:layout_width="fill_parent"  
+            android:layout_height="35dip"  
+            android:gravity="center"  
+            android:focusable="false"  
+            android:background="@null"  
+            android:cacheColorHint="#00000000"/>   
+        </LinearLayout>   
+           
+        <LinearLayout android:orientation="horizontal"  
+            android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"  
+            android:gravity="center"
+            >   
+        <Spinner   
+            android:id="@+id/twospinner"  
+            android:layout_width="fill_parent"  
+            android:layout_height="35dip"  
+            android:gravity="center"                       
+            android:clickable="false"
+            android:background="@drawable/jckh_addressbook"/>   
+        </LinearLayout>   
+        
+        <LinearLayout android:orientation="horizontal"  
+            android:layout_width="150dip"  
+            android:layout_height="fill_parent"  
+            android:gravity="center" >   
+        <FrameLayout   
+            android:id="@+id/two_clicklayout"  
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"  
+            android:clickable="true"/>   
+        </LinearLayout>  
+        
+    </FrameLayout>   
+</LinearLayout>  
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divider"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:showDividers="middle"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/tvStyle1"
+            android:text="任务名称："/>
+
+        <TextView
+            android:id="@+id/tv_taskName"
+            style="@style/tvStyle1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tvStyle1"
+            android:text="任务类型："/>
+
+        <TextView
+            android:id="@+id/tv_taskType"
+            style="@style/tvStyle1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tvStyle1"
+            android:text="开始时间："/>
+
+        <TextView
+            android:id="@+id/tv_startTime"
+            style="@style/tvStyle1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/tvStyle1"
+            android:text="结束时间："/>
+
+        <TextView
+            android:id="@+id/tv_endTime"
+            style="@style/tvStyle1"
+            android:layout_toRightOf="@id/tv"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tvStyle1"
+            android:text="任务描述："/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            style="@style/tvStyle1"/>
+    </LinearLayout>
+</LinearLayout>

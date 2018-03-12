@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:background="@color/add_click_color"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+
+    <!--android:descendantFocusability=”blocksDescendants”该属性的作用是直接覆盖子view的点击事件。-->
+    <!--不设置，子view就会获取到监听，item的监听将会失效-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tv_cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="丹凤县"
+            android:textSize="@dimen/text_size_16sp"/>
+
+
+        <CheckBox
+            android:id="@+id/cb_check"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

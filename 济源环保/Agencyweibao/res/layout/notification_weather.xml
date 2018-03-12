@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    
+     <LinearLayout
+        android:id="@+id/notification_ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_alignParentTop="true"
+        
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/show_air_pollution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tx_air_pollution1"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="8.0dip"
+                android:text="空气质量"
+                android:textSize="15.0dip" />
+
+            <TextView
+                android:id="@+id/notice_quality"
+                android:text="优"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5.0dip"
+                android:textSize="18.0dip" />
+
+            <FrameLayout
+                android:id="@+id/notification_air_level_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/notification_air_level_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+   
+    <ImageView
+        android:id="@+id/notification_ll2"
+        android:layout_width="2.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@id/notification_ll1"
+        android:src="@drawable/notification_divider_line" />
+
+   
+      <RelativeLayout
+        android:id="@+id/notification_ll3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="5.0dip"
+         android:layout_toRightOf="@id/notification_ll2">
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/w0" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40.0dip" >
+
+            <TextView
+                android:id="@+id/notice_city"
+                android:text="郑州"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:textSize="15.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+   
+   
+    
+    <ImageView
+        android:id="@+id/notification_ll4"
+        android:layout_width="2.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@id/notification_ll3"
+        android:src="@drawable/notification_divider_line" />
+
+   
+    <LinearLayout
+        android:id="@+id/notification_ll5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_toRightOf="@id/notification_ll4"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notice_weather"
+            android:text="雾霾"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="8.0dip"
+            android:textSize="15.0dip" />
+
+        <TextView
+            android:id="@+id/notice_feelTemp"
+            android:text="2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="5.0dip"
+            android:textSize="24.0dip" />
+    </LinearLayout>
+   
+   
+   
+  
+   
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5.0dip"
+        android:layout_marginTop="8.0dip"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/notice_high_temp"
+            android:text="high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13.0dip" />
+
+        <TextView
+            android:id="@+id/notice_low_temp"
+            android:text="low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13.0dip" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip" >
+
+
+            <TextView
+                android:id="@+id/notice_time"
+                android:text="11:00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+          
+                android:textSize="11.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

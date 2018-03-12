@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:stretchColumns="1"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <TableRow>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:text="@string/rwmc"/>
+             <EditText
+                android:id="@+id/enforcement_enforcementmodel_query_taskname" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+               />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:text="@string/qymc"/>
+             <EditText
+                android:id="@+id/enforcement_enforcementmodel_query_companyname"  
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+               />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" 
+     >
+
+
+    <com.mapuni.android.teamcircle.XListView
+        android:id="@+id/tc_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fcfcfc"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/line"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </com.mapuni.android.teamcircle.XListView>
+
+</RelativeLayout>

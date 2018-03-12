@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+   
+ 
+    <style type="text/css">
+       
+        .divedit
+        {
+            width: 800px;
+            line-height: 30px;
+            background-image: url(../../../../Images/line.png);
+            background-position: top;
+            background-repeat: repeat;
+            vertical-align: middle;
+            word-spacing: 5px;
+            font-size: 18px;
+			font-family: 宋体;
+            word-break: break-all;
+        }
+      
+        body
+        {
+            margin: auto;
+            color: #000;
+			font-size: 18px;
+			font-family: 宋体;
+        }
+        tr td
+        {
+            height: 22pt;
+            color: #000;
+            font-size: 18px;
+			font-family: 宋体;
+			
+        }
+       
+        span.left
+        {
+            text-align: left;
+            text-decoration: underline;
+            border: 1px solid #ff0000;
+            width: 98%;
+            display: block;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+        span
+        {
+            text-align: left;
+            float: left;
+            color: #000;
+            font-size: 18px;
+			font-family: 宋体;
+        }
+        
+        span.lbl60
+        {
+            width: 60px;
+            float: left;
+            color: #000;
+        }
+        span.lbl80
+        {
+            width: 80px;
+            float: left;
+            color: #000;
+        }
+        span.lbl128
+        {
+            width: 128px;
+            float: left;
+            color: #000;
+        }
+        span.content
+        {
+            width: 25px;
+            text-align: center;
+            float: left;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+        span.contentyear
+        {
+            width: 50px;
+            text-align: center;
+            float: left;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+        span.contentund
+		{
+			float: left;
+            border-bottom: 1px solid #000;
+            height: 20px;
+            color: #000;
+		}
+        span.content120
+        {
+            width: 250px;
+            float: left;
+            border-bottom: 1px solid #000;
+            height: 20px;
+            color: #000;
+        }
+        span.content200
+        {
+            width: 200px;
+            float: left;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+        span.content680
+        {
+            width: 800px;
+            float: left;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+        span.content60
+        {
+            width: 60px;
+            float: left;
+            border-bottom: 1px solid #000;
+            color: #000;
+        }
+		
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="msg"></div>   
+    <div id="" style=" height: 25cm; width:100%; ">
+        <table style=" margin: 0px auto; margin-top: 65px">        
+            <tr style="height: 45px;">
+                <td style="text-align: center;">
+                    <font style="font-size: 30px; font-weight: 700;letter-spacing:4px;">{region}</font></td>
+                    </tr>
+                    <tr>
+                    <td style="text-align: center;">
+                    <font style="font-size: 30px; font-weight: 900;letter-spacing:30px; margin-left:30px;">现场检查(勘察)笔录</font>                  
+                   
+                </td>
+            </tr>
+            <tr>
+            <td>
+             <hr style="width: 800px; float: left; border: 1px solid #000" />
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="width: 60px;">时间：</span> <span id="spanyear" style="border-bottom: 1px solid #000; width:740px;"
+                        runat="server">{year}年{month}月
+                               {day}日{hour1}时{min1}
+                        分至{hour2}时{min2}分 &nbsp;&nbsp;</span> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="width: 60px;">地点：</span><span class="content120" style="width: 740px"
+                        id="GZDW1"  runat="server">&nbsp;{SurveyAddress}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="width: 260px;">检查(勘察)人姓名及执法证号：</span><span class="content120" 
+                        style="width: 540px;" id="JLR" runat="server">{SurveyPeopleID}</span> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="width: 200px;">记录人姓名及执法证号：</span><span class="content120" 
+                        style="width: 600px;" id="JLR" runat="server">{RecordPeopleName}</span> 
+                </td>
+            </tr>
+			 <tr>
+                 <td>
+                    <span style="width: 90px;">工作单位：</span><span class="content120" 
+                        style="width: 710px;" id="JLR" runat="server">{QRZW}</span> 
+                </td>
+            </tr> 
+            <tr>
+                 <td>
+                    <div style="width:800px;">
+<span style="width: 240px;">被检查(勘察)人名称或姓名：</span>
+                   <span class="content120" 
+                        style="width: 560px;" id="JLR" runat="server">{AskedPeopleName}
+                    </span>
+                </td>
+            </tr>
+<tr>
+                 <td>
+                    <div style="width:800px;">
+<span style="width: 140px;">法定代表人姓名:</span>
+                   <span class="content120" 
+                        style="width: 660px;" id="JLR" runat="server">{CheckPeople}
+                    </span>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <span style="width: 140px;">现场负责人姓名:</span>
+                    <span class="content120" style="width: 290px" id="FZR" runat="server">&nbsp;{DutyPeople}</span>
+                    <span style=" width:100px;">身份证号:</span>
+                    <span id="AGE" class="content120" runat="server" style="width: 270px">{DutyPeopleCode}</span>
+                    
+                </td>
+            </tr> 
+
+<tr>
+                 <td>
+                    <div style="width:800px;">
+<span style="width: 90px;">工作单位:</span>
+                   <span class="content120" 
+                        style="width: 710px;" id="JLR" runat="server">{DutyPeopleDepartment}
+                    </span>
+                </td>
+            </tr>
+          
+<tr>
+                <td>
+                    <span style="width: 60px;">职务:</span>
+                    <span class="content120" style="width: 240px" id="FZR" runat="server">&nbsp;{DutyPeopleOffice}</span>
+                    <span style=" width:120px;">与本案关系:</span>
+                    <span id="AGE" class="content120" runat="server" style="width: 380px">{DutyPeopleRelation}</span>
+                    
+                </td>
+            </tr> 
+
+<tr>
+                <td>
+                    <span style="width: 60px;">地址:</span>
+                    <span class="content120" style="width: 470px" id="FZR" runat="server">&nbsp;{DutyPeopleAddress}</span>
+                    <span style=" width:60px;">电话:</span>
+                    <span id="AGE" class="content120" runat="server" style="width: 210px">{DutyPeopleTel}</span>
+                    
+                </td>
+            </tr> 
+
+        	<tr>
+                <td>
+                    <span style="width: 280px;">其他参加人姓名及工作单位(地址):</span><span class="content120" 
+                        style="width: 520px;" id="JLR" runat="server">{OtherPeopleAddress}</span>
+          		</td>
+            </tr>
+<tr>
+            <td>
+             <hr style="width: 800px; float: left; border: 1px solid #000" />
+            </td>
+            </tr>
+            <tr>
+          		<td>
+                   <span style="text-indent:2em;">我们是</span>
+                   <span class="contentund" style="width:250px;">{region}</span>
+                   <span style="">执法人员</span>
+                   <span class="contentund" style="width:370px;">{SurveyPeopleName}</span>
+                    <span>，</span>
+             	</td>
+            </tr>
+  			<tr>
+                 <td>                       
+                        <span style="">这是我们的行政执法证件</span>
+<span class="contentund" style="width:250px;">{SurveyPeopleCradCode}</span>
+<span style=""> ，请过目确认。</span>
+                </td>
+            </tr>
+
+{question1answer} 
+
+
+<tr >
+                <td width="800px"  >
+                    <font style="font-weight:bold;font-size:20px">现场情况: </font>
+								
+                </td>
+           
+            </tr>
+<tr >
+                <td width="800px"  >
+<font style="text-decoration:underline;word-break: break-all; word-wrap:break-word;line-height:35px;letter-spacing:2px;font-size:20px ">
+                   {sitecondition}</font>
+																							
+                </td>
+           
+            </tr>
+
+            <!--
+       		<tr>
+       			<td>
+       				<div style="text-align: left;">
+                      <a>码分别是：<div id="AGE"  runat="server" style="display:inline;line-height:30px;">
+                      <a style=" border-bottom: 1px solid #000;width:500px;">{SurveyPeopleCradCode3}</a>
+                   
+                       
+                      <a >请确认（出示证件）。</a>
+                  </div></a>
+       			</td>
+       		</tr> -->
+            <addWD>
+        </table>
+    </div>
+    <div>
+    	<table  style="text-align:center;margin:0 auto;">
+    		<tr>
+                <td>
+                    <hr style="width: 800px; float: left; border: 1px solid #000" />
+                </td>
+            </tr>
+			<tr>
+                 <td><span style="width: 270px;">被询问人对笔录的审阅确认意见：</span><span class="content120" style="width: 530px"
+                        id="data9" runat="server">&nbsp;</span></td>
+            </tr>
+			<tr>
+                <td>
+                    <span style="width: 135px;">被询问人签名：</span><span class="content120" style="width: 395px"
+                        id="data1" runat="server">&nbsp;</span><span style="width: 50px;">&nbsp;</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data2" runat="server">&nbsp;</span> <span style="width: 10px;">年</span> <span class="content120" style="width: 60px;
+                            text-align: center" id="data3" runat="server">&nbsp;</span><span style="width: 10px;">月</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data4" runat="server">
+                        &nbsp;</span><span style="width: 10px;">日</span>
+                </td>
+            </tr>
+			
+            <tr>
+                <td>
+                    <span style="width: 110px;">询问人签名：</span><span class="content120" style="width: 420px"
+                        id="data9" runat="server">&nbsp;</span><span style="width: 50px;">&nbsp;</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data10" runat="server">
+                        &nbsp;</span> <span style="width: 10px;">年</span> <span class="content120" style="width: 60px;
+                            text-align: center" id="data11" runat="server">&nbsp;</span><span style="width: 10px;">月</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data12" runat="server">
+                        &nbsp;</span><span style="width: 10px;">日</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="width: 110px;">记录人签名：</span><span class="content120" style="width: 420px"
+                        id="data13" runat="server">&nbsp;</span><span style="width: 50px;">&nbsp;</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data14" runat="server">
+                        &nbsp;</span> <span style="width: 10px;">年</span> <span class="content120" style="width: 60px;
+                            text-align: center" id="data15" runat="server">&nbsp;</span><span style="width: 10px;">月</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data16" runat="server">
+                        &nbsp;</span><span style="width: 10px;">日</span>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <span style="width: 110px;">参加人签名：</span><span class="content120" style="width: 420px"
+                        id="data13" runat="server">&nbsp;</span><span style="width: 50px;">&nbsp;</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data14" runat="server">
+                        &nbsp;</span> <span style="width: 10px;">年</span> <span class="content120" style="width: 60px;
+                            text-align: center" id="data15" runat="server">&nbsp;</span><span style="width: 10px;">月</span>
+                    <span class="content120" style="width: 60px; text-align: center" id="data16" runat="server">
+                        &nbsp;</span><span style="width: 10px;">日</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <hr style="width: 800px; float: left; border: 1px solid #000" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                   		<font style="font-weight:bold;">（第 {currentpage} 页 共  {TotalPage} 页）</font>
+                </td>
+            </tr>
+    	</table>
+    </div>
+    
+   <addTwoPage>
+   <addTreePage>
+   <addFourPage>
+   <addFivePage>
+   <addSixPage>
+   <addSevenPage>
+   <addEightPage>
+   <addNinePage>
+   <addTenPage>
+    </form>
+</body>
+</html>

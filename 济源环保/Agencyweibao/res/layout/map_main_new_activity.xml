@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hbdtlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:onClick="hide()" />
+
+        <ImageView
+            android:id="@+id/change_map"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="50dip"
+            android:src="@drawable/map_qiehuan" />
+
+        <LinearLayout
+            android:id="@+id/change_map_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/change_map"
+            android:layout_marginRight="10dip"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/change_map_normol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/map_img1_checked" />
+
+            <ImageView
+                android:id="@+id/change_map_weixing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/map_img2" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_logo" />
+
+        <TextView
+            android:id="@+id/update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:background="@drawable/updatatime_back"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dip"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="40dip"
+        android:layout_marginRight="40dip"
+        android:background="@drawable/map_title_icon_background" 
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="180dip"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/map_legend_air" >
+        </ImageView>
+       
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/map_location_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/map_title_icon_background"
+        android:src="@drawable/map_dingwei" />
+
+
+
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_map_index_btn"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+        <include layout="@layout/map_index_btn"/>
+    </RelativeLayout>
+     <TextView 
+            android:id="@+id/updateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:textColor="#fff"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="#93918A"
+            android:visibility="gone"
+            
+            />
+</RelativeLayout>

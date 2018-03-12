@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<list> 
+  <item> 
+    <name>PH值  0-1，13-14</name>  
+    <values>0.06</values>
+  </item>  
+  <item> 
+    <name>PH值  1-2，12-13</name>  
+    <values>0.125</values>
+  </item>  
+  <item> 
+    <name>PH值  2-3，11-12</name>  
+    <values>0.25</values>
+  </item>  
+  <item> 
+    <name>PH值  3-4，10-11</name>  
+    <values>0.5</values>
+  </item>  
+  <item> 
+    <name>PH值  4-5，9-10</name>  
+    <values>1</values>
+  </item>  
+  <item> 
+    <name>PH值  5-6</name>  
+    <values>5</values>
+  </item>  
+  <item> 
+    <name>大肠菌群数(超标)</name>  
+    <values>3.3</values>
+  </item>  
+  <item> 
+    <name>余氯量(用氯消毒的医院废水)</name>  
+    <values>3.3</values>
+  </item>  
+</list>

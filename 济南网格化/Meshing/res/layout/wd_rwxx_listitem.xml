@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/lefticon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/wd_rwxx_dclimage" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/linearLayout2"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingRight="15dp"
+        android:paddingTop="16dp" >
+
+        <RelativeLayout
+            android:id="@+id/linearLayoutLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/date"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="18dp"
+                android:text="去焦化厂看煤渣、煤渣、煤渣、煤渣"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="2017-01-06"
+                android:textSize="18dp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/task_state"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/chuli"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wd_rwxx_dcl_bg"
+                    android:drawableLeft="@drawable/wd_rwxx_dcl_climage"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="16dp"
+                    android:text="处理"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#353e4b"
+                    android:focusable="false" />
+
+                <Button
+                    android:id="@+id/cuiban"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/wd_rwxx_dcl_bg"
+                    android:drawableLeft="@drawable/wd_rwxx_dcl_cbimage"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="16dp"
+                    android:text="催办" 
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#353e4b"
+                    android:focusable="false"/>
+                
+                  <TextView
+                    android:id="@+id/yiwancheng_beizhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:textSize="16dp"
+                    android:text="处理"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#353e4b"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:visibility="gone" />
+
+                <!-- <Button
+                    android:id="@+id/guidang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/task_flow_silde_pigeonhole"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/task_flow_silde_button"
+                    android:text="归档" /> -->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/task_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="未处理"
+                android:background="#ff3a5a"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textSize="14dp"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginTop="8dp"
+        android:background="#c9c9c9" >
+    </TextView>
+
+</RelativeLayout>

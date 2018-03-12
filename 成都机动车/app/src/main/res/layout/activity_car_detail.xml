@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_car_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.mapuni.car.mvp.detailcar.activity.CarDetailActivity">
+
+    <View
+        android:id="@+id/fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/statusbar_view_height"
+        android:layout_alignParentTop="true"
+        android:background="#315F76" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/fake_status_bar"
+        android:background="#3fa3cd"
+        toolbar:navigationIcon="@mipmap/back">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="数据详情"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/carInfoRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:transcriptMode="normal">
+        </android.support.v7.widget.RecyclerView>
+
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/commitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/save"
+            toolbar:elevation="6dp"
+            toolbar:fab_colorNormal="#3fa3cd"
+            toolbar:fab_colorPressed="#1c90c1"
+            toolbar:fab_colorRipple="#1c90c1"
+            toolbar:pressedTranslationZ="12dp" />
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

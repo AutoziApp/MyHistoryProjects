@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#e7e7e7"
+              android:orientation="vertical">
+    <include layout="@layout/toolbar_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_taskStatistics"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rect_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_task_count" />
+
+        <TextView
+            android:layout_toRightOf="@+id/icon"
+            android:text="任务统计"
+            style="@style/grid_mg_txt_style"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/right_arrow" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_gridNumber"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rect_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/icon_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_grid_number" />
+
+        <TextView
+            android:layout_toRightOf="@+id/icon_one"
+            style="@style/grid_mg_txt_style"
+            android:text="网格排名" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/right_arrow" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_changeTrend"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rect_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/icon_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_chang_trend" />
+
+        <TextView
+            android:layout_toRightOf="@+id/icon_two"
+            style="@style/grid_mg_txt_style"
+            android:text="变化趋势" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/right_arrow" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_gridName"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rect_item"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <ImageView
+            android:id="@+id/icon_three"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_grid_name" />
+
+        <TextView
+            android:layout_toRightOf="@+id/icon_three"
+            style="@style/grid_mg_txt_style"
+            android:text="网格员"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/right_arrow" />
+
+    </RelativeLayout>
+</LinearLayout>

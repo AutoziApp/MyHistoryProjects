@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.mapuni.mobileenvironment.activity.ExecuteAddActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    <include layout="@layout/toolbar_activity"
+        android:id="@+id/include"></include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include"
+            android:id="@+id/scrollView2" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_name"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/kuang"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_from"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                        <com.mapuni.mobileenvironment.widget.NiceSpinner
+                            android:id="@+id/spinnerA"
+                            android:layout_width="200dp"
+                            android:layout_height="40dp"
+                            android:drawableRight="@mipmap/select"
+
+                            />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_type"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.mapuni.mobileenvironment.widget.NiceSpinner
+                        android:id="@+id/spinnerB"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:drawableRight="@mipmap/select"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/grid_belong"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/kuang"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:text="昌平区"
+                        android:gravity="center"
+                        android:singleLine="true"/>
+
+                    <TextView
+                        android:id="@+id/gridView"
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/kuang"
+                        android:text=" 所属网格"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:maxLength="5"
+                        android:enabled="true"
+                        android:drawableRight="@mipmap/select"
+                        android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_arae"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/kuang"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_num"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/kuang"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_time"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/start_time"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/selector"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="5dp"
+                        android:drawableRight="@drawable/iconfont_rili"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/end_time"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/end_time"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/selector"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="5dp"
+                        android:drawableRight="@drawable/iconfont_rili"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/is_sure"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <com.mapuni.mobileenvironment.widget.NiceSpinner
+                        android:id="@+id/spinnerC"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:drawableRight="@mipmap/select"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adress"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:id="@+id/longitude"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/kuang"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:gravity="center"
+                        android:maxLength="8"
+                        android:singleLine="true"/>
+
+                    <TextView
+                        android:id="@+id/lat"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/kuang"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:paddingRight="5dp"
+                        android:drawableRight="@mipmap/dingwei"
+                        android:drawablePadding="5dp"
+                        android:ellipsize="end"
+                        android:enabled="true"
+                        android:singleLine="true"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/describe"
+                        android:textSize="15sp"
+                        android:textColor="@color/input_text_color"
+                        android:layout_marginRight="10dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/kuang"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray"
+                        android:paddingLeft="5dp"
+                       />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_null"
+                        android:textSize="15sp"
+                        android:layout_marginRight="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/cameraView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/camera"
+                         />
+                    <ImageView
+                        android:id="@+id/fileView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/file"
+                       />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/bottomLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                   />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                   >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/cancel_bg"
+                        android:text="@string/cancel"
+                        android:textColor="@color/cancel_text"
+                        android:id="@+id/cancel" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="@string/commit"
+                        android:background="@drawable/commit_bg"
+                        android:textColor="@color/white"
+                        android:id="@+id/commit" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+</RelativeLayout>

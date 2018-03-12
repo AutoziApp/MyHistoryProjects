@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xflc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mapuni.administrator.activity.myNewsAc.XflcActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@color/base_black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="任务名称"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:textColor="@color/base_black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="创建时间"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:textColor="@color/base_black"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="任务类型"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <include layout="@layout/line_one_dip"/>
+
+        <include layout="@layout/my_recyclerview"/>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_addTask"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:layout_margin="30dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/fab"
+        android:visibility="gone"
+        android:src="@drawable/add"/>
+
+</RelativeLayout>

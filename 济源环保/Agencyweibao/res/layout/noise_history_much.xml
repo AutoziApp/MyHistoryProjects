@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+           <RelativeLayout
+        android:id="@+id/noise_much_title"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/top_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/noise_much_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/update_btn"
+            android:src="@drawable/title_back_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="设置"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+    
+           <RelativeLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:orientation="horizontal"
+               android:background="@drawable/ic_preference_first_normal"
+               >
+               <TextView
+                   android:id="@+id/noise_much_auto" 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:text="自动同步数据"
+                   android:textSize="17sp"
+                   />
+               <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="(仅Wi-Fi)"
+                   android:layout_toRightOf="@+id/noise_much_auto"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="20dp"
+                   android:textColor="@color/gray"
+                   android:textSize="17sp"
+                   />
+
+               <com.jy.environment.widget.SwitchButton
+                   android:id="@+id/noise_much_autobtn"
+                   android:layout_width="10dip"
+                   android:layout_height="10dip"
+                   android:layout_alignParentRight="true"
+                    />
+
+           </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/noise_much_mlayout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/preference_last_item"
+        android:clickable="true"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手动同步数据"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="17sp"
+            />
+                	        <ImageView
+                	    android:id="@+id/noise_much_mbtn"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+
+                	        <TextView
+                	            android:id="@+id/noise_much_datacount"
+                	            android:layout_width="wrap_content"
+                	            android:layout_height="wrap_content"
+                	            android:layout_centerVertical="true"
+                	            android:visibility="gone"
+                	            android:textColor="@color/white"
+                	            android:textSize="10.0dip"
+                	            android:gravity="center"
+                	            android:layout_toLeftOf="@+id/noise_much_mbtn"
+                	            android:background="@drawable/tab_unread_bg" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/noise_history_delete"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp" 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="清空本地历史数据"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@drawable/text_bg"
+        android:textColor="@color/red"
+        />
+           
+    
+
+</LinearLayout>

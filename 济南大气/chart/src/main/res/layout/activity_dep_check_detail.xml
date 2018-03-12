@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0F0F0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="部门名称:"/>
+
+                <TextView
+                    android:id="@+id/DeptName"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="监测点总数:"/>
+
+                <TextView
+                    android:id="@+id/OutportCount"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时应上传总数:"/>
+
+                <TextView
+                    android:id="@+id/hourtotalnum"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日应上传总数:"/>
+
+                <TextView
+                    android:id="@+id/daytotalnum"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时个数:"/>
+
+                <TextView
+                    android:id="@+id/hournum"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时上传率:"/>
+
+                <TextView
+                    android:id="@+id/hourrate"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时超标个数:"/>
+
+                <TextView
+                    android:id="@+id/houralarm"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时超标率:"/>
+
+                <TextView
+                    android:id="@+id/houralarmrate"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时得分:"/>
+
+                <TextView
+                    android:id="@+id/hourscore"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小时超标得分:"/>
+
+                <TextView
+                    android:id="@+id/houralarmscore"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日个数:"/>
+
+                <TextView
+                    android:id="@+id/daynum"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日上传率:"/>
+
+                <TextView
+                    android:id="@+id/dayrate"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_item_horizontal"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/tv_item_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日超标个数:"/>
+
+            <TextView
+                android:id="@+id/dayalarm"
+                style="@style/tv_item_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日超标率:"/>
+
+                <TextView
+                    android:id="@+id/dayalarmrate"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日得分:"/>
+
+                <TextView
+                    android:id="@+id/dayscore"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日超标得分:"/>
+
+                <TextView
+                    android:id="@+id/dayalarmscore"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_item_horizontal"
+                android:layout_width="match_parent">
+
+                <TextView
+                    style="@style/tv_item_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总得分:"/>
+
+                <TextView
+                    android:id="@+id/totalscore"
+                    style="@style/tv_item_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

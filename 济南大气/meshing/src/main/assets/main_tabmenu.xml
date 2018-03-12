@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+     <!-- 信息查询 -->
+    <item>
+        <menuname>xxcx</menuname> <!-- 按钮的名字 -->
+        <order>0</order> <!-- 菜单中显示的顺序-->
+        <ywl>Xxcx_business</ywl><!-- 业务类的名字 -->
+        <imagename>tab_menu_xxcx</imagename><!-- <imagename>menu_3_normal</imagename>图片名称-->
+        <contextname>cn.com.mapuni.meshing.activity.xxcx_activity</contextname><!-- 跳转intent的包名-->
+        <classname>XxcxMainActivity</classname><!-- 跳转class的名字-->
+        <ifchecked>true</ifchecked><!-- 是否默认被选中-->
+        <tabname>tab_tag_xxcx</tabname><!-- tab页的名字-->
+        <qxid>vmob10A</qxid><!-- 权限id-->
+    </item>
+    
+    <!-- 网格化查询 -->
+    <item>
+        <menuname>wghcx</menuname> <!-- 按钮的名字 -->
+        <order>1</order> <!-- 菜单中显示的顺序-->
+        <ywl>Wghcx_business</ywl><!-- 业务类的名字 -->
+        <imagename>tab_menu_wghxxcx</imagename><!-- <imagename>menu_3_normal</imagename>图片名称-->
+        <contextname>cn.com.mapuni.meshing.activity.wghcx_activity</contextname><!-- 跳转intent的包名-->
+        <classname>WghcxMainActivity</classname><!-- 跳转class的名字-->
+        <ifchecked>false</ifchecked><!-- 是否默认被选中-->
+        <tabname>tab_tag_wghcx</tabname><!-- tab页的名字-->
+        <qxid>vmob10A</qxid><!-- 权限id-->
+    </item>
+      
+</list>

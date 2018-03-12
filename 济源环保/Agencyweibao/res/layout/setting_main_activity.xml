@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+   
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+  			android:layout_width="fill_parent"
+  			android:layout_height="45dp"
+  			android:id="@+id/title" 
+  			android:background="@color/top_bg"
+  			android:gravity="center_horizontal|center_vertical"  >  
+      		<TextView
+        		android:layout_width="wrap_content" 
+        		android:layout_height="wrap_content" 
+        		android:text="我"
+        		android:textSize="20sp"		
+				android:textColor="#fff" />       
+			</LinearLayout>
+	
+        <ScrollView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        	<LinearLayout
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_marginLeft="8dp"
+        	    android:layout_marginRight="8dp"
+        	    android:layout_marginTop="30dp"
+        	    android:orientation="vertical" >
+
+        	    <RelativeLayout
+        	        android:id="@+id/login"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/preference_first_item"
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="登  录"
+        	            android:id="@+id/login_tv"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+        	    </RelativeLayout>
+
+        	  
+        	    
+        	    <RelativeLayout android:id="@+id/offLineMapSet"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="40dp"
+        	        android:clickable="true"
+        	        android:background="@drawable/preference_item"
+        	        android:gravity="center_vertical">
+        	        
+        	        <TextView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="离线地图"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+        	        
+        	        <ImageView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+        	        
+        	    </RelativeLayout>
+        	    
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="50dp"
+        	    
+        	        android:id="@+id/yuyinbaobre"
+        	        android:background="@drawable/preference_last_item"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/yushengy"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="天气播报声音(小燕普通话)"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	       
+        	    </RelativeLayout>
+        	    
+        	    
+        	      <RelativeLayout
+        	          android:layout_marginTop="15dp"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="40dp"
+        	        android:layout_weight="0.22"
+        	        android:background="@drawable/preference_first_item"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/push"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="推  送"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <com.jy.environment.widget.SwitchButton
+        	            android:id="@+id/mSlideButton"
+        	            android:layout_width="10dip"
+        	            android:layout_height="10dip"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:layout_marginRight="8.0dip" />
+        	    </RelativeLayout>
+        	    
+        	    
+
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="40dp"
+        	        android:layout_weight="0.22"
+        	        android:background="@drawable/preference_item"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/xiansdingwei"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="显示定位"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <com.jy.environment.widget.SwitchButton
+        	            android:id="@+id/mSlideButtondw"
+        	            android:layout_width="10dip"
+        	            android:layout_height="10dip"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:layout_marginRight="8.0dip" />
+        	    </RelativeLayout>
+        	    
+        	    
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="40dp"
+        	        android:layout_weight="0.22"
+        	        android:background="@drawable/preference_item"
+        	     android:visibility="gone"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/beijingyyue"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="背景音乐"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <com.jy.environment.widget.SwitchButton
+        	            android:id="@+id/mSlideButtondbeij"
+        	            android:layout_width="10dip"
+        	            android:layout_height="10dip"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:layout_marginRight="8.0dip" />
+        	    </RelativeLayout>
+        	    
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="40dp"
+        	        android:layout_weight="0.22"
+        	        android:background="@drawable/preference_item"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/notification_tv"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="通知栏提醒"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <com.jy.environment.widget.SwitchButton
+        	            android:id="@+id/mSlideButtonNotice"
+        	            android:layout_width="10dip"
+        	            android:layout_height="10dip"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:layout_marginRight="8.0dip" />
+        	    </RelativeLayout>
+        	    <RelativeLayout
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="40dp"
+        	        android:layout_weight="0.22"
+        	        android:background="@drawable/preference_last_item"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:id="@+id/xiansdingwei1"
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="访问通讯录"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <com.jy.environment.widget.SwitchButton
+        	            android:id="@+id/mSlideButtondwSms"
+        	            android:layout_width="10dip"
+        	            android:layout_height="10dip"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:layout_marginRight="8.0dip" />
+        	    </RelativeLayout>
+        	    
+        	    
+
+        	    <RelativeLayout
+        	        android:id="@+id/advice"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:layout_marginTop="15dp"
+        	        android:background="@drawable/preference_first_item"
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="意见反馈"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+        	    </RelativeLayout>
+
+        	    <RelativeLayout
+        	        android:id="@+id/rel_version"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/preference_item"
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="检测新版本"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+        	    </RelativeLayout>
+
+        	    <RelativeLayout
+        	        android:id="@+id/rel_about"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/preference_last_item"
+        	        android:clickable="true"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="关于微保"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+        	    </RelativeLayout>
+
+        	    <RelativeLayout
+        	        android:id="@+id/bangzhu"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="wrap_content"
+        	        android:background="@drawable/preference_last_item"
+        	        android:clickable="true"
+        	        android:visibility="gone"
+        	        android:gravity="center_vertical" >
+
+        	        <TextView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:padding="8dp"
+        	            android:text="帮  助"
+        	            android:textColor="#000"
+        	            android:textSize="17sp" />
+
+        	        <ImageView
+        	            android:layout_width="wrap_content"
+        	            android:layout_height="wrap_content"
+        	            android:layout_alignParentRight="true"
+        	            android:layout_centerVertical="true"
+        	            android:scaleType="matrix"
+        	            android:src="@drawable/mm_submenu" />
+        	    </RelativeLayout>
+        	</LinearLayout>
+</ScrollView>
+</LinearLayout>

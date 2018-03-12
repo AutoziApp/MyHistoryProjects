@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff" >
+
+        <RelativeLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="50dip" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/rgroup_main_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/weather333"
+                android:orientation="horizontal" >
+
+                <!-- android:background="@drawable/tab_bg" -->
+
+                <RadioButton
+                    android:id="@+id/rbtn_tq"
+                    style="@style/main_tab_bottom"
+                    android:background="@drawable/tab_selector"
+                    android:checked="true"
+                    android:drawableTop="@drawable/tab_weather_selector"
+                    android:text="环境" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:drawableTop="@drawable/weather222" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_hjdt"
+                    style="@style/main_tab_bottom"
+                    android:background="@drawable/tab_selector"
+                    android:drawableTop="@drawable/tab_env_selector"
+                    android:text="地图" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:drawableTop="@drawable/weather222" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_create"
+                    style="@style/main_tab_bottom"
+                    android:background="@drawable/tab_selector"
+                    android:drawableTop="@drawable/tab_life_selector"
+                    android:text="发现" />
+
+                <TextView
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:drawableTop="@drawable/weather222" />
+
+                <RadioButton
+                    android:id="@+id/rbtn_setting"
+                    style="@style/main_tab_bottom"
+                    android:background="@drawable/tab_selector"
+                    android:drawableTop="@drawable/tab_more_selector"
+                    android:text="我" />
+            </RadioGroup>
+        </RelativeLayout>
+    </TabHost>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<resources>
+
+    <dimen name="bigPointerX">135px</dimen>
+    <dimen name="bigPointerY">112px</dimen>
+    <dimen name="widget_marginTop">10.9375dip</dimen>
+    <dimen name="widget_time_marginTop">13.28125dip</dimen>
+    <dimen name="widget_time_marginLeft">17.96875dip</dimen>
+    <dimen name="widget_marginRight">19.53125dip</dimen>
+    <dimen name="widget_weather_date_marginRight">21.09375dip</dimen>
+
+        <dimen name="textPaint">14px</dimen>
+    <dimen name="textsize">14px</dimen>
+	<!-- <dimen name="circle">4px</dimen> -->
+	<dimen name="circle">5px</dimen>
+	<!-- <dimen name="line">2px</dimen> -->
+	<dimen name="line">1.5px</dimen>
+	
+	    	<dimen name="paint_zaosheng">40px</dimen>
+    <dimen name="textpaint_zaosheng">23px</dimen>
+    <dimen name="leftsize1">50px</dimen>
+    <dimen name="downsize1">25px</dimen>
+    <dimen name="qq_length">180px</dimen>
+    <dimen name="alarm_top">220px</dimen>
+    <dimen name="alarm_left">100dp</dimen>
+    <dimen name="point_zize">7sp</dimen>
+    
+    <dimen name="snowsize">18px</dimen>
+</resources>

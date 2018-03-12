@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 增加蓝色 -->
+    <color name="base_xczf_qy_bg">#196CC8</color>
+    <!-- 在线监测曲线背景色 -->
+    <color name="base_zxjc_qx_bg">#e5f4fe</color>
+    <!-- 海绿色 -->
+    <color name="base_seagreen">#2E8B57</color>
+    <color name="darkblue">#008ED3</color> <!-- 深蓝色 -->
+    <color name="base_black">#000000</color>
+    <color name="lightskyblue">#87CEFA</color> <!-- 亮天蓝色 -->
+    <color name="skyblue">#87CEEB</color> <!-- 天蓝色 -->
+    <color name="blueviolet">#8A2BE2</color> <!-- 紫罗兰蓝色 -->
+    <color name="slateblue">#6A5ACD</color> <!-- 石蓝色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color> <!-- 灰色 -->
+    <color name="dvblue">#0096DA</color> <!-- 深蓝色 -->
+    <color name="itemcolor">#0C6895</color> <!-- 深蓝色 -->
+    <color name="hintcolor">#00000000</color> <!-- 深蓝色 -->
+    <color name="dblue">#3f4244</color> <!-- 深灰色 -->
+    <color name="qblue">#EAEAEA</color> <!-- 浅灰色 -->
+    <color name="topbar_background">#2d96d3</color>
+    <color name="line">#a0a0a0</color>
+    <color name="transparent">#00000000</color> <!-- 透明色 -->
+    <color name="textColor">#141414</color> <!-- 透明色 -->
+
+    <color name="c_5b5b5b">#5b5b5b</color>
+    <color name="c_c9c9c9">#c9c9c9</color>
+    <color name="c_c000">#c000</color>
+    <color name="c_289d15">#289d15</color>
+    <color name="c_5c5c5c">#5c5c5c</color>
+    <color name="title_background">#4EA7DE</color>
+
+</resources>

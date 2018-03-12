@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+    
+    <!-- 危废信息 -->
+	<item>
+		<name>WRY_WFXX</name>                  
+		<id>id</id>                             
+		<lefticon>icon_table</lefticon>          
+		<title>pwkbh</title>                     
+		<content>pwkmc</content>                 
+		<date></date>                        
+		<righticon>righticon_default</righticon> 
+		
+	</item>
+    
+    
+     <!-- 排污收费 -->
+	<item>
+		<name>WRY_PWSF</name>                  
+		<id>id</id>                             
+		<lefticon>icon_table</lefticon>          
+		<title>year</title>                     
+		<content>month</content>                 
+		<date></date>                        
+		<righticon>righticon_default</righticon> 		
+	</item>
+    <!-- 固废、灰渣 -->
+	<item>
+		<name>WRY_GFHZ</name>                  
+		<id>id</id>                             
+		<lefticon>icon_table</lefticon>          
+		<title>pwkbh</title>                     
+		<content>pwkmc</content>                 
+		<date></date>                        
+		<righticon>righticon_default</righticon> 
+		
+	</item>
+    
+    
+    
+     <!-- 危废排放情况 -->
+	<item>
+		<name>WRY_WRWPFWF</name>                  
+		<id>id</id>                             
+		<lefticon>icon_table</lefticon>          
+		<title>wastename</title>                     
+		<content>hazardouscharacteristics</content>                 
+		<date></date>                        
+		<righticon>righticon_default</righticon> 
+		
+	</item>
+    
+    
+    
+    <!-- 人员定位 -->
+    <item>
+    <name>RYDW</name>
+    <id>userid</id>
+    <lefticon>icon_phonebook</lefticon>
+    <title>u_realname</title>
+    <content>depname</content>
+    <date></date>
+    <righticon>righticon_default</righticon> 
+    <mysql>select userid,u_realname,depname from V_Users where 1=1 ,, order by depid,zw asc limit </mysql>
+    </item>
+    
+    
+    <!-- 企业基本信息 -->
+	<item>
+		<name>WRY_QYJBXX</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>guid</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>qymc</title>                       <!-- 第一行大的字体 -->
+		<content>qydz</content>                   <!-- 第二行小字体 -->
+		<date>hylb</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+    <!-- 环保手续履行情况 -->
+	<item>
+		<name>WRY_HBSX</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>xmmc</title>                       <!-- 第一行大的字体 -->
+		<content>xmbh</content>                   <!-- 第二行小字体 -->
+		<date>xmspsj</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+    <!-- 生产设施行运行情况 -->
+	<item>
+		<name>WRY_SCSSYXQK</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>scssmc</title>                       <!-- 第一行大的字体 -->
+		<content>scssxh</content>                   <!-- 第二行小字体 -->
+		<date>scssgjsj</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+      <!-- 污染物排放情况 -->
+	<item>
+		<name>WRY_WRWPFFS</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>pwkbh</title>                       <!-- 第一行大的字体 -->
+		<content>wrwdm</content>                   <!-- 第二行小字体 -->
+		<date>pfbz</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+      <!-- 废气污染物排放情况 -->
+	<item>
+		<name>WRY_FQWRWPF</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>pwkbh</title>                       <!-- 第一行大的字体 -->
+		<content>wrwdm</content>                   <!-- 第二行小字体 -->
+		<date>pfbz</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+      <!-- 固体污染物排放情况 -->
+	<item>
+		<name>WRY_WRWPFGT</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>gtfwlbbh</title>                       <!-- 第一行大的字体 -->
+		<content>gtfwmc</content>                   <!-- 第二行小字体 -->
+		<date></date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+      <!-- 噪声污染物排放情况 -->
+	<item>
+		<name>WRY_WRWPFGTZS</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>zsrbh</title>                       <!-- 第一行大的字体 -->
+		<content>zsymc</content>                   <!-- 第二行小字体 -->
+		<date>zsyxz</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+    <!--排污口-->
+	<item>
+		<name>WRY_FSPWKQK</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>pwkmc</title>                       <!-- 第一行大的字体 -->
+		<content>pwkwz</content>                   <!-- 第二行小字体 -->
+		<date></date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+    <!--废气排污口-->
+	<item>
+		<name>WRY_FQPWKQK</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>pfkmc</title>                       <!-- 第一行大的字体 -->
+		<content>pwkwz</content>                   <!-- 第二行小字体 -->
+		<date></date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,qydm,qymc,qydz,kysj,hylb from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	    <!--历史执法情况-->
+	<item>
+		<name>WRY_LSZFQK</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>zfmc</title>                       <!-- 第一行大的字体 （任务名称）-->
+		<content>zfjg</content>                   <!-- 第二行小字体(执行人) -->
+		<date></date>                         <!-- 第二行靠后显示的时间（完成时间） -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+	<mysql> </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+	    <!--行政处罚-->
+	<item>
+		<name>WRY_JYXZCF</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>ajmc</title>                       <!-- 第一行大的字体 （案件名称）-->
+		<content></content>                   <!-- 第二行小字体(立案编号) -->
+		<date></date>                         <!-- 第二行靠后显示的时间（执行状态） -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+	<mysql> </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+	    <!--危险废物转移档案-->
+	<item>
+		<name>WRY_WXFWZYDA</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>wxfwmc</title>                       <!-- 第一行大的字体 （危险废物名称）-->
+		<content></content>                   <!-- 第二行小字体() -->
+		<date></date>                         <!-- 第二行靠后显示的时间（） -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+	<mysql> </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+	<!--在线监测建设情况-->
+	<item>
+		<name>WRY_ZXJKXX</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>sbscsmc</title>                       <!-- 第一行大的字体 -->
+		<content>jkyz</content>                   <!-- 第二行小字体 -->
+		<date>jsrq</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,sbscsmc,jkyz,jsrq from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	<!--行政执法后监督-->
+	<item>
+		<name>WRY_XZZFHDCXX</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>ay</title>                       <!-- 第一行大的字体 -->
+		<content>xzzflx</content>                   <!-- 第二行小字体 -->
+		<date>fwsj</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,ay,xzzflx,fwsj from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+	<!--企业平面图-->
+	<item>
+		<name>T_WRY_QYPMT</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>guid</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>filename</title>                       <!-- 第一行大的字体 -->
+		<content></content>                   <!-- 第二行小字体 -->
+		<date></date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select * from T_Attachment where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+	<!--企业环境管理制度-->
+	<item>
+		<name>T_WRY_QYHJGLZD</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>zdmc</title>                       <!-- 第一行大的字体 -->
+		<content></content>                   <!-- 第二行小字体 -->
+		<date></date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select * from T_WRY_QYHJGLZD where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+	<!--环境风险防范设施-->
+	<item>
+		<name>WRY_HJFXFFSS</name>                   <!-- 标识不同类，与类中的“ListStyleName”变量对应 -->
+		<id>id</id>                             <!-- 对应表的主键 -->
+		<lefticon>icon_table</lefticon>           <!-- 左边的图片 -->
+		<title>wrwlx</title>                       <!-- 第一行大的字体 -->
+		<content>nyxts</content>                   <!-- 第二行小字体 -->
+		<date>fxffclff</date>                         <!-- 第二行靠后显示的时间 -->
+		<righticon>righticon_default</righticon>  <!-- 右边的图片 -->
+		<mysql>select guid,wrwlx,nyxts,fxffclff from V_WHY_QYJBXX where XZQH in ,, order by UpdateTime desc limit </mysql><!-- 列表查询sql语句 -->
+	</item>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- 环评三同时 -->
+	<item> 
+		<name>WRY_HBSTSYS</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>qymc</title>
+		<content>hpstsyslx</content>
+		<date>wjsj</date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT guid,qymc,wjbh,hpstsyslx,wjsj FROM V_WRY_HPSTSYS  where 1=1  ,, order by wjsj desc limit </mysql>
+	</item>
+	<!-- 排污收费 -->
+	<!-- <item>
+		<name>WRY_PWSF</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>qymc</title>
+		<content>zpwf</content>
+		<date>wjsj</date>
+		<righticon>righticon_default</righticon>
+		<mysql>select guid,qymc,wjsj,zpwf from V_WRY_PWSF where  XZQH in ,, order by wjsj desc limit </mysql>
+	</item> -->
+	<!-- 排污许可证 -->
+	<item>
+		<name>WRY_PWXKZ</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>qymc</title>
+		<content>xkzbh</content>
+		<date>fzrq</date>
+		<righticon>righticon_default</righticon>
+		<mysql>select guid ,qydm,fzrq,xkzbh,bz,qymc from V_WRY_PWXKZ where 1=1 ,, order by zycp desc limit </mysql>
+	</item>
+	<!-- 信访投诉 -->
+	<item>
+		<name>WRY_XFTS</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>tsxm</title>
+		<content></content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+		<!-- <mysql>SELECT guid,fynr,qymc,blsj FROM V_WRY_XFTS where 1=1 ,, order by blsj desc limit </mysql> -->
+	</item>
+    <!-- 限期治理 -->
+	<item>
+		<name>WRY_XQZL</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>wjbh</title>
+		<content>qymc</content>
+		<date>wjsj</date>
+		<righticon>righticon_default</righticon>
+		<mysql>select guid,fj,wjbh,qymc,wjsj from V_WRY_XQZL where 1=1 and XZQH in  ,, order by wjsj desc limit </mysql>
+	</item>
+	<!-- 行政处罚 -->
+	<item>
+		<name>WRY_XZCF</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>wfxw</title>
+		<content>qymc</content>
+		<date>jde</date>
+		<righticon>righticon_default</righticon>
+		<mysql>select guid,wfxw,qymc,wjsj,jde from  V_WRY_XZCF where 1=1 and XZQH in ,, order by wjsj desc limit </mysql>
+	</item>
+	<!-- 模板 -->
+	<item>
+		<name>MBXX</name>
+		<id>tid</id>
+		<lefticon>icon_table</lefticon>
+		<title>tname</title>
+		<content></content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+	</item>
+	<!-- 锅炉基本情况 -->
+	<item>
+		<name>ZDWRY_GLJBQK</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>gllx</title>
+		<content>qymc</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+	</item>
+	<!-- 生产处理工艺 -->
+	<item>
+		<name>ZDWRY_SCCLGY</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>scgy</title>
+		<content>qymc</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+		<mysql>select T_ZDWRY_SCCLGY.guid,qymc from T_ZDWRY_SCCLGY,T_WRY_QYJBXX where T_WRY_QYJBXX.qydm = T_ZDWRY_SCCLGY.qydm ,, </mysql>
+	</item>
+	<!-- 危险废物 -->
+	<item>
+		<name>ZDWRY_WXFW</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>wxfwmc</title>
+		<content>qymc</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+		<mysql>select T_ZDWRY_WXFW.guid,qymc  from T_ZDWRY_WXFW,T_WRY_QYJBXX where T_WRY_QYJBXX.qydm = T_ZDWRY_WXFW.qydm ,, </mysql>
+	</item>
+	<!-- 原辅材料 -->
+	<item>
+		<name>ZDWRY_YFCL</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>yfclmc</title>
+		<content>qymc</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+		<mysql>select T_ZDWRY_YFCL.guid,qymc from T_ZDWRY_YFCL,T_WRY_QYJBXX where T_WRY_QYJBXX.qydm = T_ZDWRY_YFCL.qydm ,, </mysql>
+	</item>
+	<!-- 窑炉基本情况 -->
+	<item>
+		<name>ZDWRY_YLJBQK</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>yllx</title>
+		<content>qymc</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+	</item>
+	<!-- 主要产品 -->
+	<item>
+		<name>ZDWRY_ZYCP</name>
+		<id>guid</id>
+		<lefticon>icon_table</lefticon>
+		<title>cpmc</title>
+		<content>qymc</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+		<mysql>select T_ZDWRY_ZYCP.guid,qymc from T_ZDWRY_ZYCP,T_WRY_QYJBXX where T_WRY_QYJBXX.qydm = T_ZDWRY_ZYCP.qydm ,, </mysql>
+	</item>
+	<!-- 危化品 -->
+	<item>
+		<name>HJYJ_WHP</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>cname</title>
+		<content>itemalias</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+        <mysql>select id,cname,itemalias from T_ZSK_DangerChem LEFT JOIN KINDTYPE ON T_ZSK_DangerChem.kindcode = KINDTYPE.KINDCODE where 1=1 ,, order by ename asc limit </mysql><!-- 危化品表名 V_ZSK_Expert_New -->
+	</item>
+	<!-- 预案与案例 -->
+	<item>
+	   <name>HJYJ_YAJAL</name>
+	   <id>guid</id>
+       <lefticon>icon_table</lefticon>
+       <title>bt</title>
+       <content>type</content>
+       <!-- <content>fj</content>-->
+       <date></date>
+       <righticon>righticon_default</righticon>
+       <mysql>select guid,EmgPlanName as bt,FileType as type, filename as fj from T_EmgPlan where 1=1 ,, order by bt asc limit </mysql>
+	</item>	
+	<!-- 数据同步 -->
+	<item>
+        <name>SYNCHRONIZE_LOG</name>
+        <id>id</id>
+        <lefticon>icon_table</lefticon>
+        <title>tablename</title>
+        <content></content>
+        <date></date>
+        <righticon></righticon>
+    </item>
+    <!-- 专家库 -->
+    <item>technical
+       <name>HJYJ_ZJK</name>
+       <id>expid</id>
+       <lefticon>icon_table</lefticon>
+       <title>exp_name</title>
+       <content>exp_experttype</content>
+       <!-- <date>work_time</date> -->
+       <date>exp_job</date><!-- work_ent -->
+       <righticon>righticon_default</righticon>
+       
+       <mysql>select
+			Exp_Name as name, exp_sex as sex,Exp_Date as birthday, Exp_Native as folk, Exp_Photo as photo,  Exp_Political as polity_visage,Exp_Place as regionname,Exp_Job as administration_business,Exp_Tel as move_phone,Exp_WorkUnit as work_ent
+			from PC_Exp where 1=1 ,, order by work_time desc limit </mysql><!-- 专家库表名 V_ZSK_Expert_New -->
+    </item>
+    <!-- 队伍管理 -->s
+    <item>
+       <name>DWGL</name>
+       <id>guid</id>
+       <lefticon>icon_table</lefticon>
+       <title>name</title>
+       <content>execcode</content>
+       <!-- <date>work_time</date> -->
+       <date></date>
+       <righticon>righticon_default</righticon>
+       <!-- <mysql>select guid,name,execcode from TeamBuildingPerson where workent='九台市环境监察大队'</mysql> -->
+    </item>
+    <!-- 救援物资 -->
+    <item>
+       <name>HJYJ_JYWZ</name>
+       <id>guid</id>
+       <lefticon>icon_table</lefticon>
+       <title>soluname</title>
+       <content>entname</content>
+       <date>nownum</date>
+       <righticon>righticon_default</righticon> 
+       <mysql>select Guid,SoLuName,EntName, nownum from T_ZSK_EnterSoluAndSave where 1=1 ,, order by soluname asc limit </mysql>
+    </item>
+    <!-- 法律法规标准 -->
+    <item>
+        <name>HJYJ_FLFGBZ</name>
+        <id>guid</id>
+        <lefticon>icon_table</lefticon>
+        <title>ymbt</title>
+    <!-- <content>sjlb</content> -->        
+        <content></content>
+    <!--  <date>scsj</date> -->
+        <date>sjlb</date>
+        <righticon>righticon_default</righticon> 
+        <mysql>select guid,ymbt,sjlb,scsj from T_ZSK_FLFGBZ where 1=1 ,, order by ymbt asc limit </mysql>
+    </item>
+    <!-- 重要文件 -->
+    <item>
+        <name>HJYJ_ZYWJBZ</name>
+        <id>guid</id>
+        <lefticon>icon_table</lefticon>
+        <title>wjbt</title>
+        <content>wjlb</content>
+        <date></date>
+        <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 处理意见 -->
+    <item>
+        <name>HJYJ_CLYJBZ</name>
+        <id>guid</id>
+        <lefticon>icon_table</lefticon>
+        <title>wjbt</title>
+        <content>wjlb</content>
+        <date></date>
+        <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 重要文件 -->
+    <item>
+        <name>HJYJ_ZYZDSBZ</name>
+        <id>guid</id>
+        <lefticon>icon_table</lefticon>
+        <title>wjbt</title>
+        <content>wjlb</content>
+        <date></date>
+        <righticon>righticon_default</righticon> 
+        <mysql>select guid,wjbt,wjlb from T_ZSK_ZYWJ where 1=1  ,,  order by updatetime desc limit </mysql>
+    </item>
+    <!-- 任务列表 -->
+    <item>
+    <name>RWLB</name>
+    <id>guid</id>
+    <lefticon>icon_taskwait</lefticon>
+    <title>rwmc</title>
+	<content>bz</content>
+    <!--<content>u_realname</content> -->
+    <!-- <date>rwztmc</date>-->
+    <date>fbsj</date>
+    <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 通讯录 -->
+    <item>
+    <name>USERS</name>
+    <id>userid</id>
+    <lefticon>icon_phonebook</lefticon>
+    <title>u_realname</title>
+    <content>depname</content>
+    <date></date>
+    <righticon>bodadianhua</righticon> 
+    <mysql>select userid,u_realname,depname from V_Users where 1=1 ,, order by U_ExtendField3 desc,depid limit </mysql>
+    </item>
+    <!-- 检查记录任务列表 -->
+    <item>
+    <name>JCJL_RWXX</name>
+    <id>guid</id>
+    <lefticon>icon_taskwait</lefticon>
+    <title>rwmc</title><!-- 企业代码-->
+    <content>rwbh</content><!-- 任务编号 -->
+    <date>fbsj</date>
+    <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 通知公告列表 -->
+    <item>
+    <name>TZGGLB</name>
+    <id>id</id>
+    <lefticon>icon_table</lefticon>
+    <title>timing</title><!-- 公告名称-->
+    <content>fabubumen</content><!-- 发布公告时间 -->
+    <date>faburiqi</date>
+    <righticon>righticon_default</righticon> 
+    <mysql>select id,timing,fabubumen,faburiqi from T_YDZF_TZGG where 1=1 ,, order by faburiqi desc limit </mysql>
+    </item>
+    <!-- 移动办公列表 -->
+    <item>
+    <name>YDBG</name>
+    <id>topic</id>
+    <lefticon>icon_table</lefticon>
+    <title>topic</title><!-- 发文标题-->
+    <content></content>
+    <date></date><!-- 时间 -->
+    <righticon>righticon_default</righticon> 
+    </item>
+     <!-- 已办列表 -->
+    <item>
+    <name>SWYB</name>
+    <id>topic</id>
+    <lefticon>icon_table</lefticon>
+    <title>topic</title><!-- 发文标题-->
+    <content></content>
+    <date></date><!-- 时间 -->
+    <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 发文待办列表 -->
+    <item>
+    <name>FWDB</name>
+    <id>guid</id>
+    <lefticon>icon_table</lefticon>
+    <title>title</title><!-- 发文标题-->
+    <content>time</content>
+    <date>date</date><!-- 时间 -->
+    <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 发文已办列表 -->
+    <item>
+    <name>FWYB</name>
+    <id>guid</id>
+    <lefticon>icon_table</lefticon>
+    <title>title</title><!-- 发文标题-->
+    <content>time</content>
+    <date>date</date><!-- 时间 -->
+    <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 邮件列表 -->
+    <!-- 邮件列表 -->
+    <item>
+    <name>EmailLB</name>
+    <id>msgid</id>
+    <lefticon>icon_table</lefticon>
+    <title>msgtitle</title><!-- 邮件标题-->
+    <!--<content>username</content>  -->
+    <content>u_loginname</content>
+    <date>msgbuilddate</date>
+    <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 个人日程管理列表 -->
+    <item>
+    <name>HJYJ_RCAPBZ</name>
+    <id>sid</id>
+    <lefticon>icon_table</lefticon>
+    <!-- <title>scontent</title> -->  <!-- 邮件标题-->
+    <title>scontent</title>
+    <content>u_loginname</content>
+    <date>stime</date>
+    <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 局领导日程管理列表 -->
+    <item>
+    <name>HJYJ_LDRCAPBZ</name>
+    <id>userid</id>
+    <lefticon>icon_table</lefticon>
+    <title>ldxm</title><!-- 邮件标题-->
+    <content>ldxx</content>
+    <date></date>
+    <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 历史更新信息  -->
+    <item>
+        <name>LSGX</name>
+        <id>id</id>
+        <lefticon>icon_table</lefticon>
+        <title>apkversion</title>
+        <content>updatetime</content>
+        <date></date>
+        <righticon>righticon_default</righticon> 
+    </item>
+    <!-- 环保履行情况  -->
+    <item>
+		<name>WRY_HBLXQK</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>xmmc</title>
+		<content>hplx</content>
+		<date>hbyssj</date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_HBLXQK where 1=1 ,,order by xmspsj desc limit </mysql>
+	</item>
+        <!-- 生产设施运行情况  -->
+    <item>
+		<name>WRY_SCSSYXQKXX</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>scssmc</title>
+		<content>scsslx</content>
+		<date>trsysj</date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_SCSSYXQK where 1=1 ,, order by trsysj desc limit </mysql>
+	</item>
+    <!-- 废水治理设施  -->
+    <item>
+		<name>WRY_FSZLSS</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>sclssmc</title>
+		<content>fslb</content>
+		<date>tyrq</date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_FSZLSS where 1=1 ,, order by tyrq desc limit </mysql>
+	</item>
+    <!-- 废气治理设施  -->
+    <item>
+		<name>WRY_FQZLSS</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>jhzzmc</title>
+		<content></content>
+		<date>tyrq</date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_FQZLSS where 1=1 ,, order by tyrq desc limit </mysql>
+	</item>
+    <!-- 废水排放污染物  -->
+    <item>
+		<name>WRY_FSPFWRW</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>pwkbh</title>
+		<content>wrwdm</content>
+		<date>pfbzdw</date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_FSPFWRW where 1=1 ,, order by pwkbh desc limit </mysql>
+	</item>
+    <!-- 废气排放污染物  -->
+    <item>
+		<name>WRY_FQPFWRW</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>pwkbh</title>
+		<content>wrwdm</content>
+		<date>pfbzdw</date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_FQPFWRW where 1=1 ,, order by pwkbh desc limit </mysql>
+	</item>
+	<!-- 固体废物 -->
+	<item>
+		<name>ZDWRY_GTFW</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>gtfwmc</title>
+		<content>gtfwfldm</content>
+		<date>clfs</date>
+		<righticon>righticon_default</righticon>
+		<mysql>select * FROM V_WRY_GTFW where 1=1 ,, </mysql>
+	</item>
+    <!-- 噪声源  -->
+    <item>
+		<name>WRY_ZSY</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>zsymc</title>
+		<content>zsyxz</content>
+		<date>sfzxjk</date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_ZSY where 1=1 ,,  limit </mysql>
+	</item>
+    <!-- 废水排放口  -->
+    <item>
+		<name>WRY_FSPWK</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>pwkmc</title>
+		<content>pwkwz</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_FSPWK where 1=1 ,, limit  </mysql>
+	</item>
+    <!-- 废气排放口  -->
+    <item>
+		<name>WRY_FQPWK</name>
+		<id>id</id>
+		<lefticon>icon_table</lefticon>
+		<title>pfkmc</title>
+		<content>pfkwz</content>
+		<date></date>
+		<righticon>righticon_default</righticon>
+		<mysql>SELECT * FROM V_WRY_FQPWK where 1=1 ,,  limit </mysql>
+	</item>
+</list>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E88CB"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/weather_background_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/title_workspace_layout"
+            android:layout_width="match_parent"
+            android:layout_height="35.0dip" >
+
+            <ImageView
+                android:id="@+id/activity_main_suggest"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/update_btn"
+                android:src="@drawable/title_back_selector" />
+
+            <TextView
+                android:id="@+id/title_station_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="郑州"
+                android:textColor="#ffffffff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5px"
+            android:background="@drawable/weather_line_title" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/stationviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

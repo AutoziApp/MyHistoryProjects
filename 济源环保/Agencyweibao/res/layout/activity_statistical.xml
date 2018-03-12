@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/air_bg"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_statistical"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_statistical_ract"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_realTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_statistical_radiobutton_left"
+            android:button="@null"
+            android:gravity="center"
+            android:text="实时"
+            android:textColor="@drawable/color_statistical_radiobutton"
+            android:textSize="@dimen/statistical_radiobutton_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_fenge" />
+
+        <RadioButton
+            android:id="@+id/rb_dayTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_statistical_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="日报"
+            android:textColor="@drawable/color_statistical_radiobutton"
+            android:textSize="@dimen/statistical_radiobutton_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_fenge" />
+
+        <RadioButton
+            android:id="@+id/rb_defaultTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_statistical_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="同期消减"
+            android:textColor="@drawable/color_statistical_radiobutton"
+            android:textSize="@dimen/statistical_radiobutton_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_fenge" />
+
+        <RadioButton
+            android:id="@+id/rb_mothTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_statistical_radiobutton"
+            android:button="@null"
+            android:gravity="center"
+            android:text="月累计"
+            android:textColor="@drawable/color_statistical_radiobutton"
+            android:textSize="@dimen/statistical_radiobutton_textsize" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu_fenge" />
+
+        <RadioButton
+            android:id="@+id/rb_yearTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background_statistical_radiobutton_right"
+            android:button="@null"
+            android:gravity="center"
+            android:text="年累计"
+            android:textColor="@drawable/color_statistical_radiobutton"
+            android:textSize="@dimen/statistical_radiobutton_textsize" />
+    </RadioGroup>
+    
+    <View
+        android:id="@+id/listline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/top"
+        android:background="@drawable/list_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

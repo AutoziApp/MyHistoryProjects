@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mapuni.administrator">
+
+    <!-- arcgis for android -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <!--bugly配置权限start-->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!--bugly配置权限end-->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.media.action.VIDEO_CAPTURE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.loginAc.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppStartLoadTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.loginAc.LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.wdAc.ModifyPasswordActivity"/>
+        <activity android:name=".activity.wdAc.ContactMethodActivity"/>
+        <activity android:name=".activity.wdAc.ContactDetailActivity"/>
+        <activity android:name=".activity.wdAc.MessageActivity"/>
+        <activity android:name=".activity.wdAc.MessageDetailActivity"/>
+
+        <!-- 高德定位 -->
+        <service android:name="com.amap.api.location.APSService"/>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e9ed149cbd0d56e5a078f3aa4d3cfddc"/>
+        <!--ea1b6177b550af1a88aa36cadb5d39f1-->
+
+        <activity android:name=".activity.AssessmentActivity">
+        </activity>
+        <activity android:name=".activity.wdAc.NotSignTaskActivity"/>
+        <activity android:name=".activity.wdAc.QueryRecordActivity"/>
+        <activity android:name=".activity.wdAc.DelayApplicationCompleteActivity"/>
+        <activity android:name=".activity.wdAc.DownTaskCompleteDetailActivity"/>
+        <activity android:name=".activity.wdAc.UpTaskCompleteDetailActivity"/>
+        <activity android:name=".activity.dbAc.AttachmentActivity"/>
+        <activity android:name=".activity.dbAc.ImagePlayerActivity"/>
+        <activity android:name=".activity.dbAc.PlayerActivity"/>
+        <activity android:name=".activity.myNewsAc.UpTaskDetailActivity"/>
+        <activity android:name=".activity.myNewsAc.DownTaskDetailActivity"/>
+        <activity android:name=".activity.myNewsAc.DelayApplicationActivity"/>
+        <activity android:name=".activity.gridMgAc.TaskStatisticsActivity">
+        </activity>
+        <activity android:name=".activity.gridMgAc.GridNumberActivity">
+        </activity>
+        <activity android:name=".activity.gridMgAc.ChangeTrendActivity">
+        </activity>
+        <activity android:name=".activity.gridMgAc.GridNameActivity">
+        </activity>
+        <activity android:name=".activity.wdAc.AboutActivity">
+        </activity>
+        <activity android:name=".activity.myNewsAc.DistributionActivity"/>
+        <activity android:name=".activity.myNewsAc.DistributionDetailActivity"/>
+        <!-- 图片选择 -->
+        <activity
+            android:name="com.lzy.imagepicker.ui.ImagePreviewDelActivity"
+            android:theme="@style/ImagePickerThemeFullScreen"/>
+
+
+        <service android:name=".service.LocationService"
+                 android:enabled="true"
+                 android:exported="true"/>
+
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.mapuni.administrator"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.myNewsAc.XflcActivity">
+        </activity>
+        <activity
+            android:name=".activity.myNewsAc.AddTaskActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged">
+        </activity>
+        <activity android:name=".activity.myNewsAc.EditTaskActivity">
+        </activity>
+        <activity
+            android:name=".activity.myNewsAc.XcsbActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged">
+        </activity>
+        <activity android:name=".activity.myNewsAc.XfshListActivity">
+        </activity>
+        <activity android:name=".activity.myNewsAc.DistributionActivity1">
+        </activity>
+        <activity android:name=".activity.wdAc.KnowledgeBaseActivity">
+        </activity>
+        <activity
+            android:name=".activity.wdAc.KnowledgeUpdateActivity"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"></activity>
+        <activity android:name=".activity.wdAc.KnowledgeAddActivity"/>
+
+        <receiver android:name=".receiver.LocationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.example.demo.destroy"/>// 这个是自定义的action
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".service.LocationJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+
+        <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.mapuni.administrator.fileProvider"
+        android:grantUriPermissions="true"
+        android:exported="false">
+            <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+
+            android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/search_jckhtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:layout_gravity="center_vertical"
+            android:text="开始时间："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/jckh_start_delete_btn"
+                style="@style/btn_search_style"
+                android:layout_toLeftOf="@dimen/btn_margin_left"
+                android:background="@drawable/rwlx_delete_selector" />
+
+            <EditText
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/jckh_start_delete_btn"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="开始时间"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+            
+                <TextView
+            android:id="@+id/linkTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:layout_gravity="center_vertical"
+            android:text="结束时间："
+            android:textColor="@color/black"
+            android:textSize="18dp"  />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/jckh_end_delete_btn"
+                style="@style/btn_search_style"
+                android:layout_toLeftOf="@dimen/btn_margin_left"
+                android:background="@drawable/rwlx_delete_selector" />
+
+            <EditText
+                android:id="@+id/endTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/jckh_end_delete_btn"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@null"
+                android:focusable="false"
+                android:hint="结束时间"
+                android:singleLine="true"
+                android:textSize="16sp" />
+        </RelativeLayout>
+            
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="4dp" >
+
+        <TextView
+            android:id="@+id/search_Tasktype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行政区划："
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/jckh_rwlx_delete_btn"
+                style="@style/btn_search_style"
+                android:layout_toLeftOf="@dimen/btn_back_margin_left"
+                android:background="@drawable/rwlx_delete_selector" />
+
+            <EditText
+                android:id="@+id/search_Tasktype_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/jckh_rwlx_delete_btn"
+                android:layout_weight="1"
+                android:background="@null"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="请选择任务区域"
+                android:textSize="16sp" 
+                android:singleLine="true" />
+        </RelativeLayout>
+        <!-- 搜索 -->
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/search_Jckh_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_search_base" />
+    </LinearLayout>
+    
+        <Spinner
+                    android:id="@+id/qyjbxx_query_city_name_"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown" 
+                    android:visibility="gone"/>
+        
+             <Spinner
+                    android:id="@+id/qyjbxx_query_city_name_2"
+                    style="@style/spinner_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:animationCache="true"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown"
+                    android:visibility="gone" />
+
+</LinearLayout>
